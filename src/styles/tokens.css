@@ -1,0 +1,40 @@
+/* 视觉变量的唯一存放处(宪法第四条)。
+   现为最朴素的占位一套;视觉定稿时整体替换这里,组件不许私藏颜色字号。 */
+
+:root {
+  /* 颜色 */
+  --color-bg: #ffffff;
+  --color-text: #171717;
+  --color-muted: #6b6b6b;
+  --color-line: #e4e4e4;
+  --color-accent: #171717; /* 占位:链接悬停等,先与正文同色系 */
+
+  /* 字体(占位:系统字体,LXGW 等待授权工作后引入) */
+  --font-sans: system-ui, -apple-system, 'Segoe UI', 'PingFang SC',
+    'Hiragino Sans GB', 'Microsoft YaHei', 'Noto Sans SC', sans-serif;
+
+  /* 字号 */
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.75rem;
+
+  /* 间距 */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2.5rem;
+  --space-6: 4rem;
+
+  /* 版面(规格:宽幅面,正文限阅读宽度) */
+  --width-site: 96rem;   /* 网格/大图的铺开上限 */
+  --width-prose: 42rem;  /* 正文段落的舒适阅读宽度 */
+  --pad-page: clamp(1rem, 4vw, 3rem);
+
+  /* 作品封面统一比例(规格·未决:视觉定稿时可改,先 4:3 占位) */
+  --cover-ratio: 4 / 3;
+
+  /* 网格 */
+  --grid-gap: var(--space-4);
+}
