@@ -1,0 +1,296 @@
+[
+  {
+    "id": "craft",
+    "url": "https://www.craft.do/",
+    "cat": "基准 · craft.do 本尊",
+    "ok": true,
+    "title": "Craft — Productivity App for Notes, Tasks, and Docs",
+    "info": {
+      "bodyFont": "UntitledSansFont, \"UntitledSansFont Fallback\", apple-system, InterFont, \"InterFont Fallback\", BlinkMacSystemFont, \"Helvetica Neue\", Helvetica, Arial, \"sans-serif\"",
+      "bodyBg": "rgb(252, 249, 247)",
+      "bodyColor": "rgb(3, 3, 2)",
+      "h1Font": "UntitledSerifFont, \"UntitledSerifFont Fallback\", apple-system-ui-serif, ui-serif, Georgia, \"serif\"",
+      "h1Size": "66px",
+      "h1Weight": "400",
+      "h1Spacing": "-1.98px",
+      "familiesSampled": [
+        "UntitledSansFont",
+        "UntitledSerifFont",
+        "apple-system"
+      ]
+    }
+  },
+  {
+    "id": "julianoni",
+    "url": "https://julianoni.com/",
+    "cat": "摄影 · 人像/时尚摄影师作品集",
+    "ok": true,
+    "title": "Julia Noni | Photographer & Director",
+    "info": {
+      "bodyFont": "SuisseIntl, sans-serif",
+      "bodyBg": "rgb(255, 255, 255)",
+      "bodyColor": "rgb(0, 0, 0)",
+      "h1Font": "SuisseIntl, sans-serif",
+      "h1Size": "36px",
+      "h1Weight": "500",
+      "h1Spacing": "normal",
+      "familiesSampled": [
+        "SuisseIntl"
+      ]
+    }
+  },
+  {
+    "id": "angelaricciardi",
+    "url": "https://angelaricciardi.com/",
+    "cat": "摄影 · 摄影师作品集",
+    "ok": true,
+    "title": "Angela Ricciardi",
+    "info": {
+      "bodyFont": "NeueHaasUnicaW1G, \"NeueHaasUnicaW1G Fallback\"",
+      "bodyBg": "rgb(255, 255, 255)",
+      "bodyColor": "rgb(0, 0, 0)",
+      "h1Font": null,
+      "h1Size": null,
+      "h1Weight": null,
+      "h1Spacing": null,
+      "familiesSampled": [
+        "NeueHaasUnicaW1G"
+      ]
+    }
+  },
+  {
+    "id": "tillmannfranzen",
+    "url": "https://tillmannfranzen.com/",
+    "cat": "摄影 · 建筑/艺术摄影师",
+    "ok": true,
+    "title": "Tillmann Franzen – develops visual stories for brands, companies, agencies and publishing.",
+    "info": {
+      "bodyFont": "Lars, Arial, Helvetica, sans-serif",
+      "bodyBg": "rgb(255, 255, 255)",
+      "bodyColor": "rgb(0, 0, 0)",
+      "h1Font": null,
+      "h1Size": null,
+      "h1Weight": null,
+      "h1Spacing": null,
+      "familiesSampled": [
+        "Lars"
+      ]
+    }
+  },
+  {
+    "id": "satoshiwatanabe",
+    "url": "https://satoshiwatanabe.org/",
+    "cat": "摄影 · 日系作品集",
+    "ok": true,
+    "title": "Satoshi Watanabe",
+    "info": {
+      "bodyFont": "\"Suisse Intl\", sans-serif",
+      "bodyBg": "rgb(255, 255, 255)",
+      "bodyColor": "rgb(0, 0, 0)",
+      "h1Font": "\"Suisse Intl\", sans-serif",
+      "h1Size": "15px",
+      "h1Weight": "400",
+      "h1Spacing": "normal",
+      "familiesSampled": [
+        "Suisse Intl"
+      ]
+    }
+  },
+  {
+    "id": "wschupfer",
+    "url": "https://wschupfer.com/",
+    "cat": "摄影经纪 · 时尚摄影师经纪公司",
+    "ok": true,
+    "title": "Walter Schupfer Management",
+    "info": {
+      "bodyFont": "\"Untitled Sans\", sans-serif",
+      "bodyBg": "rgb(255, 255, 255)",
+      "bodyColor": "rgb(0, 0, 0)",
+      "h1Font": null,
+      "h1Size": null,
+      "h1Weight": null,
+      "h1Spacing": null,
+      "familiesSampled": [
+        "Untitled Sans",
+        "BNY Universe"
+      ]
+    }
+  },
+  {
+    "id": "jacquemus",
+    "url": "https://www.jacquemus.com/",
+    "cat": "服装 · 法国时装品牌",
+    "ok": "partial",
+    "error": "page.goto: net::ERR_TIMED_OUT at https://www.jacquemus.com/\nCall log:\n\u001b[2m  - navigating to \"https://www.jacquemus.com/\", waiting until \"domcontentloaded\"\u001b[22m\n"
+  },
+  {
+    "id": "lemaire",
+    "url": "https://www.lemaire.fr/",
+    "cat": "服装 · 法国时装品牌",
+    "ok": true,
+    "title": "Official Online Store | LEMAIRE",
+    "info": {
+      "bodyFont": "BrownStd, sans-serif",
+      "bodyBg": "rgb(253, 251, 249)",
+      "bodyColor": "rgb(16, 10, 13)",
+      "h1Font": "BrownStd, sans-serif",
+      "h1Size": "32px",
+      "h1Weight": "400",
+      "h1Spacing": "0.6px",
+      "familiesSampled": [
+        "BrownStd",
+        "Arial",
+        "EBGaramond",
+        "GaramondPremrPro"
+      ]
+    }
+  },
+  {
+    "id": "voyeurverite",
+    "url": "https://www.voyeurverite.com/",
+    "cat": "服装/影像 · minimal.gallery 上新",
+    "ok": true,
+    "title": "Voyeur Vérité | Documentary Films, Branded Storytelling & Original Content",
+    "info": {
+      "bodyFont": "Review, Arial, sans-serif",
+      "bodyBg": "rgb(238, 51, 53)",
+      "bodyColor": "rgb(33, 31, 31)",
+      "h1Font": "Review, Arial, sans-serif",
+      "h1Size": "136.8px",
+      "h1Weight": "900",
+      "h1Spacing": "-0.5px",
+      "familiesSampled": [
+        "Review",
+        "Feature Display",
+        "Times New Roman"
+      ]
+    }
+  },
+  {
+    "id": "cerealmag",
+    "url": "https://readcereal.com/",
+    "cat": "杂志 · Cereal 旅行美学季刊",
+    "ok": true,
+    "title": "Cereal - An Online Archive",
+    "info": {
+      "bodyFont": "NeueHaasUnicaPro-Regular, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
+      "bodyBg": "rgb(247, 246, 239)",
+      "bodyColor": "rgb(54, 53, 49)",
+      "h1Font": "adobe-text-pro",
+      "h1Size": "14px",
+      "h1Weight": "700",
+      "h1Spacing": "normal",
+      "familiesSampled": [
+        "NeueHaasUnicaPro-Regular",
+        "adobe-text-pro"
+      ]
+    }
+  },
+  {
+    "id": "gentlewoman",
+    "url": "https://thegentlewoman.co.uk/",
+    "cat": "杂志 · The Gentlewoman",
+    "ok": true,
+    "title": "The Gentlewoman",
+    "info": {
+      "bodyFont": "\"Futura TGW\", Futura-Medium, Futura, Helvetica, Arial, sans-serif",
+      "bodyBg": "rgba(0, 0, 0, 0)",
+      "bodyColor": "rgb(0, 0, 0)",
+      "h1Font": null,
+      "h1Size": null,
+      "h1Weight": null,
+      "h1Spacing": null,
+      "familiesSampled": [
+        "Futura TGW"
+      ]
+    }
+  },
+  {
+    "id": "032c",
+    "url": "https://032c.com/",
+    "cat": "杂志 · 柏林先锋文化杂志",
+    "ok": true,
+    "title": "032c",
+    "info": {
+      "bodyFont": "\"NHaas Grotesk\"",
+      "bodyBg": "rgb(255, 255, 255)",
+      "bodyColor": "rgba(18, 18, 18, 0.75)",
+      "h1Font": "\"NHaas Grotesk\"",
+      "h1Size": "30px",
+      "h1Weight": "500",
+      "h1Spacing": "0.6px",
+      "familiesSampled": [
+        "NHaas Grotesk"
+      ]
+    }
+  },
+  {
+    "id": "apartamento",
+    "url": "https://www.apartamentomagazine.com/",
+    "cat": "杂志 · 居家生活杂志",
+    "ok": true,
+    "title": "Apartamento – Everyday Interiors Magazine & Publisher",
+    "info": {
+      "bodyFont": "futura-pt, Arial, sans-serif",
+      "bodyBg": "rgb(255, 255, 255)",
+      "bodyColor": "rgb(0, 0, 0)",
+      "h1Font": "futura-pt, Arial, sans-serif",
+      "h1Size": "63px",
+      "h1Weight": "500",
+      "h1Spacing": "1px",
+      "familiesSampled": [
+        "futura-pt",
+        "Times New Roman",
+        "Times",
+        "Futura"
+      ]
+    }
+  },
+  {
+    "id": "fionavilmer",
+    "url": "https://fionavilmer.com/",
+    "cat": "设计师作品集 · siteinspire 精选",
+    "ok": "partial",
+    "error": "page.goto: net::ERR_CERT_AUTHORITY_INVALID at https://fionavilmer.com/\nCall log:\n\u001b[2m  - navigating to \"https://fionavilmer.com/\", waiting until \"domcontentloaded\"\u001b[22m\n"
+  },
+  {
+    "id": "vincent",
+    "url": "https://vincent.computer/",
+    "cat": "设计师作品集 · siteinspire 精选",
+    "ok": true,
+    "title": "System Error",
+    "info": {
+      "bodyFont": "GeistMono, \"Courier New\", monospace",
+      "bodyBg": "rgb(255, 255, 255)",
+      "bodyColor": "rgb(0, 0, 0)",
+      "h1Font": null,
+      "h1Size": null,
+      "h1Weight": null,
+      "h1Spacing": null,
+      "familiesSampled": [
+        "GeistMono"
+      ]
+    }
+  },
+  {
+    "id": "stagecrew",
+    "url": "https://stagecrew.studio/",
+    "cat": "工作室 · 两个合集站同时收录",
+    "ok": true,
+    "title": "STAGECREW",
+    "info": {
+      "bodyFont": "\"Baikal Book\", Helvetica, Arial, sans-serif",
+      "bodyBg": "rgb(251, 251, 251)",
+      "bodyColor": "rgb(32, 32, 32)",
+      "h1Font": null,
+      "h1Size": null,
+      "h1Weight": null,
+      "h1Spacing": null,
+      "familiesSampled": [
+        "Baikal Book",
+        "Baikal Regular",
+        "Times New Roman"
+      ]
+    }
+  }
+]

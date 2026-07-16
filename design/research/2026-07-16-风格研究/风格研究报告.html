@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>风格研究 · 网站巡游 2026-07-16</title>
+<style>
+/* ============ 卡纸底 · craft 真值取色 ============ */
+:root{
+  --bg:#fcf9f7;          /* craft 暖米白 */
+  --ink:#030302;         /* craft 墨色 */
+  --card:#ffffff;
+  --border:#03030217;    /* 9% 黑描边 */
+  --muted:#03030280;     /* 50% 黑次级文字 */
+  --faint:#0303020a;
+  --green:#4aa25e; --blue:#4ba2b4; --purple:#748ddd;
+  --pink:#c37ec8; --red:#e66960; --orange:#dd8e40; --yellow:#fde99b;
+  --r1:10px; --r2:16px; --r3:24px; --r4:32px;
+  --kai:"LXGW WenKai","Kaiti SC",KaiTi,STKaiti,serif;
+  --disp:Georgia,"Times New Roman",serif;
+  --mono:"Cascadia Mono",Consolas,monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{
+  background:var(--bg);color:var(--ink);
+  font-family:var(--kai);font-size:17.5px;line-height:1.95;
+  padding:96px 24px 80px;
+}
+.page{max-width:980px;margin:0 auto}
+
+/* ============ 悬浮胶囊导航(craft 真值:blur 4px,无 saturate) ============ */
+nav.cap{
+  position:fixed;top:24px;left:50%;transform:translateX(-50%);z-index:9;
+  width:calc(100% - 96px);max-width:850px;
+  display:flex;align-items:center;gap:18px;flex-wrap:wrap;
+  padding:10px 22px;border-radius:26px;
+  background:linear-gradient(180deg,#fff6 10%,#fffc);
+  backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);
+  border:1px solid #ffffffa3;
+  box-shadow:0 12px 12px 2px #0000001a,0 2px 4px -1px #0000000f;
+  font-size:14px;
+}
+nav.cap b{font-family:var(--disp);font-style:italic;font-weight:400;letter-spacing:.02em;margin-right:auto}
+nav.cap a{color:var(--muted);text-decoration:none}
+nav.cap a:hover,nav.cap a:focus-visible{color:var(--ink)}
+nav.cap a:focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:4px}
+
+/* ============ 标题区 ============ */
+header.hero{margin:48px 0 64px}
+.hero .eyebrow{font-family:var(--mono);font-size:12.5px;color:var(--muted);letter-spacing:.12em}
+.hero h1{
+  font-family:var(--disp);font-weight:400;font-size:56px;line-height:1.18;
+  letter-spacing:-.03em;margin:14px 0 8px;
+}
+.hero h1 .cjk{font-family:var(--kai);letter-spacing:0}
+.hero p.lede{max-width:44em;color:#030302d9;margin-top:18px}
+.hero p.lede b{background:linear-gradient(transparent 62%,var(--yellow) 62%);font-weight:600}
+
+/* ============ 通用节 ============ */
+section{margin:72px 0}
+h2{
+  font-family:var(--kai);font-weight:600;font-size:29px;letter-spacing:.01em;
+  margin-bottom:6px;
+}
+h2 .no{font-family:var(--disp);font-style:italic;font-weight:400;color:var(--muted);font-size:20px;margin-right:10px}
+.sub{color:var(--muted);font-size:15px;margin-bottom:26px}
+p+p{margin-top:.9em}
+
+/* ============ 卡片(纸纹压在卡内,multiply,craft 的正确姿势) ============ */
+.card{
+  position:relative;background:var(--card);
+  border:1px solid var(--border);border-radius:var(--r3);
+  padding:26px 30px;overflow:hidden;
+}
+.card::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:url("img/paper.jpg") left top / 2048px 1201px repeat;
+  mix-blend-mode:multiply;opacity:.35;
+}
+.card>*{position:relative}
+.grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}
+
+/* 站点卡 */
+.site{padding:0;display:flex;flex-direction:column}
+.site .shot{display:block;border-bottom:1px solid var(--border);background:var(--faint)}
+.site .shot img{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:top}
+.site .body{padding:18px 22px 20px}
+.site h3{font-size:19px;font-weight:600;line-height:1.4}
+.site h3 a{color:inherit;text-decoration:none;border-bottom:1px solid #03030233}
+.site h3 a:hover{border-bottom-color:var(--ink)}
+.site .tag{
+  display:inline-block;font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;
+  padding:1px 10px;border-radius:99px;border:1px solid;margin-bottom:10px;
+}
+.t-photo{color:var(--blue);border-color:var(--blue)}
+.t-fashion{color:var(--pink);border-color:var(--pink)}
+.t-mag{color:var(--orange);border-color:var(--orange)}
+.t-studio{color:var(--purple);border-color:var(--purple)}
+.t-base{color:var(--green);border-color:var(--green)}
+.site ul{list-style:none;margin-top:10px;font-size:15.5px}
+.site li{padding-left:1.35em;position:relative;margin:.35em 0;color:#030302d9}
+.site li::before{content:"—";position:absolute;left:0;color:var(--muted)}
+.site .steal{margin-top:12px;font-size:14px;color:var(--muted)}
+.site .steal b{color:var(--ink);font-weight:600}
+
+/* 真值表 */
+table{width:100%;border-collapse:collapse;font-size:15px}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:top}
+th{font-weight:600;font-size:13.5px;color:var(--muted);letter-spacing:.05em}
+td.v{font-family:var(--mono);font-size:13.5px}
+.sw{display:inline-block;width:13px;height:13px;border-radius:4px;vertical-align:-1px;margin-right:7px;border:1px solid #03030222}
+
+/* 规律列表 */
+.law{display:grid;gap:18px}
+.law .card{border-radius:var(--r2)}
+.law h3{font-size:20px;font-weight:600;margin-bottom:6px}
+.law h3 .en{font-family:var(--disp);font-style:italic;font-weight:400;color:var(--muted);font-size:16px;margin-left:10px}
+.law p{font-size:16px;color:#030302d9}
+.chips{margin-top:10px}
+.chip{
+  display:inline-block;font-family:var(--mono);font-size:12px;
+  background:var(--faint);border:1px solid var(--border);border-radius:8px;
+  padding:2px 10px;margin:3px 4px 0 0;
+}
+
+/* 落地建议 */
+.map td:first-child{white-space:nowrap;font-weight:600}
+.map td:nth-child(2){white-space:nowrap}
+
+.note{
+  font-size:14.5px;color:var(--muted);border-left:3px solid var(--yellow);
+  padding:6px 0 6px 16px;margin-top:22px;
+}
+footer{margin-top:88px;font-size:13px;color:var(--muted);text-align:center;font-family:var(--mono)}
+footer a{color:inherit}
+@media (max-width:720px){
+  body{padding-top:120px}
+  .hero h1{font-size:38px}
+  nav.cap{width:calc(100% - 32px)}
+}
+</style>
+</head>
+<body>
+<nav class="cap" aria-label="页内导航">
+  <b>Field Notes</b>
+  <a href="#base">基准</a><a href="#tour">逐站</a><a href="#law">规律</a><a href="#apply">落地</a><a href="#skill">工具</a><a href="#next">线索</a>
+</nav>
+
+<div class="page">
+
+<header class="hero">
+  <div class="eyebrow">DESIGN RESEARCH · 2026-07-16 · 设计辅助对话</div>
+  <h1><span class="cjk">网站巡游</span> — <em>a field trip</em></h1>
+  <p class="lede">
+    一天里逛了 <b>16 个网站</b>:craft.do 本尊、四个摄影师作品集、一家摄影经纪、两家法国时装品牌、四本杂志的网站、两家工作室,截图全部存档在本文件夹的
+    <span style="font-family:var(--mono);font-size:14px">img/</span> 里。
+    最重要的一条结论先说:<b>咱们定下的「暖白卡纸」方向,被最好的那批网站集体验证了</b>——craft、Lemaire、Cereal 三家的底色几乎是同一张纸。
+  </p>
+</header>
+
+<!-- ============ 基准 ============ -->
+<section id="base">
+  <h2><span class="no">一</span>基准:craft.do 现在长什么样</h2>
+  <div class="sub">数值真值早已扒好(在快照的「craft-真值」页里),这次补的是 2026 年 7 月的实景。</div>
+
+  <div class="card site" style="max-width:640px">
+    <a class="shot" href="img/craft-full.jpg"><img src="img/craft-fold.png" alt="craft.do 首页截图:撕纸拼贴的山脉与天空,糖果色圆角卡片"></a>
+    <div class="body">
+      <span class="tag t-base">基准 BASELINE</span>
+      <h3><a href="https://www.craft.do/">craft.do</a></h3>
+      <ul>
+        <li>首页现在整个是「撕纸拼贴」:撕边卡纸山脉、纸片云、横格纸黄块——<b>比以前更像咱们的卡纸质感了</b></li>
+        <li>衬线大标题 66px、字重 400、字距 −1.98px:大而轻,不加粗——「高级编辑感」的做法</li>
+        <li>糖果色圆角卡(−2 档平涂色)仍是最有识别度的部件</li>
+        <li>悬浮胶囊导航:毛玻璃只有 blur(4px),圆角 26px——本页顶部的导航条就是照这个真值做的,你正看着它</li>
+      </ul>
+      <p class="steal"><b>可抄:</b>大字轻字重的衬线标题;撕纸拼贴作为「卡纸」的进阶玩法;胶囊导航。</p>
+    </div>
+  </div>
+
+  <div class="note">
+    真值速查(全部来自快照里逐字扒的记录):底色 <span class="sw" style="background:#fcf9f7"></span><span style="font-family:var(--mono);font-size:13px">#fcf9f7</span>,
+    墨色 <span class="sw" style="background:#030302"></span><span style="font-family:var(--mono);font-size:13px">#030302</span>,
+    描边 9% 黑,圆角梯 10 / 16 / 24 / 32px,纸纹永远垫在卡片内部、浅底要用 multiply。
+    字体是商业零售字体 Untitled Sans/Serif,<b>不碰</b>,气质用咱们的 OFL 字体去够。
+  </div>
+</section>
+
+<!-- ============ 逐站 ============ -->
+<section id="tour">
+  <h2><span class="no">二</span>逐站笔记</h2>
+  <div class="sub">点截图可看整页长图。截图仅作内部研究参考,版权归各站所有。</div>
+
+  <h3 style="font-size:17px;color:var(--muted);font-weight:600;margin:26px 0 14px">摄影 · 让图说话</h3>
+  <div class="grid">
+    <div class="card site">
+      <a class="shot" href="img/angelaricciardi-full.jpg"><img src="img/angelaricciardi-fold.png" alt="Angela Ricciardi:居中单图与底部胶片条"></a>
+      <div class="body">
+        <span class="tag t-photo">摄影 PHOTO</span>
+        <h3><a href="https://angelaricciardi.com/">Angela Ricciardi</a></h3>
+        <ul>
+          <li>一屏一张图,底部一条「胶片带」缩略图,像在灯箱前看底片</li>
+          <li>导航三件套:左「名字」/ 中「栏目」/ 右「001 of 029」计数</li>
+        </ul>
+        <p class="steal"><b>可抄:</b>计数式页码(001 of 029)——档案感一下就出来。</p>
+      </div>
+    </div>
+    <div class="card site">
+      <a class="shot" href="img/tillmannfranzen-full.jpg"><img src="img/tillmannfranzen-fold.png" alt="Tillmann Franzen:标签页式导航与错位双图"></a>
+      <div class="body">
+        <span class="tag t-photo">摄影 PHOTO</span>
+        <h3><a href="https://tillmannfranzen.com/">Tillmann Franzen</a></h3>
+        <ul>
+          <li>导航做成一排「实体标签页」,像卡片索引柜的抽头</li>
+          <li>双图错位排布:一张贴左缘、一张沉右下,中缝夹一段自我介绍</li>
+        </ul>
+        <p class="steal"><b>可抄:</b>标签页导航(和卡纸是天生一对);图文错位的呼吸感。</p>
+      </div>
+    </div>
+    <div class="card site">
+      <a class="shot" href="img/satoshiwatanabe-full.jpg"><img src="img/satoshiwatanabe-fold.png" alt="Satoshi Watanabe:首页即作品清单表格"></a>
+      <div class="body">
+        <span class="tag t-photo">摄影 PHOTO</span>
+        <h3><a href="https://satoshiwatanabe.org/">Satoshi Watanabe</a></h3>
+        <ul>
+          <li>首页没有一张图:<b>作品清单就是首页</b>——编号 / 客户 / 项目 / 年份四列</li>
+          <li>000 起头的三位编号,列头缩写成 N. C. P. Y.,克制到极致</li>
+        </ul>
+        <p class="steal"><b>可抄:</b>清单式首页——大胆、快、极有性格,适合作品多的人。</p>
+      </div>
+    </div>
+    <div class="card site">
+      <a class="shot" href="img/wschupfer-full.jpg"><img src="img/wschupfer-fold.png" alt="WSM:错落瀑布式图墙"></a>
+      <div class="body">
+        <span class="tag t-photo">摄影经纪 AGENCY</span>
+        <h3><a href="https://wschupfer.com/">Walter Schupfer Management</a></h3>
+        <ul>
+          <li>五列图墙,列与列上下错开,两侧的图故意切出画面外</li>
+          <li>图注(摄影师 – 客户)压在图的下缘,小而低调</li>
+        </ul>
+        <p class="steal"><b>可抄:</b>错落图墙 + 出血裁切——「还有更多」的暗示。</p>
+      </div>
+    </div>
+    <div class="card site">
+      <div class="body">
+        <span class="tag t-photo">摄影 PHOTO</span>
+        <h3><a href="https://julianoni.com/">Julia Noni</a></h3>
+        <ul>
+          <li>站方对机器人锁图,截图是空白的,但骨架看清了:居中大图 + 三段导航</li>
+          <li>栏目名用方括号写:[ SELECTED ] [ WORKS ] [ ABOUT ]——像相纸背面的铅笔标注</li>
+          <li>顶栏中间实时写着当前客户名(VOGUE GERMANY <span style="color:var(--muted)">EDITORIAL</span>)</li>
+        </ul>
+        <p class="steal"><b>可抄:</b>方括号栏目名;当前内容的「片头字幕」。</p>
+      </div>
+    </div>
+  </div>
+
+  <h3 style="font-size:17px;color:var(--muted);font-weight:600;margin:26px 0 14px">服装 · 留白与飘浮</h3>
+  <div class="grid">
+    <div class="card site">
+      <a class="shot" href="img/lemaire-full.jpg"><img src="img/lemaire-fold.png" alt="Lemaire:全站地图式导航,大量留白"></a>
+      <div class="body">
+        <span class="tag t-fashion">服装 FASHION</span>
+        <h3><a href="https://www.lemaire.fr/">LEMAIRE</a></h3>
+        <ul>
+          <li>底色 #fdfbf9,又一张暖白纸;Logo 字距拉得很开</li>
+          <li>导航直接把全站地图平铺在页首,小号全大写,像杂志目录页</li>
+          <li>往下滚:图不排网格,东一张西一张地「飘」,配一个小小的品类词(PANTS / BAGS)</li>
+        </ul>
+        <p class="steal"><b>可抄:</b>非对称飘浮排图——作品集不必是整齐的格子。</p>
+      </div>
+    </div>
+    <div class="card site">
+      <a class="shot" href="img/voyeurverite-full.jpg"><img src="img/voyeurverite-fold.png" alt="Voyeur Vérité:奶白底一支红,两种字体声部对撞"></a>
+      <div class="body">
+        <span class="tag t-fashion">影像工作室 STUDIO</span>
+        <h3><a href="https://www.voyeurverite.com/">Voyeur Vérité</a></h3>
+        <ul>
+          <li>整站只有两个颜色:奶白纸 + 一支信号红</li>
+          <li>两种字在对唱:纤细优雅的衬线(Voyeur)对超重超扁的无衬线(THE ART OF OBSERVATION)</li>
+          <li>词典式排版:MEANING: 小标签 + 大词 + 释义小字</li>
+        </ul>
+        <p class="steal"><b>可抄:</b>两个字体声部的对撞——咱们的 IM Fell(戏剧衬线)+ 文楷正是同一构造;词典式的自我介绍。</p>
+      </div>
+    </div>
+  </div>
+
+  <h3 style="font-size:17px;color:var(--muted);font-weight:600;margin:26px 0 14px">杂志 · 档案与性格</h3>
+  <div class="grid">
+    <div class="card site">
+      <a class="shot" href="img/cerealmag-full.jpg"><img src="img/cerealmag-fold.png" alt="Cereal:细黑边框住的档案索引首页"></a>
+      <div class="body">
+        <span class="tag t-mag">杂志 MAGAZINE</span>
+        <h3><a href="https://readcereal.com/">Cereal</a></h3>
+        <ul>
+          <li>象牙底 #f7f6ef,一根细黑线框住整页——像杂志的裁切线</li>
+          <li><b>首页就是档案馆</b>:分类 / 关键词 / 年份三列过滤器,988 条结果</li>
+          <li>每张图的图注带编号 (057-09) = 第几期第几页;排序方式写着「Unsystematic(不系统)」——性格藏在一个词里</li>
+        </ul>
+        <p class="steal"><b>可抄:</b>整页细线边框;编号图注;把幽默感埋进功能文案。<b>这是咱们「收藏」板块的头号范本。</b></p>
+      </div>
+    </div>
+    <div class="card site">
+      <a class="shot" href="img/gentlewoman-full.jpg"><img src="img/gentlewoman-fold.png" alt="The Gentlewoman:整屏封面轮播与底部图注条"></a>
+      <div class="body">
+        <span class="tag t-mag">杂志 MAGAZINE</span>
+        <h3><a href="https://thegentlewoman.co.uk/">The Gentlewoman</a></h3>
+        <ul>
+          <li>整屏封面轮播,图注和计数(1 / 7)收进底部一条细线里</li>
+          <li>全站只用一个字体(定制 Futura)+ 一个湖绿色,Logo 反常规放右上</li>
+        </ul>
+        <p class="steal"><b>可抄:</b>底部细线图注条;「一个字体 + 一个颜色」的纪律。</p>
+      </div>
+    </div>
+    <div class="card site">
+      <a class="shot" href="img/032c-full.jpg"><img src="img/032c-fold.png" alt="032c:灰白底与信号红,粗黑无衬线"></a>
+      <div class="body">
+        <span class="tag t-mag">杂志 MAGAZINE</span>
+        <h3><a href="https://032c.com/">032c</a></h3>
+        <ul>
+          <li>中性灰白底 + 一支侵略性的信号红,标题直接压在满幅图上</li>
+          <li>跑马灯促销条、杂志封面当商品卡——energy 拉满的反面教材式参考:热闹,但不是咱们的味</li>
+        </ul>
+        <p class="steal"><b>可抄:</b>「品牌 = 一个红」的专一;其余留给对比参照。</p>
+      </div>
+    </div>
+    <div class="card site">
+      <a class="shot" href="img/apartamento-full.jpg"><img src="img/apartamento-fold.png" alt="Apartamento:奶白页眉与全幅视频头图"></a>
+      <div class="body">
+        <span class="tag t-mag">杂志 MAGAZINE</span>
+        <h3><a href="https://www.apartamentomagazine.com/">Apartamento</a></h3>
+        <ul>
+          <li>奶白页眉 + 全小写衬线 Logo,天蓝公告条一句话(送托特包!)——亲切、居家</li>
+          <li>全幅视频头图,居中衬线标题,气质在「杂志」和「朋友家」之间</li>
+        </ul>
+        <p class="steal"><b>可抄:</b>顶部一句话公告条;全小写 Logo 的松弛感。</p>
+      </div>
+    </div>
+  </div>
+
+  <h3 style="font-size:17px;color:var(--muted);font-weight:600;margin:26px 0 14px">工作室与彩蛋</h3>
+  <div class="grid">
+    <div class="card site">
+      <a class="shot" href="img/stagecrew-full.jpg"><img src="img/stagecrew-fold.png" alt="STAGECREW:左图右文两栏,项目名与职能左右对齐"></a>
+      <div class="body">
+        <span class="tag t-studio">工作室 STUDIO</span>
+        <h3><a href="https://stagecrew.studio/">STAGECREW</a></h3>
+        <ul>
+          <li>左半屏一列作品图,右半屏只放两行字:项目名靠左、职能清单靠右</li>
+          <li>当前栏目用一枚黑色药丸标记(Work)——最小成本的「你在这里」</li>
+        </ul>
+        <p class="steal"><b>可抄:</b>项目名 × 职能左右对齐那一行;药丸式当前页标记。</p>
+      </div>
+    </div>
+    <div class="card site">
+      <a class="shot" href="img/vincent-full.jpg"><img src="img/vincent-fold.png" alt="vincent.computer:把 404 演成系统日志的概念页"></a>
+      <div class="body">
+        <span class="tag t-studio">彩蛋 EASTER EGG</span>
+        <h3><a href="https://vincent.computer/">vincent.computer</a></h3>
+        <ul>
+          <li>整个网站是一场戏:域名叫 computer,首页就演「电脑内存不足死机」的系统日志,最后一行红字把你送去新站</li>
+        </ul>
+        <p class="steal"><b>可抄:</b>概念先行的勇气——个人网站可以是一个「装置」,不只是一份简历。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="note">
+    没拍到的两个:Jacquemus 当天整站维护中(改天再访);Fiona Vilmer 的证书被公司网络拦截。
+    另外两家(Julia Noni、Gentlewoman)对机器人锁图,拍到了骨架、拍不到图——上面已按骨架记录。
+  </div>
+</section>
+
+<!-- ============ 规律 ============ -->
+<section id="law">
+  <h2><span class="no">三</span>五条横向规律</h2>
+  <div class="sub">跨着看十几个站,反复出现的东西才值得信。</div>
+  <div class="law">
+    <div class="card">
+      <h3>暖白不是巧合<span class="en">the warm-white consensus</span></h3>
+      <p>craft、Lemaire、Cereal——产品站、时装屋、杂志——底色全落在同一张暖白纸上。纯白 #ffffff 只有摄影站在用(为了让照片的白边消失)。<b>咱们的卡纸底色是被市场验证过的共识,放心走。</b></p>
+      <div class="chips"><span class="chip">craft #fcf9f7</span><span class="chip">Lemaire #fdfbf9</span><span class="chip">Cereal #f7f6ef</span></div>
+    </div>
+    <div class="card">
+      <h3>图说话时,字闭嘴<span class="en">when images speak, type whispers</span></h3>
+      <p>四个摄影师作品集全是一个配方:纯白底 + 15px 上下的中性无衬线 + 零装饰。他们用的全是商业字体(Suisse Intl、Neue Haas、Untitled Sans),咱们不碰——同样的「安静」气质,家底里的思源黑就够得着。规律本身更重要:<b>作品页的字,退到几乎看不见才算合格。</b></p>
+    </div>
+    <div class="card">
+      <h3>档案感就是高级感<span class="en">the archive is the aesthetic</span></h3>
+      <p>Cereal 把首页做成检索台,Satoshi Watanabe 把首页做成台账,Angela Ricciardi 给每张图配「001 of 029」的编号。<b>把内容当档案来编目,克制又郑重,比任何装饰都显得认真。</b>这套手法和霞鹜文楷的文人气质极配。</p>
+      <div class="chips"><span class="chip">(057-09)</span><span class="chip">001 of 029</span><span class="chip">N. C. P. Y.</span><span class="chip">Sort by: Unsystematic</span></div>
+    </div>
+    <div class="card">
+      <h3>两个声部的对撞<span class="en">two voices, one stage</span></h3>
+      <p>Voyeur Vérité 用一支纤细衬线和一支超重无衬线对唱,craft 用轻盈大衬线配工整小无衬线。<b>咱们手里已经握着同样的牌:IM Fell English(戏剧衬线)× 霞鹜文楷(温润楷书)</b>——这次巡游确认这个配方在一线通用。</p>
+    </div>
+    <div class="card">
+      <h3>性格只花在一处<span class="en">spend personality once</span></h3>
+      <p>Gentlewoman 全站只有一个湖绿,032c 只有一个信号红,craft 的花样全部集中在糖果卡上,其余部分全都素着。Cereal 的性格甚至只藏在一个词里(Unsystematic)。<b>决定好咱们的「那一处」在哪,其他地方就都得守规矩。</b></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 落地 ============ -->
+<section id="apply">
+  <h2><span class="no">四</span>对咱们网站的落地建议</h2>
+  <div class="sub">四类内容(作品集 / 自我介绍 / 文章 / 收藏)各自认领的范本。这些只是我的推荐,拍板在你。</div>
+  <div class="card">
+    <table class="map">
+      <tr><th>板块</th><th>头号范本</th><th>怎么用</th></tr>
+      <tr><td>作品集 · 列表</td><td>WSM / Lemaire</td><td>错落图墙或非对称飘浮,拒绝死板网格;图注小而低调</td></tr>
+      <tr><td>作品集 · 详情</td><td>Angela Ricciardi</td><td>一屏一图 + 计数页码;文字退后,图占满呼吸</td></tr>
+      <tr><td>收藏 / 灵感</td><td>Cereal</td><td>档案索引式:过滤器 + 编号图注 + 一句藏性格的文案</td></tr>
+      <tr><td>文章 / 随笔</td><td>Apartamento / craft</td><td>暖白底窄栏,衬线大标题轻字重,正文霞鹜文楷</td></tr>
+      <tr><td>自我介绍</td><td>Voyeur Vérité / Tillmann</td><td>词典式开场(名字 + 释义),或左图右文的错位排布</td></tr>
+      <tr><td>首页</td><td>craft 壳 + Satoshi 心</td><td>卡纸质感与胶囊导航打底,内容区可以大胆用清单/索引</td></tr>
+      <tr><td>导航</td><td>Julia Noni / STAGECREW</td><td>三段式(名字/栏目/状态),方括号或药丸标记当前页</td></tr>
+    </table>
+  </div>
+  <div class="note">
+    双语提醒:巡游的站几乎全是纯拉丁字母排版,中文要自己拿捏——中文没有斜体、大小写、字重梯队也窄,
+    上面这些手法搬过来时,「大写小字」可以换成「加字距的小字」,「斜体」可以换成「楷体」。这正是文楷 + IM Fell 双声部的用武之地。
+  </div>
+</section>
+
+<!-- ============ 工具 ============ -->
+<section id="skill">
+  <h2><span class="no">五</span>设计类 skill(经验包)盘点</h2>
+  <div class="sub">skill 是给我装的「工作方法」,装了以后我出的活儿更专业。安装要动项目配置,归辅助对话管。</div>
+  <div class="card">
+    <table>
+      <tr><th>名称</th><th>状态</th><th>是什么</th></tr>
+      <tr><td class="v">frontend-design</td><td>✅ 已装</td><td>Anthropic 官方出品:防「AI 味模板脸」,强调有主张的字体/配色/签名元素。这次报告就是按它的纪律写的</td></tr>
+      <tr><td class="v">dataviz</td><td>✅ 已装</td><td>官方图表设计法:以后网站要放任何图表时用</td></tr>
+      <tr><td class="v">Owl-Listener/designer-skills</td><td>可以装</td><td>一位设计师(Marie-Claire Dean)写的 63 个设计 skill + 27 条命令:用户调研、设计 token、案例集撰写、开发交接清单等,MIT 开源。想装的话让辅助对话执行</td></tr>
+      <tr><td class="v">travisvn/awesome-claude-skills</td><td>目录</td><td>skill 的「黄页」,以后缺什么去这里翻</td></tr>
+    </table>
+  </div>
+</section>
+
+<!-- ============ 线索 ============ -->
+<section id="next">
+  <h2><span class="no">六</span>下次去哪找灵感</h2>
+  <div class="card">
+    <table>
+      <tr><th>去处</th><th>看什么</th></tr>
+      <tr><td><a href="https://www.siteinspire.com/">siteinspire</a></td><td>按「摄影 / 作品集 / 极简」分类检索,这次的摄影样本多数来自这里</td></tr>
+      <tr><td><a href="https://minimal.gallery/">minimal.gallery</a></td><td>极简网站日更精选,Voyeur Vérité、WSM 来自这里</td></tr>
+      <tr><td><a href="https://recent.design/">recent.design</a></td><td>原 godly.website,已改名迁址</td></tr>
+      <tr><td><a href="https://www.typewolf.com/">typewolf</a></td><td>专看字体搭配:每天一个站,分析它用了什么字、怎么配</td></tr>
+      <tr><td><a href="https://fontsinuse.com/">Fonts In Use</a></td><td>真实世界的字体使用档案馆,按行业/年代/字体检索</td></tr>
+    </table>
+  </div>
+</section>
+
+<footer>
+  设计辅助对话 · 巡游与截图均于 2026-07-16 完成 · 截图版权归各网站所有,仅作内部研究<br>
+  本页样式即练手:craft 真值配色 + 卡内纸纹(multiply)+ 胶囊导航 blur(4px) · 纸纹素材 ambientCG Paper001 (CC0)
+</footer>
+
+</div>
+</body>
+</html>
