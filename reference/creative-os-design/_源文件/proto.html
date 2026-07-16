@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>灵感详情 · Creative OS</title>
+<style>
+/* ══════════════════════════════════════════════════════════════
+   字体 —— 全部 OFL 开源可商用,base64 内嵌(Chrome 对 file:// 的
+   @font-face 按不透明源做 CORS 拦截,相对路径字体会静默失效)
+   ══════════════════════════════════════════════════════════════ */
+/* 中文:霞鹜文楷,subset 到本页实际用到的字 */
+@font-face{font-family:"LXGW WenKai";src:url(data:font/woff2;base64,__WENKAI__) format("woff2");font-weight:400;font-display:block}
+/* 拉丁:IM Fell English 标题 + Newsreader 正文 + Martian Mono 数据/标签 */
+@font-face{font-family:"IM Fell English";src:url(data:font/woff2;base64,__IMFELL__) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Newsreader";src:url(data:font/woff2;base64,__NEWSREADER__) format("woff2");font-weight:200 800;font-display:swap}
+@font-face{font-family:"Martian Mono";src:url(data:font/woff2;base64,__MARTIAN__) format("woff2");font-weight:100 800;font-display:swap}
+
+/* ══════════════════════════════════════════════════════════════
+   配色 —— 全部逐字取自 craft.do 的 679a6a0dd0f9207b.css
+   没有一个是我编的
+   ══════════════════════════════════════════════════════════════ */
+:root{
+  --beige:#fcf9f7;          /* --background  页面底色:暖米白,不是奶油 */
+  --ink:#030302;            /* --foreground  近黑带暖 */
+  --ink-500:#03030280;      /* --muted-foreground */
+  --ink-200:#0303021f;      /* --ring */
+  --ink-100:#03030217;      /* --border  ~9% 黑 */
+  --ink-50:#0303020a;       /* --muted */
+  --card:#ffffff;           /* --card */
+  --accent:#427e8a;         /* --color-blue-4  灰青 */
+  --destructive:#bb433a;    /* --color-red-4 */
+
+  /* craft 品牌色梯 —— 首页那组圆角课程卡用的就是 -2 档,平涂,零渐变 */
+  --green-1:#d5f0db;  --green-2:#9bd8a9;  --green-3:#4aa25e;  --green-4:#3f8850;
+  --blue-1:#d1eef9;   --blue-2:#9ed4ef;   --blue-3:#4ba2b4;   --blue-4:#427e8a;
+  --purple-1:#d6e0f7; --purple-2:#b8caf5; --purple-3:#748ddd; --purple-4:#4b68c3;
+  --pink-1:#e9d6ea;   --pink-2:#d5acd8;   --pink-3:#c37ec8;   --pink-4:#a549ab;
+  --red-1:#f9d3d0;    --red-2:#f09d93;    --red-3:#e66960;    --red-4:#bb433a;
+  --orange-1:#f9debd; --orange-2:#f6cb98; --orange-3:#dd8e40; --orange-4:#b25620;
+  --yellow-1:#fcf1c5; --yellow-2:#fde99b; --yellow-4:#987e1b;
+
+  /* craft 圆角梯 */
+  --r:10px; --r-2xl:16px; --r-3xl:24px; --r-4xl:32px;
+
+  /* 颗粒强度 —— 默认 .70 是算出来的,不是猜的:
+     Paper001 原生 sigma=1.30%,multiply 到 #fcf9f7 上 @ .70 => 最终 sigma=0.89% of range
+     = "不仔细看看不出来" 的目标区。@ .06 时 sigma=0.08%,等于没做。 */
+  --tex:.70;
+  --tex-w:2048px; --tex-h:1201px;
+  /* 纹理只内嵌一份,页面层和卡片层共用 —— 否则 463KB 的 base64 要存两遍 */
+  --paper:url("data:image/jpeg;base64,__PAPER__");
+
+  --cjk:"LXGW WenKai";
+  --disp-lat:"IM Fell English"; --sans-lat:"Newsreader";
+  --disp-wt:400; --disp-ls:0; --disp-vf:normal;
+  /* 拉丁在前、中文在后 —— 浏览器逐字符回退:拉丁字形取拉丁字体,汉字取中文字体。
+     PingFang SC / Songti SC 已彻底删除:macOS 专有,在 Windows 上是无声失效的死项。 */
+  --disp:var(--disp-lat), var(--cjk), Georgia, serif;
+  --sans:var(--sans-lat), var(--cjk), system-ui, sans-serif;
+  --mono:"Martian Mono", var(--cjk), ui-monospace, monospace;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--beige);color:var(--ink);font-family:var(--sans);
+  font-size:15px;line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+.disp{font-family:var(--disp);font-weight:var(--disp-wt);letter-spacing:var(--disp-ls);
+  font-variation-settings:var(--disp-vf)}
+
+/* ══════════════════════════════════════════════════════════════
+   卡纸 —— 真实 CC0 扫描(ambientCG Paper001),不是函数生成的噪声
+   关键:absolute,不是 fixed。纹理挂在文档流里,跟着内容一起滚。
+   fixed 会把纹理钉在视口上,内容从静止的颗粒下面滑过 —— 那就是"很假"。
+   craft.do 全站 background-attachment:fixed 出现 0 次。
+   ══════════════════════════════════════════════════════════════ */
+/* min-height:100vh —— 窗口比内容高时,body 底色会从 #doc 下面露出来,
+   露出的那块没有纹理,于是出现一条硬边。纸必须铺满整个视口。 */
+#doc{position:relative;min-height:100vh}
+#doc > *:not(.tex-page){position:relative;z-index:1}
+.tex-page{position:absolute;inset:0;z-index:0;pointer-events:none;
+  background-image:var(--paper);
+  background-repeat:repeat;background-size:var(--tex-w) var(--tex-h);background-position:left top;
+  mix-blend-mode:multiply;opacity:var(--tex)}
+
+/* ══════════════════════════════════════════════════════════════
+   导航 —— 全部是 craft.do 的真值,一个都没改
+   craft:backdrop-blur-xs = --blur-xs:4px,且完全没有 saturate。
+   (v3 写的 blur(28px) saturate(1.7) 是我编的。CSS 里那套 blur(32px)/
+    saturate(150%) 确实存在,但首页 HTML 里 0 处引用 —— 是死代码。)
+   ══════════════════════════════════════════════════════════════ */
+.nav{position:fixed;top:20px;left:50%;transform:translateX(-50%);z-index:50;
+  width:calc(100% - 96px);max-width:850px;
+  border-radius:26px;                                        /* craft 内联 style 的真值 */
+  background:linear-gradient(180deg,#fff6 10%,#fffc);        /* --navbar-gradient */
+  backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);
+  box-shadow:0 12px 12px 2px #0000001a, 0 2px 4px -1px #0000000f}  /* .glass-button-shadow */
+/* .glass-border-3xl:before —— 1px 渐变描边,mask-composite:exclude 的老把戏 */
+.nav::before{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;
+  background:linear-gradient(#ffffffa3 40%,#fff0 75% 95%,#ffffffa3);padding:1px;
+  -webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
+  -webkit-mask-composite:xor;
+  mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);
+  mask-composite:exclude}
+.nav-in{display:flex;align-items:center;gap:14px;padding:9px 14px 9px 16px}
+.crumb{display:flex;align-items:center;gap:7px;font-size:13px;color:var(--ink-500);min-width:0}
+.crumb b{color:var(--ink);font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.crumb .sep{color:var(--ink-200)}
+.mark{width:19px;height:19px;border-radius:6px;background:var(--accent);color:#fff;
+  display:grid;place-items:center;font-size:11px;font-weight:700;flex:none;font-family:var(--sans-lat),sans-serif}
+.spring{flex:1}
+.seg{display:flex;gap:2px;background:var(--ink-50);border-radius:var(--r);padding:2px;flex:none}
+.seg button{border:0;background:none;font:inherit;font-size:12.5px;color:var(--ink-500);
+  padding:4px 11px;border-radius:8px;cursor:pointer;font-family:var(--sans);transition:.15s cubic-bezier(0,0,.2,1)}
+.seg button.on{background:#fff;color:var(--ink);box-shadow:0 1px 2px #00000026}
+
+/* ══════════════════════════════════════════════════════════════ */
+.wrap{max-width:1080px;margin:0 auto;padding:112px 28px 72px}
+.head{margin-bottom:34px}
+.status{display:inline-flex;align-items:center;gap:7px;font-size:12.5px;color:var(--ink-500);
+  margin-bottom:14px;font-family:var(--mono);font-variation-settings:"wdth" 90}
+.dot{width:6px;height:6px;border-radius:50%;background:var(--green-3);flex:none}
+h1{font-size:46px;line-height:1.18;font-family:var(--disp);font-weight:var(--disp-wt);
+  letter-spacing:var(--disp-ls);font-variation-settings:var(--disp-vf);margin-bottom:12px}
+.sub{font-size:16px;color:var(--ink-500);max-width:62ch;line-height:1.65}
+
+/* ── 证据区 ── */
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:22px;margin-bottom:44px;align-items:start}
+/* ── 证据图 ──
+   这张图必须用它自己被提取出来的那套色(见下面色板卡):
+   #F4F1EA 背景 62% · #1E1B18 文字 24% · #8896A0 辅助 9% · #B4472F 强调 5%
+   证据和结论得对得上 —— 否则下面那张色板卡就是凭空捏的。
+   全部平涂,零渐变。 */
+.evidence{}
+.frame{position:relative;aspect-ratio:8/5;background:#F4F1EA;border-radius:var(--r-4xl);
+  overflow:hidden;border:1px solid var(--ink-100);box-shadow:0 1px 2px #00000026}
+.frame .ttl{position:absolute;left:7%;top:13%;font-family:var(--disp);font-weight:var(--disp-wt);
+  font-size:27px;line-height:1.1;letter-spacing:var(--disp-ls);font-variation-settings:var(--disp-vf);
+  color:#1E1B18}
+.photo{position:absolute;right:8%;top:12%;width:52%;height:46%;background:#8896A0}
+.photo::after{content:"";position:absolute;left:0;bottom:0;width:100%;height:16%;background:#B4472F}
+.cap{position:absolute;left:7%;bottom:16%;width:34%;display:flex;flex-direction:column;gap:6px}
+.cap i{height:1px;background:#1E1B1833}
+.cap i:last-child{width:58%}
+.badge{position:absolute;right:7%;bottom:11%;font-family:var(--disp);font-size:20px;color:#1E1B1899}
+.ev-meta{display:flex;justify-content:space-between;margin-top:10px;font-size:12.5px;color:var(--ink-500)}
+.ev-meta .ft{font-family:var(--mono);font-size:11.5px;font-variation-settings:"wdth" 85}
+.context{display:flex;flex-direction:column;gap:2px}
+.field{padding:13px 0;border-bottom:1px solid var(--ink-100)}
+.field:last-child{border-bottom:0}
+.field .k{font-size:11px;color:var(--ink-500);margin-bottom:5px;letter-spacing:.08em;font-family:var(--mono);
+  font-variation-settings:"wdth" 88}
+.field .v{font-size:14.5px;line-height:1.55}
+.reason{font-family:var(--disp);font-size:16.5px;line-height:1.5;font-variation-settings:var(--disp-vf)}
+.folders{display:flex;gap:6px;flex-wrap:wrap}
+.folder{background:var(--ink-50);border-radius:99px;padding:3px 10px;font-size:12.5px}
+
+.rule{display:flex;align-items:center;gap:14px;margin-bottom:20px}
+.rule .lab{font-size:11px;letter-spacing:.1em;color:var(--ink-500);white-space:nowrap;
+  font-family:var(--mono);font-variation-settings:"wdth" 85}
+.rule .ln{flex:1;height:1px;background:var(--ink-100)}
+
+/* ══════════════════════════════════════════════════════════════
+   六类知识卡 —— craft 首页那组"课程配色圆角设计"的真实做法:
+   平涂的 -2 档品牌色 + rounded-4xl(2rem = 32px),零渐变。
+   卡纸纹理贴在卡片内部:absolute inset-0,贴图 2048px 远大于任何卡片
+   => 每张卡只显示一个独一无二的裁切,永不重复。
+   (这正是 craft 的解法:让贴图比元素大,重复问题就不存在。
+    v3 用 600px 贴图在 1440 宽屏重复 6 次 —— 那就是"系统贴图"。)
+   注意 craft 用 mix-blend-screen —— 但 screen 在白底上数学上是 no-op
+   (b=1 时 (1-b)=0),他们的纸纹在自家白色表面上根本不可见,只在黑卡上
+   起作用。浅色卡纸必须用 multiply。
+   ══════════════════════════════════════════════════════════════ */
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;align-items:start}
+.card{position:relative;overflow:hidden;border-radius:var(--r-4xl);padding:22px 24px 24px;
+  display:flex;flex-direction:column}
+.card > *{position:relative;z-index:1}
+.card::after{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
+  background-image:var(--paper);
+  background-repeat:repeat;background-size:var(--tex-w) var(--tex-h);
+  mix-blend-mode:multiply;opacity:var(--tex)}
+/* 每张卡取贴图的不同裁切 —— craft 全用 left top,因为他们的纹理本来就看不见;
+   我们的看得见,所以必须错开,否则六张卡显示同一块纹理 = 又变回重复 */
+.card:nth-child(1)::after{background-position:0 0}
+.card:nth-child(2)::after{background-position:-680px -140px}
+.card:nth-child(3)::after{background-position:-1290px -420px}
+.card:nth-child(4)::after{background-position:-240px -760px}
+.card:nth-child(5)::after{background-position:-1560px -60px}
+.card:nth-child(6)::after{background-position:-900px -880px}
+
+/* 糖果块深浅 —— 两档都是 craft 的真值。
+   -2 是他们首页课程卡用的档;-1 是同一梯的浅一档。
+   六张大卡铺满 -2 会比 craft 原用法(小卡、周围大片米白)重,所以做成开关,你自己定。 */
+.c-green {background:var(--green-2)}
+.c-purple{background:var(--purple-2)}
+.c-yellow{background:var(--yellow-2)}
+.c-blue  {background:var(--blue-2)}
+.c-pink  {background:var(--pink-2)}
+.c-orange{background:var(--orange-2)}
+
+.card-h{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:16px}
+.name{display:flex;align-items:baseline;gap:9px}
+.card-h h3{font-size:19px;font-weight:var(--disp-wt);font-family:var(--disp);
+  letter-spacing:var(--disp-ls);font-variation-settings:var(--disp-vf)}
+.name .en{font-size:10.5px;letter-spacing:.1em;color:#03030266;text-transform:uppercase;
+  font-family:var(--mono);font-variation-settings:"wdth" 82}
+.conf{display:inline-flex;align-items:center;gap:5px;font-size:11px;color:#03030299;flex:none;
+  background:#ffffff8c;border-radius:99px;padding:3px 9px}
+.cd{width:5px;height:5px;border-radius:50%;flex:none}
+.conf.high .cd{background:var(--green-4)}
+.conf.mid .cd{background:var(--yellow-4)}
+.conf.na .cd{background:#03030259}
+
+/* 色板 —— 去掉了每行的"点击复制"标签:四行重复四遍是噪音,
+   hover 高亮 + cursor:pointer 已经把这件事说清楚了 */
+.sw{display:flex;flex-direction:column;gap:1px}
+.swatch{display:grid;grid-template-columns:26px 1fr auto;align-items:center;gap:11px;
+  padding:8px 9px;border-radius:var(--r);cursor:pointer;transition:.15s cubic-bezier(0,0,.2,1)}
+.swatch:hover,.swatch:focus-visible{background:#ffffffa8;outline:none}
+.chip{width:26px;height:26px;border-radius:7px;box-shadow:inset 0 0 0 1px #0303021f}
+.swrole{font-size:13px}
+.swrole small{display:block;font-family:var(--mono);font-size:10.5px;color:#03030299;margin-top:1px;
+  font-variation-settings:"wdth" 82}
+.swpct{display:flex;align-items:center;gap:8px}
+.swpct b{font-family:var(--mono);font-size:12px;font-variant-numeric:tabular-nums;font-weight:500;
+  font-variation-settings:"wdth" 82;min-width:30px;text-align:right}
+.bar{width:52px;height:3px;background:#03030217;border-radius:2px;overflow:hidden}
+.bar i{display:block;height:100%;background:#03030266}
+
+/* 字体 */
+.type-lay{display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:start;flex:1}
+.specimen{font-size:60px;line-height:.9;cursor:pointer;font-family:var(--disp);
+  font-weight:var(--disp-wt);letter-spacing:var(--disp-ls);font-variation-settings:var(--disp-vf)}
+.specimen small{display:block;font-size:11px;line-height:1.45;color:#03030299;margin-top:9px;
+  font-family:var(--sans);font-weight:400;letter-spacing:0;font-variation-settings:normal}
+.attrs{display:flex;flex-direction:column;gap:7px}
+.attr{display:flex;justify-content:space-between;gap:10px;font-size:12.5px;
+  padding-bottom:6px;border-bottom:1px solid #03030217}
+.attr .k{color:#03030299;flex:none}
+.attr .val{font-family:var(--mono);font-size:11.5px;display:inline-flex;align-items:center;gap:6px;
+  text-align:right;font-variation-settings:"wdth" 82}
+.edited{background:#ffffffc4;border-radius:5px;padding:1px 5px;font-size:10px;cursor:help;
+  font-family:var(--sans);color:var(--orange-4)}
+.fontname{display:flex;justify-content:space-between;align-items:center;margin-top:16px;
+  padding-top:13px;border-top:1px solid #03030217}
+.fn{font-family:var(--mono);font-size:12px;cursor:pointer;font-variation-settings:"wdth" 85}
+.dl{font-size:12px;color:var(--ink);text-decoration:none;border-bottom:1px solid #03030233}
+
+/* 布局图 —— 零渐变 */
+.diagram{position:relative;aspect-ratio:16/9;background:#ffffff8c;border-radius:var(--r-3xl);
+  overflow:hidden;margin-bottom:14px}
+.region{position:absolute;border:1px solid #03030233;border-radius:8px;background:#ffffffb8;
+  display:grid;place-items:center;font-family:var(--mono);font-size:11px;color:#03030299;
+  font-variation-settings:"wdth" 85}
+.ord{position:absolute;font-family:var(--mono);font-size:10px;color:#03030266;font-weight:600}
+.lay-meta{display:flex;gap:26px;flex-wrap:wrap;font-size:12px;color:#03030299}
+.lay-meta b{color:var(--ink);font-family:var(--mono);font-weight:500;font-variation-settings:"wdth" 85}
+
+/* 间距 */
+.est{font-family:var(--mono);color:#030302b3;font-size:12.5px;line-height:1.9;
+  font-variation-settings:"wdth" 85}
+.q{color:var(--ink)}
+.why{margin-top:14px}
+.why button{border:0;background:#ffffff8c;font:inherit;font-family:var(--sans);font-size:12px;
+  color:var(--ink);cursor:pointer;padding:5px 11px;border-radius:99px;display:inline-flex;
+  align-items:center;gap:6px}
+.why button span{color:#03030280;font-size:13px}
+.why .body{display:none;font-size:12.5px;color:#030302b3;line-height:1.65;padding-top:11px}
+.why[data-open] .body{display:block}
+.why[data-open] button span{transform:rotate(45deg)}
+
+/* 可复用元素 —— 全部平涂 + 线条,零渐变(你点名要求过) */
+.els{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;flex:1}
+.el{display:flex;flex-direction:column;gap:8px}
+.crop{position:relative;aspect-ratio:1;border-radius:var(--r-2xl);overflow:hidden;background:#ffffffb8}
+.crop.a{display:grid;place-items:center}
+.crop.a::after{content:"38";font-family:var(--disp);font-weight:var(--disp-wt);color:var(--ink);font-size:25px}
+.crop.b::after{content:"";position:absolute;left:16%;right:16%;top:50%;height:1px;background:#03030280}
+.crop.c::after{content:"";position:absolute;left:22%;top:22%;width:56%;height:56%;background:var(--red-4)}
+.cap2{font-size:12px}
+.cap2 small{display:block;font-size:10.5px;color:#03030299;margin-top:2px;font-family:var(--mono);
+  font-variation-settings:"wdth" 82}
+
+/* 风格 */
+.style-p{font-size:14.5px;line-height:1.7;max-width:74ch;margin-bottom:15px}
+.tags{display:flex;gap:7px;flex-wrap:wrap}
+.tag{background:#ffffffa8;border-radius:99px;padding:4px 12px;font-size:12.5px;cursor:pointer;
+  transition:.15s cubic-bezier(0,0,.2,1)}
+.tag:hover,.tag:focus-visible{background:#fff;outline:none}
+
+footer{max-width:1080px;margin:0 auto;padding:0 28px 64px;font-size:12px;
+  color:var(--ink-500);line-height:1.9}
+footer b{color:var(--ink);font-weight:500}
+footer code{font-family:var(--mono);font-size:11px;background:var(--ink-50);padding:1px 5px;border-radius:4px}
+
+
+@media(max-width:900px){
+  .hero{grid-template-columns:1fr}
+  .grid{grid-template-columns:1fr}
+  .nav{width:calc(100% - 24px);top:12px}
+  .wrap{padding:92px 18px 56px}
+  h1{font-size:32px}
+  .type-lay{grid-template-columns:1fr}
+  }
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-in">
+    <div class="crumb"><span class="mark">C</span><span>灵感仓库</span><span class="sep">/</span>
+      <span>未分类</span><span class="sep">/</span><b>某本画册的跨页版式</b></div>
+    <div class="spring"></div>
+    <div class="seg" role="tablist" aria-label="浏览模式">
+      <button class="on" role="tab" aria-selected="true">按灵感</button>
+      <button role="tab" aria-selected="false">按图片</button>
+    </div>
+  </div>
+</nav>
+
+<div id="doc">
+<div class="tex-page" aria-hidden="true"></div>
+
+<div class="wrap">
+  <header class="head">
+    <span class="status"><span class="dot"></span>分析已完成 · 2 分钟前</span>
+    <h1 class="disp">某本画册的跨页版式</h1>
+    <p class="sub">一张平面图,已经被拆成六类可复用的创意知识。图片是证据,下面的知识才是你收下的东西。</p>
+  </header>
+
+  <section class="hero">
+    <div class="evidence">
+      <div class="frame">
+        <div class="ttl">Slow<br>Mornings</div>
+        <div class="photo"></div>
+        <div class="cap"><i></i><i></i><i></i></div>
+        <div class="badge">38</div>
+      </div>
+      <div class="ev-meta"><span>来源图片 · 1 张</span><span class="ft">spread_38.jpg</span></div>
+    </div>
+    <div class="context">
+      <div class="field"><div class="k">来源</div><div class="v">《Kinfolk》第 38 期 · 跨页</div></div>
+      <div class="field"><div class="k">保存理由</div><div class="v reason">“想复用它那种大留白托着一小块高密度文字的呼吸感。”</div></div>
+      <div class="field"><div class="k">文件夹</div><div class="v folders"><span class="folder">编辑排版</span><span class="folder">杂志感</span></div></div>
+    </div>
+  </section>
+
+  <div class="rule"><span class="lab">提取的结构化知识 · 六类</span><span class="ln"></span></div>
+
+  <section class="grid">
+    <article class="card c-green">
+      <div class="card-h"><div class="name"><h3>色板</h3><span class="en">Palette</span></div>
+        <span class="conf high"><span class="cd"></span>高</span></div>
+      <div class="sw">
+        <div class="swatch" data-copy="#F4F1EA" tabindex="0"><span class="chip" style="background:#F4F1EA"></span>
+          <span class="swrole">背景 · 主色<small>#F4F1EA</small></span>
+          <span class="swpct"><b>62%</b><span class="bar"><i style="width:62%"></i></span></span></div>
+        <div class="swatch" data-copy="#1E1B18" tabindex="0"><span class="chip" style="background:#1E1B18"></span>
+          <span class="swrole">文字 · 墨黑<small>#1E1B18</small></span>
+          <span class="swpct"><b>24%</b><span class="bar"><i style="width:24%"></i></span></span></div>
+        <div class="swatch" data-copy="#8896A0" tabindex="0"><span class="chip" style="background:#8896A0"></span>
+          <span class="swrole">辅助 · 灰蓝<small>#8896A0</small></span>
+          <span class="swpct"><b>9%</b><span class="bar"><i style="width:9%"></i></span></span></div>
+        <div class="swatch" data-copy="#B4472F" tabindex="0"><span class="chip" style="background:#B4472F"></span>
+          <span class="swrole">强调 · 赭红<small>#B4472F</small></span>
+          <span class="swpct"><b>5%</b><span class="bar"><i style="width:5%"></i></span></span></div>
+      </div>
+    </article>
+
+    <article class="card c-purple">
+      <div class="card-h"><div class="name"><h3>字体</h3><span class="en">Typography</span></div>
+        <span class="conf mid"><span class="cd"></span>中</span></div>
+      <div class="type-lay">
+        <div class="specimen disp" data-copy="Aa" tabindex="0">Aa<small>克制的高对比<br>衬线标题</small></div>
+        <div class="attrs">
+          <div class="attr"><span class="k">层级</span><span class="val">标题/正文/小标签</span></div>
+          <div class="attr"><span class="k">标题</span><span class="val">48 / 56 · Light
+            <span class="edited" title="系统原始值:Regular · 你改成了 Light">已修正</span></span></div>
+          <div class="attr"><span class="k">正文</span><span class="val">15 / 24 · Regular</span></div>
+          <div class="attr"><span class="k">小标签</span><span class="val">全大写 +0.14em</span></div>
+        </div>
+      </div>
+      <div class="fontname"><span class="fn" data-copy="GT Sesame" tabindex="0">GT&nbsp;Sesame <span style="color:#03030280">· 尽力识别</span></span>
+        <a class="dl" href="#" data-noop>找免费相近 →</a></div>
+    </article>
+
+    <article class="card c-yellow">
+      <div class="card-h"><div class="name"><h3>布局结构</h3><span class="en">Layout</span></div>
+        <span class="conf high"><span class="cd"></span>高</span></div>
+      <div class="diagram">
+        <div class="region" style="left:5%;top:16%;width:34%;height:24%">标题</div>
+        <div class="region" style="left:52%;top:12%;width:40%;height:72%">图片</div>
+        <div class="region" style="left:5%;top:56%;width:38%;height:28%">说明文字</div>
+        <div class="ord" style="left:7%;top:20%">1</div><div class="ord" style="left:54%;top:16%">2</div>
+        <div class="ord" style="left:7%;top:60%">3</div>
+      </div>
+      <div class="lay-meta"><span>推断网格 · <b>12 列</b></span><span>阅读顺序 · <b>标题 → 图 → 说明</b></span><span>对齐 · <b>左基线</b></span></div>
+    </article>
+
+    <article class="card c-blue">
+      <div class="card-h"><div class="name"><h3>间距 / 网格</h3><span class="en">Spacing</span></div>
+        <span class="conf na"><span class="cd"></span>不确定</span></div>
+      <p class="est">基准间距 <span class="q">≈ 24px?</span><br>栏距 <span class="q">≈ 20px?</span><br>
+        <span style="color:#03030280">仅为可见区域的粗估</span></p>
+      <div class="why"><button aria-expanded="false">为什么这么判断 <span aria-hidden="true">＋</span></button>
+        <div class="body"><p>原图上下被裁切,看不到完整的基准网格,无法可靠反推间距 —— 所以标成"不确定",没有替你编一个看起来精确的数字。</p></div></div>
+    </article>
+
+    <article class="card c-pink">
+      <div class="card-h"><div class="name"><h3>可复用元素</h3><span class="en">Elements</span></div>
+        <span class="conf high"><span class="cd"></span>高</span></div>
+      <div class="els">
+        <div class="el"><span class="crop a"></span><span class="cap2">压角页码<small>右下 · 衬线</small></span></div>
+        <div class="el"><span class="crop b"></span><span class="cap2">细线分隔<small>1px 满幅</small></span></div>
+        <div class="el"><span class="crop c"></span><span class="cap2">色块角标<small>赭红实心</small></span></div>
+      </div>
+    </article>
+
+    <article class="card c-orange">
+      <div class="card-h"><div class="name"><h3>整体视觉风格</h3><span class="en">Style</span></div>
+        <span class="conf high"><span class="cd"></span>高</span></div>
+      <p class="style-p">克制的编辑感排版:大面积留白托起少量高信息密度的文字块,冷暖中性色打底,层级完全靠字号与字重的强对比建立,而不靠任何装饰。安静,但每一处都经过掂量。</p>
+      <div class="tags"><span class="tag" data-copy="极简" tabindex="0">极简</span><span class="tag" data-copy="编辑感" tabindex="0">编辑感</span>
+        <span class="tag" data-copy="高对比" tabindex="0">高对比</span><span class="tag" data-copy="冷调" tabindex="0">冷调</span>
+        <span class="tag" data-copy="呼吸感" tabindex="0">呼吸感</span></div>
+    </article>
+  </section>
+</div>
+
+<footer>
+  <b>纸</b> · ambientCG Paper001,真实扫描,CC0 免署名 · 原生颗粒 σ=1.30%,multiply 到 #fcf9f7 上 @0.70 得 σ=0.89%<br>
+  <b>关键</b> · 纹理是 <code>absolute</code> 不是 <code>fixed</code>,跟着内容滚;贴图 2048px 大于任何卡片,永不重复<br>
+  <b>色</b> · 全部取自 craft.do 的 <code>679a6a0dd0f9207b.css</code>:<code>#fcf9f7</code> 底 · <code>#030302</code> 墨 · <code>#427e8a</code> 强调 · 糖果块 <code>-2</code> 档 · <code>32px</code> 圆角<br>
+  <b>玻璃</b> · 只在导航一处,<code>blur(4px)</code> 无 saturate —— craft 的真值<br>
+  <b>字</b> · 全部 OFL 开源可商用。craft 自己用的 Untitled Sans/Serif 是 Klim 商业授权,没扒。
+</footer>
+</div>
+
+<script>
+document.querySelectorAll('.seg button').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('.seg button').forEach(x=>{
+    x.classList.toggle('on', x===b); x.setAttribute('aria-selected', x===b);
+  });
+}));
+
+document.querySelectorAll('.why button').forEach(b=>b.addEventListener('click',()=>{
+  const w = b.parentElement, open = w.hasAttribute('data-open');
+  w.toggleAttribute('data-open', !open); b.setAttribute('aria-expanded', !open);
+}));
+
+document.querySelectorAll('[data-copy]').forEach(el=>{
+  const go = ()=>{ navigator.clipboard?.writeText(el.dataset.copy).catch(()=>{}); };
+  el.addEventListener('click', go);
+  el.addEventListener('keydown', e=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); go(); }});
+});
+document.querySelectorAll('[data-noop]').forEach(a=>a.addEventListener('click',e=>e.preventDefault()));
+</script>
+</body>
+</html>
