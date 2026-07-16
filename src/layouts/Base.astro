@@ -6,19 +6,34 @@ import { getRelativeLocaleUrl } from 'astro:i18n';
 interface Props {
   title?: string;
   description?: string;
-  /** 另一语言对应页的路径;不传则按语言前缀互换(适用于两边都存在的页面) */
-  altPath?: string;
+  /**
+   * 另一语言对应页的路径。
+   * 不传 = 按语言前缀互换(两边都存在的页面);
+   * null = 对应翻译不存在(切换跳该语言首页,且不输出 hreflang 互指)。
+   */
+  altPath?: string | null;
+  /** og 分享卡片图;作品页传封面,其余用全站统一占位图(规格·搜索与分享) */
+  ogImage?: string;
 }
 
 const lang = (Astro.currentLocale ?? defaultLang) as Lang;
 const otherLang: Lang = lang === 'zh' ? 'en' : 'zh';
 const siteName = t(lang, 'site.name');
-const { title, description = t(lang, 'site.description'), altPath } = Astro.props;
+const {
+  title,
+  description = t(lang, 'site.description'),
+  altPath,
+  ogImage = '/og-placeholder.png',
+} = Astro.props;
 const pageTitle = title ? `${title} — ${siteName}` : siteName;
 
 const currentPath = Astro.url.pathname;
-const switchPath =
-  altPath ?? currentPath.replace(new RegExp(`^/${lang}(?=/|$)`), `/${otherLang}`);
+const swappedPath = currentPath.replace(new RegExp(`^/${lang}(?=/|$)`), `/${otherLang}`);
+const hasAlt = altPath !== null;
+const switchPath = hasAlt ? (altPath ?? swappedPath) : getRelativeLocaleUrl(otherLang);
+
+const abs = (path: string) => new URL(path, Astro.site).href;
+const zhPath = lang === 'zh' ? currentPath : switchPath;
 
 const nav = [
   { href: getRelativeLocaleUrl(lang, 'works'), label: t(lang, 'nav.works') },
@@ -34,8 +49,18 @@ const year = new Date().getFullYear();
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content={Astro.generator} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
     <title>{pageTitle}</title>
     <meta name="description" content={description} />
+    <link rel="canonical" href={abs(currentPath)} />
+    {hasAlt && <link rel="alternate" hreflang={lang === 'zh' ? 'zh-CN' : 'en'} href={abs(currentPath)} />}
+    {hasAlt && <link rel="alternate" hreflang={otherLang === 'zh' ? 'zh-CN' : 'en'} href={abs(switchPath)} />}
+    {hasAlt && <link rel="alternate" hreflang="x-default" href={abs(zhPath)} />}
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={abs(currentPath)} />
+    <meta property="og:image" content={abs(ogImage)} />
   </head>
   <body>
     <header class="site-header">

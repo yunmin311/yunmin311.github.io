@@ -1,0 +1,48 @@
+---
+import { Image } from 'astro:assets';
+import { getRelativeLocaleUrl } from 'astro:i18n';
+import type { CollectionEntry } from 'astro:content';
+import type { Lang } from '../i18n/ui';
+import { slugOf } from '../lib/content';
+
+interface Props {
+  work: CollectionEntry<'works'>;
+  lang: Lang;
+}
+const { work, lang } = Astro.props;
+const href = getRelativeLocaleUrl(lang, `works/${slugOf(work.id)}`);
+---
+
+<a class="work-card" href={href}>
+  <Image class="work-cover" src={work.data.cover} alt={work.data.title} width={800} />
+  <span class="work-title">{work.data.title}</span>
+  <span class="work-summary">{work.data.summary}</span>
+</a>
+
+<style>
+  .work-card {
+    display: block;
+  }
+  .work-card:hover {
+    text-decoration: none;
+  }
+  .work-card:hover .work-title {
+    text-decoration: underline;
+  }
+  .work-cover {
+    width: 100%;
+    height: auto; /* 压掉 img 的 height 属性,否则 aspect-ratio 不生效 */
+    aspect-ratio: var(--cover-ratio);
+    object-fit: cover;
+    background: var(--color-line);
+  }
+  .work-title {
+    display: block;
+    margin-top: var(--space-2);
+  }
+  .work-summary {
+    display: block;
+    color: var(--color-muted);
+    font-size: var(--text-sm);
+  }
+</style>

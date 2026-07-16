@@ -1,0 +1,62 @@
+---
+// 从链接识别 Vimeo/YouTube/B站,渲染响应式内嵌播放器;识别不了就显示普通链接(规格第四节)。
+interface Props {
+  url: string;
+  title: string;
+}
+const { url, title } = Astro.props;
+
+function embedSrc(raw: string): string | null {
+  let u: URL;
+  try {
+    u = new URL(raw);
+  } catch {
+    return null;
+  }
+  const host = u.hostname.replace(/^www\./, '');
+  if (host === 'vimeo.com') {
+    const id = u.pathname.split('/').filter(Boolean)[0];
+    return id ? `https://player.vimeo.com/video/${id}` : null;
+  }
+  if (host === 'youtube.com' || host === 'm.youtube.com') {
+    const id = u.searchParams.get('v');
+    return id ? `https://www.youtube-nocookie.com/embed/${id}` : null;
+  }
+  if (host === 'youtu.be') {
+    const id = u.pathname.split('/').filter(Boolean)[0];
+    return id ? `https://www.youtube-nocookie.com/embed/${id}` : null;
+  }
+  if (host === 'bilibili.com') {
+    const bvid = u.pathname.split('/').filter(Boolean)[1];
+    return bvid ? `https://player.bilibili.com/player.html?bvid=${bvid}&autoplay=0` : null;
+  }
+  return null;
+}
+const src = embedSrc(url);
+---
+
+{
+  src ? (
+    <iframe
+      class="video-embed"
+      src={src}
+      title={title}
+      loading="lazy"
+      allowfullscreen
+      allow="fullscreen; picture-in-picture"
+    />
+  ) : (
+    <a href={url} target="_blank" rel="noopener">
+      {url}
+    </a>
+  )
+}
+
+<style>
+  .video-embed {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 0;
+    background: var(--color-line);
+  }
+</style>

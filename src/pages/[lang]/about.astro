@@ -1,0 +1,107 @@
+---
+import Base from '../../layouts/Base.astro';
+import { t, locales, type Lang } from '../../i18n/ui';
+import { email, socials } from '../../lib/profile';
+
+export function getStaticPaths() {
+  return locales.map((lang) => ({ params: { lang } }));
+}
+
+const lang = Astro.params.lang as Lang;
+---
+
+<Base title={t(lang, 'about.title')}>
+  <div class="about">
+    <div class="about-photo" role="img" aria-label={t(lang, 'about.photoAlt')}>
+      {t(lang, 'about.photoAlt')}
+    </div>
+    <div class="about-text">
+      <h1>{t(lang, 'about.title')}</h1>
+      <p class="status">{t(lang, 'about.status')}</p>
+      <p>{t(lang, 'about.body')}</p>
+
+      <dl class="contact">
+        <div class="contact-item">
+          <dt>{t(lang, 'about.email')}</dt>
+          <dd>
+            <a class="email-link" data-u={email.user} data-d={email.domain} href="#">@</a>
+          </dd>
+        </div>
+        {socials.map((s) => (
+          <div class="contact-item">
+            <dd>
+              {s.href ? (
+                <a href={s.href} target="_blank" rel="noopener">{s.label} ↗</a>
+              ) : (
+                <span class="pending">{s.label}(待补 / coming)</span>
+              )}
+            </dd>
+          </div>
+        ))}
+        <div class="contact-item">
+          <dd><span class="pending">{t(lang, 'about.resume')}</span></dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</Base>
+
+<script>
+  // 邮箱防爬:地址拆两段存 data 属性,浏览器里拼装;源码无明文(规格·关于页)
+  document.querySelectorAll<HTMLAnchorElement>('.email-link').forEach((a) => {
+    const addr = `${a.dataset.u}@${a.dataset.d}`;
+    a.href = `mailto:${addr}`;
+    a.textContent = addr;
+  });
+</script>
+
+<style>
+  .about {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-5);
+    align-items: flex-start;
+  }
+  /* 照片位:照片后补,先占位(规格·关于页) */
+  .about-photo {
+    flex: 0 0 16rem;
+    aspect-ratio: 3 / 4;
+    background: var(--color-line);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-muted);
+    font-size: var(--text-sm);
+  }
+  .about-text {
+    flex: 1 1 20rem;
+    max-width: var(--width-prose);
+  }
+  .about-text h1 {
+    margin: 0 0 var(--space-2);
+    font-size: var(--text-xl);
+    font-weight: 600;
+  }
+  .status {
+    color: var(--color-muted);
+    font-size: var(--text-sm);
+  }
+  .contact {
+    margin-top: var(--space-5);
+    display: grid;
+    gap: var(--space-2);
+  }
+  .contact-item {
+    display: flex;
+    gap: var(--space-2);
+  }
+  .contact dt {
+    color: var(--color-muted);
+  }
+  .contact dd {
+    margin: 0;
+  }
+  .pending {
+    color: var(--color-muted);
+  }
+</style>

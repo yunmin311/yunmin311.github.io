@@ -1,0 +1,43 @@
+---
+import Base from '../../../layouts/Base.astro';
+import WorkCard from '../../../components/WorkCard.astro';
+import { getWorks } from '../../../lib/content';
+import { t, locales, type Lang } from '../../../i18n/ui';
+
+export function getStaticPaths() {
+  return locales.map((lang) => ({ params: { lang } }));
+}
+
+const lang = Astro.params.lang as Lang;
+const works = await getWorks(lang);
+---
+
+<Base title={t(lang, 'works.title')}>
+  <h1 class="page-title">{t(lang, 'works.title')}</h1>
+  <div class="works-grid">
+    {works.map((work) => <WorkCard work={work} lang={lang} />)}
+  </div>
+</Base>
+
+<style>
+  .page-title {
+    margin: 0 0 var(--space-4);
+    font-size: var(--text-xl);
+    font-weight: 600;
+  }
+  .works-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--grid-gap);
+  }
+  @media (max-width: 64rem) {
+    .works-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (max-width: 40rem) {
+    .works-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

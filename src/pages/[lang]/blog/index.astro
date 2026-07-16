@@ -1,0 +1,56 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { getPosts, slugOf } from '../../../lib/content';
+import { t, locales, type Lang } from '../../../i18n/ui';
+import { formatDate } from '../../../lib/format';
+import { getRelativeLocaleUrl } from 'astro:i18n';
+
+export function getStaticPaths() {
+  return locales.map((lang) => ({ params: { lang } }));
+}
+
+const lang = Astro.params.lang as Lang;
+const posts = await getPosts(lang);
+---
+
+<Base title={t(lang, 'blog.title')}>
+  <h1 class="page-title">{t(lang, 'blog.title')}</h1>
+  <ul class="post-list">
+    {posts.map((post) => (
+      <li class="post-item">
+        <a href={getRelativeLocaleUrl(lang, `blog/${slugOf(post.id)}`)}>{post.data.title}</a>
+        <time datetime={post.data.date.toISOString().slice(0, 10)}>{formatDate(lang, post.data.date)}</time>
+        <p class="post-summary">{post.data.summary}</p>
+      </li>
+    ))}
+  </ul>
+</Base>
+
+<style>
+  .page-title {
+    margin: 0 0 var(--space-4);
+    font-size: var(--text-xl);
+    font-weight: 600;
+  }
+  /* 纯文字清单(规格·博客列表) */
+  .post-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-width: var(--width-prose);
+  }
+  .post-item {
+    padding-block: var(--space-3);
+    border-bottom: 1px solid var(--color-line);
+  }
+  .post-item time {
+    margin-inline-start: var(--space-3);
+    color: var(--color-muted);
+    font-size: var(--text-sm);
+  }
+  .post-summary {
+    margin: var(--space-1) 0 0;
+    color: var(--color-muted);
+    font-size: var(--text-sm);
+  }
+</style>

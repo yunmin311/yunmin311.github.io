@@ -1,0 +1,30 @@
+---
+import Base from '../layouts/Base.astro';
+import { t } from '../i18n/ui';
+import { getRelativeLocaleUrl } from 'astro:i18n';
+---
+
+<Base title="404" altPath={null}>
+  <div class="notfound">
+    <h1>404</h1>
+    <p>
+      {t('zh', 'notfound.body')}
+      <a href={getRelativeLocaleUrl('zh')}>{t('zh', 'notfound.home')}</a>
+    </p>
+    <p>
+      {t('en', 'notfound.body')}
+      <a href={getRelativeLocaleUrl('en')}>{t('en', 'notfound.home')}</a>
+    </p>
+  </div>
+</Base>
+
+<style>
+  .notfound h1 {
+    margin: 0 0 var(--space-3);
+    font-size: var(--text-xl);
+    font-weight: 600;
+  }
+  .notfound a {
+    text-decoration: underline;
+  }
+</style>

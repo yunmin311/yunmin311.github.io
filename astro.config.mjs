@@ -1,5 +1,6 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
+import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
@@ -12,4 +13,10 @@ export default defineConfig({
       redirectToDefaultLocale: true,
     },
   },
+  integrations: [
+    sitemap({
+      // 根路径只是跳转页(noindex),不进 sitemap
+      filter: (page) => page !== 'https://yunmin311.github.io/',
+    }),
+  ],
 });
