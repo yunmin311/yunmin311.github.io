@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>风格研究二 · 殿堂级样本 2026-07-16</title>
+<style>
+:root{
+  --bg:#fcf9f7; --ink:#030302; --card:#ffffff;
+  --border:#03030217; --muted:#03030280; --faint:#0303020a;
+  --green:#4aa25e; --blue:#4ba2b4; --purple:#748ddd;
+  --pink:#c37ec8; --red:#e66960; --orange:#dd8e40; --yellow:#fde99b;
+  --r1:10px; --r2:16px; --r3:24px; --r4:32px;
+  --kai:"LXGW WenKai","Kaiti SC",KaiTi,STKaiti,serif;
+  --disp:Georgia,"Times New Roman",serif;
+  --mono:"Cascadia Mono",Consolas,monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{background:var(--bg);color:var(--ink);font-family:var(--kai);font-size:17.5px;line-height:1.95;padding:96px 24px 80px}
+.page{max-width:980px;margin:0 auto}
+nav.cap{
+  position:fixed;top:24px;left:50%;transform:translateX(-50%);z-index:9;
+  width:calc(100% - 96px);max-width:850px;display:flex;align-items:center;gap:18px;flex-wrap:wrap;
+  padding:10px 22px;border-radius:26px;
+  background:linear-gradient(180deg,#fff6 10%,#fffc);
+  backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);
+  border:1px solid #ffffffa3;box-shadow:0 12px 12px 2px #0000001a,0 2px 4px -1px #0000000f;font-size:14px;
+}
+nav.cap b{font-family:var(--disp);font-style:italic;font-weight:400;margin-right:auto}
+nav.cap a{color:var(--muted);text-decoration:none}
+nav.cap a:hover,nav.cap a:focus-visible{color:var(--ink)}
+nav.cap a:focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:4px}
+header.hero{margin:48px 0 64px}
+.hero .eyebrow{font-family:var(--mono);font-size:12.5px;color:var(--muted);letter-spacing:.12em}
+.hero h1{font-family:var(--disp);font-weight:400;font-size:56px;line-height:1.18;letter-spacing:-.03em;margin:14px 0 8px}
+.hero h1 .cjk{font-family:var(--kai);letter-spacing:0}
+.hero p.lede{max-width:44em;color:#030302d9;margin-top:18px}
+.hero p.lede b{background:linear-gradient(transparent 62%,var(--yellow) 62%);font-weight:600}
+section{margin:72px 0}
+h2{font-family:var(--kai);font-weight:600;font-size:29px;margin-bottom:6px}
+h2 .no{font-family:var(--disp);font-style:italic;font-weight:400;color:var(--muted);font-size:20px;margin-right:10px}
+.sub{color:var(--muted);font-size:15px;margin-bottom:26px}
+.card{position:relative;background:var(--card);border:1px solid var(--border);border-radius:var(--r3);padding:26px 30px;overflow:hidden}
+.card::before{content:"";position:absolute;inset:0;pointer-events:none;background:url("img/paper.jpg") left top / 2048px 1201px repeat;mix-blend-mode:multiply;opacity:.35}
+.card>*{position:relative}
+.grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fill,minmax(300px,1fr))}
+.site{padding:0;display:flex;flex-direction:column}
+.site .shot{display:block;border-bottom:1px solid var(--border);background:var(--faint)}
+.site .shot img{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:top}
+.site .body{padding:18px 22px 20px}
+.site h3{font-size:19px;font-weight:600;line-height:1.4}
+.site h3 a{color:inherit;text-decoration:none;border-bottom:1px solid #03030233}
+.site h3 a:hover{border-bottom-color:var(--ink)}
+.site .tag{display:inline-block;font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;padding:1px 10px;border-radius:99px;border:1px solid;margin-bottom:10px}
+.t-hall{color:var(--red);border-color:var(--red)}
+.t-camera{color:var(--blue);border-color:var(--blue)}
+.t-fashion{color:var(--pink);border-color:var(--pink)}
+.t-mag{color:var(--orange);border-color:var(--orange)}
+.site ul{list-style:none;margin-top:10px;font-size:15.5px}
+.site li{padding-left:1.35em;position:relative;margin:.35em 0;color:#030302d9}
+.site li::before{content:"—";position:absolute;left:0;color:var(--muted)}
+.site .steal{margin-top:12px;font-size:14px;color:var(--muted)}
+.site .steal b{color:var(--ink);font-weight:600}
+table{width:100%;border-collapse:collapse;font-size:15px}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--border);vertical-align:top}
+th{font-weight:600;font-size:13.5px;color:var(--muted);letter-spacing:.05em}
+td.v{font-family:var(--mono);font-size:13.5px}
+.law{display:grid;gap:18px}
+.law .card{border-radius:var(--r2)}
+.law h3{font-size:20px;font-weight:600;margin-bottom:6px}
+.law h3 .en{font-family:var(--disp);font-style:italic;font-weight:400;color:var(--muted);font-size:16px;margin-left:10px}
+.law p{font-size:16px;color:#030302d9}
+.chips{margin-top:10px}
+.chip{display:inline-block;font-family:var(--mono);font-size:12px;background:var(--faint);border:1px solid var(--border);border-radius:8px;padding:2px 10px;margin:3px 4px 0 0}
+.note{font-size:14.5px;color:var(--muted);border-left:3px solid var(--yellow);padding:6px 0 6px 16px;margin-top:22px}
+footer{margin-top:88px;font-size:13px;color:var(--muted);text-align:center;font-family:var(--mono)}
+footer a{color:inherit}
+@media (max-width:720px){body{padding-top:120px}.hero h1{font-size:38px}nav.cap{width:calc(100% - 32px)}}
+</style>
+</head>
+<body>
+<nav class="cap" aria-label="页内导航">
+  <b>Field Notes II</b>
+  <a href="#tour">逐站</a><a href="#law">铁律</a><a href="#method">军规</a><a href="#revise">修订</a><a href="风格研究报告.html">← 第一辑</a>
+</nav>
+
+<div class="page">
+
+<header class="hero">
+  <div class="eyebrow">DESIGN RESEARCH II · 2026-07-16 · 设计辅助对话</div>
+  <h1><span class="cjk">殿堂级样本</span> — <em>the masters</em></h1>
+  <p class="lede">
+    第一辑被批评得对:合集站里捞出来的是「网页设计圈的好学生」,不是行业殿堂。这一辑按更严的标准重新出发:
+    国家地理、世界新闻摄影奖、徕卡、哈苏、富士、适马、The Row、Jil Sander、Acne、Monocle、Emergence——
+    <b>13 个站拿下 12 个</b>(马格南把机器人挡在门外,Aperture 超时,已记进待办)。
+    另外把网上公开流传的高质量设计提示词扒了回来,蒸馏成第三节的「军规」。
+  </p>
+</header>
+
+<!-- ============ 逐站 ============ -->
+<section id="tour">
+  <h2><span class="no">一</span>逐站笔记</h2>
+  <div class="sub">点截图看整页长图。截图仅内部研究,版权归各站。</div>
+
+  <h3 style="font-size:17px;color:var(--muted);font-weight:600;margin:26px 0 14px">摄影殿堂 · 图就是设计</h3>
+  <div class="grid">
+    <div class="card site">
+      <a class="shot" href="img2/worldpressphoto-full.jpg"><img src="img2/worldpressphoto-fold.jpg" alt="世界新闻摄影奖:满幅纪实照片,红色标识块"></a>
+      <div class="body">
+        <span class="tag t-hall">殿堂 INSTITUTION</span>
+        <h3><a href="https://www.worldpressphoto.org/">World Press Photo</a></h3>
+        <ul>
+          <li>整屏就是一张纪实照片,标题压在照片下缘的暗部里</li>
+          <li>品牌只有一块红色矩形 Logo ——照片面前,机构自己也退后</li>
+        </ul>
+        <p class="steal"><b>可抄:</b>照片满幅、文字进暗部;机构红块的克制用法。</p>
+      </div>
+    </div>
+    <div class="card site">
+      <a class="shot" href="img2/natgeo-full.jpg"><img src="img2/natgeo-fold.jpg" alt="国家地理:黑白黄三色纪律,字距拉开的眉题"></a>
+      <div class="body">
+        <span class="tag t-hall">殿堂 INSTITUTION</span>
+        <h3><a href="https://www.nationalgeographic.com/">National Geographic</a></h3>
+        <ul>
+          <li>百年品牌只有三个颜色:黑、白、一个黄框</li>
+          <li>眉题(IMPACT)全大写 + 3px 字距;标题字体是自家定制的几何无衬线</li>
+          <li>图被机器人锁掉了,但骨架足够说明纪律</li>
+        </ul>
+        <p class="steal"><b>可抄:</b>「三色纪律」;眉题的字距用法。</p>
+      </div>
+    </div>
+  </div>
+
+  <h3 style="font-size:17px;color:var(--muted);font-weight:600;margin:26px 0 14px">相机厂 · 两极字号</h3>
+  <div class="grid">
+    <div class="card site">
+      <a class="shot" href="img2/leica-full.jpg"><img src="img2/leica-fold.jpg" alt="徕卡:满幅摄影 hero,76px 轻字重标题,红点"></a>
+      <div class="body">
+        <span class="tag t-camera">相机厂 CAMERA</span>
+        <h3><a href="https://leica-camera.com/">Leica</a></h3>
+        <ul>
+          <li>Hero 是一张真正的照片(不是产品渲染图),标题 76px 但字重 400——巨大而轻</li>
+          <li>品牌 = 一颗红点,按钮里也只用这颗红点</li>
+          <li>整页节奏:满幅照片 ↔ 白底产品卡,一幕一幕交替,像展览动线</li>
+        </ul>
+        <p class="steal"><b>可抄:</b>满幅/卡片的交替节奏;巨大轻字重标题;「一颗红点」级别的品牌克制。</p>
+      </div>
+    </div>
+    <div class="card site">
+      <a class="shot" href="img2/hasselblad-full.jpg"><img src="img2/hasselblad-fold.jpg" alt="哈苏:纯黑,金色日食,字距拉开的小型大写"></a>
+      <div class="body">
+        <span class="tag t-camera">相机厂 CAMERA</span>
+        <h3><a href="https://www.hasselblad.com/">Hasselblad</a></h3>
+        <ul>
+          <li>纯黑底,一轮金色日食;标题只有 12px,但字距 2px,全大写</li>
+          <li>按钮是一个细线框的小型大写(READ MORE)——奢侈感全靠字距和留白,不靠字号</li>
+        </ul>
+        <p class="steal"><b>可抄:</b>12px + 2px 字距的小型大写标题;细线框按钮。</p>
+      </div>
+    </div>
+    <div class="card site">
+      <a class="shot" href="img2/fujifilmx-full.jpg"><img src="img2/fujifilmx-fold.jpg" alt="富士 X:满幅生活场景照,压缩体大写标题"></a>
+      <div class="body">
+        <span class="tag t-camera">相机厂 CAMERA</span>
+        <h3><a href="https://fujifilm-x.com/">FUJIFILM X</a></h3>
+        <ul>
+          <li>Hero 拍的是「正在拍照的人」——卖的不是机器,是拍照这件事</li>
+          <li>压缩体全大写标题 + 左对齐文字块沉在画面左下</li>
+        </ul>
+        <p class="steal"><b>可抄:</b>让「使用中」的场景当封面,而不是摆拍的成品。</p>
+      </div>
+    </div>
+    <div class="card site">
+      <a class="shot" href="img2/sigma-full.jpg"><img src="img2/sigma-fold.jpg" alt="适马:金属纹理微距满幅,极小的衬线报头"></a>
+      <div class="body">
+        <span class="tag t-camera">相机厂 CAMERA</span>
+        <h3><a href="https://www.sigma-global.com/">SIGMA</a></h3>
+        <ul>
+          <li>满幅是一张金属滚花的微距——<b>材质本身当 hero</b></li>
+          <li>自家定制的衬线报头居中,导航 13px;导航里有一项「MADE IN AIZU」——产地即品牌</li>
+          <li>底色 #fefefd,近乎不可察觉的暖</li>
+        </ul>
+        <p class="steal"><b>可抄:</b>材质微距当头图(和卡纸质感天然同构);把「出处」写进导航。</p>
+      </div>
+    </div>
+  </div>
+
+  <h3 style="font-size:17px;color:var(--muted);font-weight:600;margin:26px 0 14px">时装 · 静默的纪律</h3>
+  <div class="grid">
+    <div class="card site">
+      <a class="shot" href="img2/therow-full.jpg"><img src="img2/therow-fold.jpg" alt="The Row:灰调摄影棚满幅,极简字距报头"></a>
+      <div class="body">
+        <span class="tag t-fashion">时装 FASHION</span>
+        <h3><a href="https://www.therow.com/">The Row</a></h3>
+        <ul>
+          <li>整屏一张灰调摄影棚照,报头 T H E &nbsp; R O W 字距拉到极限</li>
+          <li>全站标题 13px,一切都小声说话——奢侈品的音量</li>
+        </ul>
+        <p class="steal"><b>可抄:</b>报头字距;整屏只做一件事。</p>
+      </div>
+    </div>
+    <div class="card site">
+      <a class="shot" href="img2/jilsander-full.jpg"><img src="img2/jilsander-fold.jpg" alt="Jil Sander:象牙底,粗黑报头,双联照片"></a>
+      <div class="body">
+        <span class="tag t-fashion">时装 FASHION</span>
+        <h3><a href="https://www.jilsander.com/">Jil Sander</a></h3>
+        <ul>
+          <li>底色 #fbfbf6 象牙白——暖白军团再 +1</li>
+          <li>粗黑无衬线报头居中当纪念碑,下面双联照片分屏</li>
+          <li>正文是加了字距的 Futura,轻、稳、冷静</li>
+        </ul>
+        <p class="steal"><b>可抄:</b>报头当纪念碑;双联分屏;正文字距的冷静感。</p>
+      </div>
+    </div>
+    <div class="card site">
+      <a class="shot" href="img2/acnestudios-full.jpg"><img src="img2/acnestudios-fold.jpg" alt="Acne Studios:巨型 Logo 压在双联大片上"></a>
+      <div class="body">
+        <span class="tag t-fashion">时装 FASHION</span>
+        <h3><a href="https://www.acnestudios.com/">Acne Studios</a></h3>
+        <ul>
+          <li>巨型 Logo 横压在两张大片上,字与图咬合成一个版面</li>
+          <li>购物袋计数写成「00」——小怪癖藏在系统字里</li>
+        </ul>
+        <p class="steal"><b>可抄:</b>大字压图的咬合排版;「00」式的小怪癖。</p>
+      </div>
+    </div>
+  </div>
+
+  <h3 style="font-size:17px;color:var(--muted);font-weight:600;margin:26px 0 14px">刊物 · 报头与长卷</h3>
+  <div class="grid">
+    <div class="card site">
+      <a class="shot" href="img2/monocle-full.jpg"><img src="img2/monocle-fold.jpg" alt="Monocle:Didone 大报头,细线分隔的大写栏目条"></a>
+      <div class="body">
+        <span class="tag t-mag">刊物 MAGAZINE</span>
+        <h3><a href="https://monocle.com/">Monocle</a></h3>
+        <ul>
+          <li>Didone 衬线大报头居中——网站排成一份报纸;正文用老牌印刷字 Plantin</li>
+          <li>栏目条:AFFAIRS | BUSINESS | CULTURE… 细竖线分隔的小型大写</li>
+          <li>报头旁一行小字「Currently being edited in London」+ 一只叼信的狗——性格又是藏在一处</li>
+        </ul>
+        <p class="steal"><b>可抄:</b>报纸式报头版;细竖线栏目条;那行「正在伦敦编辑中」。</p>
+      </div>
+    </div>
+    <div class="card site">
+      <a class="shot" href="img2/emergence-full.jpg"><img src="img2/emergence-fold.jpg" alt="Emergence:大留白,加字距正文,读/听/看分组索引"></a>
+      <div class="body">
+        <span class="tag t-mag">刊物 MAGAZINE</span>
+        <h3><a href="https://emergencemagazine.org/">Emergence Magazine</a></h3>
+        <ul>
+          <li>拿过一堆网页设计大奖。正文都带字距(1.33px),文字块非对称地散在大留白里,读起来像诗集</li>
+          <li>整页是一幕一幕的长卷:渐变色场 → 满幅微距 → 主编信 → 纸刊照片 → 故事索引</li>
+          <li>故事索引按动词分组:<b>Read / Listen / Watch</b>——不按栏目,按你要做的事</li>
+        </ul>
+        <p class="steal"><b>可抄:</b>动词分组的内容索引(咱们的作品/文章/收藏可以是 看/读/藏);长卷式一幕一幕的节奏。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="note">
+    没拿下的:<b>马格南</b>(403,把机器人整个挡掉——想看得用户开浏览器亲自看,或我换路子);<b>Aperture</b>(超时)。两个都进待办,不算完。
+  </div>
+</section>
+
+<!-- ============ 铁律 ============ -->
+<section id="law">
+  <h2><span class="no">二</span>这一辑的新铁律</h2>
+  <div class="sub">第一辑五条规律照旧成立;下面是只有殿堂级样本才教得了的。</div>
+  <div class="law">
+    <div class="card">
+      <h3>字号只有两极<span class="en">no middle sizes</span></h3>
+      <p>哈苏 12px、适马 13px、The Row 13px、Jil Sander 12px、Acne 12px——顶级品牌的「标题」是加字距的小型大写;徕卡反着走:76px 但字重 400。<b>要么巨大而轻,要么极小而稳;中间字号只属于杂志正文。</b>模糊的 24px 加粗标题是平庸的标志。</p>
+      <div class="chips"><span class="chip">Leica 76px/400</span><span class="chip">Hasselblad 12px+2px 字距</span><span class="chip">The Row 13px</span></div>
+    </div>
+    <div class="card">
+      <h3>字距是奢侈品<span class="en">letterspacing is luxury</span></h3>
+      <p>国家地理眉题 3px、哈苏 2px、Emergence 正文 1.33px、The Row 的报头几乎一字一停。<b>字距花的是空间,空间就是钱</b>——网页上最便宜的奢侈感来源。中文同理:加字距的小字比加粗的大字贵气得多。</p>
+    </div>
+    <div class="card">
+      <h3>满幅与卡片交替<span class="en">the exhibition rhythm</span></h3>
+      <p>徕卡整页是「满幅照片 → 白底卡片 → 满幅 → 卡片」的一幕幕交替,Emergence 是「色场 → 微距 → 文字 → 索引」的长卷。<b>页面不是一个容器,是一条展览动线</b>——每一屏该是一幕,幕与幕之间要换气。</p>
+    </div>
+    <div class="card">
+      <h3>材质就是头图<span class="en">material as hero</span></h3>
+      <p>适马开屏是金属滚花的微距。咱们的对应物是<b>纸</b>:卡纸的纹理、撕边、叠层本身就能当 hero,不一定要放作品或照片。这是卡纸语言里还没用足的一张牌。</p>
+    </div>
+    <div class="card">
+      <h3>出处即品牌<span class="en">provenance is branding</span></h3>
+      <p>适马把「MADE IN AIZU(会津制造)」放进导航,徕卡首页排着「1914–2025」的世纪线,Monocle 写「currently being edited in London」。<b>你在哪儿、从哪来、正在干什么,本身就是设计素材。</b>个人网站尤其适用——它天生就是「一个人的出处」。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 军规 ============ -->
+<section id="method">
+  <h2><span class="no">三</span>蒸馏的军规(来自公开的高质量提示词)</h2>
+  <div class="sub">扒了三处公开流传的设计方法论:Claude 官方设计 skill、从 Claude.ai 内部设计提示词改编的开源版、以及一个按美学流派编目提示词的仓库。去掉重复后剩这些,以后我每出一稿都按这个自查。</div>
+  <div class="card">
+    <table>
+      <tr><th>军规</th><th>内容</th></tr>
+      <tr><td>先取真值</td><td>「凭空画高保真是最后手段」——先收集真实的色值、字体、素材再动笔。咱们的 craft 真值页就是这条的践行</td></tr>
+      <tr><td>动笔前申报系统</td><td>写下:字号梯、1–2 个底色、布局节奏、节标题模式——然后整页只许用申报过的。防止越画越乱</td></tr>
+      <tr><td>硬底线</td><td>手机上可点的东西 ≥ 44px;正文对比度过 AA(普通字号至少 4.5:1);尊重「减少动效」的系统设置</td></tr>
+      <tr><td>反 AI 味清单</td><td>禁:大渐变底、左侧彩条强调卡、Inter/Roboto 默认字、假文占位、纯装饰性区块。AI 生成的网页有三张俗脸(奶油底+衬线+赤陶色 / 黑底+荧光绿 / 报纸式细线密栏)——撞脸即重画</td></tr>
+      <tr><td>一次给三个方案</td><td>「给选项,不给唯一答案」——从保守到大胆排开,你挑、你混。以后我交视觉方向必须这么交</td></tr>
+      <tr><td>七维自审</td><td>层级 / 间距 / 色彩 / 无障碍 / AI 味 / 动效 / 文案,逐维打分列罚单,按「影响 × 省力」排序修。「不推荐验证不了的东西,引用证据」——和咱们第一纪律同源</td></tr>
+      <tr><td>性格预算</td><td>放肆只花在一处(第一辑就发现了,提示词圈叫它 signature element);其余全部守申报过的系统</td></tr>
+    </table>
+    <p style="margin-top:14px;font-size:15px;color:var(--muted)">
+      流派地图:公开提示词圈把网页美学分成 9 族。咱们的卡纸方向属于「Warm Editorial(暖编辑)」族,本辑相机厂属于「Editorial Minimalism(冷编辑)」族——两族血缘最近,手法可以互相借。
+    </p>
+  </div>
+</section>
+
+<!-- ============ 修订 ============ -->
+<section id="revise">
+  <h2><span class="no">四</span>据此修订第一辑的落地表</h2>
+  <div class="sub">第一辑的对照表仍然成立,以下几处按殿堂标准升级。依旧只是推荐,拍板在你。</div>
+  <div class="card">
+    <table>
+      <tr><th>板块</th><th>第一辑说</th><th>殿堂级升级</th></tr>
+      <tr><td>首页 hero</td><td>craft 壳 + 清单心</td><td>徕卡节奏:满幅一幕(可以是纸的材质微距)+ 巨大轻字重标题;往下才进卡片</td></tr>
+      <tr><td>作品详情</td><td>一屏一图 + 计数</td><td>照旧,但标题降到「哈苏级」:小型大写 + 字距,让图独占音量</td></tr>
+      <tr><td>栏目导航</td><td>三段式 + 方括号</td><td>可以再加 Monocle 的细竖线栏目条;或 Emergence 的动词分组(看 / 读 / 藏)</td></tr>
+      <tr><td>自我介绍</td><td>词典式开场</td><td>叠加「出处即品牌」:你在哪、正在做什么,当一行小字放进报头区</td></tr>
+      <tr><td>标题体系</td><td>(未定)</td><td>两极制:展示级 = 大而轻(衬线/楷体);功能级 = 小而稳(加字距);取消中间档</td></tr>
+    </table>
+  </div>
+  <div class="note">
+    双语再提醒:小型大写、字距这套在中文里的对应物是「加字距的小号汉字」,楷体自带的笔触已经是性格,不必再加粗。两极字号制对中文反而更友好——文楷在大字号下的笔锋和小字号下的工整,正好各占一极。
+  </div>
+</section>
+
+<footer>
+  设计辅助对话 · 2026-07-16 · 第二辑(第一辑:<a href="风格研究报告.html">风格研究报告.html</a>)<br>
+  截图版权归各网站所有,仅作内部研究 · 待办:马格南(403)、Aperture(超时)
+</footer>
+
+</div>
+</body>
+</html>

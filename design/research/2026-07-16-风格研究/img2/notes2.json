@@ -1,0 +1,256 @@
+[
+  {
+    "id": "magnum",
+    "url": "https://www.magnumphotos.com/",
+    "cat": "殿堂 · 马格南图片社",
+    "ok": true,
+    "title": "403 Forbidden",
+    "info": {
+      "bodyFont": "\"Times New Roman\"",
+      "bodyBg": "rgba(0, 0, 0, 0)",
+      "bodyColor": "rgb(0, 0, 0)",
+      "h1Font": "\"Times New Roman\"",
+      "h1Size": "32px",
+      "h1Weight": "700",
+      "h1Spacing": "normal",
+      "familiesSampled": [
+        "Times New Roman"
+      ]
+    }
+  },
+  {
+    "id": "natgeo",
+    "url": "https://www.nationalgeographic.com/",
+    "cat": "殿堂 · 国家地理",
+    "ok": true,
+    "title": "National Geographic",
+    "info": {
+      "bodyFont": "GeoBrandRegular, CenturyGothic, AppleGothic, \"Gill Sans\", \"Gill Sans MT\", sans-serif",
+      "bodyBg": "rgba(0, 0, 0, 0)",
+      "bodyColor": "rgb(0, 0, 0)",
+      "h1Font": "GeoBrandBold, CenturyGothic, AppleGothic, \"Gill Sans\", \"Gill Sans MT\", sans-serif",
+      "h1Size": "32px",
+      "h1Weight": "400",
+      "h1Spacing": "3px",
+      "familiesSampled": [
+        "GeoBrandRegular",
+        "GeoEditRegular",
+        "GeoEditMedium",
+        "GeoBrandMedium",
+        "GeoBrandBold",
+        "sans-serif"
+      ]
+    }
+  },
+  {
+    "id": "aperture",
+    "url": "https://aperture.org/",
+    "cat": "殿堂 · Aperture 光圈基金会",
+    "ok": "partial",
+    "error": "page.goto: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://aperture.org/\", waiting until \"domcontentloaded\"\u001b[22m\n"
+  },
+  {
+    "id": "worldpressphoto",
+    "url": "https://www.worldpressphoto.org/",
+    "cat": "殿堂 · 世界新闻摄影奖",
+    "ok": true,
+    "title": "Home | World Press Photo",
+    "info": {
+      "bodyFont": "Akkurat-Light, sans-serif",
+      "bodyBg": "rgb(255, 255, 255)",
+      "bodyColor": "rgb(40, 40, 40)",
+      "h1Font": "Akkurat-Bold",
+      "h1Size": "32px",
+      "h1Weight": "500",
+      "h1Spacing": "normal",
+      "familiesSampled": [
+        "Akkurat-Light",
+        "Akkurat-Bold",
+        "Akkurat-Normal"
+      ]
+    }
+  },
+  {
+    "id": "leica",
+    "url": "https://leica-camera.com/en-US",
+    "cat": "相机厂 · 徕卡",
+    "ok": true,
+    "title": "Leica Camera – Official | USA",
+    "info": {
+      "bodyFont": "Outfit, sans-serif",
+      "bodyBg": "rgba(0, 0, 0, 0)",
+      "bodyColor": "rgb(34, 34, 34)",
+      "h1Font": "Outfit, sans-serif",
+      "h1Size": "76px",
+      "h1Weight": "400",
+      "h1Spacing": "normal",
+      "familiesSampled": [
+        "Outfit"
+      ]
+    }
+  },
+  {
+    "id": "hasselblad",
+    "url": "https://www.hasselblad.com/",
+    "cat": "相机厂 · 哈苏",
+    "ok": true,
+    "title": "Hasselblad",
+    "info": {
+      "bodyFont": "outfit, \"Helvetica Neue\", Arial, Verdana, sans-serif",
+      "bodyBg": "rgba(0, 0, 0, 0)",
+      "bodyColor": "rgb(0, 0, 0)",
+      "h1Font": "\"Tw Cen\", \"Helvetica Neue\", Arial, Verdana, sans-serif",
+      "h1Size": "12px",
+      "h1Weight": "400",
+      "h1Spacing": "2.004px",
+      "familiesSampled": [
+        "outfit",
+        "Tw Cen",
+        "Arial"
+      ]
+    }
+  },
+  {
+    "id": "fujifilmx",
+    "url": "https://fujifilm-x.com/en-us/",
+    "cat": "相机厂 · 富士 X",
+    "ok": true,
+    "title": "Fujifilm | FUJIFILM X Series & GFX - USA",
+    "info": {
+      "bodyFont": "\"Noto Sans JP\", \"Noto Sans\", Helvetica, sans-serif",
+      "bodyBg": "rgba(0, 0, 0, 0)",
+      "bodyColor": "rgb(0, 0, 0)",
+      "h1Font": "\"Fjalla One\", sans-serif",
+      "h1Size": "30px",
+      "h1Weight": "400",
+      "h1Spacing": "normal",
+      "familiesSampled": [
+        "Noto Sans JP",
+        "Fjalla One",
+        "Noto Sans"
+      ]
+    }
+  },
+  {
+    "id": "sigma",
+    "url": "https://www.sigma-global.com/en/",
+    "cat": "相机厂 · 适马",
+    "ok": true,
+    "title": "Sigma",
+    "info": {
+      "bodyFont": "\"Sigma Serif\", \"Noto Sans JP\", sans-serif",
+      "bodyBg": "rgb(254, 254, 253)",
+      "bodyColor": "rgb(51, 51, 51)",
+      "h1Font": "\"Sigma Sans\", \"Noto Sans JP\", sans-serif",
+      "h1Size": "13px",
+      "h1Weight": "400",
+      "h1Spacing": "0.26px",
+      "familiesSampled": [
+        "Sigma Serif",
+        "Sigma Sans",
+        "Sigma Serif head"
+      ]
+    }
+  },
+  {
+    "id": "therow",
+    "url": "https://www.therow.com/",
+    "cat": "时装 · The Row",
+    "ok": true,
+    "title": "The Row | Clothing & Accessories",
+    "info": {
+      "bodyFont": "\"Basic Commercial\", Arial, sans-serif",
+      "bodyBg": "rgb(255, 255, 255)",
+      "bodyColor": "rgb(28, 27, 27)",
+      "h1Font": "\"Basic Commercial\", Arial, sans-serif",
+      "h1Size": "13px",
+      "h1Weight": "400",
+      "h1Spacing": "normal",
+      "familiesSampled": [
+        "Basic Commercial"
+      ]
+    }
+  },
+  {
+    "id": "jilsander",
+    "url": "https://www.jilsander.com/",
+    "cat": "时装 · Jil Sander",
+    "ok": true,
+    "title": "Jil Sander | Official Online Store",
+    "info": {
+      "bodyFont": "Jil-Futura, Futura, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "bodyBg": "rgb(251, 251, 246)",
+      "bodyColor": "rgb(0, 0, 0)",
+      "h1Font": "Jil-Futura, Futura, \"Helvetica Neue\", Helvetica, Arial, sans-serif",
+      "h1Size": "12px",
+      "h1Weight": "700",
+      "h1Spacing": "0.96px",
+      "familiesSampled": [
+        "Jil-Futura"
+      ]
+    }
+  },
+  {
+    "id": "acnestudios",
+    "url": "https://www.acnestudios.com/",
+    "cat": "时装 · Acne Studios",
+    "ok": true,
+    "title": "Acne Studios - Shop the official site",
+    "info": {
+      "bodyFont": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+      "bodyBg": "rgba(0, 0, 0, 0)",
+      "bodyColor": "rgb(0, 0, 0)",
+      "h1Font": "\"Helvetica Now Text\", Helvetica, Arial, sans-serif",
+      "h1Size": "12px",
+      "h1Weight": "400",
+      "h1Spacing": "0.3px",
+      "familiesSampled": [
+        "Helvetica Now Text",
+        "Helvetica Monospaced Pro",
+        "Helvetica Now Micro"
+      ]
+    }
+  },
+  {
+    "id": "monocle",
+    "url": "https://monocle.com/",
+    "cat": "刊物 · Monocle",
+    "ok": true,
+    "title": "Monocle - global affairs, culture and design",
+    "info": {
+      "bodyFont": "Plantin, ItalicAmpersand, \"Book Antiqua\", Georgia, \"Times New Roman\", serif",
+      "bodyBg": "rgb(255, 255, 255)",
+      "bodyColor": "rgb(0, 0, 0)",
+      "h1Font": "Plantin, ItalicAmpersand, \"Book Antiqua\", Georgia, \"Times New Roman\", serif",
+      "h1Size": "32px",
+      "h1Weight": "400",
+      "h1Spacing": "normal",
+      "familiesSampled": [
+        "sans-serif",
+        "Plantin",
+        "Helvetica Neue"
+      ]
+    }
+  },
+  {
+    "id": "emergence",
+    "url": "https://emergencemagazine.org/",
+    "cat": "刊物 · Emergence(屡获网页设计大奖)",
+    "ok": true,
+    "title": "Connecting the threads between ecology, culture, and spirituality – Emergence Magazine",
+    "info": {
+      "bodyFont": "\"GT America\"",
+      "bodyBg": "rgb(255, 255, 255)",
+      "bodyColor": "rgb(0, 0, 0)",
+      "h1Font": "\"GT America\"",
+      "h1Size": "24px",
+      "h1Weight": "400",
+      "h1Spacing": "1.33px",
+      "familiesSampled": [
+        "GT America",
+        "Courier Prime Sans",
+        "WindsorD-Bol"
+      ]
+    }
+  }
+]
