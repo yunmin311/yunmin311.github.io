@@ -1,9 +1,13 @@
-# 推送到 main 即自动构建并发布到 GitHub Pages(实现计划·阶段 4)
+# GitHub Pages 部署(实现计划·阶段 4)
+# ⚠️ 暂只允许手动触发:用户明确暂不上线,推送只作云端备份。
+# 上线日(T18/T19)把 push 触发加回来:
+#   on:
+#     push:
+#       branches: [main]
+#     workflow_dispatch:
 name: Deploy to GitHub Pages
 
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 permissions:
