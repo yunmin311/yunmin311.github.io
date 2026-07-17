@@ -3,6 +3,8 @@
 //   node scripts/prep-image.mjs 原图路径 [输出路径]
 // 规则:最长边缩到 2400px(不放大)、转成质量 80 的 JPG;输出默认在原图旁边加「-web」后缀。
 // 支持 jpg/png/webp/tiff;HEIC 不支持(先用 Windows「照片」另存为 JPG,见工序文档)。
+// ⚠️ 隐私红线:本脚本靠 sharp 默认不保留元数据来抹掉 EXIF(含 GPS 定位),
+//    故意不调 .withMetadata()——谁都别加,否则拍摄坐标会随公开仓库泄露。
 import sharp from 'sharp';
 import { stat } from 'node:fs/promises';
 import path from 'node:path';
