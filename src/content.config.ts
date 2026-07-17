@@ -1,6 +1,7 @@
 // 内容集合定义:字段规矩见 docs/specs/2026-07-16-website-spec.md 第五节。
 // 目录按语言分(works/zh、works/en),同名文件互为翻译。
-import { defineCollection, z } from 'astro:content';
+import { defineCollection } from 'astro:content';
+import { z } from 'astro/zod';
 import { glob } from 'astro/loaders';
 
 const works = defineCollection({
