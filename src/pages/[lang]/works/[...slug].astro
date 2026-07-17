@@ -115,8 +115,13 @@ const meta = [
   .work-body :global(p) {
     max-width: var(--width-prose);
   }
+  /* markdown 会把独占一行的图片包进段落;这类段落解除阅读宽度,让图铺开 */
+  .work-body :global(p:has(> img)) {
+    max-width: none;
+  }
   .work-body :global(img) {
     width: 100%;
+    height: auto; /* 压掉 img 的 height 属性,否则照片会被拉变形(同封面的教训) */
     margin-block: var(--space-4);
   }
   .work-pager {

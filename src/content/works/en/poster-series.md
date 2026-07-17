@@ -13,4 +13,7 @@ order: 1
 **[PLACEHOLDER]** This is the body of a work page. A real entry would cover:
 background, the problem, the process, the outcome.
 
-Images flow in a single large column. Omitted here.
+Images flow in a single large column. The large placeholder below (3000px source)
+verifies the responsive image pipeline — the build produces multiple compressed sizes:
+
+![Large placeholder image verifying the responsive image pipeline](../_images/placeholder-large.jpg)
