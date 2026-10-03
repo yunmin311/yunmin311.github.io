@@ -1,0 +1,643 @@
+{
+  "origin": "http://localhost:8800",
+  "results": [
+    {
+      "name": "home zh 1440 no-preference",
+      "pass": true,
+      "data": {
+        "production": {
+          "lang": "zh",
+          "posts": 2,
+          "projects": 6,
+          "live": {
+            "reflections": 0,
+            "learning": 0,
+            "code": 0
+          }
+        },
+        "print": {
+          "background": true,
+          "tile": true,
+          "photos": 0,
+          "model": false,
+          "cloud": true,
+          "errors": [],
+          "scrollUpdates": 0,
+          "materialWrites": 30,
+          "cached": true,
+          "shaderPasses": 0
+        },
+        "overflow": 0,
+        "name": "76px",
+        "scroll": {
+          "scope": "page",
+          "target": "document",
+          "max": 6396,
+          "top": 0,
+          "shown": true
+        },
+        "ticks": [
+          {
+            "top": 309.5,
+            "opacity": "1"
+          },
+          {
+            "top": 327.796875,
+            "opacity": "0.7"
+          },
+          {
+            "top": 345.59375,
+            "opacity": "0.7"
+          },
+          {
+            "top": 363.390625,
+            "opacity": "0.7"
+          },
+          {
+            "top": 381.1875,
+            "opacity": "0.7"
+          },
+          {
+            "top": 399,
+            "opacity": "0.7"
+          },
+          {
+            "top": 416.796875,
+            "opacity": "0.7"
+          },
+          {
+            "top": 434.59375,
+            "opacity": "0.7"
+          },
+          {
+            "top": 452.390625,
+            "opacity": "0.7"
+          },
+          {
+            "top": 470.1875,
+            "opacity": "0.7"
+          },
+          {
+            "top": 488,
+            "opacity": "0.7"
+          }
+        ]
+      }
+    },
+    {
+      "name": "home zh 768 reduce",
+      "pass": true,
+      "data": {
+        "production": {
+          "lang": "zh",
+          "posts": 2,
+          "projects": 6,
+          "live": {
+            "reflections": 0,
+            "learning": 0,
+            "code": 0
+          }
+        },
+        "print": {
+          "background": true,
+          "tile": true,
+          "photos": 0,
+          "model": false,
+          "cloud": true,
+          "errors": [],
+          "scrollUpdates": 0,
+          "materialWrites": 30,
+          "cached": true,
+          "shaderPasses": 0
+        },
+        "overflow": 0,
+        "name": "64px",
+        "scroll": {
+          "scope": "page",
+          "target": "document",
+          "max": 8298,
+          "top": 0,
+          "shown": true
+        },
+        "ticks": [
+          {
+            "top": 294.5,
+            "opacity": "1"
+          },
+          {
+            "top": 315.796875,
+            "opacity": "0.7"
+          },
+          {
+            "top": 336.59375,
+            "opacity": "0.7"
+          },
+          {
+            "top": 357.390625,
+            "opacity": "0.7"
+          },
+          {
+            "top": 378.1875,
+            "opacity": "0.7"
+          },
+          {
+            "top": 399,
+            "opacity": "0.7"
+          },
+          {
+            "top": 419.796875,
+            "opacity": "0.7"
+          },
+          {
+            "top": 440.59375,
+            "opacity": "0.7"
+          },
+          {
+            "top": 461.390625,
+            "opacity": "0.7"
+          },
+          {
+            "top": 482.1875,
+            "opacity": "0.7"
+          },
+          {
+            "top": 503,
+            "opacity": "0.7"
+          }
+        ]
+      }
+    },
+    {
+      "name": "home zh 375 reduce",
+      "pass": true,
+      "data": {
+        "production": {
+          "lang": "zh",
+          "posts": 2,
+          "projects": 6,
+          "live": {
+            "reflections": 0,
+            "learning": 0,
+            "code": 0
+          }
+        },
+        "print": {
+          "background": true,
+          "tile": true,
+          "photos": 0,
+          "model": false,
+          "cloud": true,
+          "errors": [],
+          "scrollUpdates": 0,
+          "materialWrites": 30,
+          "cached": true,
+          "shaderPasses": 0
+        },
+        "overflow": 0,
+        "name": "54px",
+        "scroll": {
+          "scope": "page",
+          "target": "document",
+          "max": 10455,
+          "top": 0,
+          "shown": true
+        },
+        "ticks": [
+          {
+            "top": 294.5,
+            "opacity": "1"
+          },
+          {
+            "top": 315.796875,
+            "opacity": "0.7"
+          },
+          {
+            "top": 336.59375,
+            "opacity": "0.7"
+          },
+          {
+            "top": 357.390625,
+            "opacity": "0.7"
+          },
+          {
+            "top": 378.1875,
+            "opacity": "0.7"
+          },
+          {
+            "top": 399,
+            "opacity": "0.7"
+          },
+          {
+            "top": 419.796875,
+            "opacity": "0.7"
+          },
+          {
+            "top": 440.59375,
+            "opacity": "0.7"
+          },
+          {
+            "top": 461.390625,
+            "opacity": "0.7"
+          },
+          {
+            "top": 482.1875,
+            "opacity": "0.7"
+          },
+          {
+            "top": 503,
+            "opacity": "0.7"
+          }
+        ]
+      }
+    },
+    {
+      "name": "home en 1440 reduce",
+      "pass": true,
+      "data": {
+        "production": {
+          "lang": "en",
+          "posts": 0,
+          "projects": 0,
+          "live": {
+            "reflections": 0,
+            "learning": 0,
+            "code": 0
+          }
+        },
+        "print": {
+          "background": true,
+          "tile": true,
+          "photos": 0,
+          "model": false,
+          "cloud": true,
+          "errors": [],
+          "scrollUpdates": 0,
+          "materialWrites": 28,
+          "cached": true,
+          "shaderPasses": 0
+        },
+        "overflow": 0,
+        "name": "76px",
+        "scroll": {
+          "scope": "page",
+          "target": "document",
+          "max": 6366,
+          "top": 0,
+          "shown": true
+        },
+        "ticks": [
+          {
+            "top": 309.5,
+            "opacity": "1"
+          },
+          {
+            "top": 327.796875,
+            "opacity": "0.7"
+          },
+          {
+            "top": 345.59375,
+            "opacity": "0.7"
+          },
+          {
+            "top": 363.390625,
+            "opacity": "0.7"
+          },
+          {
+            "top": 381.1875,
+            "opacity": "0.7"
+          },
+          {
+            "top": 399,
+            "opacity": "0.7"
+          },
+          {
+            "top": 416.796875,
+            "opacity": "0.7"
+          },
+          {
+            "top": 434.59375,
+            "opacity": "0.7"
+          },
+          {
+            "top": 452.390625,
+            "opacity": "0.7"
+          },
+          {
+            "top": 470.1875,
+            "opacity": "0.7"
+          },
+          {
+            "top": 488,
+            "opacity": "0.7"
+          }
+        ]
+      }
+    },
+    {
+      "name": "home en 375 reduce",
+      "pass": true,
+      "data": {
+        "production": {
+          "lang": "en",
+          "posts": 0,
+          "projects": 0,
+          "live": {
+            "reflections": 0,
+            "learning": 0,
+            "code": 0
+          }
+        },
+        "print": {
+          "background": true,
+          "tile": true,
+          "photos": 0,
+          "model": false,
+          "cloud": true,
+          "errors": [],
+          "scrollUpdates": 0,
+          "materialWrites": 28,
+          "cached": true,
+          "shaderPasses": 0
+        },
+        "overflow": 0,
+        "name": "54px",
+        "scroll": {
+          "scope": "page",
+          "target": "document",
+          "max": 10645,
+          "top": 0,
+          "shown": true
+        },
+        "ticks": [
+          {
+            "top": 294.5,
+            "opacity": "1"
+          },
+          {
+            "top": 315.796875,
+            "opacity": "0.7"
+          },
+          {
+            "top": 336.59375,
+            "opacity": "0.7"
+          },
+          {
+            "top": 357.390625,
+            "opacity": "0.7"
+          },
+          {
+            "top": 378.1875,
+            "opacity": "0.7"
+          },
+          {
+            "top": 399,
+            "opacity": "0.7"
+          },
+          {
+            "top": 419.796875,
+            "opacity": "0.7"
+          },
+          {
+            "top": 440.59375,
+            "opacity": "0.7"
+          },
+          {
+            "top": 461.390625,
+            "opacity": "0.7"
+          },
+          {
+            "top": 482.1875,
+            "opacity": "0.7"
+          },
+          {
+            "top": 503,
+            "opacity": "0.7"
+          }
+        ]
+      }
+    },
+    {
+      "name": "page /zh/blog/building-personal-website/",
+      "pass": true,
+      "data": {
+        "scroll": {
+          "scope": "page",
+          "target": "document",
+          "max": 1559,
+          "top": 0,
+          "shown": true
+        },
+        "title": "个人网站搭建全记录 — Yunmin",
+        "tracking": "normal",
+        "lang": "zh-CN"
+      }
+    },
+    {
+      "name": "page /zh/blog/vibe-coding-heatmap/",
+      "pass": true,
+      "data": {
+        "scroll": {
+          "scope": "page",
+          "target": "document",
+          "max": 804,
+          "top": 0,
+          "shown": true
+        },
+        "title": "Vibe Coding 初体验：Heatmap 项目复盘 — Yunmin",
+        "tracking": "normal",
+        "lang": "zh-CN"
+      }
+    },
+    {
+      "name": "page /zh/projects/",
+      "pass": true,
+      "data": {
+        "scroll": {
+          "scope": "page",
+          "target": "document",
+          "max": 1116,
+          "top": 0,
+          "shown": true
+        },
+        "title": "项目记录 — Yunmin",
+        "tracking": "normal",
+        "lang": "zh-CN"
+      }
+    },
+    {
+      "name": "page /zh/projects/camera-transfer/",
+      "pass": true,
+      "data": {
+        "scroll": {
+          "scope": "page",
+          "target": "document",
+          "max": 83,
+          "top": 0,
+          "shown": true
+        },
+        "title": "相机图传工具 — Yunmin",
+        "tracking": "normal",
+        "lang": "zh-CN"
+      }
+    },
+    {
+      "name": "page /en/projects/",
+      "pass": true,
+      "data": {
+        "scroll": {
+          "scope": "page",
+          "target": "document",
+          "max": 0,
+          "top": 0,
+          "shown": false
+        },
+        "title": "Projects — Yunmin",
+        "tracking": "normal",
+        "lang": "en"
+      }
+    },
+    {
+      "name": "page /zh/works/",
+      "pass": true,
+      "data": {
+        "scroll": {
+          "scope": "page",
+          "target": "document",
+          "max": 1883,
+          "top": 0,
+          "shown": true
+        },
+        "title": "作品 — Yunmin",
+        "tracking": "normal",
+        "lang": "zh-CN"
+      }
+    },
+    {
+      "name": "page /zh/works/poster-series/",
+      "pass": true,
+      "data": {
+        "scroll": {
+          "scope": "page",
+          "target": "document",
+          "max": 450,
+          "top": 0,
+          "shown": true
+        },
+        "title": "占位作品:海报系列 — Yunmin",
+        "tracking": "normal",
+        "lang": "zh-CN"
+      }
+    },
+    {
+      "name": "page /zh/works/zh-only-sample/",
+      "pass": true,
+      "data": {
+        "scroll": {
+          "scope": "page",
+          "target": "document",
+          "max": 41,
+          "top": 0,
+          "shown": true
+        },
+        "title": "占位作品:仅中文样本 — Yunmin",
+        "tracking": "normal",
+        "lang": "zh-CN"
+      }
+    },
+    {
+      "name": "page /en/works/",
+      "pass": true,
+      "data": {
+        "scroll": {
+          "scope": "page",
+          "target": "document",
+          "max": 2601,
+          "top": 0,
+          "shown": true
+        },
+        "title": "Works — Yunmin",
+        "tracking": "normal",
+        "lang": "en"
+      }
+    },
+    {
+      "name": "page /zh/about/",
+      "pass": true,
+      "data": {
+        "scroll": {
+          "scope": "page",
+          "target": "document",
+          "max": 448,
+          "top": 0,
+          "shown": true
+        },
+        "title": "关于 — Yunmin",
+        "tracking": "normal",
+        "lang": "zh-CN"
+      }
+    },
+    {
+      "name": "page /en/about/",
+      "pass": true,
+      "data": {
+        "scroll": {
+          "scope": "page",
+          "target": "document",
+          "max": 0,
+          "top": 0,
+          "shown": false
+        },
+        "title": "About — Yunmin",
+        "tracking": "normal",
+        "lang": "en"
+      }
+    },
+    {
+      "name": "page /zh/learning/",
+      "pass": true,
+      "data": {
+        "scroll": {
+          "scope": "page",
+          "target": "document",
+          "max": 0,
+          "top": 0,
+          "shown": false
+        },
+        "title": "学习记录 — Yunmin",
+        "tracking": "normal",
+        "lang": "zh-CN"
+      }
+    },
+    {
+      "name": "page /en/repos/",
+      "pass": true,
+      "data": {
+        "scroll": {
+          "scope": "page",
+          "target": "document",
+          "max": 0,
+          "top": 0,
+          "shown": false
+        },
+        "title": "Repositories — Yunmin",
+        "tracking": "normal",
+        "lang": "en"
+      }
+    },
+    {
+      "name": "asset failure retains real content navigation",
+      "pass": true,
+      "data": {}
+    },
+    {
+      "name": "no browser exceptions or missing assets",
+      "pass": true,
+      "data": {
+        "errors": [],
+        "failed": []
+      }
+    }
+  ],
+  "errors": [],
+  "failed": []
+}

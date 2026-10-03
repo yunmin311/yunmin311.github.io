@@ -6,10 +6,10 @@ export type Lang = (typeof locales)[number];
 export const defaultLang: Lang = 'zh';
 
 const zh = {
-  'site.name': 'Y',
-  'site.description': '设计师的个人网站:作品集与博客。(占位描述,待定稿)',
+  'site.name': 'Yunmin',
+  'site.description': 'Yunmin 的作品、文字与过程记录。',
   'nav.works': '作品',
-  'nav.blog': '博客',
+  'nav.blog': '文字',
   'nav.about': '关于',
   'home.intro.title': '你好,我是 Y。',
   'home.intro.body': '(占位介绍)设计师,做视觉与影像。这里放两三行真正的自我介绍。',
@@ -21,7 +21,7 @@ const zh = {
   'work.prev': '上一个',
   'work.next': '下一个',
   'work.backToList': '全部作品',
-  'blog.title': '博客',
+  'blog.title': '文字',
   'about.title': '关于',
   'about.photoAlt': '照片(占位)',
   'about.status': '(占位状态)现居某地,接受合作洽谈。',
@@ -34,10 +34,10 @@ const zh = {
 } as const;
 
 const en = {
-  'site.name': 'Y',
-  'site.description': 'Personal website and portfolio of a designer. (placeholder)',
+  'site.name': 'Yunmin',
+  'site.description': 'Works, writing, and process notes by Yunmin.',
   'nav.works': 'Works',
-  'nav.blog': 'Blog',
+  'nav.blog': 'Writing',
   'nav.about': 'About',
   'home.intro.title': 'Hi, I am Y.',
   'home.intro.body': '(Placeholder intro) Designer working in visuals and motion. A real two-line intro goes here.',
@@ -49,7 +49,7 @@ const en = {
   'work.prev': 'Previous',
   'work.next': 'Next',
   'work.backToList': 'All works',
-  'blog.title': 'Blog',
+  'blog.title': 'Writing',
   'about.title': 'About',
   'about.photoAlt': 'Photo (placeholder)',
   'about.status': '(Placeholder status) Based somewhere, open for collaboration.',

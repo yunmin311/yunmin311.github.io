@@ -22,12 +22,18 @@ const works = defineCollection({
     }),
 });
 
+const projectIdeas = defineCollection({
+  loader: glob({pattern:'**/*.md',base:'./src/content/projectIdeas'}),
+  schema:z.object({title:z.string(),summary:z.string(),historicalStatus:z.string(),sourceDate:z.string(),tags:z.array(z.string()),draft:z.boolean().default(false)}),
+});
+
 const posts = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/posts' }),
   schema: z.object({
     title: z.string(),
     summary: z.string(),
     date: z.coerce.date(),
+    legacy: z.boolean().default(false),
     draft: z.boolean().default(false),
   }),
 });
@@ -75,4 +81,4 @@ const code = defineCollection({
   }),
 });
 
-export const collections = { works, posts, reflections, learning, code };
+export const collections = { works, posts, projectIdeas, reflections, learning, code };

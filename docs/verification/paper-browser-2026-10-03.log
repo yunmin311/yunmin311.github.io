@@ -1,0 +1,20 @@
+PASS home zh 1440 no-preference
+PASS home zh 768 reduce
+PASS home zh 375 reduce
+PASS home en 1440 reduce
+PASS home en 375 reduce
+PASS page /zh/blog/building-personal-website/
+PASS page /zh/blog/vibe-coding-heatmap/
+PASS page /zh/projects/
+PASS page /zh/projects/camera-transfer/
+PASS page /en/projects/
+PASS page /zh/works/
+PASS page /zh/works/poster-series/
+PASS page /zh/works/zh-only-sample/
+PASS page /en/works/
+PASS page /zh/about/
+PASS page /en/about/
+PASS page /zh/learning/
+PASS page /en/repos/
+PASS asset failure retains real content navigation
+PASS no browser exceptions or missing assets

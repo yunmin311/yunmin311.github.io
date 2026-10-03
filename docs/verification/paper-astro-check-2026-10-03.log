@@ -1,0 +1,25 @@
+
+> personal-site@0.0.1 check
+> astro check
+
+21:28:39 [content] Syncing content
+21:28:39 [WARN] [glob-loader] The base directory "/mnt/e/1project/yunmin311.github.io/src/content/code/" does not exist.
+21:28:39 [WARN] [glob-loader] The base directory "/mnt/e/1project/yunmin311.github.io/src/content/learning/" does not exist.
+21:28:39 [WARN] [glob-loader] The base directory "/mnt/e/1project/yunmin311.github.io/src/content/reflections/" does not exist.
+21:28:39 [content] Synced content
+21:28:39 [types] Generated 1.71s
+21:28:39 [check] Getting diagnostics for Astro files in /mnt/e/1project/yunmin311.github.io...
+[96msrc/content.config.ts[0m:[93m18[0m:[93m25[0m - [93mwarning[0m[90m ts(6385): [0m'(params?: string | { abort?: boolean | undefined; pattern?: RegExp | undefined; hostname?: RegExp | undefined; protocol?: RegExp | undefined; normalize?: boolean | undefined; error?: string | ... 1 more ... | undefined; message?: string | undefined; } | undefined): ZodString' is deprecated.
+
+[7m18[0m       video: z.string().url().optional(),
+[7m  [0m [93m                        ~~~[0m
+[96msrc/content.config.ts[0m:[93m17[0m:[93m24[0m - [93mwarning[0m[90m ts(6385): [0m'(params?: string | { abort?: boolean | undefined; pattern?: RegExp | undefined; hostname?: RegExp | undefined; protocol?: RegExp | undefined; normalize?: boolean | undefined; error?: string | ... 1 more ... | undefined; message?: string | undefined; } | undefined): ZodString' is deprecated.
+
+[7m17[0m       link: z.string().url().optional(),
+[7m  [0m [93m                       ~~~[0m
+
+Result (28 files): 
+- 0 errors
+- 0 warnings
+- 2 hints
+

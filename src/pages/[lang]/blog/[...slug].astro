@@ -29,6 +29,7 @@ const altPath = (await hasTranslation('posts', otherLang, slug))
   <article class="post">
     <h1>{entry.data.title}</h1>
     <time datetime={entry.data.date.toISOString().slice(0, 10)}>{formatDate(lang, entry.data.date)}</time>
+    {entry.data.legacy && <p class="source-note">{lang==='zh'?'2026-05 旧稿，保留原文；其中的技术与部署描述不代表当前网站状态。':'Earlier draft; its technology and deployment descriptions are historical.'}</p>}
     <div class="post-body">
       <Content />
     </div>

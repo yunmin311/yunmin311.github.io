@@ -1,0 +1,47 @@
+{
+  "touchPhotoSwitch": true,
+  "naturalTab": true,
+  "pointerMiddle": {
+    "scope": "panel",
+    "target": "reader",
+    "max": 1685,
+    "top": 843,
+    "shown": true
+  },
+  "pointerEnd": {
+    "scope": "panel",
+    "target": "reader",
+    "max": 1685,
+    "top": 1685,
+    "shown": true
+  },
+  "fullPhotoHidesRuler": true,
+  "modal": {
+    "stats": {
+      "scope": "panel",
+      "target": "recovered-dialog",
+      "max": 1157,
+      "top": 1157,
+      "shown": true
+    },
+    "owner": "recovered-dialog",
+    "current": 10
+  },
+  "rail": {
+    "navigation": {
+      "docked": true,
+      "headerTop": -3229,
+      "headerWidth": 343,
+      "railTop": 12,
+      "railWidth": 343,
+      "compactWidth": 571,
+      "railOverflow": 227,
+      "spring": {
+        "stiffness": 180,
+        "damping": 28
+      }
+    },
+    "left": 227
+  },
+  "errors": []
+}

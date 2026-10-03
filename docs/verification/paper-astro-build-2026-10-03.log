@@ -1,0 +1,105 @@
+
+> personal-site@0.0.1 prebuild
+> node scripts/build-paper.mjs
+
+Paper site: local assets, theme and runtime built.
+
+> personal-site@0.0.1 build
+> astro build
+
+21:29:47 [content] Syncing content
+21:29:47 [WARN] [glob-loader] The base directory "/mnt/e/1project/yunmin311.github.io/src/content/learning/" does not exist.
+21:29:47 [WARN] [glob-loader] The base directory "/mnt/e/1project/yunmin311.github.io/src/content/reflections/" does not exist.
+21:29:47 [WARN] [glob-loader] The base directory "/mnt/e/1project/yunmin311.github.io/src/content/code/" does not exist.
+21:29:47 [content] Synced content
+21:29:47 [types] Generated 1.77s
+21:29:47 [build] output: "static"
+21:29:47 [build] mode: "static"
+21:29:47 [build] directory: /mnt/e/1project/yunmin311.github.io/dist/
+21:29:47 [build] Collecting build info...
+21:29:47 [build] ✓ Completed in 1.90s.
+21:29:47 [build] Building static entrypoints...
+21:29:48 [vite] ✓ built in 876ms
+21:29:49 [vite] ✓ built in 895ms
+21:29:49 [build] Rearranging server assets...
+
+ generating static routes 
+21:29:50 [WARN] [content] The collection "reflections" does not exist or is empty. Please check your content config file for errors.
+21:29:50 [WARN] [content] The collection "learning" does not exist or is empty. Please check your content config file for errors.
+21:29:50 [WARN] [content] The collection "code" does not exist or is empty. Please check your content config file for errors.
+21:29:50 [WARN] [build] Could not render `` from route `/` as it conflicts with higher priority route `/`.
+21:29:50   ├─ /404.html (+23ms) 
+21:29:50   ├─ /zh/about/index.html (+10ms) 
+21:29:50   ├─ /en/about/index.html (+8ms) 
+21:29:50   ├─ /zh/blog/index.html (+7ms) 
+21:29:50   ├─ /en/blog/index.html (+6ms) 
+21:29:50   ├─ /en/blog/hello/index.html (+7ms) 
+21:29:50   ├─ /zh/blog/building-personal-website/index.html (+5ms) 
+21:29:50   ├─ /zh/blog/hello/index.html (+6ms) 
+21:29:50   ├─ /zh/blog/process-notes/index.html (+6ms) 
+21:29:50   ├─ /zh/blog/vibe-coding-heatmap/index.html (+6ms) 
+21:29:50   ├─ /zh/projects/index.html21:29:50 [WARN] [content] The collection "reflections" does not exist or is empty. Please check your content config file for errors.
+ (+5ms) 
+21:29:50   ├─ /en/projects/index.html21:29:50 [WARN] [content] The collection "reflections" does not exist or is empty. Please check your content config file for errors.
+ (+5ms) 
+21:29:50   ├─ /zh/projects/camera-transfer/index.html (+7ms) 
+21:29:50   ├─ /zh/projects/cognitive-training/index.html (+5ms) 
+21:29:50   ├─ /zh/projects/debate-agent/index.html (+5ms) 
+21:29:50   ├─ /zh/projects/heatmap/index.html (+6ms) 
+21:29:50   ├─ /zh/projects/rehab-guide/index.html (+5ms) 
+21:29:50   ├─ /zh/projects/skincare-notes/index.html (+5ms) 
+21:29:50   ├─ /zh/works/index.html (+16ms) 
+21:29:50   ├─ /en/works/index.html (+5ms) 
+21:29:50   ├─ /en/works/motion-reel/index.html (+6ms) 
+21:29:50   ├─ /en/works/poster-series/index.html (+14ms) 
+21:29:50   ├─ /zh/works/motion-reel/index.html (+5ms) 
+21:29:50   ├─ /zh/works/poster-series/index.html (+7ms) 
+21:29:50   ├─ /zh/works/zh-only-sample/index.html (+5ms) 
+21:29:50   ├─ /zh/project-notes/index.html21:29:50 [WARN] [content] The collection "reflections" does not exist or is empty. Please check your content config file for errors.
+ (+5ms) 
+21:29:50   ├─ /en/project-notes/index.html21:29:50 [WARN] [content] The collection "reflections" does not exist or is empty. Please check your content config file for errors.
+ (+5ms) 
+21:29:50   ├─ /zh/learning/index.html21:29:50 [WARN] [content] The collection "learning" does not exist or is empty. Please check your content config file for errors.
+ (+5ms) 
+21:29:50   ├─ /en/learning/index.html21:29:50 [WARN] [content] The collection "learning" does not exist or is empty. Please check your content config file for errors.
+ (+5ms) 
+21:29:50   ├─ /zh/repos/index.html21:29:50 [WARN] [content] The collection "code" does not exist or is empty. Please check your content config file for errors.
+ (+6ms) 
+21:29:50   ├─ /en/repos/index.html21:29:50 [WARN] [content] The collection "code" does not exist or is empty. Please check your content config file for errors.
+ (+5ms) 
+21:29:50   ├─ /zh/index.html21:29:50 [WARN] [content] The collection "reflections" does not exist or is empty. Please check your content config file for errors.
+21:29:50 [WARN] [content] The collection "learning" does not exist or is empty. Please check your content config file for errors.
+21:29:50 [WARN] [content] The collection "code" does not exist or is empty. Please check your content config file for errors.
+ (+6ms) 
+21:29:50   ├─ /en/index.html21:29:50 [WARN] [content] The collection "reflections" does not exist or is empty. Please check your content config file for errors.
+21:29:50 [WARN] [content] The collection "learning" does not exist or is empty. Please check your content config file for errors.
+21:29:50 [WARN] [content] The collection "code" does not exist or is empty. Please check your content config file for errors.
+ (+6ms) 
+21:29:50   ├─ /index.html (+11ms) 
+21:29:50 ✓ Completed in 466ms.
+
+ generating optimized images 
+21:29:50   ▶ /_astro/placeholder-large.Dx06Oemb_lCKAw.webp (reused cache entry) (+7ms) (1/18)
+21:29:50   ▶ /_astro/zh-only-sample.Cz1MqZQN_19CqV7.svg (reused cache entry) (+8ms) (2/18)
+21:29:50   ▶ /_astro/poster-series.CzK5LJHg_19CqV7.svg (reused cache entry) (+10ms) (3/18)
+21:29:50   ▶ /_astro/motion-reel.C-OFLyMf_19CqV7.svg (reused cache entry) (+10ms) (4/18)
+21:29:50   ▶ /_astro/placeholder-large.Dx06Oemb_ZgIUyF.webp (reused cache entry) (+5ms) (5/18)
+21:29:50   ▶ /_astro/zh-only-sample.Cz1MqZQN_JtlqP.svg (reused cache entry) (+5ms) (6/18)
+21:29:50   ▶ /_astro/poster-series.CzK5LJHg_JtlqP.svg (reused cache entry) (+5ms) (7/18)
+21:29:50   ▶ /_astro/motion-reel.C-OFLyMf_JtlqP.svg (reused cache entry) (+6ms) (8/18)
+21:29:50   ▶ /_astro/placeholder-large.Dx06Oemb_1Cryy2.webp (reused cache entry) (+6ms) (9/18)
+21:29:50   ▶ /_astro/zh-only-sample.Cz1MqZQN_Z1Ch0p9.svg (reused cache entry) (+7ms) (10/18)
+21:29:50   ▶ /_astro/poster-series.CzK5LJHg_Z1Ch0p9.svg (reused cache entry) (+6ms) (11/18)
+21:29:50   ▶ /_astro/motion-reel.C-OFLyMf_Z1Ch0p9.svg (reused cache entry) (+5ms) (12/18)
+21:29:50   ▶ /_astro/placeholder-large.Dx06Oemb_1IRmF1.webp (reused cache entry) (+4ms) (13/18)
+21:29:50   ▶ /_astro/placeholder-large.Dx06Oemb_Z8wJjH.webp (reused cache entry) (+5ms) (14/18)
+21:29:50   ▶ /_astro/placeholder-large.Dx06Oemb_1QQw7G.webp (reused cache entry) (+6ms) (15/18)
+21:29:50   ▶ /_astro/placeholder-large.Dx06Oemb_Z1IcxSf.webp (reused cache entry) (+4ms) (16/18)
+21:29:50   ▶ /_astro/placeholder-large.Dx06Oemb_Vk3N7.webp (reused cache entry) (+4ms) (17/18)
+21:29:50   ▶ /_astro/placeholder-large.Dx06Oemb_n7Lo4.webp (reused cache entry) (+12ms) (18/18)
+21:29:50 ✓ Completed in 58ms.
+
+21:29:50 [build] ✓ Completed in 2.44s.
+21:29:50 [@astrojs/sitemap] `sitemap-index.xml` created at `dist`
+21:29:50 [build] 34 page(s) built in 4.50s
+21:29:50 [build] Complete!

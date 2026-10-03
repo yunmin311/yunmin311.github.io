@@ -1,60 +1,29 @@
 ---
-import Base from '../../layouts/Base.astro';
-import WorkCard from '../../components/WorkCard.astro';
-import { getFeaturedWorks } from '../../lib/content';
-import { t, locales, type Lang } from '../../i18n/ui';
-import { getRelativeLocaleUrl } from 'astro:i18n';
-
-export function getStaticPaths() {
-  return locales.map((lang) => ({ params: { lang } }));
-}
-
-const lang = Astro.params.lang as Lang;
-const works = await getFeaturedWorks(lang);
+import HeroScene from '../../components/paper/HeroScene.astro';
+import Exhibition from '../../components/paper/Exhibition.astro';
+import ReadingFooter from '../../components/paper/ReadingFooter.astro';
+import Overlays from '../../components/paper/Overlays.astro';
+import {getPaperHomeData} from '../../lib/paper-home';
+import {locales,type Lang} from '../../i18n/ui';
+export function getStaticPaths(){return locales.map(lang=>({params:{lang}}));}
+const lang=Astro.params.lang as Lang;
+const data=await getPaperHomeData(lang);
+const encoded=JSON.stringify(data).replace(/</g,'\\u003c');
+const base='https://yunmin311.github.io';
+const description=lang==='zh'?'Yunmin 的作品、文字与过程记录。':'Works, writing, and process notes by Yunmin.';
 ---
-
-<Base>
-  <div class="home-grid">
-    <div class="intro-cell">
-      <h1>{t(lang, 'home.intro.title')}</h1>
-      <p>{t(lang, 'home.intro.body')}</p>
-    </div>
-    {works.map((work) => <WorkCard work={work} lang={lang} />)}
-  </div>
-  <p class="view-all">
-    <a href={getRelativeLocaleUrl(lang, 'works')}>{t(lang, 'home.viewAll')} →</a>
-  </p>
-</Base>
-
-<style>
-  .home-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--grid-gap);
-  }
-  @media (max-width: 64rem) {
-    .home-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  @media (max-width: 40rem) {
-    .home-grid {
-      grid-template-columns: 1fr;
-    }
-  }
-  /* 介绍块作为网格中的一格,与作品图块平起平坐(规格·首页) */
-  .intro-cell h1 {
-    margin: 0 0 var(--space-2);
-    font-size: var(--text-xl);
-    font-weight: 600;
-    line-height: 1.3;
-  }
-  .intro-cell p {
-    margin: 0;
-    color: var(--color-muted);
-    max-width: var(--width-prose);
-  }
-  .view-all {
-    margin-top: var(--space-5);
-  }
-</style>
+<!doctype html>
+<html lang={lang==='zh'?'zh-CN':'en'}>
+<head>
+<meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" /><title>Yunmin</title><meta name="description" content={description}/><meta property="og:title" content="Yunmin"/><meta property="og:description" content={description}/><meta property="og:image" content={`${base}/og-placeholder.png`}/><link rel="canonical" href={`${base}/${lang}/`}/><link rel="alternate" hreflang="zh-CN" href={`${base}/zh/`}/><link rel="alternate" hreflang="en" href={`${base}/en/`}/><link rel="alternate" hreflang="x-default" href={`${base}/zh/`}/><link rel="icon" href="/favicon.svg"/><link rel="sitemap" href="/sitemap-index.xml"/><link rel="stylesheet" href="/assets/paper/theme.css" />
+</head>
+<body class="paper-site">
+<Overlays lang={lang}/>
+<main><HeroScene lang={lang}/><Exhibition lang={lang}/><ReadingFooter lang={lang}/></main>
+<nav class="paper-fallback-links" aria-label={lang==='zh'?'内容入口':'Content pages'}><a href={`/${lang}/works/`}>{lang==='zh'?'作品':'Works'}</a><a href={`/${lang}/blog/`}>{lang==='zh'?'文字':'Writing'}</a><a href={`/${lang}/projects/`}>{lang==='zh'?'项目记录':'Projects'}</a><a href={`/${lang}/about/`}>{lang==='zh'?'关于':'About'}</a></nav>
+<script is:inline id="paper-data" type="application/json" set:html={encoded}></script>
+<script is:inline id="licenses" type="application/json">{}</script>
+<script is:inline src="/assets/paper/home.js" defer></script>
+<noscript><div class="paper-route-links"><a href={`/${lang}/works/`}>{lang==='zh'?'作品':'Works'}</a><a href={`/${lang}/blog/`}>{lang==='zh'?'文字':'Writing'}</a><a href={`/${lang}/projects/`}>{lang==='zh'?'项目记录':'Projects'}</a></div></noscript>
+</body>
+</html>

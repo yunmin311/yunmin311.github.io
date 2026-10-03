@@ -1,0 +1,23 @@
+{
+  "origin": "http://localhost:8800",
+  "results": [
+    {
+      "lang": "zh",
+      "pass": true,
+      "model": true,
+      "automaticAudioRequests": 0,
+      "studyRequests": 1,
+      "interceptableMediaRequests": 0,
+      "errors": []
+    },
+    {
+      "lang": "en",
+      "pass": true,
+      "model": true,
+      "automaticAudioRequests": 0,
+      "studyRequests": 1,
+      "interceptableMediaRequests": 0,
+      "errors": []
+    }
+  ]
+}

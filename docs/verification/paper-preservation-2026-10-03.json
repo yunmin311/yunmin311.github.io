@@ -1,0 +1,24 @@
+{
+  "trackedBaselineFiles": 165,
+  "changed": [
+    "AGENTS.md",
+    "package-lock.json",
+    "package.json",
+    "src/content.config.ts",
+    "src/i18n/ui.ts",
+    "src/layouts/Base.astro",
+    "src/pages/[lang]/about.astro",
+    "src/pages/[lang]/blog/[...slug].astro",
+    "src/pages/[lang]/blog/index.astro",
+    "src/pages/[lang]/index.astro",
+    "tsconfig.json"
+  ],
+  "unexpected": [],
+  "CLAUDEUnchanged": true,
+  "referenceUnchanged": true,
+  "syncScriptsUnchanged": true,
+  "legacyArticleBodiesIdentical": {
+    "building-personal-website": true,
+    "vibe-coding-heatmap": true
+  }
+}

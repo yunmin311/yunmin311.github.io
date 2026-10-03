@@ -10,7 +10,11 @@
     "build": "astro build",
     "preview": "astro preview",
     "check": "astro check",
-    "astro": "astro"
+    "astro": "astro",
+    "predev": "node scripts/build-paper.mjs",
+    "prebuild": "node scripts/build-paper.mjs",
+    "paper:build": "node scripts/build-paper.mjs",
+    "paper:fonts": "node scripts/update-paper-fonts.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.3",
@@ -18,7 +22,10 @@
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.9",
+    "esbuild": "^0.25.12",
+    "ogl": "^1.0.11",
     "sharp": "^0.35.3",
+    "three": "^0.160.1",
     "typescript": "^6.0.3"
   }
 }

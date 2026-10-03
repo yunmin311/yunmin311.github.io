@@ -1,0 +1,16 @@
+---
+import {getCollection} from 'astro:content';
+import Base from '../../../layouts/Base.astro';
+import {locales,type Lang} from '../../../i18n/ui';
+import {slugOf} from '../../../lib/content';
+export function getStaticPaths(){return locales.map(lang=>({params:{lang}}));}
+const lang=Astro.params.lang as Lang;
+const entries=await getCollection('projectIdeas',({id,data})=>id.startsWith(lang+'/')&&!data.draft);
+const notes=await getCollection('reflections',({id})=>id.startsWith(lang+'/'));
+---
+<Base title={lang==='zh'?'项目记录':'Projects'}>
+<h1>{lang==='zh'?'项目记录':'Projects'}</h1>
+{entries.length>0&&<><p class="source-note">2026-05 旧项目想法。状态来自原稿，当前进度与项目过程待补。</p><div class="route-cards">{entries.map(entry=><a class="route-card" href={`/${lang}/projects/${slugOf(entry.id)}/`}><small>旧稿 · {entry.data.historicalStatus}</small><h2>{entry.data.title}</h2><p>{entry.data.summary}</p><div class="route-tags">{entry.data.tags.map(tag=><span>{tag}</span>)}</div></a>)}</div></>}
+{notes.length>0&&<><h2>{lang==='zh'?'过程与复盘':'Process & reflections'}</h2><div class="route-cards">{notes.map(entry=><a class="route-card" href={`/${lang}/project-notes/${slugOf(entry.id)}/`}><small>{entry.data.project} · {entry.data.kind}</small><h2>{entry.data.title}</h2><p>{entry.data.summary}</p></a>)}</div></>}
+{!entries.length&&!notes.length&&<p class="notice-empty">{lang==='zh'?'内容待补。':'No project entries in this language yet.'}</p>}
+</Base>

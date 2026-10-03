@@ -1,0 +1,13 @@
+{
+  "npmCi": true,
+  "check": {
+    "files": 28,
+    "errors": 0,
+    "warnings": 0,
+    "hints": 2
+  },
+  "pages": 34,
+  "localReferences": 403,
+  "missing": [],
+  "designFolderRequired": false
+}

@@ -1,0 +1,2 @@
+PASS zh blocked .bin/.wav, silent load/open, play/seek/pause/resume
+PASS en blocked .bin/.wav, silent load/open, play/seek/pause/resume

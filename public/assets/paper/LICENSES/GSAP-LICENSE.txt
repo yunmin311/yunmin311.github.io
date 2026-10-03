@@ -1,0 +1,356 @@
+Standard License - GSAP
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-43392009-1', 'auto');
+ga('send', 'pageview');
+window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-XWSY51WBF0');
+GSAP is now
+free for everyone
+, thanks to Webflow's support!
+GSAP
+GSAP
+Menu
+Tools
+Core
+Scroll
+SVG
+UI
+Text
+Installation
+GSAP & React
+Video Lessons
+Professional-grade JavaScript animation for the modern web
+Showcase
+Community
+Learn GSAP
+Docs
+Demos
+Notifications
+Notifications
+Notification Settings
+View All
+Messages
+Messages
+Compose new
+Go to Inbox
+Login/Create Account
+Sign In
+Login
+Forgot your password?
+Why create an account?
+It's free
+Access the private Discord
+Learn & share in the forums
+Hear about new features first
+Create an Account
+My Account
+Dashboard
+Account Settings
+Logout
+Get GSAP
+Tools
+Core
+Scroll
+SVG
+UI
+Text
+About
+Showcase
+Community
+Learn GSAP
+Docs
+Login/Create Account
+Dashboard
+Account Settings
+Logout
+Messages
+Notifications
+Sign In
+Login
+Forgot your password?
+Not got an account?
+Create an Account
+CodePen
+GitHub
+Facebook
+LinkedIn
+x
+Jump to content
+Leaderboard
+More
+More
+All Activity
+Home
+Standard License
+Search Community
+Everywhere
+Topics
+#summary {
+		margin: 2em 0;
+		padding: 1em 1.5em;
+		border-radius: 1em;
+		border: 2px solid #7c7c6f;
+	}
+	#license h3 {
+		margin: 1.5em 0 0.5em 0;
+	}
+	#license ol {
+		list-style-type: upper-alpha;
+	}
+	#license .faq-q {
+		display: block;
+		font-weight: bold;
+		color: var(--color-surface-white);
+	}
+	#license .faq-a {
+		margin-bottom: 1em;
+		display: block;
+	}
+	#license .fine-print p {
+		font-size: 0.8em;
+	}
+Standard "No Charge" GSAP License
+I. DEFINITIONS
+“GSAP License”
+means the terms and conditions of this GSAP Software License Agreement.
+"GSAP Products"
+means any Software made available at
+gsap.com
+or any successor sites, including but not limited to the GSAP animation library and related plugins, tools, or extensions.
+"Permitted Uses"
+means the implementation and/or use of GSAP Products on any website, web application, or digital interface by any person or entity (which may include, for clarity, those of companies that compete with Webflow in other areas of business).
+"Prohibited Uses"
+means any implementation and/or use of GSAP Products in tools that allow users to build visual animations without code that encourages, induces, or materially assists in creating a solution that competes with Webflow’s visual animation building capabilities.
+"Competitive Products"
+means any software, tool, or service that enables users to create, edit, or manage animations through a visual interface or builder similar to
+Webflow
+.
+II. GRANT OF LICENSE
+Subject to the terms and conditions of this GSAP License, Webflow grants you a non-exclusive, worldwide license to use, reproduce, display, and implement GSAP Products solely for Permitted Uses.
+III. RESTRICTIONS
+You may not:
+Use any GSAP Products for any Prohibited Uses without prior written consent;
+Reverse engineer any GSAP Products for the purpose of creating Competitive Products;
+Remove or alter any proprietary notices or branding from GSAP Products.
+IV. OWNERSHIP AND INTELLECTUAL PROPERTY
+All intellectual property rights in GSAP Products, including but not limited to copyright, patents, trademarks, and trade secrets, remain the exclusive property of Webflow. This GSAP License does not transfer any ownership rights in GSAP Products to you.
+V. TERMINATION
+Webflow may terminate this GSAP License and revoke your access in its discretion if you fail to comply with any of these terms and conditions. Upon termination, you must cease all use of GSAP Products and destroy all copies in your possession.
+VI. MISCELLANEOUS PROVISIONS
+General
+: This GSAP License is incorporated into and subject to Webflow’s Terms of Service available
+here
+(
+"Terms of Service"
+). In the event of any conflict or inconsistency between this GSAP License and the Terms of Service, the terms of this GSAP License shall govern in relation to your use of any GSAP Products.
+Amendments
+: Webflow reserves the right to update or modify this GSAP License at any time by posting the revised terms on this website, provided that any such updates or modifications shall not result in any material degradation to the security, integrity, or functionality of any GSAP Products. You understand and agree that your continued use of any GSAP Products after such revisions to this GSAP License constitutes your acceptance of this GSAP License as revised. If you do not accept the revised GSAP License, you are prohibited from using versions of the GSAP Products released after the effective date of the revised GSAP License (as well as any updates made to previous versions). Notwithstanding, you may continue using previous versions of GSAP Products under the applicable terms licensed to you prior to the effective date of the revised GSAP License (for clarity, excluding any updates made thereto).
+No Waiver
+: Failure of Webflow to enforce any provision of this GSAP License shall not constitute a waiver of future enforcement of that or any other provision.
+FAQ
+Is it acceptable for AI tools like ChatGPT, Cursor, Lovable, Webstudio, etc. to generate GSAP code?
+Absolutely! AI-generated code is not a "Prohibited Use".
+What if a WordPress plugin or theme or other niche tool allows users to create GSAP-driven effects through a visual interface? Is that prohibited?
+We want to encourage developers to build on top of GSAP, including visual tools that don't directly compete with Webflow's rich animation-building capabilities. If you are not sure if your product might be considered a "Prohibited Use", feel free to
+contact us
+so we can talk through it!
+Can I really use GSAP in commercial projects without paying anything?
+Yes, really! Commercial usage is covered under the standard license. All of GSAP including the plugins that were formerly "members-only" like
+SplitText
+and
+MorphSVG
+can be used in commercial projects at no charge. Enjoy! 💚
+Effective date: April 30, 2025
+Last modified date: May 30, 2025
+Copyright (©) 2025, Webflow
+Blogs
+All Activity
+Home
+Standard License
+×
+Existing user? Sign In
+Sign Up
+Leaderboard
+×
+Create New...
+var ipsDebug = false;		
+	
+		var CKEDITOR_BASEPATH = '//gsap.com/community/applications/core/interface/ckeditor/ckeditor/';
+	
+		var ipsSettings = {
+			
+			
+			cookie_domain: ".gsap.com",
+			
+			cookie_path: "/",
+			
+			cookie_prefix: "ips4_",
+			
+			
+			cookie_ssl: true,
+			
+            essential_cookies: ["oauth_authorize","member_id","login_key","clearAutosave","lastSearch","device_key","IPSSessionFront","loggedIn","noCache","hasJS","cookie_consent","cookie_consent_optional","referred_by","forumpass_*","cm_reg","location","currency","guestTransactionKey"],
+			upload_imgURL: "",
+			message_imgURL: "",
+			notification_imgURL: "",
+			baseURL: "//gsap.com/community/",
+			jsURL: "//gsap.com/community/applications/core/interface/js/js.php",
+			csrfKey: "c87d19bca2e983548335be36ebbc248a",
+			antiCache: "d2eb6874221790552598",
+			jsAntiCache: "d2eb6874221790860018",
+			disableNotificationSounds: true,
+			useCompiledFiles: true,
+			links_external: true,
+			memberID: 0,
+			lazyLoadEnabled: false,
+			blankImg: "//gsap.com/community/applications/core/interface/js/spacer.png",
+			googleAnalyticsEnabled: true,
+			matomoEnabled: false,
+			viewProfiles: false,
+			mapProvider: 'none',
+			mapApiKey: '',
+			pushPublicKey: "BBLZSaDx_1_m7od3-Mo9OBJqCB-Gw1IXAXvXIXa3OVirfKgG8DdRPNHE0Ip7FxnU1VbShaOfXrfVI1QuVDkgVVc",
+			relativeDates: true
+		};
+		
+		
+		
+		
+			ipsSettings['maxImageDimensions'] = {
+				width: 1000,
+				height: 750
+			};
+ips.setSetting( 'date_format', jQuery.parseJSON('"mm\/dd\/yy"') );
+		
+			ips.setSetting( 'date_first_day', jQuery.parseJSON('0') );
+		
+			ips.setSetting( 'ipb_url_filter_option', jQuery.parseJSON('"none"') );
+		
+			ips.setSetting( 'url_filter_any_action', jQuery.parseJSON('"allow"') );
+		
+			ips.setSetting( 'bypass_profanity', jQuery.parseJSON('0') );
+		
+			ips.setSetting( 'emoji_style', jQuery.parseJSON('"native"') );
+		
+			ips.setSetting( 'emoji_shortcodes', jQuery.parseJSON('true') );
+		
+			ips.setSetting( 'emoji_ascii', jQuery.parseJSON('true') );
+		
+			ips.setSetting( 'emoji_cache', jQuery.parseJSON('1687813245') );
+		
+			ips.setSetting( 'image_jpg_quality', jQuery.parseJSON('85') );
+		
+			ips.setSetting( 'cloud2', jQuery.parseJSON('false') );
+		
+			ips.setSetting( 'cjmobile', jQuery.parseJSON('false') );
+		
+			ips.setSetting( 'desktopNotifications', jQuery.parseJSON('0') );
+		
+			ips.setSetting( 'isAnonymous', jQuery.parseJSON('false') );
+{
+    "@context": "http://www.schema.org",
+    "publisher": "https://gsap.com/community/#organization",
+    "@type": "WebSite",
+    "@id": "https://gsap.com/community/#website",
+    "mainEntityOfPage": "https://gsap.com/community/",
+    "name": "GSAP",
+    "url": "https://gsap.com/community/",
+    "potentialAction": {
+        "type": "SearchAction",
+        "query-input": "required name=query",
+        "target": "https://gsap.com/community/search/?q={query}"
+    },
+    "inLanguage": [
+        {
+            "@type": "Language",
+            "name": "English (USA)",
+            "alternateName": "en-US"
+        }
+    ]
+}
+{
+    "@context": "http://www.schema.org",
+    "@type": "Organization",
+    "@id": "https://gsap.com/community/#organization",
+    "mainEntityOfPage": "https://gsap.com/community/",
+    "name": "GSAP",
+    "url": "https://gsap.com/community/"
+}
+{
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+                "name": "Standard License",
+                "@id": "https://gsap.com/community/standard-license/"
+            }
+        }
+    ]
+}
+{
+    "@context": "http://schema.org",
+    "@type": "ContactPage",
+    "url": "https://gsap.com/community/contact/"
+}
+(() => {
+        let gqlKeys = [];
+        for (let [k, v] of Object.entries(gqlKeys)) {
+            ips.setGraphQlData(k, v);
+        }
+    })();
+GSAP
+Core
+Docs
+All Plugins
+Scroll
+ScrollTrigger
+ScrollSmoother
+ScrollTo
+SVG
+DrawSVG
+MorphSVG
+MotionPath
+MotionPathHelper
+UI
+Flip
+Draggable
+Inertia
+Observer
+Text
+SplitText
+ScrambleText
+Text Replace
+Other
+Physics2D
+PhysicsProps
+GSDevTools
+Keep in the loop with the GSAP® newsletter.
+Email
+*
+GSAP
+Blog
+Showcase
+Learn GSAP
+GSAP & Webflow
+Contact Us
+Connect
+Forums
+Discord
+Codepen
+LinkedIn
+Bluesky
+GitHub
+X
+©2025 GSAP - A Webflow Product.  All rights reserved.
+Privacy Policy.
+Terms of Use.

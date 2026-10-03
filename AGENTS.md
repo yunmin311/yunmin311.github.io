@@ -41,9 +41,9 @@ CLAUDE.md,靠这一行把本文件自动带进每个新对话的上下文。**�
 4. **推送只在用户明确要求时做**
 5. 子 agent 绝对不许跑任何 git 命令,提交永远由父对话做
 
-## 与 D:\project(Creative OS)的关系
+## 与 E:\1project\creative-os(Creative OS)的关系
 
-- **完全隔离**:两个项目、两个 git 仓库、互不引用。本项目的任何对话**绝不写 D:\project 里的任何东西**
+- **完全隔离**:两个项目、两个 git 仓库、互不引用。本项目的任何对话**绝不写 E:\1project\creative-os 里的任何东西**
 - `reference/creative-os-design/` 是 Creative OS 设计稿在 2026-07-16 的**只读快照**
   (含设计对话当时未提交的改动)。规矩是**"只复制不引用"——抄想法,不 import 文件**。
   **谁都不许写它,包括往里补文件**——要更新参考,是"再拷一份新快照"这个动作,由用户发起
@@ -90,3 +90,11 @@ npm run preview  # 预览构建产物
 
 **要证据不要断言。** 回答任何"现状"问题前,先用只读命令看一手的东西(文件本身、git log),
 不要凭印象推断。
+
+## 当前正式接入（2026-10-03）
+
+用户已将设计辅助对话转为网站实现，授权把认可的冷蓝细砂云层、玻璃控件、侧边音乐和卡片交互接入本项目。新视觉/交互定稿见 `docs/specs/2026-10-03-paper-site-integration.md`，维护说明见 `docs/正式网站接入说明.md`。旧的内容、双语、笔记同步和 Git 规矩继续适用；CLAUDE.md 不改。
+
+正式首页在 `src/pages/[lang]/index.astro`，互动源码/样式在 `src/scripts/paper`、`src/styles/paper`，共享阅读页面在 `src/layouts/Base.astro`。`scripts/build-paper.mjs` 从正式源生成本地缓存资产；不读取 design 或 personal-website。运行 `npm run dev` / `npm run build` 会先执行此步骤。新增中文后可用 `npm run paper:fonts` 获取服务商字表字体，普通构建不需联网。
+
+旧项目两篇文章、六个历史项目已迁入内容集合，缺项明确待补；`reflections`、`learning`、`code` 同步目录仍是机器管理区，不手写。素材/音乐样例不代表真实个人作品或歌单。右侧刻度替代可见滚动条，键盘/滚轮/触摸滚动保留。用户随后确认设计定稿，并明确要求本轮提交、推送到 GitHub。后续以此设计为基准，只补充真实内容与必要功能；设计变更仍由用户拍板。GitHub Pages 保持手动部署，推送不自动上线。

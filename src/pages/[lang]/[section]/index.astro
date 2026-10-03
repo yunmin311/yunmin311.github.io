@@ -1,0 +1,16 @@
+---
+import {getCollection} from 'astro:content';
+import Base from '../../../layouts/Base.astro';
+import {locales,type Lang} from '../../../i18n/ui';
+import {slugOf} from '../../../lib/content';
+const mapping={'project-notes':'reflections',learning:'learning',repos:'code'} as const;
+export function getStaticPaths(){return ['project-notes','learning','repos'].flatMap(section=>locales.map(lang=>({params:{lang,section}})));}
+const lang=Astro.params.lang as Lang,section=Astro.params.section as keyof typeof mapping;
+const collection=mapping[section];const entries=await getCollection(collection,({id})=>id.startsWith(lang+'/'));entries.sort((a,b)=>b.data.date.getTime()-a.data.date.getTime());
+const titles={'project-notes':['过程与复盘','Process & reflections'],learning:['学习记录','Learning'],repos:['代码库','Repositories']} as const;
+const title=titles[section][lang==='zh'?0:1];
+---
+<Base title={title}>
+<h1>{title}</h1><div class="route-cards">{entries.map(entry=><a class="route-card" href={`/${lang}/${section}/${slugOf(entry.id)}/`}><small>{entry.data.date.toISOString().slice(0,10)}</small><h2>{entry.data.title}</h2><p>{entry.data.summary}</p></a>)}</div>
+{entries.length===0&&<p class="notice-empty">{lang==='zh'?'这里已接入现有笔记同步结构，内容发布后会出现在这一页。':'This page is connected to the existing notes workflow. Published entries will appear here.'}</p>}
+</Base>

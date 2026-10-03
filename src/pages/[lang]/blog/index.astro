@@ -10,7 +10,7 @@ export function getStaticPaths() {
 }
 
 const lang = Astro.params.lang as Lang;
-const posts = await getPosts(lang);
+const posts = (await getPosts(lang)).filter(p=>!/^占位文章|^Placeholder post/i.test(p.data.title));
 ---
 
 <Base title={t(lang, 'blog.title')}>
