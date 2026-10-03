@@ -1,14 +1,20 @@
-# 个人网站 — 维护手册
+# Yunmin · 个人网站
 
 设计师的个人网站:作品集 + 博客,中英双语,纯静态,免费托管在 GitHub Pages。
-这份手册写给**站主本人**(不懂技术也能照做);给 Claude 看的交接规矩在 `AGENTS.md`。
+**线上入口：[中文首页](https://yunmin311.github.io/zh/) · [English](https://yunmin311.github.io/en/)**
+
+冷蓝细砂云层、玻璃界面、可展开的立体卡片和侧边音乐播放器。当前设计已定稿，详细作品、照片、歌单及笔记仍待逐步填充，展示样例保持明确标注。
+
+[设计基准](docs/design-baseline-2026-10-03.md) · [接入与维护说明](docs/正式网站接入说明.md) · [发布进度](https://github.com/yunmin311/yunmin311.github.io/actions/workflows/deploy.yml)
+
+下面是站主的维护手册；给 AI 的交接规矩在 `AGENTS.md`。
 
 > 最省心的用法:让 Claude Code 替你做下面所有事,你只动嘴。
 > 手册的价值是——就算没有 Claude,你自己也做得了。
 
 ---
 
-## 一、在电脑上把网站跑起来
+## 一、本地编辑与预览（维护时使用）
 
 前提:电脑装了 Node.js 和 Git(没装?见 `docs/搬家清单.md`,一路下一步)。
 
@@ -19,7 +25,7 @@ npm install     # 第一次(或换电脑后)装依赖,只需跑一次
 npm run dev     # 启动本地预览
 ```
 
-然后浏览器打开 **http://localhost:4321** 就能看到网站。改内容会实时刷新。
+日常访问使用上方的线上网址。只有修改代码、内容时，才用 **http://localhost:4321** 在自己的电脑预览；这个地址不是公开网站。改内容会实时刷新。
 看完在终端按 `Ctrl+C` 关掉。
 
 ## 二、怎么加一篇作品
@@ -75,12 +81,15 @@ date: 2026-07-01
 
 ## 四、上线 / 更新线上网站
 
-**网站目前没有上线**(2026-07 有意保持下线,先做设计)。上线那天:
+网站发布到 GitHub Pages，网址继续是 **https://yunmin311.github.io/**。
 
-1. 打开 `docs/上线前检查清单.md`,逐条打勾(隐私检查最重要);
-2. 清单里会让你把 `.github/workflows/deploy.yml` 的自动开关改回来
-   (现在是"仅手动触发"的保险状态,文件头注释里存着改回去的原样);
-3. 之后每次推送到 GitHub,网站几分钟内自动更新,不用再做任何事。
+1. 修改内容后运行 `npm run check` 和 `npm run build`，确认通过；
+2. 将明确修改的文件提交并推送到 `main`；
+3. [GitHub Actions](https://github.com/yunmin311/yunmin311.github.io/actions/workflows/deploy.yml) 自动构建、发布。任务显示成功后，刷新线上网址即可看到更新。
+
+也可以在同一页面选择 **Run workflow** 手动发布。发布尚在进行时，线上仍会显示上一次成功版本。
+
+设计以本次定稿为基准，后续主要补充内容和功能；不需要等所有占位都填完才上线。
 
 ## 五、保存与备份
 
@@ -96,7 +105,9 @@ date: 2026-07-01
 | 想改什么 | 去哪 |
 |----------|------|
 | 作品 / 文章 | `src/content/works/`、`src/content/posts/` |
-| 颜色、字号、间距(全站视觉) | `src/styles/tokens.css`(唯一的地方) |
+| 颜色、字号、间距(全站视觉) | `src/styles/paper/`（定稿界面）及 `src/styles/tokens.css`（共享基础） |
 | 界面上的字(导航、按钮、页脚) | `src/i18n/ui.ts`(中英各一份,站名也在这) |
-| 关于页的邮箱、社交链接 | `src/lib/profile.ts` |
+| 个人简介和已提供的联系方式 | `src/pages/[lang]/about.astro`、`src/data/legacy-profile.json` |
+| 首页交互与播放器 | `src/scripts/paper/` |
+| 模型、字体、材质和许可 | `public/assets/paper/` |
 | 各种说明书 | `docs/`(愿景、规格、清单都在这) |

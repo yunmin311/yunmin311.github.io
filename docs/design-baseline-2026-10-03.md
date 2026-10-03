@@ -19,4 +19,4 @@
 
 正式源码位于 `src/components/paper`、`src/styles/paper`、`src/scripts/paper`；字体、模型、材质和完整许可位于 `public/assets/paper`。仅这些正式文件即可独立构建，不依赖本机设计探索目录。Git 中的本次定稿提交保存可恢复的设计基准；以后整体更改视觉需用户重新拍板。
 
-验收证据见 `docs/verification/paper-site-2026-10-03.md`，维护入口见 `docs/正式网站接入说明.md`。本轮 GitHub 上传用于保存定稿；Pages 部署仍为手动触发。
+验收证据见 `docs/verification/paper-site-2026-10-03.md`，维护入口见 `docs/正式网站接入说明.md`。用户随后明确要求公开上线；main 推送会自动发布到原 GitHub Pages 网址，设计定稿和待补内容的边界不变。

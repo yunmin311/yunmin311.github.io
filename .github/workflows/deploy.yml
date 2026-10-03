@@ -1,19 +1,20 @@
-# GitHub Pages 部署(实现计划·阶段 4)
-# ⚠️ 暂只允许手动触发:用户明确暂不上线,推送只作云端备份。
-# 上线日(T18/T19)把 push 触发加回来:
-#   on:
-#     push:
-#       branches: [main]
-#     workflow_dispatch:
+# GitHub Pages：用户已于 2026-10-03 明确要求公开上线。
+# 推送 main 后自动构建发布；也可手动运行。
 name: Deploy to GitHub Pages
 
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
 
 permissions:
   contents: read
   pages: write
   id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
 
 jobs:
   build:

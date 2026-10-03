@@ -97,4 +97,4 @@ npm run preview  # 预览构建产物
 
 正式首页在 `src/pages/[lang]/index.astro`，互动源码/样式在 `src/scripts/paper`、`src/styles/paper`，共享阅读页面在 `src/layouts/Base.astro`。`scripts/build-paper.mjs` 从正式源生成本地缓存资产；不读取 design 或 personal-website。运行 `npm run dev` / `npm run build` 会先执行此步骤。新增中文后可用 `npm run paper:fonts` 获取服务商字表字体，普通构建不需联网。
 
-旧项目两篇文章、六个历史项目已迁入内容集合，缺项明确待补；`reflections`、`learning`、`code` 同步目录仍是机器管理区，不手写。素材/音乐样例不代表真实个人作品或歌单。右侧刻度替代可见滚动条，键盘/滚轮/触摸滚动保留。用户随后确认设计定稿，并明确要求本轮提交、推送到 GitHub。后续以此设计为基准，只补充真实内容与必要功能；设计变更仍由用户拍板。GitHub Pages 保持手动部署，推送不自动上线。
+旧项目两篇文章、六个历史项目已迁入内容集合，缺项明确待补；`reflections`、`learning`、`code` 同步目录仍是机器管理区，不手写。素材/音乐样例不代表真实个人作品或歌单。右侧刻度替代可见滚动条，键盘/滚轮/触摸滚动保留。用户随后确认设计定稿，并明确要求本轮提交、推送到 GitHub。后续以此设计为基准，只补充真实内容与必要功能；设计变更仍由用户拍板。用户随后明确要求公开部署和更新线上 README。GitHub Pages 现由 main 推送自动构建发布，也保留手动触发；沿用原网址，内容占位继续保留。
