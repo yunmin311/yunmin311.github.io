@@ -1,0 +1,109 @@
+{
+  "geometry": {
+    "header": {
+      "x": 48,
+      "y": 74,
+      "width": 1344,
+      "height": 56,
+      "top": 74,
+      "right": 1392,
+      "bottom": 130,
+      "left": 48
+    },
+    "intro": {
+      "x": 107.515625,
+      "y": 208,
+      "width": 563.1875,
+      "height": 330,
+      "top": 208,
+      "right": 670.703125,
+      "bottom": 538,
+      "left": 107.515625
+    },
+    "stage": {
+      "x": 635.515625,
+      "y": 209,
+      "width": 675.828125,
+      "height": 390,
+      "top": 209,
+      "right": 1311.34375,
+      "bottom": 599,
+      "left": 635.515625
+    },
+    "rail": {
+      "x": 48,
+      "y": 730,
+      "width": 1344,
+      "height": 58,
+      "top": 730,
+      "right": 1392,
+      "bottom": 788,
+      "left": 48
+    },
+    "font": "76px"
+  },
+  "sky0": 1524763785,
+  "sky1": 101423514,
+  "disturbed": {
+    "ready": true,
+    "sourceKeys": [
+      "cloud-01",
+      "cloud-02",
+      "cloud-03"
+    ],
+    "sourceSizes": [
+      [
+        1024,
+        1536
+      ],
+      [
+        1024,
+        1536
+      ],
+      [
+        1024,
+        1536
+      ]
+    ],
+    "grid": [
+      960,
+      1440
+    ],
+    "generated": 8,
+    "planes": 28,
+    "legacyUses": [
+      "record-art pixel-plane",
+      "pixel-window"
+    ],
+    "mode": "canvas-inverse-sampling",
+    "loadedSources": 3,
+    "cellCSS": 2,
+    "worldHeight": 900,
+    "backend": "software-webgl-fallback",
+    "renderSize": [
+      1440,
+      900
+    ],
+    "active": true,
+    "emissions": 14,
+    "allowed": true,
+    "frames": 37,
+    "scroll": 3269.4760805086444,
+    "progress": 0.5192941678063285,
+    "sceneIndex": 1,
+    "sources": 3,
+    "mirrored": false,
+    "looped": false,
+    "maxDisplacement": 14,
+    "reduced": false,
+    "baseBuilds": 35,
+    "localPatch": [
+      194,
+      179
+    ]
+  },
+  "clicks0": 0,
+  "errors": [],
+  "real3D": true,
+  "approvedLayout": true
+}
