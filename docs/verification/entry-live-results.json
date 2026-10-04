@@ -1,0 +1,109 @@
+{
+  "geometry": {
+    "header": {
+      "x": 932,
+      "y": 74,
+      "width": 460,
+      "height": 56,
+      "top": 74,
+      "right": 1392,
+      "bottom": 130,
+      "left": 932
+    },
+    "intro": {
+      "x": 241.265625,
+      "y": 208,
+      "width": 563.1875,
+      "height": 330,
+      "top": 208,
+      "right": 804.453125,
+      "bottom": 538,
+      "left": 241.265625
+    },
+    "stage": {
+      "x": 595.4569091796875,
+      "y": 228.4273223876953,
+      "width": 608.4971923828125,
+      "height": 351.1453857421875,
+      "top": 228.4273223876953,
+      "right": 1203.9541015625,
+      "bottom": 579.5727081298828,
+      "left": 595.4569091796875
+    },
+    "rail": {
+      "x": 48,
+      "y": 938,
+      "width": 1344,
+      "height": 58,
+      "top": 938,
+      "right": 1392,
+      "bottom": 996,
+      "left": 48
+    },
+    "font": "88px"
+  },
+  "sky0": 1524763785,
+  "sky1": 685848870,
+  "disturbed": {
+    "ready": true,
+    "sourceKeys": [
+      "cloud-01",
+      "cloud-02",
+      "cloud-03"
+    ],
+    "sourceSizes": [
+      [
+        1024,
+        1536
+      ],
+      [
+        1024,
+        1536
+      ],
+      [
+        1024,
+        1536
+      ]
+    ],
+    "grid": [
+      960,
+      1440
+    ],
+    "generated": 8,
+    "planes": 28,
+    "legacyUses": [
+      "record-art pixel-plane",
+      "pixel-window"
+    ],
+    "mode": "canvas-inverse-sampling",
+    "loadedSources": 3,
+    "cellCSS": 2,
+    "worldHeight": 900,
+    "backend": "software-webgl-fallback",
+    "renderSize": [
+      1440,
+      900
+    ],
+    "active": true,
+    "emissions": 14,
+    "allowed": true,
+    "frames": 38,
+    "scroll": 3378.3374613006836,
+    "progress": 0.5194245789207693,
+    "sceneIndex": 1,
+    "sources": 3,
+    "mirrored": false,
+    "looped": false,
+    "maxDisplacement": 14,
+    "reduced": false,
+    "baseBuilds": 36,
+    "localPatch": [
+      211,
+      186
+    ]
+  },
+  "clicks0": 0,
+  "errors": [],
+  "real3D": true,
+  "comparisonKeepsScene": true
+}
