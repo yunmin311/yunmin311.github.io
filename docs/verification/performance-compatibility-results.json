@@ -1,0 +1,543 @@
+[
+  {
+    "name": "desktop",
+    "initial": {
+      "ready": true,
+      "materialURL": "/assets/paper/76720cf83df061e5.lossless.webp",
+      "cloud": {
+        "ready": true,
+        "sourceKeys": [
+          "cloud-01",
+          "cloud-02",
+          "cloud-03"
+        ],
+        "sourceSizes": [
+          [
+            1024,
+            1536
+          ],
+          [
+            1024,
+            1536
+          ],
+          [
+            1024,
+            1536
+          ]
+        ],
+        "grid": [
+          960,
+          1440
+        ],
+        "generated": 8,
+        "planes": 28,
+        "legacyUses": [
+          "record-art pixel-plane",
+          "pixel-window"
+        ],
+        "mode": "canvas-inverse-sampling",
+        "cellCSS": 2,
+        "worldHeight": 900,
+        "backend": "software-webgl-fallback",
+        "renderSize": [
+          1440,
+          900
+        ],
+        "active": false,
+        "emissions": 0,
+        "allowed": true,
+        "frames": 2,
+        "scroll": 0,
+        "progress": 0,
+        "sceneIndex": 0,
+        "sources": 3,
+        "mirrored": false,
+        "looped": false,
+        "maxDisplacement": 14,
+        "reduced": false,
+        "baseBuilds": 2,
+        "localPatch": [
+          300,
+          150
+        ]
+      },
+      "model": {
+        "ready": true,
+        "front": 0,
+        "selected": -1,
+        "moving": false,
+        "poses": [
+          {
+            "x": -0.1,
+            "y": -0.07,
+            "z": 0.5
+          },
+          {
+            "x": 0.42,
+            "y": 0.51,
+            "z": -0.2
+          },
+          {
+            "x": -0.42,
+            "y": -0.38,
+            "z": -0.35
+          }
+        ]
+      },
+      "overflow": false
+    },
+    "english": {
+      "lang": "en",
+      "timeOrigin": 1791087066931.3,
+      "sameModel": true,
+      "sameAudio": true,
+      "links": [
+        "/en/works/",
+        "/en/projects/",
+        "/en/learning/",
+        "/en/repos/",
+        "/en/blog/",
+        "/en/about/"
+      ],
+      "title": "Works, writing, and process notes.",
+      "sameDocument": true,
+      "milliseconds": 128
+    },
+    "back": "zh",
+    "reader": {
+      "phase": "open",
+      "index": 0,
+      "animating": false
+    },
+    "errors": []
+  },
+  {
+    "name": "phone",
+    "initial": {
+      "ready": true,
+      "materialURL": "/assets/paper/76720cf83df061e5.lossless.webp",
+      "cloud": {
+        "ready": true,
+        "sourceKeys": [
+          "cloud-01",
+          "cloud-02",
+          "cloud-03"
+        ],
+        "sourceSizes": [
+          [
+            1024,
+            1536
+          ],
+          [
+            1024,
+            1536
+          ],
+          [
+            1024,
+            1536
+          ]
+        ],
+        "grid": [
+          960,
+          1440
+        ],
+        "generated": 8,
+        "planes": 28,
+        "legacyUses": [
+          "record-art pixel-plane",
+          "pixel-window"
+        ],
+        "mode": "canvas-inverse-sampling",
+        "cellCSS": 1,
+        "worldHeight": 844,
+        "backend": "software-webgl-fallback",
+        "renderSize": [
+          390,
+          844
+        ],
+        "active": false,
+        "emissions": 0,
+        "allowed": false,
+        "frames": 3,
+        "scroll": 0,
+        "progress": 0,
+        "sceneIndex": 0,
+        "sources": 3,
+        "mirrored": false,
+        "looped": false,
+        "maxDisplacement": 14,
+        "reduced": false,
+        "baseBuilds": 3,
+        "localPatch": [
+          300,
+          150
+        ]
+      },
+      "model": {
+        "ready": true,
+        "front": 0,
+        "selected": -1,
+        "moving": false,
+        "poses": [
+          {
+            "x": -0.1,
+            "y": -0.07,
+            "z": 0.5
+          },
+          {
+            "x": 0.42,
+            "y": 0.51,
+            "z": -0.2
+          },
+          {
+            "x": -0.42,
+            "y": -0.38,
+            "z": -0.35
+          }
+        ]
+      },
+      "overflow": false
+    },
+    "english": {
+      "lang": "en",
+      "timeOrigin": 1791087071569.3,
+      "sameModel": true,
+      "sameAudio": true,
+      "links": [
+        "/en/works/",
+        "/en/projects/",
+        "/en/learning/",
+        "/en/repos/",
+        "/en/blog/",
+        "/en/about/"
+      ],
+      "title": "Works, writing, and process notes.",
+      "sameDocument": true,
+      "milliseconds": 120
+    },
+    "back": "zh",
+    "reader": {
+      "phase": "open",
+      "index": 0,
+      "animating": false
+    },
+    "errors": []
+  },
+  {
+    "name": "no-webgl",
+    "initial": {
+      "ready": true,
+      "materialURL": "/assets/paper/76720cf83df061e5.lossless.webp",
+      "cloud": {
+        "ready": true,
+        "sourceKeys": [
+          "cloud-01",
+          "cloud-02",
+          "cloud-03"
+        ],
+        "sourceSizes": [
+          [
+            1024,
+            1536
+          ],
+          [
+            1024,
+            1536
+          ],
+          [
+            1024,
+            1536
+          ]
+        ],
+        "grid": [
+          960,
+          1440
+        ],
+        "generated": 8,
+        "planes": 28,
+        "legacyUses": [
+          "record-art pixel-plane",
+          "pixel-window"
+        ],
+        "mode": "canvas-inverse-sampling",
+        "cellCSS": 1,
+        "worldHeight": 844,
+        "backend": "software-webgl-fallback",
+        "renderSize": [
+          390,
+          844
+        ],
+        "active": false,
+        "emissions": 0,
+        "allowed": false,
+        "frames": 3,
+        "scroll": 0,
+        "progress": 0,
+        "sceneIndex": 0,
+        "sources": 3,
+        "mirrored": false,
+        "looped": false,
+        "maxDisplacement": 14,
+        "reduced": false,
+        "baseBuilds": 3,
+        "localPatch": [
+          300,
+          150
+        ]
+      },
+      "model": {
+        "ready": true,
+        "fallback": true
+      },
+      "overflow": false
+    },
+    "english": {
+      "lang": "en",
+      "timeOrigin": 1791087075570.4,
+      "sameModel": true,
+      "sameAudio": true,
+      "links": [
+        "/en/works/",
+        "/en/projects/",
+        "/en/learning/",
+        "/en/repos/",
+        "/en/blog/",
+        "/en/about/"
+      ],
+      "title": "Works, writing, and process notes.",
+      "sameDocument": true,
+      "milliseconds": 98
+    },
+    "back": "zh",
+    "reader": {
+      "phase": "open",
+      "index": 0,
+      "animating": false
+    },
+    "errors": []
+  },
+  {
+    "name": "reduced",
+    "initial": {
+      "ready": true,
+      "materialURL": "/assets/paper/76720cf83df061e5.lossless.webp",
+      "cloud": {
+        "ready": true,
+        "sourceKeys": [
+          "cloud-01",
+          "cloud-02",
+          "cloud-03"
+        ],
+        "sourceSizes": [
+          [
+            1024,
+            1536
+          ],
+          [
+            1024,
+            1536
+          ],
+          [
+            1024,
+            1536
+          ]
+        ],
+        "grid": [
+          960,
+          1440
+        ],
+        "generated": 8,
+        "planes": 28,
+        "legacyUses": [
+          "record-art pixel-plane",
+          "pixel-window"
+        ],
+        "mode": "canvas-inverse-sampling",
+        "cellCSS": 2,
+        "worldHeight": 900,
+        "backend": "software-webgl-fallback",
+        "renderSize": [
+          1440,
+          900
+        ],
+        "active": false,
+        "emissions": 0,
+        "allowed": false,
+        "frames": 2,
+        "scroll": 0,
+        "progress": 0,
+        "sceneIndex": 0,
+        "sources": 3,
+        "mirrored": false,
+        "looped": false,
+        "maxDisplacement": 14,
+        "reduced": true,
+        "baseBuilds": 2,
+        "localPatch": [
+          300,
+          150
+        ]
+      },
+      "model": {
+        "ready": true,
+        "front": 0,
+        "selected": -1,
+        "moving": false,
+        "poses": [
+          {
+            "x": -0.1,
+            "y": -0.07,
+            "z": 0.5
+          },
+          {
+            "x": 0.42,
+            "y": 0.51,
+            "z": -0.2
+          },
+          {
+            "x": -0.42,
+            "y": -0.38,
+            "z": -0.35
+          }
+        ]
+      },
+      "overflow": false
+    },
+    "english": {
+      "lang": "en",
+      "timeOrigin": 1791087078019.3,
+      "sameModel": true,
+      "sameAudio": true,
+      "links": [
+        "/en/works/",
+        "/en/projects/",
+        "/en/learning/",
+        "/en/repos/",
+        "/en/blog/",
+        "/en/about/"
+      ],
+      "title": "Works, writing, and process notes.",
+      "sameDocument": true,
+      "milliseconds": 92
+    },
+    "back": "zh",
+    "reader": {
+      "phase": "open",
+      "index": 0,
+      "animating": false
+    },
+    "errors": []
+  },
+  {
+    "name": "no-webp",
+    "initial": {
+      "ready": true,
+      "materialURL": "/assets/paper/76720cf83df061e5.png",
+      "cloud": {
+        "ready": true,
+        "sourceKeys": [
+          "cloud-01",
+          "cloud-02",
+          "cloud-03"
+        ],
+        "sourceSizes": [
+          [
+            1024,
+            1536
+          ],
+          [
+            1024,
+            1536
+          ],
+          [
+            1024,
+            1536
+          ]
+        ],
+        "grid": [
+          960,
+          1440
+        ],
+        "generated": 8,
+        "planes": 28,
+        "legacyUses": [
+          "record-art pixel-plane",
+          "pixel-window"
+        ],
+        "mode": "canvas-inverse-sampling",
+        "cellCSS": 1,
+        "worldHeight": 844,
+        "backend": "software-webgl-fallback",
+        "renderSize": [
+          390,
+          844
+        ],
+        "active": false,
+        "emissions": 0,
+        "allowed": false,
+        "frames": 3,
+        "scroll": 0,
+        "progress": 0,
+        "sceneIndex": 0,
+        "sources": 3,
+        "mirrored": false,
+        "looped": false,
+        "maxDisplacement": 14,
+        "reduced": false,
+        "baseBuilds": 3,
+        "localPatch": [
+          300,
+          150
+        ]
+      },
+      "model": {
+        "ready": true,
+        "front": 0,
+        "selected": -1,
+        "moving": false,
+        "poses": [
+          {
+            "x": -0.1,
+            "y": -0.07,
+            "z": 0.5
+          },
+          {
+            "x": 0.42,
+            "y": 0.51,
+            "z": -0.2
+          },
+          {
+            "x": -0.42,
+            "y": -0.38,
+            "z": -0.35
+          }
+        ]
+      },
+      "overflow": false
+    },
+    "english": {
+      "lang": "en",
+      "timeOrigin": 1791087080502.7,
+      "sameModel": true,
+      "sameAudio": true,
+      "links": [
+        "/en/works/",
+        "/en/projects/",
+        "/en/learning/",
+        "/en/repos/",
+        "/en/blog/",
+        "/en/about/"
+      ],
+      "title": "Works, writing, and process notes.",
+      "sameDocument": true,
+      "milliseconds": 113
+    },
+    "back": "zh",
+    "reader": {
+      "phase": "open",
+      "index": 0,
+      "animating": false
+    },
+    "errors": []
+  }
+]

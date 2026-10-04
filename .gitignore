@@ -22,3 +22,6 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# Rebuildable experiment design HTML
+/design/entry-focus-2026-10-04/00-entry-focus.html

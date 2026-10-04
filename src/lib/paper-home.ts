@@ -15,5 +15,6 @@ export async function getPaperHomeData(lang: Lang) {
  const projects=(await getCollection('projectIdeas',({id,data})=>id.startsWith('zh/')&&!data.draft)).map(p=>({title:p.data.title,desc:p.data.summary,status:p.data.historicalStatus,tags:p.data.tags,slug:slugOf(p.id),href:`/zh/projects/${slugOf(p.id)}/`}));
  const posts=content.zh.posts;
  const live={reflections:await getCollection('reflections'),learning:await getCollection('learning'),code:await getCollection('code')};
- return {lang,content,recovered:{posts,projects,about:profile},live:Object.fromEntries(Object.entries(live).map(([key,entries])=>[key,entries.filter(e=>e.id.startsWith(lang+'/')).map(e=>({...e.data,slug:slugOf(e.id)}))]))};
+ const liveByLocale=Object.fromEntries((['zh','en'] as const).map(locale=>[locale,Object.fromEntries(Object.entries(live).map(([key,entries])=>[key,entries.filter(e=>e.id.startsWith(locale+'/')).map(e=>({...e.data,slug:slugOf(e.id)}))]))]));
+ return {lang,content,liveByLocale,recovered:{posts,projects,about:profile},live:Object.fromEntries(Object.entries(live).map(([key,entries])=>[key,entries.filter(e=>e.id.startsWith(lang+'/')).map(e=>({...e.data,slug:slugOf(e.id)}))]))};
 }

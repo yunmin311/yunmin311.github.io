@@ -1,12 +1,20 @@
 (async()=>{
 const data=JSON.parse(document.getElementById('paper-data').textContent),base='/assets/paper/';
 const json=async url=>{const response=await fetch(url);if(!response.ok)throw Error('Asset unavailable: '+url);return response.json();};
+const webpSupport=new Promise(resolve=>{const image=new Image();image.onload=()=>resolve(image.width===1);image.onerror=()=>resolve(false);image.src='data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ7z53vf+BiOh/AAA=';});
+function script(file){return new Promise((resolve,reject)=>{const s=document.createElement('script');s.src=base+file;s.onload=resolve;s.onerror=reject;document.body.append(s);});}
+function fallbackCards(){if(document.querySelector('.flat-card'))return;const stage=document.querySelector('.stage');stage.querySelectorAll('canvas').forEach(c=>c.remove());stage.classList.add('flat-cards');stage.querySelector('.loading').hidden=true;const titles=data.lang==='zh'?['作品','文字','探索']:['Works','Writing','Explore'];stage.insertAdjacentHTML('beforeend',titles.map((title,i)=>'<button class="flat-card" data-flat="'+i+'" data-zh="'+['作品','文字','探索'][i]+'" data-en="'+['Works','Writing','Explore'][i]+'">'+title+' ↗</button>').join(''));window.selectPaper=i=>window.onPaperSelect?.(i);window.closePaper=()=>{};window.setFrontPaper=i=>{stage.dataset.front=i;};stage.querySelectorAll('[data-flat]').forEach(b=>b.onclick=()=>window.selectPaper(+b.dataset.flat));window.paperModelMotion={stats:()=>({ready:true,fallback:true})};}
+window.paperFlatFallback=fallbackCards;
 try{
  const manifest=await json(base+'manifest.json');
- const [model,material,print,licenses]=await Promise.all([json(manifest.model).catch(()=>null),json(manifest.materialCache).catch(()=>null),json(manifest.printCache).catch(()=>null),json(base+'licenses.json')]);
+ const [model,material,print]=await Promise.all([json(manifest.model).catch(()=>null),webpSupport.then(supported=>json(supported?base+'material-experiment.json':manifest.materialCache)).catch(()=>json(manifest.materialCache)).catch(()=>null),json(manifest.printCache).catch(()=>null)]);
  Object.assign(window,{PAPER_INITIAL_LANG:data.lang,PAPER_ROUTE_DATA:data,SITE_CONTENT:data.content,RECOVERED_CONTENT:data.recovered,PAPER_MODEL:model,PAPER_MATERIAL_CACHE:material,PAPER_PRINT_CACHE:print,PAPER_GENERATED_ASSETS:manifest.generated});
- document.getElementById('licenses').textContent=JSON.stringify(licenses);
- const runtime=document.createElement('script');runtime.src=base+'runtime.js';runtime.onload=()=>{if(window.paperProduction)document.body.dataset.paperReady='true';else fallback();};runtime.onerror=()=>fallback();document.body.append(runtime);
-}catch(error){console.warn('Paper interaction loading:',error);fallback();}
-function fallback(){document.body.classList.add('paper-fallback');document.querySelector('.loading').textContent=data.lang==='zh'?'交互暂时不可用，内容仍可阅读。':'Interaction is unavailable; content is still readable.';}
+ const modelReady=script('scene.js').then(()=>{if(!window.paperModelMotion)fallbackCards();}).catch(fallbackCards);
+ await script('runtime.js');
+ if(!window.paperProduction)throw Error('Controls unavailable');
+ document.body.dataset.paperReady='true';
+ // Model and materials have independent lifecycles; either may fail without taking controls down.
+ script('print.js').catch(()=>{});
+ json(base+'licenses.json').then(value=>document.getElementById('licenses').textContent=JSON.stringify(value)).catch(()=>{});
+}catch(error){console.warn('Paper interaction loading:',error);document.body.classList.add('paper-fallback');document.querySelector('.loading').textContent=data.lang==='zh'?'交互暂时不可用，内容仍可阅读。':'Interaction is unavailable; content is still readable.';}
 })();

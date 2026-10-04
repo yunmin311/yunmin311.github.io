@@ -3,16 +3,16 @@ import {mountCloudCanvas} from './cloud-canvas.js';
 import {Renderer,Texture,Program,Mesh,Triangle,Flowmap,Vec2} from 'ogl';
 const vertex=`attribute vec2 uv;attribute vec2 position;varying vec2 vUv;void main(){vUv=uv;gl_Position=vec4(position,0.,1.);}`;
 const fragment=`precision highp float;
-uniform sampler2D tCloudA;uniform sampler2D tCloudB;uniform sampler2D tCloudC;uniform sampler2D tFlow;uniform vec2 uSize;uniform float uProgress;uniform float uForce;varying vec2 vUv;
+uniform sampler2D tCloudA;uniform sampler2D tCloudB;uniform sampler2D tCloudC;uniform sampler2D tFlow;uniform vec2 uSize;uniform float uProgress;uniform float uWorldHeight;uniform float uForce;varying vec2 vUv;
 vec2 sceneUV(vec2 pixel,float span,float worldY,float start){
  float width=span*2./3.;vec2 uv=vec2((pixel.x-.5*uSize.x)/width+.5,(worldY-start)/span);
- uv=clamp(uv,vec2(.002),vec2(.998));return (floor(uv*vec2(640.,960.))+.5)/vec2(640.,960.);
+ uv=clamp(uv,vec2(.002),vec2(.998));return (floor(uv*vec2(960.,1440.))+.5)/vec2(960.,1440.);
 }
 void main(){
  vec2 pixel=vec2(vUv.x,1.-vUv.y)*uSize;pixel=(floor(pixel)+.5);vec3 flow=texture2D(tFlow,vUv).rgb;
  pixel-=clamp(flow.xy*uForce*36.,vec2(-14.),vec2(14.));
- float span=max(uSize.y*1.65,uSize.x*1.5),overlap=span*.16,stepSize=span-overlap;
- float total=span+stepSize*2.;float worldY=pixel.y+uProgress*(total-uSize.y);
+ float cell=max(1.,ceil(uSize.x/960.));float span=1440.*cell,overlap=span*.16,stepSize=span-overlap;
+ float total=span+stepSize*2.;float worldY=pixel.y+floor(uProgress*(total-uWorldHeight)/cell+.5)*cell;
  vec3 result;
  if(worldY<stepSize){result=texture2D(tCloudA,sceneUV(pixel,span,worldY,0.)).rgb;}
  else if(worldY<span){result=mix(texture2D(tCloudA,sceneUV(pixel,span,worldY,0.)).rgb,texture2D(tCloudB,sceneUV(pixel,span,worldY,stepSize)).rgb,smoothstep(stepSize,span,worldY));}
@@ -23,7 +23,7 @@ void main(){
 }`;
 export async function mountCloudFlow(host,urls){
  const fine=matchMedia('(hover:hover) and (pointer:fine)'),reduce=matchMedia('(prefers-reduced-motion:reduce)'),transparent=matchMedia('(prefers-reduced-transparency:reduce)'),forced=matchMedia('(forced-colors:active)');
- let renderer,gl,flow,program,mesh,raf=0,frames=0,emissions=0,running=false,scroll=scrollY,targetScroll=scrollY,last=null,lastTime=0,energy=0,lost=false;const velocity=new Vec2();
+ let renderer,gl,flow,program,mesh,raf=0,frames=0,emissions=0,running=false,scroll=scrollY,targetScroll=scrollY,last=null,lastTime=0,energy=0,lost=false,worldHeight=innerHeight,worldWidth=innerWidth;const velocity=new Vec2();
  const reduced=()=>reduce.matches||document.body.classList.contains('motion-off');
  const visible=()=>!document.hidden&&!transparent.matches&&!forced.matches&&!lost;
  const allowed=()=>visible()&&fine.matches&&!reduced();
@@ -33,12 +33,15 @@ export async function mountCloudFlow(host,urls){
  gl.getExtension('EXT_color_buffer_float');flow=new Flowmap(gl,{size:64,falloff:.32,alpha:.40,dissipation:.90});
  // A zero field is the exact resting state; random initial stamps are never emitted.
  function clear(){for(const t of [flow.mask.read,flow.mask.write]){renderer.bindFramebuffer(t);gl.clearColor(0,0,0,0);gl.clear(gl.COLOR_BUFFER_BIT);}renderer.bindFramebuffer();}
- clear();const textures=[];for(const url of urls){const texture=new Texture(gl,{minFilter:gl.NEAREST,magFilter:gl.NEAREST,generateMipmaps:false,flipY:false});const img=new Image();img.src=url;await img.decode();texture.image=img;textures.push(texture);}
- program=new Program(gl,{vertex,fragment,depthTest:false,depthWrite:false,uniforms:{tCloudA:{value:textures[0]},tCloudB:{value:textures[1]},tCloudC:{value:textures[2]},tFlow:flow.uniform,uSize:{value:new Vec2(innerWidth,innerHeight)},uProgress:{value:0},uForce:{value:1}}});mesh=new Mesh(gl,{geometry:new Triangle(gl),program});
+ clear();const textures=[];const load=async url=>{const img=new Image();img.src=url;try{await img.decode();}catch(error){if(!url.endsWith('.lossless.webp'))throw error;img.src=url.replace('.lossless.webp','.png');await img.decode();}return img;};
+ const first=await load(urls[0]);const blank=document.createElement('canvas');blank.width=blank.height=1;const fill=blank.getContext('2d');fill.fillStyle='#cfdfeb';fill.fillRect(0,0,1,1);
+ for(let i=0;i<3;i++){const texture=new Texture(gl,{minFilter:gl.NEAREST,magFilter:gl.NEAREST,generateMipmaps:false,flipY:false});texture.image=i===0?first:blank;textures.push(texture);}
+
+ program=new Program(gl,{vertex,fragment,depthTest:false,depthWrite:false,uniforms:{tCloudA:{value:textures[0]},tCloudB:{value:textures[1]},tCloudC:{value:textures[2]},tFlow:flow.uniform,uSize:{value:new Vec2(innerWidth,innerHeight)},uProgress:{value:0},uWorldHeight:{value:worldHeight},uForce:{value:1}}});mesh=new Mesh(gl,{geometry:new Triangle(gl),program});
  gl.canvas.className='cloud-flow-canvas';gl.canvas.setAttribute('aria-hidden','true');host.append(gl.canvas);host.classList.add('is-flowing');
- function progress(){return Math.max(0,Math.min(1,scroll/Math.max(1,document.documentElement.scrollHeight-innerHeight)));}
+ function progress(){return Math.max(0,Math.min(1,scroll/Math.max(1,document.documentElement.scrollHeight-worldHeight)));}
  function draw(){program.uniforms.uProgress.value=reduced()?0:progress();program.uniforms.uForce.value=reduced()?0:1;renderer.render({scene:mesh});frames++;}
- function resize(){renderer.setSize(Math.ceil(innerWidth/1.5),Math.ceil(innerHeight/1.5));program.uniforms.uSize.value.set(innerWidth,innerHeight);flow.aspect=innerWidth/innerHeight;last=null;clear();energy=0;scroll=targetScroll=scrollY;draw();}
+ function resize(){if(worldWidth!==innerWidth){worldWidth=innerWidth;worldHeight=innerHeight;}program.uniforms.uWorldHeight.value=worldHeight;renderer.setSize(Math.round(innerWidth),Math.round(innerHeight));program.uniforms.uSize.value.set(innerWidth,innerHeight);flow.aspect=innerWidth/innerHeight;last=null;clear();energy=0;scroll=targetScroll=scrollY;draw();}
  function resetField(){velocity.set(0);flow.velocity.set(0);flow.mouse.set(-1);energy=0;last=null;clear();}
  function stop(){cancelAnimationFrame(raf);raf=0;running=false;resetField();scroll=targetScroll=scrollY;if(visible())draw();}
  function frame(){raf=0;if(!visible()){stop();return;}running=true;
@@ -55,8 +58,9 @@ export async function mountCloudFlow(host,urls){
  document.addEventListener('visibilitychange',()=>{if(document.hidden)stop();else{resize();wake();}});window.addEventListener('blur',stop);window.addEventListener('pagehide',stop);
  reduce.addEventListener('change',stop);fine.addEventListener('change',stop);transparent.addEventListener('change',stop);forced.addEventListener('change',stop);document.querySelector('.reduce').addEventListener('click',stop);
  gl.canvas.addEventListener('webglcontextlost',e=>{e.preventDefault();lost=true;cancelAnimationFrame(raf);raf=0;running=false;host.classList.remove('is-flowing');});
- gl.canvas.addEventListener('webglcontextrestored',()=>{host.classList.remove('is-flowing');});
+ gl.canvas.addEventListener('webglcontextrestored',()=>{gl.canvas.remove();mountCloudCanvas(host,urls).catch(()=>host.classList.remove('is-flowing'));});
  resize();
- return {stop,stats:()=>({mode:'ogl-flowmap',renderSize:[gl.drawingBufferWidth,gl.drawingBufferHeight],flowSize:64,active:running,emissions,allowed:allowed(),frames,scroll,progress:reduced()?0:progress(),sceneIndex:Math.min(2,Math.floor(progress()*3)),sources:3,mirrored:false,looped:false,maxDisplacement:14,reduced:reduced(),contextLost:lost}),signature:()=>{draw();const bytes=new Uint8Array(gl.drawingBufferWidth*gl.drawingBufferHeight*4);gl.readPixels(0,0,gl.drawingBufferWidth,gl.drawingBufferHeight,gl.RGBA,gl.UNSIGNED_BYTE,bytes);let hash=2166136261;for(let i=0;i<bytes.length;i+=16)hash=Math.imul(hash^bytes[i],16777619);return hash>>>0;}};
- }catch(e){console.warn('Cloud flow fallback:',e.message);host.classList.remove('is-flowing');return{stop:()=>{},stats:()=>({mode:'static-fallback',active:false,error:e.message})};}
+ urls.slice(1).forEach((url,j)=>load(url).then(img=>{textures[j+1].image=img;wake();}).catch(error=>console.warn('Cloud layer unavailable:',error.message)));
+ return {stop,stats:()=>({mode:'ogl-flowmap',cellCSS:Math.max(1,Math.ceil(innerWidth/960)),worldHeight,renderSize:[gl.drawingBufferWidth,gl.drawingBufferHeight],flowSize:64,active:running,emissions,allowed:allowed(),frames,scroll,progress:reduced()?0:progress(),sceneIndex:Math.min(2,Math.floor(progress()*3)),sources:3,mirrored:false,looped:false,maxDisplacement:14,reduced:reduced(),contextLost:lost}),signature:()=>{draw();const bytes=new Uint8Array(gl.drawingBufferWidth*gl.drawingBufferHeight*4);gl.readPixels(0,0,gl.drawingBufferWidth,gl.drawingBufferHeight,gl.RGBA,gl.UNSIGNED_BYTE,bytes);let hash=2166136261;for(let i=0;i<bytes.length;i+=16)hash=Math.imul(hash^bytes[i],16777619);return hash>>>0;}};
+ }catch(e){console.warn('Cloud flow fallback:',e.message);host.classList.remove('is-flowing');try{return await mountCloudCanvas(host,urls);}catch(error){return{stop:()=>{},stats:()=>({mode:'static-fallback',active:false,error:error.message})};}}
 }

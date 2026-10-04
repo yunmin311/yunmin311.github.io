@@ -1,0 +1,72 @@
+[
+  {
+    "name": "baseline",
+    "tasks": [
+      {
+        "start": 5646.0999999996275,
+        "duration": 199
+      },
+      {
+        "start": 5845.89999999851,
+        "duration": 490
+      },
+      {
+        "start": 6844.199999999255,
+        "duration": 322
+      },
+      {
+        "start": 17427,
+        "duration": 98
+      }
+    ],
+    "controls": 6340.39999999851,
+    "model": 7168.89999999851,
+    "cloud": 17534.599999999627,
+    "paint": [
+      {
+        "name": "first-paint",
+        "time": 800
+      },
+      {
+        "name": "first-contentful-paint",
+        "time": 800
+      }
+    ],
+    "transferred": 8638345
+  },
+  {
+    "name": "experiment",
+    "tasks": [
+      {
+        "start": 4870,
+        "duration": 65
+      },
+      {
+        "start": 4937,
+        "duration": 545
+      },
+      {
+        "start": 5491.10000000149,
+        "duration": 87
+      },
+      {
+        "start": 5615.300000000745,
+        "duration": 283
+      }
+    ],
+    "controls": 5595.10000000149,
+    "model": 5898.800000000745,
+    "cloud": 11316.700000001118,
+    "paint": [
+      {
+        "name": "first-paint",
+        "time": 788
+      },
+      {
+        "name": "first-contentful-paint",
+        "time": 788
+      }
+    ],
+    "transferred": 5534312
+  }
+]

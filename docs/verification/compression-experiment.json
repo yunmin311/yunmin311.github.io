@@ -1,0 +1,56 @@
+[
+  {
+    "key": "cloud-01",
+    "original": 1933184,
+    "compressed": 1044916,
+    "pixelIdentical": true
+  },
+  {
+    "key": "cloud-02",
+    "original": 1869013,
+    "compressed": 976072,
+    "pixelIdentical": true
+  },
+  {
+    "key": "cloud-03",
+    "original": 1902324,
+    "compressed": 1009330,
+    "pixelIdentical": true
+  },
+  {
+    "key": "mineral-study",
+    "original": 172768,
+    "compressed": 69434,
+    "pixelIdentical": true
+  },
+  {
+    "key": "pond-study",
+    "original": 219684,
+    "compressed": 105668,
+    "pixelIdentical": true
+  },
+  {
+    "key": "sand-blue",
+    "original": 1312148,
+    "compressed": 722136,
+    "pixelIdentical": true
+  },
+  {
+    "key": "sand-sage",
+    "original": 1239476,
+    "compressed": 656872,
+    "pixelIdentical": true
+  },
+  {
+    "key": "terrace-study",
+    "original": 207894,
+    "compressed": 98908,
+    "pixelIdentical": true
+  },
+  {
+    "key": "podcast-legacy",
+    "original": 121122,
+    "compressed": 61058,
+    "pixelIdentical": true
+  }
+]
