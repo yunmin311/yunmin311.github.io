@@ -5,7 +5,7 @@
 
 冷蓝细砂云层、玻璃界面、可展开的立体卡片和侧边音乐播放器。当前设计已定稿，详细作品、照片、歌单及笔记仍待逐步填充，展示样例保持明确标注。
 
-[设计基准](docs/design-baseline-2026-10-03.md) · [接入与维护说明](docs/正式网站接入说明.md) · [发布进度](https://github.com/yunmin311/yunmin311.github.io/actions/workflows/deploy.yml)
+[设计基准](docs/design-baseline-2026-10-03.md) · [接入与维护说明](docs/正式网站接入说明.md) · [内容填充准备](docs/内容填充准备.md) · [发布进度](https://github.com/yunmin311/yunmin311.github.io/actions/workflows/deploy.yml)
 
 下面是站主的维护手册；给 AI 的交接规矩在 `AGENTS.md`。
 
