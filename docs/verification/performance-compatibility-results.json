@@ -36,6 +36,7 @@
           "pixel-window"
         ],
         "mode": "canvas-inverse-sampling",
+        "loadedSources": 3,
         "cellCSS": 2,
         "worldHeight": 900,
         "backend": "software-webgl-fallback",
@@ -88,7 +89,7 @@
     },
     "english": {
       "lang": "en",
-      "timeOrigin": 1791087066931.3,
+      "timeOrigin": 1791092935745.5,
       "sameModel": true,
       "sameAudio": true,
       "links": [
@@ -101,7 +102,7 @@
       ],
       "title": "Works, writing, and process notes.",
       "sameDocument": true,
-      "milliseconds": 128
+      "milliseconds": 115
     },
     "back": "zh",
     "reader": {
@@ -148,6 +149,7 @@
           "pixel-window"
         ],
         "mode": "canvas-inverse-sampling",
+        "loadedSources": 3,
         "cellCSS": 1,
         "worldHeight": 844,
         "backend": "software-webgl-fallback",
@@ -200,7 +202,7 @@
     },
     "english": {
       "lang": "en",
-      "timeOrigin": 1791087071569.3,
+      "timeOrigin": 1791092939916.7,
       "sameModel": true,
       "sameAudio": true,
       "links": [
@@ -213,7 +215,7 @@
       ],
       "title": "Works, writing, and process notes.",
       "sameDocument": true,
-      "milliseconds": 120
+      "milliseconds": 90
     },
     "back": "zh",
     "reader": {
@@ -260,6 +262,7 @@
           "pixel-window"
         ],
         "mode": "canvas-inverse-sampling",
+        "loadedSources": 3,
         "cellCSS": 1,
         "worldHeight": 844,
         "backend": "software-webgl-fallback",
@@ -293,7 +296,7 @@
     },
     "english": {
       "lang": "en",
-      "timeOrigin": 1791087075570.4,
+      "timeOrigin": 1791092943779,
       "sameModel": true,
       "sameAudio": true,
       "links": [
@@ -306,7 +309,7 @@
       ],
       "title": "Works, writing, and process notes.",
       "sameDocument": true,
-      "milliseconds": 98
+      "milliseconds": 94
     },
     "back": "zh",
     "reader": {
@@ -353,6 +356,7 @@
           "pixel-window"
         ],
         "mode": "canvas-inverse-sampling",
+        "loadedSources": 3,
         "cellCSS": 2,
         "worldHeight": 900,
         "backend": "software-webgl-fallback",
@@ -405,7 +409,7 @@
     },
     "english": {
       "lang": "en",
-      "timeOrigin": 1791087078019.3,
+      "timeOrigin": 1791092946132.6,
       "sameModel": true,
       "sameAudio": true,
       "links": [
@@ -418,7 +422,7 @@
       ],
       "title": "Works, writing, and process notes.",
       "sameDocument": true,
-      "milliseconds": 92
+      "milliseconds": 88
     },
     "back": "zh",
     "reader": {
@@ -465,6 +469,7 @@
           "pixel-window"
         ],
         "mode": "canvas-inverse-sampling",
+        "loadedSources": 3,
         "cellCSS": 1,
         "worldHeight": 844,
         "backend": "software-webgl-fallback",
@@ -517,7 +522,7 @@
     },
     "english": {
       "lang": "en",
-      "timeOrigin": 1791087080502.7,
+      "timeOrigin": 1791092948302.9,
       "sameModel": true,
       "sameAudio": true,
       "links": [
@@ -530,7 +535,7 @@
       ],
       "title": "Works, writing, and process notes.",
       "sameDocument": true,
-      "milliseconds": 113
+      "milliseconds": 109
     },
     "back": "zh",
     "reader": {

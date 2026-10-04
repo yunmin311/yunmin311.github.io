@@ -1,0 +1,289 @@
+{
+  "conditions": {
+    "runs": 3,
+    "latencyMs": 80,
+    "downloadBytesPerSecond": 512000,
+    "cache": "disabled",
+    "viewport": "1440x900",
+    "renderer": "Chromium software GPU",
+    "server": "local Python static server without gzip"
+  },
+  "results": [
+    {
+      "name": "baseline",
+      "run": 1,
+      "tasks": [
+        {
+          "start": 5680.400000002235,
+          "duration": 202
+        },
+        {
+          "start": 5882.800000000745,
+          "duration": 462
+        },
+        {
+          "start": 8201.10000000149,
+          "duration": 302
+        },
+        {
+          "start": 17912.60000000149,
+          "duration": 98
+        }
+      ],
+      "controls": 6348.400000002235,
+      "model": 8110.800000000745,
+      "firstCloud": 18020.400000002235,
+      "allClouds": 18020.5,
+      "paint": [
+        {
+          "name": "first-paint",
+          "time": 796
+        },
+        {
+          "name": "first-contentful-paint",
+          "time": 796
+        }
+      ],
+      "transferred": 8867884,
+      "errors": []
+    },
+    {
+      "name": "experiment",
+      "run": 1,
+      "tasks": [
+        {
+          "start": 4849.699999999255,
+          "duration": 65
+        },
+        {
+          "start": 4916,
+          "duration": 528
+        },
+        {
+          "start": 5452.10000000149,
+          "duration": 84
+        },
+        {
+          "start": 6446.800000000745,
+          "duration": 276
+        },
+        {
+          "start": 18188.199999999255,
+          "duration": 99
+        }
+      ],
+      "controls": 5538.400000002235,
+      "model": 6375.800000000745,
+      "firstCloud": 11542.400000002235,
+      "allClouds": 18450,
+      "paint": [
+        {
+          "name": "first-paint",
+          "time": 764
+        },
+        {
+          "name": "first-contentful-paint",
+          "time": 764
+        }
+      ],
+      "transferred": 9202752,
+      "language": {
+        "milliseconds": 298.80000000074506,
+        "lang": "en",
+        "sameDocument": true,
+        "sameModel": true
+      },
+      "errors": []
+    },
+    {
+      "name": "experiment",
+      "run": 2,
+      "tasks": [
+        {
+          "start": 4849.5,
+          "duration": 63
+        },
+        {
+          "start": 4913.900000002235,
+          "duration": 537
+        },
+        {
+          "start": 5459.20000000298,
+          "duration": 85
+        },
+        {
+          "start": 6467.5,
+          "duration": 273
+        },
+        {
+          "start": 18196.70000000298,
+          "duration": 86
+        }
+      ],
+      "controls": 5558.300000000745,
+      "model": 6389,
+      "firstCloud": 11546.800000000745,
+      "allClouds": 18446.60000000149,
+      "paint": [
+        {
+          "name": "first-paint",
+          "time": 776
+        },
+        {
+          "name": "first-contentful-paint",
+          "time": 776
+        }
+      ],
+      "transferred": 9202752,
+      "language": {
+        "milliseconds": 426.80000000074506,
+        "lang": "en",
+        "sameDocument": true,
+        "sameModel": true
+      },
+      "errors": []
+    },
+    {
+      "name": "baseline",
+      "run": 2,
+      "tasks": [
+        {
+          "start": 5647.60000000149,
+          "duration": 197
+        },
+        {
+          "start": 5845.400000002235,
+          "duration": 476
+        },
+        {
+          "start": 8071.10000000149,
+          "duration": 286
+        },
+        {
+          "start": 17878.699999999255,
+          "duration": 104
+        }
+      ],
+      "controls": 6324.400000002235,
+      "model": 8070.300000000745,
+      "firstCloud": 18000.60000000149,
+      "allClouds": 18000.60000000149,
+      "paint": [
+        {
+          "name": "first-paint",
+          "time": 788
+        },
+        {
+          "name": "first-contentful-paint",
+          "time": 788
+        }
+      ],
+      "transferred": 8867884,
+      "errors": []
+    },
+    {
+      "name": "baseline",
+      "run": 3,
+      "tasks": [
+        {
+          "start": 5646,
+          "duration": 182
+        },
+        {
+          "start": 5828.199999999255,
+          "duration": 475
+        },
+        {
+          "start": 8077.39999999851,
+          "duration": 288
+        },
+        {
+          "start": 17852.89999999851,
+          "duration": 102
+        }
+      ],
+      "controls": 6306.199999999255,
+      "model": 8048.699999999255,
+      "firstCloud": 17974,
+      "allClouds": 17974,
+      "paint": [
+        {
+          "name": "first-paint",
+          "time": 776
+        },
+        {
+          "name": "first-contentful-paint",
+          "time": 776
+        }
+      ],
+      "transferred": 8867884,
+      "errors": []
+    },
+    {
+      "name": "experiment",
+      "run": 3,
+      "tasks": [
+        {
+          "start": 4846.800000000745,
+          "duration": 71
+        },
+        {
+          "start": 4919.599999997765,
+          "duration": 528
+        },
+        {
+          "start": 5455.300000000745,
+          "duration": 85
+        },
+        {
+          "start": 6628.099999997765,
+          "duration": 304
+        },
+        {
+          "start": 18197.89999999851,
+          "duration": 94
+        }
+      ],
+      "controls": 5553.599999997765,
+      "model": 6390.5,
+      "firstCloud": 11545.800000000745,
+      "allClouds": 18457.89999999851,
+      "paint": [
+        {
+          "name": "first-paint",
+          "time": 776
+        },
+        {
+          "name": "first-contentful-paint",
+          "time": 776
+        }
+      ],
+      "transferred": 9202752,
+      "language": {
+        "milliseconds": 169,
+        "lang": "en",
+        "sameDocument": true,
+        "sameModel": true
+      },
+      "errors": []
+    }
+  ],
+  "medians": {
+    "baseline": {
+      "controls": 6324.4,
+      "model": 8070.3,
+      "firstCloud": 18000.6,
+      "allClouds": 18000.6,
+      "transferred": 8867884,
+      "firstPaint": 788
+    },
+    "experiment": {
+      "controls": 5553.6,
+      "model": 6389,
+      "firstCloud": 11545.8,
+      "allClouds": 18450,
+      "transferred": 9202752,
+      "firstPaint": 776
+    }
+  }
+}

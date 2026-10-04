@@ -43,7 +43,7 @@
     "font": "76px"
   },
   "sky0": 1524763785,
-  "sky1": 101423514,
+  "sky1": 1314223640,
   "disturbed": {
     "ready": true,
     "sourceKeys": [
@@ -87,19 +87,19 @@
     "active": true,
     "emissions": 14,
     "allowed": true,
-    "frames": 37,
-    "scroll": 3269.4760805086444,
-    "progress": 0.5192941678063285,
+    "frames": 35,
+    "scroll": 3268.4839635615763,
+    "progress": 0.5191365888757269,
     "sceneIndex": 1,
     "sources": 3,
     "mirrored": false,
     "looped": false,
     "maxDisplacement": 14,
     "reduced": false,
-    "baseBuilds": 35,
+    "baseBuilds": 33,
     "localPatch": [
-      194,
-      179
+      203,
+      183
     ]
   },
   "clicks0": 0,
