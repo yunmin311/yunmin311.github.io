@@ -1,0 +1,1058 @@
+[
+  {
+    "backend": "canvas",
+    "width": 390,
+    "cloud": {
+      "ready": true,
+      "sourceKeys": [
+        "cloud-01",
+        "cloud-02",
+        "cloud-03"
+      ],
+      "sourceSizes": [
+        [
+          1024,
+          1536
+        ],
+        [
+          1024,
+          1536
+        ],
+        [
+          1024,
+          1536
+        ]
+      ],
+      "grid": [
+        960,
+        1440
+      ],
+      "generated": 8,
+      "planes": 28,
+      "legacyUses": [
+        "record-art pixel-plane",
+        "pixel-window"
+      ],
+      "mode": "canvas-inverse-sampling",
+      "loadedSources": 3,
+      "cellCSS": 1,
+      "sampleGrid": [
+        960,
+        1440
+      ],
+      "worldHeight": 844,
+      "backend": "software-webgl-fallback",
+      "renderSize": [
+        390,
+        844
+      ],
+      "active": false,
+      "emissions": 0,
+      "allowed": true,
+      "frames": 3,
+      "scroll": 0,
+      "progress": 0,
+      "sceneIndex": 0,
+      "sources": 3,
+      "mirrored": false,
+      "looped": false,
+      "maxDisplacement": 14,
+      "reduced": false,
+      "baseBuilds": 3,
+      "localPatch": [
+        300,
+        150
+      ]
+    },
+    "signature": 1049042449,
+    "overflow": false
+  },
+  {
+    "backend": "canvas",
+    "width": 960,
+    "cloud": {
+      "ready": true,
+      "sourceKeys": [
+        "cloud-01",
+        "cloud-02",
+        "cloud-03"
+      ],
+      "sourceSizes": [
+        [
+          1024,
+          1536
+        ],
+        [
+          1024,
+          1536
+        ],
+        [
+          1024,
+          1536
+        ]
+      ],
+      "grid": [
+        960,
+        1440
+      ],
+      "generated": 8,
+      "planes": 28,
+      "legacyUses": [
+        "record-art pixel-plane",
+        "pixel-window"
+      ],
+      "mode": "canvas-inverse-sampling",
+      "loadedSources": 3,
+      "cellCSS": 1,
+      "sampleGrid": [
+        960,
+        1440
+      ],
+      "worldHeight": 844,
+      "backend": "software-webgl-fallback",
+      "renderSize": [
+        960,
+        844
+      ],
+      "active": false,
+      "emissions": 0,
+      "allowed": true,
+      "frames": 5,
+      "scroll": 0,
+      "progress": 0,
+      "sceneIndex": 0,
+      "sources": 3,
+      "mirrored": false,
+      "looped": false,
+      "maxDisplacement": 14,
+      "reduced": false,
+      "baseBuilds": 4,
+      "localPatch": [
+        300,
+        150
+      ]
+    },
+    "signature": 1213897242,
+    "overflow": false
+  },
+  {
+    "backend": "canvas",
+    "width": 961,
+    "cloud": {
+      "ready": true,
+      "sourceKeys": [
+        "cloud-01",
+        "cloud-02",
+        "cloud-03"
+      ],
+      "sourceSizes": [
+        [
+          1024,
+          1536
+        ],
+        [
+          1024,
+          1536
+        ],
+        [
+          1024,
+          1536
+        ]
+      ],
+      "grid": [
+        960,
+        1440
+      ],
+      "generated": 8,
+      "planes": 28,
+      "legacyUses": [
+        "record-art pixel-plane",
+        "pixel-window"
+      ],
+      "mode": "canvas-inverse-sampling",
+      "loadedSources": 3,
+      "cellCSS": 1,
+      "sampleGrid": [
+        961,
+        1441.5
+      ],
+      "worldHeight": 844,
+      "backend": "software-webgl-fallback",
+      "renderSize": [
+        961,
+        844
+      ],
+      "active": false,
+      "emissions": 0,
+      "allowed": true,
+      "frames": 7,
+      "scroll": 0,
+      "progress": 0,
+      "sceneIndex": 0,
+      "sources": 3,
+      "mirrored": false,
+      "looped": false,
+      "maxDisplacement": 14,
+      "reduced": false,
+      "baseBuilds": 5,
+      "localPatch": [
+        300,
+        150
+      ]
+    },
+    "signature": 3573562426,
+    "overflow": false
+  },
+  {
+    "backend": "canvas",
+    "width": 1440,
+    "cloud": {
+      "ready": true,
+      "sourceKeys": [
+        "cloud-01",
+        "cloud-02",
+        "cloud-03"
+      ],
+      "sourceSizes": [
+        [
+          1024,
+          1536
+        ],
+        [
+          1024,
+          1536
+        ],
+        [
+          1024,
+          1536
+        ]
+      ],
+      "grid": [
+        960,
+        1440
+      ],
+      "generated": 8,
+      "planes": 28,
+      "legacyUses": [
+        "record-art pixel-plane",
+        "pixel-window"
+      ],
+      "mode": "canvas-inverse-sampling",
+      "loadedSources": 3,
+      "cellCSS": 1,
+      "sampleGrid": [
+        1440,
+        2160
+      ],
+      "worldHeight": 844,
+      "backend": "software-webgl-fallback",
+      "renderSize": [
+        1440,
+        844
+      ],
+      "active": false,
+      "emissions": 0,
+      "allowed": true,
+      "frames": 9,
+      "scroll": 0,
+      "progress": 0,
+      "sceneIndex": 0,
+      "sources": 3,
+      "mirrored": false,
+      "looped": false,
+      "maxDisplacement": 14,
+      "reduced": false,
+      "baseBuilds": 6,
+      "localPatch": [
+        300,
+        150
+      ]
+    },
+    "signature": 2393394081,
+    "overflow": false
+  },
+  {
+    "backend": "canvas",
+    "width": 1920,
+    "cloud": {
+      "ready": true,
+      "sourceKeys": [
+        "cloud-01",
+        "cloud-02",
+        "cloud-03"
+      ],
+      "sourceSizes": [
+        [
+          1024,
+          1536
+        ],
+        [
+          1024,
+          1536
+        ],
+        [
+          1024,
+          1536
+        ]
+      ],
+      "grid": [
+        960,
+        1440
+      ],
+      "generated": 8,
+      "planes": 28,
+      "legacyUses": [
+        "record-art pixel-plane",
+        "pixel-window"
+      ],
+      "mode": "canvas-inverse-sampling",
+      "loadedSources": 3,
+      "cellCSS": 1,
+      "sampleGrid": [
+        1920,
+        2880
+      ],
+      "worldHeight": 844,
+      "backend": "software-webgl-fallback",
+      "renderSize": [
+        1920,
+        844
+      ],
+      "active": false,
+      "emissions": 0,
+      "allowed": true,
+      "frames": 11,
+      "scroll": 0,
+      "progress": 0,
+      "sceneIndex": 0,
+      "sources": 3,
+      "mirrored": false,
+      "looped": false,
+      "maxDisplacement": 14,
+      "reduced": false,
+      "baseBuilds": 7,
+      "localPatch": [
+        300,
+        150
+      ]
+    },
+    "signature": 3764300933,
+    "overflow": false
+  },
+  {
+    "backend": "canvas",
+    "width": 1921,
+    "cloud": {
+      "ready": true,
+      "sourceKeys": [
+        "cloud-01",
+        "cloud-02",
+        "cloud-03"
+      ],
+      "sourceSizes": [
+        [
+          1024,
+          1536
+        ],
+        [
+          1024,
+          1536
+        ],
+        [
+          1024,
+          1536
+        ]
+      ],
+      "grid": [
+        960,
+        1440
+      ],
+      "generated": 8,
+      "planes": 28,
+      "legacyUses": [
+        "record-art pixel-plane",
+        "pixel-window"
+      ],
+      "mode": "canvas-inverse-sampling",
+      "loadedSources": 3,
+      "cellCSS": 1,
+      "sampleGrid": [
+        1921,
+        2881.5
+      ],
+      "worldHeight": 844,
+      "backend": "software-webgl-fallback",
+      "renderSize": [
+        1921,
+        844
+      ],
+      "active": false,
+      "emissions": 0,
+      "allowed": true,
+      "frames": 13,
+      "scroll": 0,
+      "progress": 0,
+      "sceneIndex": 0,
+      "sources": 3,
+      "mirrored": false,
+      "looped": false,
+      "maxDisplacement": 14,
+      "reduced": false,
+      "baseBuilds": 8,
+      "localPatch": [
+        300,
+        150
+      ]
+    },
+    "signature": 717237863,
+    "overflow": false
+  },
+  {
+    "backend": "canvas",
+    "width": 2560,
+    "cloud": {
+      "ready": true,
+      "sourceKeys": [
+        "cloud-01",
+        "cloud-02",
+        "cloud-03"
+      ],
+      "sourceSizes": [
+        [
+          1024,
+          1536
+        ],
+        [
+          1024,
+          1536
+        ],
+        [
+          1024,
+          1536
+        ]
+      ],
+      "grid": [
+        960,
+        1440
+      ],
+      "generated": 8,
+      "planes": 28,
+      "legacyUses": [
+        "record-art pixel-plane",
+        "pixel-window"
+      ],
+      "mode": "canvas-inverse-sampling",
+      "loadedSources": 3,
+      "cellCSS": 1,
+      "sampleGrid": [
+        2560,
+        3840
+      ],
+      "worldHeight": 844,
+      "backend": "software-webgl-fallback",
+      "renderSize": [
+        2560,
+        844
+      ],
+      "active": false,
+      "emissions": 0,
+      "allowed": true,
+      "frames": 15,
+      "scroll": 0,
+      "progress": 0,
+      "sceneIndex": 0,
+      "sources": 3,
+      "mirrored": false,
+      "looped": false,
+      "maxDisplacement": 14,
+      "reduced": false,
+      "baseBuilds": 9,
+      "localPatch": [
+        300,
+        150
+      ]
+    },
+    "signature": 590852474,
+    "overflow": false
+  },
+  {
+    "backend": "canvas",
+    "width": 3840,
+    "cloud": {
+      "ready": true,
+      "sourceKeys": [
+        "cloud-01",
+        "cloud-02",
+        "cloud-03"
+      ],
+      "sourceSizes": [
+        [
+          1024,
+          1536
+        ],
+        [
+          1024,
+          1536
+        ],
+        [
+          1024,
+          1536
+        ]
+      ],
+      "grid": [
+        960,
+        1440
+      ],
+      "generated": 8,
+      "planes": 28,
+      "legacyUses": [
+        "record-art pixel-plane",
+        "pixel-window"
+      ],
+      "mode": "canvas-inverse-sampling",
+      "loadedSources": 3,
+      "cellCSS": 1,
+      "sampleGrid": [
+        3840,
+        5760
+      ],
+      "worldHeight": 844,
+      "backend": "software-webgl-fallback",
+      "renderSize": [
+        3840,
+        844
+      ],
+      "active": false,
+      "emissions": 0,
+      "allowed": true,
+      "frames": 17,
+      "scroll": 0,
+      "progress": 0,
+      "sceneIndex": 0,
+      "sources": 3,
+      "mirrored": false,
+      "looped": false,
+      "maxDisplacement": 14,
+      "reduced": false,
+      "baseBuilds": 10,
+      "localPatch": [
+        300,
+        150
+      ]
+    },
+    "signature": 442524418,
+    "overflow": false
+  },
+  {
+    "backend": "webgl",
+    "width": 390,
+    "cloud": {
+      "ready": true,
+      "sourceKeys": [
+        "cloud-01",
+        "cloud-02",
+        "cloud-03"
+      ],
+      "sourceSizes": [
+        [
+          1024,
+          1536
+        ],
+        [
+          1024,
+          1536
+        ],
+        [
+          1024,
+          1536
+        ]
+      ],
+      "grid": [
+        960,
+        1440
+      ],
+      "generated": 8,
+      "planes": 28,
+      "legacyUses": [
+        "record-art pixel-plane",
+        "pixel-window"
+      ],
+      "mode": "ogl-flowmap",
+      "loadedSources": 3,
+      "cellCSS": 1,
+      "sampleGrid": [
+        960,
+        1440
+      ],
+      "worldHeight": 844,
+      "renderSize": [
+        390,
+        844
+      ],
+      "flowSize": 64,
+      "active": false,
+      "emissions": 0,
+      "allowed": true,
+      "frames": 3,
+      "scroll": 0,
+      "progress": 0,
+      "sceneIndex": 0,
+      "sources": 3,
+      "mirrored": false,
+      "looped": false,
+      "maxDisplacement": 14,
+      "reduced": false,
+      "contextLost": false
+    },
+    "signature": 3496108938,
+    "overflow": false
+  },
+  {
+    "backend": "webgl",
+    "width": 960,
+    "cloud": {
+      "ready": true,
+      "sourceKeys": [
+        "cloud-01",
+        "cloud-02",
+        "cloud-03"
+      ],
+      "sourceSizes": [
+        [
+          1024,
+          1536
+        ],
+        [
+          1024,
+          1536
+        ],
+        [
+          1024,
+          1536
+        ]
+      ],
+      "grid": [
+        960,
+        1440
+      ],
+      "generated": 8,
+      "planes": 28,
+      "legacyUses": [
+        "record-art pixel-plane",
+        "pixel-window"
+      ],
+      "mode": "ogl-flowmap",
+      "loadedSources": 3,
+      "cellCSS": 1,
+      "sampleGrid": [
+        960,
+        1440
+      ],
+      "worldHeight": 844,
+      "renderSize": [
+        960,
+        844
+      ],
+      "flowSize": 64,
+      "active": false,
+      "emissions": 0,
+      "allowed": true,
+      "frames": 6,
+      "scroll": 0,
+      "progress": 0,
+      "sceneIndex": 0,
+      "sources": 3,
+      "mirrored": false,
+      "looped": false,
+      "maxDisplacement": 14,
+      "reduced": false,
+      "contextLost": false
+    },
+    "signature": 3103335975,
+    "overflow": false
+  },
+  {
+    "backend": "webgl",
+    "width": 961,
+    "cloud": {
+      "ready": true,
+      "sourceKeys": [
+        "cloud-01",
+        "cloud-02",
+        "cloud-03"
+      ],
+      "sourceSizes": [
+        [
+          1024,
+          1536
+        ],
+        [
+          1024,
+          1536
+        ],
+        [
+          1024,
+          1536
+        ]
+      ],
+      "grid": [
+        960,
+        1440
+      ],
+      "generated": 8,
+      "planes": 28,
+      "legacyUses": [
+        "record-art pixel-plane",
+        "pixel-window"
+      ],
+      "mode": "ogl-flowmap",
+      "loadedSources": 3,
+      "cellCSS": 1,
+      "sampleGrid": [
+        961,
+        1441.5
+      ],
+      "worldHeight": 844,
+      "renderSize": [
+        961,
+        844
+      ],
+      "flowSize": 64,
+      "active": false,
+      "emissions": 0,
+      "allowed": true,
+      "frames": 9,
+      "scroll": 0,
+      "progress": 0,
+      "sceneIndex": 0,
+      "sources": 3,
+      "mirrored": false,
+      "looped": false,
+      "maxDisplacement": 14,
+      "reduced": false,
+      "contextLost": false
+    },
+    "signature": 223217268,
+    "overflow": false
+  },
+  {
+    "backend": "webgl",
+    "width": 1440,
+    "cloud": {
+      "ready": true,
+      "sourceKeys": [
+        "cloud-01",
+        "cloud-02",
+        "cloud-03"
+      ],
+      "sourceSizes": [
+        [
+          1024,
+          1536
+        ],
+        [
+          1024,
+          1536
+        ],
+        [
+          1024,
+          1536
+        ]
+      ],
+      "grid": [
+        960,
+        1440
+      ],
+      "generated": 8,
+      "planes": 28,
+      "legacyUses": [
+        "record-art pixel-plane",
+        "pixel-window"
+      ],
+      "mode": "ogl-flowmap",
+      "loadedSources": 3,
+      "cellCSS": 1,
+      "sampleGrid": [
+        1440,
+        2160
+      ],
+      "worldHeight": 844,
+      "renderSize": [
+        1440,
+        844
+      ],
+      "flowSize": 64,
+      "active": false,
+      "emissions": 0,
+      "allowed": true,
+      "frames": 12,
+      "scroll": 0,
+      "progress": 0,
+      "sceneIndex": 0,
+      "sources": 3,
+      "mirrored": false,
+      "looped": false,
+      "maxDisplacement": 14,
+      "reduced": false,
+      "contextLost": false
+    },
+    "signature": 1868060950,
+    "overflow": false
+  },
+  {
+    "backend": "webgl",
+    "width": 1920,
+    "cloud": {
+      "ready": true,
+      "sourceKeys": [
+        "cloud-01",
+        "cloud-02",
+        "cloud-03"
+      ],
+      "sourceSizes": [
+        [
+          1024,
+          1536
+        ],
+        [
+          1024,
+          1536
+        ],
+        [
+          1024,
+          1536
+        ]
+      ],
+      "grid": [
+        960,
+        1440
+      ],
+      "generated": 8,
+      "planes": 28,
+      "legacyUses": [
+        "record-art pixel-plane",
+        "pixel-window"
+      ],
+      "mode": "ogl-flowmap",
+      "loadedSources": 3,
+      "cellCSS": 1,
+      "sampleGrid": [
+        1920,
+        2880
+      ],
+      "worldHeight": 844,
+      "renderSize": [
+        1920,
+        844
+      ],
+      "flowSize": 64,
+      "active": false,
+      "emissions": 0,
+      "allowed": true,
+      "frames": 15,
+      "scroll": 0,
+      "progress": 0,
+      "sceneIndex": 0,
+      "sources": 3,
+      "mirrored": false,
+      "looped": false,
+      "maxDisplacement": 14,
+      "reduced": false,
+      "contextLost": false
+    },
+    "signature": 637343233,
+    "overflow": false
+  },
+  {
+    "backend": "webgl",
+    "width": 1921,
+    "cloud": {
+      "ready": true,
+      "sourceKeys": [
+        "cloud-01",
+        "cloud-02",
+        "cloud-03"
+      ],
+      "sourceSizes": [
+        [
+          1024,
+          1536
+        ],
+        [
+          1024,
+          1536
+        ],
+        [
+          1024,
+          1536
+        ]
+      ],
+      "grid": [
+        960,
+        1440
+      ],
+      "generated": 8,
+      "planes": 28,
+      "legacyUses": [
+        "record-art pixel-plane",
+        "pixel-window"
+      ],
+      "mode": "ogl-flowmap",
+      "loadedSources": 3,
+      "cellCSS": 1,
+      "sampleGrid": [
+        1921,
+        2881.5
+      ],
+      "worldHeight": 844,
+      "renderSize": [
+        1921,
+        844
+      ],
+      "flowSize": 64,
+      "active": false,
+      "emissions": 0,
+      "allowed": true,
+      "frames": 18,
+      "scroll": 0,
+      "progress": 0,
+      "sceneIndex": 0,
+      "sources": 3,
+      "mirrored": false,
+      "looped": false,
+      "maxDisplacement": 14,
+      "reduced": false,
+      "contextLost": false
+    },
+    "signature": 756845197,
+    "overflow": false
+  },
+  {
+    "backend": "webgl",
+    "width": 2560,
+    "cloud": {
+      "ready": true,
+      "sourceKeys": [
+        "cloud-01",
+        "cloud-02",
+        "cloud-03"
+      ],
+      "sourceSizes": [
+        [
+          1024,
+          1536
+        ],
+        [
+          1024,
+          1536
+        ],
+        [
+          1024,
+          1536
+        ]
+      ],
+      "grid": [
+        960,
+        1440
+      ],
+      "generated": 8,
+      "planes": 28,
+      "legacyUses": [
+        "record-art pixel-plane",
+        "pixel-window"
+      ],
+      "mode": "ogl-flowmap",
+      "loadedSources": 3,
+      "cellCSS": 1,
+      "sampleGrid": [
+        2560,
+        3840
+      ],
+      "worldHeight": 844,
+      "renderSize": [
+        2560,
+        844
+      ],
+      "flowSize": 64,
+      "active": false,
+      "emissions": 0,
+      "allowed": true,
+      "frames": 21,
+      "scroll": 0,
+      "progress": 0,
+      "sceneIndex": 0,
+      "sources": 3,
+      "mirrored": false,
+      "looped": false,
+      "maxDisplacement": 14,
+      "reduced": false,
+      "contextLost": false
+    },
+    "signature": 4154616167,
+    "overflow": false
+  },
+  {
+    "backend": "webgl",
+    "width": 3840,
+    "cloud": {
+      "ready": true,
+      "sourceKeys": [
+        "cloud-01",
+        "cloud-02",
+        "cloud-03"
+      ],
+      "sourceSizes": [
+        [
+          1024,
+          1536
+        ],
+        [
+          1024,
+          1536
+        ],
+        [
+          1024,
+          1536
+        ]
+      ],
+      "grid": [
+        960,
+        1440
+      ],
+      "generated": 8,
+      "planes": 28,
+      "legacyUses": [
+        "record-art pixel-plane",
+        "pixel-window"
+      ],
+      "mode": "ogl-flowmap",
+      "loadedSources": 3,
+      "cellCSS": 1,
+      "sampleGrid": [
+        3840,
+        5760
+      ],
+      "worldHeight": 844,
+      "renderSize": [
+        3840,
+        844
+      ],
+      "flowSize": 64,
+      "active": false,
+      "emissions": 0,
+      "allowed": true,
+      "frames": 24,
+      "scroll": 0,
+      "progress": 0,
+      "sceneIndex": 0,
+      "sources": 3,
+      "mirrored": false,
+      "looped": false,
+      "maxDisplacement": 14,
+      "reduced": false,
+      "contextLost": false
+    },
+    "signature": 67417280,
+    "overflow": false
+  }
+]
