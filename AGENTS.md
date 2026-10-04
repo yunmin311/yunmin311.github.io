@@ -98,3 +98,9 @@ npm run preview  # 预览构建产物
 正式首页在 `src/pages/[lang]/index.astro`，互动源码/样式在 `src/scripts/paper`、`src/styles/paper`，共享阅读页面在 `src/layouts/Base.astro`。`scripts/build-paper.mjs` 从正式源生成本地缓存资产；不读取 design 或 personal-website。运行 `npm run dev` / `npm run build` 会先执行此步骤。新增中文后可用 `npm run paper:fonts` 获取服务商字表字体，普通构建不需联网。
 
 旧项目两篇文章、六个历史项目已迁入内容集合，缺项明确待补；`reflections`、`learning`、`code` 同步目录仍是机器管理区，不手写。素材/音乐样例不代表真实个人作品或歌单。右侧刻度替代可见滚动条，键盘/滚轮/触摸滚动保留。用户随后确认设计定稿，并明确要求本轮提交、推送到 GitHub。后续以此设计为基准，只补充真实内容与必要功能；设计变更仍由用户拍板。用户随后明确要求公开部署和更新线上 README。GitHub Pages 现由 main 推送自动构建发布，也保留手动触发；沿用原网址，内容占位继续保留。
+
+## 性能优化与发布授权（2026-10-04）
+
+用户已否决集中构图，继续沿用 2026-10-03 原定稿，并明确要求完成下一轮优化、自动化测试后上线。性能实现包括无损 WebP（不支持时回退 PNG）、控件与模型并行加载、首页原位中英切换、云层首层先显示其余预取、砂画组件靠近视口加载、整数颗粒采样，以及图形能力不足时的可点击卡片与 Canvas 备用路径。触摸屏扰动仍未实现，不减少手机内容。
+
+构建自动生成压缩素材、脚本和样式，不依赖设计试稿。测试脚本在 `scripts/qa`，测速和兼容边界见 `docs/verification/performance-experiment-2026-10-04.md`。发布必须保留真实设计、滚动云层、鼠标和点击粒子、3D 交互、音乐控件及原有内容。
