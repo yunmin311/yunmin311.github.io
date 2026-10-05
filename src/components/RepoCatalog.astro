@@ -1,0 +1,10 @@
+---
+import {getPublicRepos,projectGroups} from '../lib/catalog';
+import ReleaseLink from './ReleaseLink.astro';
+import type {Lang} from '../i18n/ui';
+const {lang}=Astro.props as {lang:Lang};
+const repos=await getPublicRepos(lang);
+---
+<p class="source-note">{lang==='zh'?'全部公开仓库，按主题放在一起。Fork、Profile 与网站源码保留独立身份；版本于 2026-10-05 核对，不自动追踪。':'All public repositories grouped by theme. Forks, profile and site sources retain their own identities. Releases were checked on 2026-10-05; no live tracking.'}</p>
+{projectGroups.map(group=><section class="catalog-group" id={group.id}><h2>{group[lang]}</h2><div class="route-cards">{repos.filter(r=>r.group===group.id).map(row=><article class="route-card" data-repo-name={row.name}><small>{row.fork?'Fork':row.stack}</small><h2>{row.title}</h2><p>{row.summary}</p><div class="repo-links"><a href={row.link} target="_blank" rel="noopener">GitHub ↗</a>{row.href&&<a href={row.href}>{lang==='zh'?'项目说明':'Project notes'} ↗</a>}<ReleaseLink release={row.release} lang={lang}/></div></article>)}</div></section>)}
+<h2>{lang==='zh'?'练习':'Practice'}</h2><p class="notice-empty">{lang==='zh'?'没有额外标记为练习的公开条目。':'No additional public entries are classified as practice.'}</p>

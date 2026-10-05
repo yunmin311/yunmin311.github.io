@@ -3,7 +3,7 @@
 个人数字花园 + Creative Engineering Portfolio，中英双语，Astro 静态站，免费托管在 GitHub Pages。
 **线上入口：[中文首页](https://yunmin311.github.io/zh/) · [English](https://yunmin311.github.io/en/)**
 
-冷蓝细砂云层、玻璃界面、可展开的立体卡片和侧边音乐播放器。设计和性能基准已定稿并上线。2026-10-05 内容接入工作分支整理六个真实公开项目、五个精选与当前简介；尚未推送、尚未替换线上内容。照片、歌单、学习记录仍待真实材料，展示试样单独标明。
+冷蓝细砂云层、玻璃界面、可展开的立体卡片和侧边音乐播放器。设计和性能基准已定稿并上线。2026-10-05 内容接入工作分支整理 22 个真实公开项目、26 个公开仓库、五个精选与当前简介；尚未推送、尚未替换线上内容。照片、歌单、学习记录仍待真实材料，展示试样单独标明。
 
 [设计基准](docs/design-baseline-2026-10-03.md) · [接入与维护说明](docs/正式网站接入说明.md) · [内容填充准备](docs/内容填充准备.md) · [发布进度](https://github.com/yunmin311/yunmin311.github.io/actions/workflows/deploy.yml)
 

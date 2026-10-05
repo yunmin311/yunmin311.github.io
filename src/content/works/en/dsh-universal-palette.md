@@ -11,6 +11,8 @@ order: 6
 kind: "project"
 sources: [{"label": "README.md", "url": "https://github.com/yunmin311/dsh-universal-palette/blob/d6b59dc8acfe68267039485072b8cdd3eb786989/README.md"}, {"label": "docs/COMPATIBILITY.md", "url": "https://github.com/yunmin311/dsh-universal-palette/blob/d6b59dc8acfe68267039485072b8cdd3eb786989/docs/COMPATIBILITY.md"}, {"label": "package.json", "url": "https://github.com/yunmin311/dsh-universal-palette/blob/d6b59dc8acfe68267039485072b8cdd3eb786989/package.json"}]
 cover: "../_covers/dsh-universal-palette.webp"
+group: "software"
+release: {"tag": "v0.2.1", "url": "https://github.com/yunmin311/dsh-universal-palette/releases/tag/v0.2.1", "prerelease": false, "hasAssets": false}
 ---
 
 ## Project

@@ -10,6 +10,7 @@ featured: true
 order: 1
 kind: "project"
 sources: [{"label": "README.md", "url": "https://github.com/yunmin311/GitLineage/blob/e6c2bc54305e68552328d02c2a82ef62ccbe7fe8/README.md"}, {"label": "docs/project-state.md", "url": "https://github.com/yunmin311/GitLineage/blob/e6c2bc54305e68552328d02c2a82ef62ccbe7fe8/docs/project-state.md"}, {"label": "docs/web-slice.md", "url": "https://github.com/yunmin311/GitLineage/blob/e6c2bc54305e68552328d02c2a82ef62ccbe7fe8/docs/web-slice.md"}]
+group: "software"
 ---
 
 ## Project

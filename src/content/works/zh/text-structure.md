@@ -10,6 +10,8 @@ featured: true
 order: 3
 kind: "project"
 sources: [{"label": "README.md", "url": "https://github.com/yunmin311/universal-text-structure-standard/blob/fe2b7f9763cec2eb3971a20913f8c4dae3d40afe/README.md"}, {"label": "STANDARD.md", "url": "https://github.com/yunmin311/universal-text-structure-standard/blob/fe2b7f9763cec2eb3971a20913f8c4dae3d40afe/STANDARD.md"}, {"label": "FORMAT_RULES.yaml", "url": "https://github.com/yunmin311/universal-text-structure-standard/blob/fe2b7f9763cec2eb3971a20913f8c4dae3d40afe/FORMAT_RULES.yaml"}, {"label": "scripts/validate.py", "url": "https://github.com/yunmin311/universal-text-structure-standard/blob/fe2b7f9763cec2eb3971a20913f8c4dae3d40afe/scripts/validate.py"}]
+group: "knowledge"
+release: {"tag": "v1.0.0", "url": "https://github.com/yunmin311/universal-text-structure-standard/releases/tag/v1.0.0", "prerelease": false, "hasAssets": false}
 ---
 
 ## 项目

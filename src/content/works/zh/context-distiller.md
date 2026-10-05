@@ -11,6 +11,8 @@ order: 2
 kind: "project"
 sources: [{"label": "README.md", "url": "https://github.com/yunmin311/context-distiller/blob/c94e1f2c5e63caf664569ef0c18c94e8bfce42c4/README.md"}, {"label": "docs/PRIVACY.md", "url": "https://github.com/yunmin311/context-distiller/blob/c94e1f2c5e63caf664569ef0c18c94e8bfce42c4/docs/PRIVACY.md"}, {"label": "package.json", "url": "https://github.com/yunmin311/context-distiller/blob/c94e1f2c5e63caf664569ef0c18c94e8bfce42c4/package.json"}]
 cover: "../_covers/context-distiller.webp"
+group: "software"
+release: {"tag": "v1.3.0", "url": "https://github.com/yunmin311/context-distiller/releases/tag/v1.3.0", "prerelease": false, "hasAssets": true}
 ---
 
 ## 项目

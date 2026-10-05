@@ -1,0 +1,5 @@
+---
+import type {Lang} from '../i18n/ui';
+const {release,lang}=Astro.props as {lang:Lang,release?:{tag:string;url:string;prerelease:boolean;hasAssets:boolean}|null};
+---
+{release&&<a class="release-link" href={release.url} target="_blank" rel="noopener">Release {release.tag}<small data-zh={release.prerelease?'预发布':!release.hasAssets?'源码':''} data-en={release.prerelease?'Pre-release':!release.hasAssets?'Source':''}>{release.prerelease?(lang==='zh'?'预发布':'Pre-release'):!release.hasAssets?(lang==='zh'?'源码':'Source'):''}</small> ↗</a>}

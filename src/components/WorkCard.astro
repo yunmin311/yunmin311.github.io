@@ -1,4 +1,5 @@
 ---
+import ReleaseLink from './ReleaseLink.astro';
 import { Image } from 'astro:assets';
 import { getRelativeLocaleUrl } from 'astro:i18n';
 import type { CollectionEntry } from 'astro:content';
@@ -13,12 +14,12 @@ const { work, lang } = Astro.props;
 const href = getRelativeLocaleUrl(lang, `works/${slugOf(work.id)}`);
 ---
 
-<a class="work-card" href={href}>
+<div class="work-entry"><a class="work-card" href={href}>
   {work.data.cover ? <Image class="work-cover" src={work.data.cover} alt={`${work.data.title} — ${lang==='zh'?'项目仓库原有截图':'Existing repository screenshot'}`} width={800} /> : <div class="work-cover project-title-cover"><small>{work.data.category}</small><strong>{work.data.title}</strong><span>{work.data.stack}</span></div>}
   <span class="work-title">{work.data.title}</span>
   <span class="work-summary">{work.data.summary}</span>
   <small>{work.data.status}</small>
-</a>
+</a><ReleaseLink release={work.data.release} lang={lang}/></div>
 
 <style>
   .work-card {

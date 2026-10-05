@@ -2,11 +2,11 @@
 import {getCollection} from 'astro:content';
 import Base from '../../../layouts/Base.astro';
 import {locales,type Lang} from '../../../i18n/ui';
-import {slugOf,getFeaturedWorks} from '../../../lib/content';
+import {slugOf,getWorks} from '../../../lib/content';
 export function getStaticPaths(){return locales.map(lang=>({params:{lang}}));}
 const lang=Astro.params.lang as Lang;
 const entries=await getCollection('projectIdeas',({id,data})=>id.startsWith(lang+'/')&&!data.draft);
-const works=await getFeaturedWorks(lang);
+const works=await getWorks(lang);
 const archive=await getCollection('projectIdeas',({id,data})=>id.startsWith('zh/')&&!data.draft);
 const notes=await getCollection('reflections',({id})=>id.startsWith(lang+'/'));
 ---

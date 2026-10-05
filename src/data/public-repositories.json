@@ -1,0 +1,503 @@
+[
+  {
+    "name": "ai-systematic-notes",
+    "title": "AI Systematic Notes",
+    "url": "https://github.com/yunmin311/ai-systematic-notes",
+    "group": "knowledge",
+    "fork": false,
+    "archived": false,
+    "language": "HTML",
+    "summary": {
+      "zh": "离线 HTML 人工智能课程、实验、题库与外部资源导读。",
+      "en": "Offline HTML AI courses, labs, quizzes and curated external resources."
+    },
+    "workSlug": "ai-systematic-notes",
+    "release": null,
+    "checkedAt": "2026-10-05"
+  },
+  {
+    "name": "anatomical-symptom-interface",
+    "title": "anatomical-symptom-interface",
+    "url": "https://github.com/yunmin311/anatomical-symptom-interface",
+    "group": "software",
+    "fork": false,
+    "archived": false,
+    "language": "TypeScript",
+    "summary": {
+      "zh": "",
+      "en": ""
+    },
+    "workSlug": "anatomical-symptom-interface",
+    "release": {
+      "tag": "v1.0.0-rc.2",
+      "url": "https://github.com/yunmin311/anatomical-symptom-interface/releases/tag/v1.0.0-rc.2",
+      "prerelease": true,
+      "hasAssets": false
+    },
+    "checkedAt": "2026-10-05"
+  },
+  {
+    "name": "calendar-app",
+    "title": "Activity Record",
+    "url": "https://github.com/yunmin311/calendar-app",
+    "group": "visual",
+    "fork": false,
+    "archived": false,
+    "language": "HTML",
+    "summary": {
+      "zh": "把活动数据渲染成月历留痕、统计简报与印刷 PDF。",
+      "en": "Render activity data as calendar traces, statistics, digests and print PDFs."
+    },
+    "workSlug": "calendar-app",
+    "release": null,
+    "checkedAt": "2026-10-05"
+  },
+  {
+    "name": "context-distiller",
+    "title": "context-distiller",
+    "url": "https://github.com/yunmin311/context-distiller",
+    "group": "software",
+    "fork": false,
+    "archived": false,
+    "language": "TypeScript",
+    "summary": {
+      "zh": "",
+      "en": ""
+    },
+    "workSlug": "context-distiller",
+    "release": {
+      "tag": "v1.3.0",
+      "url": "https://github.com/yunmin311/context-distiller/releases/tag/v1.3.0",
+      "prerelease": false,
+      "hasAssets": true
+    },
+    "checkedAt": "2026-10-05"
+  },
+  {
+    "name": "dark-canvas-image-skill",
+    "title": "Dark Canvas",
+    "url": "https://github.com/yunmin311/dark-canvas-image-skill",
+    "group": "visual",
+    "fork": false,
+    "archived": false,
+    "language": "HTML",
+    "summary": {
+      "zh": "保持源照片内容与颜色，探索细布面、色形与影像转换。",
+      "en": "An image skill exploring fine canvas surfaces and shape while retaining source content and color."
+    },
+    "workSlug": "dark-canvas-image-skill",
+    "release": {
+      "tag": "v0.6.0",
+      "url": "https://github.com/yunmin311/dark-canvas-image-skill/releases/tag/v0.6.0",
+      "prerelease": true,
+      "hasAssets": true
+    },
+    "checkedAt": "2026-10-05"
+  },
+  {
+    "name": "deepseek-harness",
+    "title": "deepseek-harness",
+    "url": "https://github.com/yunmin311/deepseek-harness",
+    "group": "repository",
+    "fork": true,
+    "archived": false,
+    "language": "TypeScript",
+    "summary": {
+      "zh": "DeepSeek 官方 Agent Harness 的 Fork，不标为原创项目。",
+      "en": "A fork of DeepSeek’s agent harness, not presented as an original project."
+    },
+    "workSlug": null,
+    "release": null,
+    "checkedAt": "2026-10-05"
+  },
+  {
+    "name": "dense-reading-obsidian",
+    "title": "Dense Reading",
+    "url": "https://github.com/yunmin311/dense-reading-obsidian",
+    "group": "obsidian",
+    "fork": false,
+    "archived": false,
+    "language": "JavaScript",
+    "summary": {
+      "zh": "调整阅读视图间距与行宽，并支持按笔记固定宽度。",
+      "en": "Reading-view spacing and line width, with per-note width pins."
+    },
+    "workSlug": "dense-reading-obsidian",
+    "release": {
+      "tag": "0.2.2",
+      "url": "https://github.com/yunmin311/dense-reading-obsidian/releases/tag/0.2.2",
+      "prerelease": false,
+      "hasAssets": true
+    },
+    "checkedAt": "2026-10-05"
+  },
+  {
+    "name": "DenseGPT",
+    "title": "DenseGPT",
+    "url": "https://github.com/yunmin311/DenseGPT",
+    "group": "software",
+    "fork": false,
+    "archived": false,
+    "language": "CSS",
+    "summary": {
+      "zh": "",
+      "en": ""
+    },
+    "workSlug": "densegpt",
+    "release": {
+      "tag": "v2.5.1",
+      "url": "https://github.com/yunmin311/DenseGPT/releases/tag/v2.5.1",
+      "prerelease": false,
+      "hasAssets": true
+    },
+    "checkedAt": "2026-10-05"
+  },
+  {
+    "name": "dsh-universal-palette",
+    "title": "dsh-universal-palette",
+    "url": "https://github.com/yunmin311/dsh-universal-palette",
+    "group": "software",
+    "fork": false,
+    "archived": false,
+    "language": "TypeScript",
+    "summary": {
+      "zh": "",
+      "en": ""
+    },
+    "workSlug": "dsh-universal-palette",
+    "release": {
+      "tag": "v0.2.1",
+      "url": "https://github.com/yunmin311/dsh-universal-palette/releases/tag/v0.2.1",
+      "prerelease": false,
+      "hasAssets": false
+    },
+    "checkedAt": "2026-10-05"
+  },
+  {
+    "name": "game",
+    "title": "game",
+    "url": "https://github.com/yunmin311/game",
+    "group": "repository",
+    "fork": false,
+    "archived": false,
+    "language": "Mathematica",
+    "summary": {
+      "zh": "仓库简介为 Unity；尚无 README，保留源码入口。",
+      "en": "Repository description: Unity; no README is available yet."
+    },
+    "workSlug": null,
+    "release": null,
+    "checkedAt": "2026-10-05"
+  },
+  {
+    "name": "GitLineage",
+    "title": "GitLineage",
+    "url": "https://github.com/yunmin311/GitLineage",
+    "group": "software",
+    "fork": false,
+    "archived": false,
+    "language": "TypeScript",
+    "summary": {
+      "zh": "",
+      "en": ""
+    },
+    "workSlug": "gitlineage",
+    "release": null,
+    "checkedAt": "2026-10-05"
+  },
+  {
+    "name": "governance-framework",
+    "title": "AI Governance Framework",
+    "url": "https://github.com/yunmin311/governance-framework",
+    "group": "knowledge",
+    "fork": false,
+    "archived": false,
+    "language": "PowerShell",
+    "summary": {
+      "zh": "让多个 AI 共用事实底本、权限边界与可检查的协作规则。",
+      "en": "A shared factual baseline, authority boundaries and checkable rules for multiple AI agents."
+    },
+    "workSlug": "governance-framework",
+    "release": {
+      "tag": "v2.2.3",
+      "url": "https://github.com/yunmin311/governance-framework/releases/tag/v2.2.3",
+      "prerelease": false,
+      "hasAssets": false
+    },
+    "checkedAt": "2026-10-05"
+  },
+  {
+    "name": "obsidian-config",
+    "title": "Obsidian Config",
+    "url": "https://github.com/yunmin311/obsidian-config",
+    "group": "obsidian",
+    "fork": false,
+    "archived": false,
+    "language": "PowerShell",
+    "summary": {
+      "zh": "主题、蓝灰配色、插件设置与恢复文档的配置包。",
+      "en": "A configuration pack for themes, blue-gray colors, plugin settings and recovery docs."
+    },
+    "workSlug": "obsidian-config",
+    "release": null,
+    "checkedAt": "2026-10-05"
+  },
+  {
+    "name": "paper-desk-obsidian",
+    "title": "Paper Desk",
+    "url": "https://github.com/yunmin311/paper-desk-obsidian",
+    "group": "obsidian",
+    "fork": false,
+    "archived": false,
+    "language": "JavaScript",
+    "summary": {
+      "zh": "笔记时钟、侧栏番茄钟与可选首页区块。",
+      "en": "A note clock, sidebar pomodoro and optional homepage blocks."
+    },
+    "workSlug": "paper-desk-obsidian",
+    "release": {
+      "tag": "0.5.0",
+      "url": "https://github.com/yunmin311/paper-desk-obsidian/releases/tag/0.5.0",
+      "prerelease": false,
+      "hasAssets": true
+    },
+    "checkedAt": "2026-10-05"
+  },
+  {
+    "name": "pixel-panels",
+    "title": "Pixel Panels",
+    "url": "https://github.com/yunmin311/pixel-panels",
+    "group": "visual",
+    "fork": false,
+    "archived": false,
+    "language": "JavaScript",
+    "summary": {
+      "zh": "统一像素网格与双配色的 GitHub Profile SVG 组件。",
+      "en": "GitHub profile SVG components sharing a pixel grid and dual palettes."
+    },
+    "workSlug": "pixel-panels",
+    "release": {
+      "tag": "v1.1.0",
+      "url": "https://github.com/yunmin311/pixel-panels/releases/tag/v1.1.0",
+      "prerelease": false,
+      "hasAssets": false
+    },
+    "checkedAt": "2026-10-05"
+  },
+  {
+    "name": "quiet-shelf-obsidian",
+    "title": "Quiet Shelf",
+    "url": "https://github.com/yunmin311/quiet-shelf-obsidian",
+    "group": "obsidian",
+    "fork": false,
+    "archived": false,
+    "language": "JavaScript",
+    "summary": {
+      "zh": "收起归档、索引笔记，并让文件树聚焦到选定内容。",
+      "en": "Shelve archive and index notes, and focus the file tree on chosen content."
+    },
+    "workSlug": "quiet-shelf-obsidian",
+    "release": {
+      "tag": "0.3.1",
+      "url": "https://github.com/yunmin311/quiet-shelf-obsidian/releases/tag/0.3.1",
+      "prerelease": false,
+      "hasAssets": true
+    },
+    "checkedAt": "2026-10-05"
+  },
+  {
+    "name": "reading-rail-sidebar-obsidian",
+    "title": "Reading Rail Sidebar",
+    "url": "https://github.com/yunmin311/reading-rail-sidebar-obsidian",
+    "group": "obsidian",
+    "fork": false,
+    "archived": false,
+    "language": "JavaScript",
+    "summary": {
+      "zh": "阅读进度、标题目录、密度刻度与每篇笔记的续读位置。",
+      "en": "Reading progress, heading outline, density ticks and per-note resume positions."
+    },
+    "workSlug": "reading-rail-sidebar-obsidian",
+    "release": {
+      "tag": "0.2.3",
+      "url": "https://github.com/yunmin311/reading-rail-sidebar-obsidian/releases/tag/0.2.3",
+      "prerelease": false,
+      "hasAssets": true
+    },
+    "checkedAt": "2026-10-05"
+  },
+  {
+    "name": "toolbar-pin-toggle-obsidian",
+    "title": "Toolbar Pin Toggle",
+    "url": "https://github.com/yunmin311/toolbar-pin-toggle-obsidian",
+    "group": "obsidian",
+    "fork": false,
+    "archived": false,
+    "language": "JavaScript",
+    "summary": {
+      "zh": "用一个快捷键让 Editing Toolbar 顶栏或底栏常驻。",
+      "en": "Pin Editing Toolbar’s top or bottom bar with one hotkey."
+    },
+    "workSlug": "toolbar-pin-toggle-obsidian",
+    "release": {
+      "tag": "1.1.2",
+      "url": "https://github.com/yunmin311/toolbar-pin-toggle-obsidian/releases/tag/1.1.2",
+      "prerelease": false,
+      "hasAssets": true
+    },
+    "checkedAt": "2026-10-05"
+  },
+  {
+    "name": "universal-text-structure-standard",
+    "title": "universal-text-structure-standard",
+    "url": "https://github.com/yunmin311/universal-text-structure-standard",
+    "group": "knowledge",
+    "fork": false,
+    "archived": false,
+    "language": "Python",
+    "summary": {
+      "zh": "",
+      "en": ""
+    },
+    "workSlug": "text-structure",
+    "release": {
+      "tag": "v1.0.0",
+      "url": "https://github.com/yunmin311/universal-text-structure-standard/releases/tag/v1.0.0",
+      "prerelease": false,
+      "hasAssets": false
+    },
+    "checkedAt": "2026-10-05"
+  },
+  {
+    "name": "window-annotator",
+    "title": "Window Annotator",
+    "url": "https://github.com/yunmin311/window-annotator",
+    "group": "software",
+    "fork": false,
+    "archived": false,
+    "language": "JavaScript",
+    "summary": {
+      "zh": "给 Windows 窗口贴手绘标注，并随窗口移动、缩放和可读滚动跟随。",
+      "en": "Hand-drawn annotations attached to Windows windows, following movement, resize and readable scroll events."
+    },
+    "workSlug": "window-annotator",
+    "release": {
+      "tag": "v0.2.0",
+      "url": "https://github.com/yunmin311/window-annotator/releases/tag/v0.2.0",
+      "prerelease": false,
+      "hasAssets": false
+    },
+    "checkedAt": "2026-10-05"
+  },
+  {
+    "name": "work-capsule",
+    "title": "Work Capsule",
+    "url": "https://github.com/yunmin311/work-capsule",
+    "group": "software",
+    "fork": false,
+    "archived": false,
+    "language": "Rust",
+    "summary": {
+      "zh": "桌面与命令行入口，一键同步选定 Git 文件夹，可选自动提交。",
+      "en": "Desktop and CLI entry points for syncing selected Git folders, with optional auto-commit."
+    },
+    "workSlug": "work-capsule",
+    "release": {
+      "tag": "V1.1.0",
+      "url": "https://github.com/yunmin311/work-capsule/releases/tag/V1.1.0",
+      "prerelease": false,
+      "hasAssets": true
+    },
+    "checkedAt": "2026-10-05"
+  },
+  {
+    "name": "ym-obsidian-course-notes-standard",
+    "title": "Obsidian Course Notes Standard",
+    "url": "https://github.com/yunmin311/ym-obsidian-course-notes-standard",
+    "group": "obsidian",
+    "fork": false,
+    "archived": false,
+    "language": "Python",
+    "summary": {
+      "zh": "带持续课程状态、来源管理和视觉审核的课程笔记交付规范。",
+      "en": "A course-note workflow with persistent state, source tracking and visual review."
+    },
+    "workSlug": "ym-obsidian-course-notes-standard",
+    "release": {
+      "tag": "v3.1.0",
+      "url": "https://github.com/yunmin311/ym-obsidian-course-notes-standard/releases/tag/v3.1.0",
+      "prerelease": false,
+      "hasAssets": true
+    },
+    "checkedAt": "2026-10-05"
+  },
+  {
+    "name": "yunmin-workbench",
+    "title": "Yunmin Workbench",
+    "url": "https://github.com/yunmin311/yunmin-workbench",
+    "group": "software",
+    "fork": false,
+    "archived": false,
+    "language": "TypeScript",
+    "summary": {
+      "zh": "连接项目、任务、上下文与真实 Agent 执行的桌面工作台。",
+      "en": "A desktop workbench connecting projects, tasks, context and real agent execution."
+    },
+    "workSlug": "yunmin-workbench",
+    "release": null,
+    "checkedAt": "2026-10-05"
+  },
+  {
+    "name": "yunmin311",
+    "title": "yunmin311",
+    "url": "https://github.com/yunmin311/yunmin311",
+    "group": "repository",
+    "fork": false,
+    "archived": false,
+    "language": "JavaScript",
+    "summary": {
+      "zh": "个人 GitHub Profile 的生成源码。",
+      "en": "Source for the personal GitHub profile."
+    },
+    "workSlug": null,
+    "release": null,
+    "checkedAt": "2026-10-05"
+  },
+  {
+    "name": "yunmin311.github.io",
+    "title": "yunmin311.github.io",
+    "url": "https://github.com/yunmin311/yunmin311.github.io",
+    "group": "repository",
+    "fork": false,
+    "archived": false,
+    "language": "HTML",
+    "summary": {
+      "zh": "当前个人网站的 Astro 源码。",
+      "en": "Astro source for this personal website."
+    },
+    "workSlug": null,
+    "release": null,
+    "checkedAt": "2026-10-05"
+  },
+  {
+    "name": "zheng-tally-obsidian",
+    "title": "Zheng Tally",
+    "url": "https://github.com/yunmin311/zheng-tally-obsidian",
+    "group": "obsidian",
+    "fork": false,
+    "archived": false,
+    "language": "TypeScript",
+    "summary": {
+      "zh": "可逐笔计数、提交和恢复的内联“正”字计数器。",
+      "en": "An inline stroke-by-stroke 正 tally that can be committed and resumed."
+    },
+    "workSlug": "zheng-tally-obsidian",
+    "release": {
+      "tag": "1.0.5",
+      "url": "https://github.com/yunmin311/zheng-tally-obsidian/releases/tag/1.0.5",
+      "prerelease": false,
+      "hasAssets": true
+    },
+    "checkedAt": "2026-10-05"
+  }
+]

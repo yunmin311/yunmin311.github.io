@@ -1,5 +1,5 @@
 ---
-title: "anatomical-symptom-interface"
+title: "Anatomical Symptom Interface"
 summary: "帮助描述症状、定位解剖区域并整理就诊前记录；不是诊断工具。"
 reviewedAt: "2026-10-05"
 category: "解剖定位与交互"
@@ -9,7 +9,9 @@ link: "https://github.com/yunmin311/anatomical-symptom-interface"
 featured: true
 order: 5
 kind: "project"
-sources: [{"label": "README.md", "url": "https://github.com/yunmin311/anatomical-symptom-interface/blob/dbd9c1f4af55f11c60e185a925221e1bf6a4a571/README.md"}, {"label": "docs/known-limitations.md", "url": "https://github.com/yunmin311/anatomical-symptom-interface/blob/dbd9c1f4af55f11c60e185a925221e1bf6a4a571/docs/known-limitations.md"}, {"label": "docs/04-roadmap.md", "url": "https://github.com/yunmin311/anatomical-symptom-interface/blob/dbd9c1f4af55f11c60e185a925221e1bf6a4a571/docs/04-roadmap.md"}]
+sources: [{"label": "README.md", "url": "https://github.com/yunmin311/anatomical-symptom-interface/blob/333735369e32cde8679cc95d784b4abbff8a2a50/README.md"}, {"label": "docs/known-limitations.md", "url": "https://github.com/yunmin311/anatomical-symptom-interface/blob/333735369e32cde8679cc95d784b4abbff8a2a50/docs/known-limitations.md"}, {"label": "docs/04-roadmap.md", "url": "https://github.com/yunmin311/anatomical-symptom-interface/blob/333735369e32cde8679cc95d784b4abbff8a2a50/docs/04-roadmap.md"}]
+group: "software"
+release: {"tag": "v1.0.0-rc.2", "url": "https://github.com/yunmin311/anatomical-symptom-interface/releases/tag/v1.0.0-rc.2", "prerelease": true, "hasAssets": false}
 ---
 
 ## 项目
@@ -24,6 +26,6 @@ sources: [{"label": "README.md", "url": "https://github.com/yunmin311/anatomical
 
 以下资料于 2026-10-05 核对；这不是项目创建或发布日期。
 
-- [README.md](https://github.com/yunmin311/anatomical-symptom-interface/blob/dbd9c1f4af55f11c60e185a925221e1bf6a4a571/README.md)
-- [docs/known-limitations.md](https://github.com/yunmin311/anatomical-symptom-interface/blob/dbd9c1f4af55f11c60e185a925221e1bf6a4a571/docs/known-limitations.md)
-- [docs/04-roadmap.md](https://github.com/yunmin311/anatomical-symptom-interface/blob/dbd9c1f4af55f11c60e185a925221e1bf6a4a571/docs/04-roadmap.md)
+- [README.md](https://github.com/yunmin311/anatomical-symptom-interface/blob/333735369e32cde8679cc95d784b4abbff8a2a50/README.md)
+- [docs/known-limitations.md](https://github.com/yunmin311/anatomical-symptom-interface/blob/333735369e32cde8679cc95d784b4abbff8a2a50/docs/known-limitations.md)
+- [docs/04-roadmap.md](https://github.com/yunmin311/anatomical-symptom-interface/blob/333735369e32cde8679cc95d784b4abbff8a2a50/docs/04-roadmap.md)

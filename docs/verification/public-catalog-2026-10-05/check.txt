@@ -1,0 +1,32 @@
+
+> personal-site@0.0.1 check
+> astro check
+
+12:45:23 [content] Syncing content
+12:45:23 [WARN] [glob-loader] The base directory "/mnt/e/1project/yunmin311-site-performance/src/content/reflections/" does not exist.
+12:45:23 [WARN] [glob-loader] The base directory "/mnt/e/1project/yunmin311-site-performance/src/content/code/" does not exist.
+12:45:23 [WARN] [glob-loader] The base directory "/mnt/e/1project/yunmin311-site-performance/src/content/learning/" does not exist.
+12:45:23 [content] Synced content
+12:45:23 [types] Generated 3.13s
+12:45:23 [check] Getting diagnostics for Astro files in /mnt/e/1project/yunmin311-site-performance...
+src/content.config.ts:26:25 - warning ts(6385): '(params?: string | { abort?: boolean | undefined; pattern?: RegExp | undefined; hostname?: RegExp | undefined; protocol?: RegExp | undefined; normalize?: boolean | undefined; error?: string | ... 1 more ... | undefined; message?: string | undefined; } | undefined): ZodString' is deprecated.
+
+26       video: z.string().url().optional(),
+                           ~~~
+src/content.config.ts:25:24 - warning ts(6385): '(params?: string | { abort?: boolean | undefined; pattern?: RegExp | undefined; hostname?: RegExp | undefined; protocol?: RegExp | undefined; normalize?: boolean | undefined; error?: string | ... 1 more ... | undefined; message?: string | undefined; } | undefined): ZodString' is deprecated.
+
+25       link: z.string().url().optional(),
+                          ~~~
+src/content.config.ts:22:66 - warning ts(6385): '(params?: string | { abort?: boolean | undefined; pattern?: RegExp | undefined; hostname?: RegExp | undefined; protocol?: RegExp | undefined; normalize?: boolean | undefined; error?: string | ... 1 more ... | undefined; message?: string | undefined; } | undefined): ZodString' is deprecated.
+
+22       sources: z.array(z.object({label:z.string(),url:z.string().url()})).default([]),
+                                                                    ~~~
+src/content.config.ts:21:56 - warning ts(6385): '(params?: string | { abort?: boolean | undefined; pattern?: RegExp | undefined; hostname?: RegExp | undefined; protocol?: RegExp | undefined; normalize?: boolean | undefined; error?: string | ... 1 more ... | undefined; message?: string | undefined; } | undefined): ZodString' is deprecated.
+
+21       release: z.object({tag:z.string(),url:z.string().url(),prerelease:z.boolean(),hasAssets:z.boolean()}).optional(),
+                                                          ~~~
+
+Result (32 files):
+- 0 errors
+- 0 warnings
+- 4 hints

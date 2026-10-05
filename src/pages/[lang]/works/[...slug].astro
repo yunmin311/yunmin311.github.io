@@ -1,4 +1,5 @@
 ---
+import ReleaseLink from '../../../components/ReleaseLink.astro';
 import { getCollection, render } from 'astro:content';
 import { getRelativeLocaleUrl } from 'astro:i18n';
 import Base from '../../../layouts/Base.astro';
@@ -45,7 +46,7 @@ const meta = [
   altPath={altPath}
   ogImage={entry.data.cover?.src}
 >
-  <article class="work">
+  <article class="work"><ReleaseLink release={entry.data.release} lang={lang}/>
     <header class="work-head">
       <h1>{entry.data.title}</h1>
       <p class="summary">{entry.data.summary}</p>

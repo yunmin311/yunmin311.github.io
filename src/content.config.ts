@@ -17,6 +17,8 @@ const works = defineCollection({
       status: z.string().optional(),
       stack: z.string().optional(),
       kind: z.enum(['project', 'practice']).default('project'),
+      group: z.enum(['software','obsidian','knowledge','visual','repository']).default('software'),
+      release: z.object({tag:z.string(),url:z.string().url(),prerelease:z.boolean(),hasAssets:z.boolean()}).optional(),
       sources: z.array(z.object({label:z.string(),url:z.string().url()})).default([]),
       client: z.string().optional(),
       role: z.string().optional(),

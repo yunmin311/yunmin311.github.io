@@ -1,0 +1,295 @@
+[
+  {
+    "repo": "ai-systematic-notes",
+    "revision": "57f36beff0b87f9b09af49b6284110032b62eabf",
+    "readme": "https://github.com/yunmin311/ai-systematic-notes/blob/57f36beff0b87f9b09af49b6284110032b62eabf/README.md",
+    "readmeSHA256": "28ee0853550f44e606093344f13099708daf7e851d60171ca63757095cdb366c",
+    "releasesAPI": "https://api.github.com/repos/yunmin311/ai-systematic-notes/releases",
+    "release": null
+  },
+  {
+    "repo": "anatomical-symptom-interface",
+    "revision": "333735369e32cde8679cc95d784b4abbff8a2a50",
+    "readme": "https://github.com/yunmin311/anatomical-symptom-interface/blob/333735369e32cde8679cc95d784b4abbff8a2a50/README.md",
+    "readmeSHA256": "f013d71a4697f9241f970dd49894b5a870304661d34e60171956ebb32f223277",
+    "releasesAPI": "https://api.github.com/repos/yunmin311/anatomical-symptom-interface/releases",
+    "release": {
+      "tag": "v1.0.0-rc.2",
+      "url": "https://github.com/yunmin311/anatomical-symptom-interface/releases/tag/v1.0.0-rc.2",
+      "prerelease": true,
+      "hasAssets": false
+    }
+  },
+  {
+    "repo": "calendar-app",
+    "revision": "4d2fe420dfd861ea63734969d76fa6fd1aefae78",
+    "readme": "https://github.com/yunmin311/calendar-app/blob/4d2fe420dfd861ea63734969d76fa6fd1aefae78/README.md",
+    "readmeSHA256": "7ab94360032888b4633efa6d84926c6fb2c467f9418e4bc4ec885b93340f4946",
+    "releasesAPI": "https://api.github.com/repos/yunmin311/calendar-app/releases",
+    "release": null
+  },
+  {
+    "repo": "context-distiller",
+    "revision": "c94e1f2c5e63caf664569ef0c18c94e8bfce42c4",
+    "readme": "https://github.com/yunmin311/context-distiller/blob/c94e1f2c5e63caf664569ef0c18c94e8bfce42c4/README.md",
+    "readmeSHA256": "60e32fc139e29258f85be9e3f9f5601ccb79f6e0691689fe6af114e06381f5e4",
+    "releasesAPI": "https://api.github.com/repos/yunmin311/context-distiller/releases",
+    "release": {
+      "tag": "v1.3.0",
+      "url": "https://github.com/yunmin311/context-distiller/releases/tag/v1.3.0",
+      "prerelease": false,
+      "hasAssets": true
+    }
+  },
+  {
+    "repo": "dark-canvas-image-skill",
+    "revision": "6b9a2a6c270951615ef3206fe14d1eae061d29d7",
+    "readme": "https://github.com/yunmin311/dark-canvas-image-skill/blob/6b9a2a6c270951615ef3206fe14d1eae061d29d7/README.md",
+    "readmeSHA256": "ce150340af3b131d47d5b6c5516363629330c99d2a79c7887570c08cf180ee6c",
+    "releasesAPI": "https://api.github.com/repos/yunmin311/dark-canvas-image-skill/releases",
+    "release": {
+      "tag": "v0.6.0",
+      "url": "https://github.com/yunmin311/dark-canvas-image-skill/releases/tag/v0.6.0",
+      "prerelease": true,
+      "hasAssets": true
+    }
+  },
+  {
+    "repo": "deepseek-harness",
+    "revision": "c291e7961a515f6d7af9304e7fd1d257929aef26",
+    "readme": "https://github.com/yunmin311/deepseek-harness/blob/c291e7961a515f6d7af9304e7fd1d257929aef26/README.md",
+    "readmeSHA256": "b43a2af65d10028e5de61e4603f946bfce9b777df079e92745491c7700a6d58e",
+    "releasesAPI": "https://api.github.com/repos/yunmin311/deepseek-harness/releases",
+    "release": null
+  },
+  {
+    "repo": "dense-reading-obsidian",
+    "revision": "3e60191a444ba51b241efb4efe6433d26ef9d7de",
+    "readme": "https://github.com/yunmin311/dense-reading-obsidian/blob/3e60191a444ba51b241efb4efe6433d26ef9d7de/README.md",
+    "readmeSHA256": "3ec2edd1cf57dd3688e6dceb1ca15353fd2043ebcbb2943ad7b3abdbcb915921",
+    "releasesAPI": "https://api.github.com/repos/yunmin311/dense-reading-obsidian/releases",
+    "release": {
+      "tag": "0.2.2",
+      "url": "https://github.com/yunmin311/dense-reading-obsidian/releases/tag/0.2.2",
+      "prerelease": false,
+      "hasAssets": true
+    }
+  },
+  {
+    "repo": "DenseGPT",
+    "revision": "01fd25dba0eca1dfc123b34329d745007b653579",
+    "readme": "https://github.com/yunmin311/DenseGPT/blob/01fd25dba0eca1dfc123b34329d745007b653579/README.md",
+    "readmeSHA256": "8ae9ac5fd2c1f61c18fcae6368b7a64f824f1ee458c8257c75dcb8f94622d06c",
+    "releasesAPI": "https://api.github.com/repos/yunmin311/DenseGPT/releases",
+    "release": {
+      "tag": "v2.5.1",
+      "url": "https://github.com/yunmin311/DenseGPT/releases/tag/v2.5.1",
+      "prerelease": false,
+      "hasAssets": true
+    }
+  },
+  {
+    "repo": "dsh-universal-palette",
+    "revision": "d6b59dc8acfe68267039485072b8cdd3eb786989",
+    "readme": "https://github.com/yunmin311/dsh-universal-palette/blob/d6b59dc8acfe68267039485072b8cdd3eb786989/README.md",
+    "readmeSHA256": "8d0ec7997412079859c46c26800ef07560a2b23720e647291d3c4634540f5540",
+    "releasesAPI": "https://api.github.com/repos/yunmin311/dsh-universal-palette/releases",
+    "release": {
+      "tag": "v0.2.1",
+      "url": "https://github.com/yunmin311/dsh-universal-palette/releases/tag/v0.2.1",
+      "prerelease": false,
+      "hasAssets": false
+    }
+  },
+  {
+    "repo": "game",
+    "revision": "3b0ec55077a4497be4a97ad36852500a7e4c84cd",
+    "readme": "https://github.com/yunmin311/game",
+    "readmeSHA256": null,
+    "releasesAPI": "https://api.github.com/repos/yunmin311/game/releases",
+    "release": null
+  },
+  {
+    "repo": "GitLineage",
+    "revision": "e6c2bc54305e68552328d02c2a82ef62ccbe7fe8",
+    "readme": "https://github.com/yunmin311/GitLineage/blob/e6c2bc54305e68552328d02c2a82ef62ccbe7fe8/README.md",
+    "readmeSHA256": "8a3ab8bb4e338fac39b11b9023370897e2ac1d75783f16d4f2242020c819c72f",
+    "releasesAPI": "https://api.github.com/repos/yunmin311/GitLineage/releases",
+    "release": null
+  },
+  {
+    "repo": "governance-framework",
+    "revision": "5c6a8a1418736653408d7efebd153fe994494c88",
+    "readme": "https://github.com/yunmin311/governance-framework/blob/5c6a8a1418736653408d7efebd153fe994494c88/README.md",
+    "readmeSHA256": "fe9763f4676163fb388bde6ecf8359dd671fc41e8e17f816635d50e53144bfe3",
+    "releasesAPI": "https://api.github.com/repos/yunmin311/governance-framework/releases",
+    "release": {
+      "tag": "v2.2.3",
+      "url": "https://github.com/yunmin311/governance-framework/releases/tag/v2.2.3",
+      "prerelease": false,
+      "hasAssets": false
+    }
+  },
+  {
+    "repo": "obsidian-config",
+    "revision": "3982a219c1027a7128b2dc0d056d211e7f7e5b96",
+    "readme": "https://github.com/yunmin311/obsidian-config/blob/3982a219c1027a7128b2dc0d056d211e7f7e5b96/README.md",
+    "readmeSHA256": "26c740b29acf0eacc57485de8d0e6f17a909777471cbd946e4aa4f83828cd2de",
+    "releasesAPI": "https://api.github.com/repos/yunmin311/obsidian-config/releases",
+    "release": null
+  },
+  {
+    "repo": "paper-desk-obsidian",
+    "revision": "2629fcb594a6b78dd5bfd574bd5ee098e43942c3",
+    "readme": "https://github.com/yunmin311/paper-desk-obsidian/blob/2629fcb594a6b78dd5bfd574bd5ee098e43942c3/README.md",
+    "readmeSHA256": "9602e30891fe6b73f4bfb1795dd672973ee7c49d355332e4bf47db410f4be16a",
+    "releasesAPI": "https://api.github.com/repos/yunmin311/paper-desk-obsidian/releases",
+    "release": {
+      "tag": "0.5.0",
+      "url": "https://github.com/yunmin311/paper-desk-obsidian/releases/tag/0.5.0",
+      "prerelease": false,
+      "hasAssets": true
+    }
+  },
+  {
+    "repo": "pixel-panels",
+    "revision": "a5ba4b80833049904df632d205ffcbac9c7fd791",
+    "readme": "https://github.com/yunmin311/pixel-panels/blob/a5ba4b80833049904df632d205ffcbac9c7fd791/README.md",
+    "readmeSHA256": "e26463e15f61a107ba6acc986c54e9e572f025d9a01c468c64dc52fccefc2026",
+    "releasesAPI": "https://api.github.com/repos/yunmin311/pixel-panels/releases",
+    "release": {
+      "tag": "v1.1.0",
+      "url": "https://github.com/yunmin311/pixel-panels/releases/tag/v1.1.0",
+      "prerelease": false,
+      "hasAssets": false
+    }
+  },
+  {
+    "repo": "quiet-shelf-obsidian",
+    "revision": "2c3d5edfecac77e0b2e8df9186a9dd928470903d",
+    "readme": "https://github.com/yunmin311/quiet-shelf-obsidian/blob/2c3d5edfecac77e0b2e8df9186a9dd928470903d/README.md",
+    "readmeSHA256": "f5e21b517536618e7a015f2eb83c869a4e246c71cafffef4b4adae71ea30ccf5",
+    "releasesAPI": "https://api.github.com/repos/yunmin311/quiet-shelf-obsidian/releases",
+    "release": {
+      "tag": "0.3.1",
+      "url": "https://github.com/yunmin311/quiet-shelf-obsidian/releases/tag/0.3.1",
+      "prerelease": false,
+      "hasAssets": true
+    }
+  },
+  {
+    "repo": "reading-rail-sidebar-obsidian",
+    "revision": "bb0b204fb0dc90f9e35bb54ecf59bd84a394ca34",
+    "readme": "https://github.com/yunmin311/reading-rail-sidebar-obsidian/blob/bb0b204fb0dc90f9e35bb54ecf59bd84a394ca34/README.md",
+    "readmeSHA256": "f4d2efb5f3ab679c385a1110d4d44e53264ec5f3a9b4758d7f1d96da1897fd80",
+    "releasesAPI": "https://api.github.com/repos/yunmin311/reading-rail-sidebar-obsidian/releases",
+    "release": {
+      "tag": "0.2.3",
+      "url": "https://github.com/yunmin311/reading-rail-sidebar-obsidian/releases/tag/0.2.3",
+      "prerelease": false,
+      "hasAssets": true
+    }
+  },
+  {
+    "repo": "toolbar-pin-toggle-obsidian",
+    "revision": "497d2bbd709b92405eccde410d6f6dc98adc00ba",
+    "readme": "https://github.com/yunmin311/toolbar-pin-toggle-obsidian/blob/497d2bbd709b92405eccde410d6f6dc98adc00ba/README.md",
+    "readmeSHA256": "26d4262d48e5227fd688a6779e478e2f42da61a42698013a396d6d4d57d0624b",
+    "releasesAPI": "https://api.github.com/repos/yunmin311/toolbar-pin-toggle-obsidian/releases",
+    "release": {
+      "tag": "1.1.2",
+      "url": "https://github.com/yunmin311/toolbar-pin-toggle-obsidian/releases/tag/1.1.2",
+      "prerelease": false,
+      "hasAssets": true
+    }
+  },
+  {
+    "repo": "universal-text-structure-standard",
+    "revision": "fe2b7f9763cec2eb3971a20913f8c4dae3d40afe",
+    "readme": "https://github.com/yunmin311/universal-text-structure-standard/blob/fe2b7f9763cec2eb3971a20913f8c4dae3d40afe/README.md",
+    "readmeSHA256": "f86ebe75f8d4ee099b6c65f58f4176f20d13efc3114f92b0804da80863a97f42",
+    "releasesAPI": "https://api.github.com/repos/yunmin311/universal-text-structure-standard/releases",
+    "release": {
+      "tag": "v1.0.0",
+      "url": "https://github.com/yunmin311/universal-text-structure-standard/releases/tag/v1.0.0",
+      "prerelease": false,
+      "hasAssets": false
+    }
+  },
+  {
+    "repo": "window-annotator",
+    "revision": "2ef415c37eebf44adf5a5f1eece3c04e52a29c24",
+    "readme": "https://github.com/yunmin311/window-annotator/blob/2ef415c37eebf44adf5a5f1eece3c04e52a29c24/README.md",
+    "readmeSHA256": "d8ad77629cc345c5b2d903c55f1c2a531f774a4222ce965f917edb73c564a667",
+    "releasesAPI": "https://api.github.com/repos/yunmin311/window-annotator/releases",
+    "release": {
+      "tag": "v0.2.0",
+      "url": "https://github.com/yunmin311/window-annotator/releases/tag/v0.2.0",
+      "prerelease": false,
+      "hasAssets": false
+    }
+  },
+  {
+    "repo": "work-capsule",
+    "revision": "be4ed1c454bf37ed440f4b637e0f9146141751dc",
+    "readme": "https://github.com/yunmin311/work-capsule/blob/be4ed1c454bf37ed440f4b637e0f9146141751dc/README.md",
+    "readmeSHA256": "20dda8e853e7f6e6170d1332faf96f9bc35efaac3753402e835152334e5b9318",
+    "releasesAPI": "https://api.github.com/repos/yunmin311/work-capsule/releases",
+    "release": {
+      "tag": "V1.1.0",
+      "url": "https://github.com/yunmin311/work-capsule/releases/tag/V1.1.0",
+      "prerelease": false,
+      "hasAssets": true
+    }
+  },
+  {
+    "repo": "ym-obsidian-course-notes-standard",
+    "revision": "54d1362aa4d5c4e875c973b9da1f78b70b729730",
+    "readme": "https://github.com/yunmin311/ym-obsidian-course-notes-standard/blob/54d1362aa4d5c4e875c973b9da1f78b70b729730/README.md",
+    "readmeSHA256": "6b376bb044a559c2a41cc9966739ec39824f411b7191434530338a8a3decdd00",
+    "releasesAPI": "https://api.github.com/repos/yunmin311/ym-obsidian-course-notes-standard/releases",
+    "release": {
+      "tag": "v3.1.0",
+      "url": "https://github.com/yunmin311/ym-obsidian-course-notes-standard/releases/tag/v3.1.0",
+      "prerelease": false,
+      "hasAssets": true
+    }
+  },
+  {
+    "repo": "yunmin-workbench",
+    "revision": "5d8874ac7339cb23b9a936d7dad8a684161099bd",
+    "readme": "https://github.com/yunmin311/yunmin-workbench/blob/5d8874ac7339cb23b9a936d7dad8a684161099bd/README.md",
+    "readmeSHA256": "e6111ba31e7844ef9c684abf9a45157e8e6d5774df2d8835244170f12076d7c3",
+    "releasesAPI": "https://api.github.com/repos/yunmin311/yunmin-workbench/releases",
+    "release": null
+  },
+  {
+    "repo": "yunmin311",
+    "revision": "3cc725a138d53f07856a8d99dd13777fa8f40898",
+    "readme": "https://github.com/yunmin311/yunmin311/blob/3cc725a138d53f07856a8d99dd13777fa8f40898/README.md",
+    "readmeSHA256": "755f40bde7bfe59f030e6ea8ac62c7448a532efca74f662cc29e029ffa89ab7f",
+    "releasesAPI": "https://api.github.com/repos/yunmin311/yunmin311/releases",
+    "release": null
+  },
+  {
+    "repo": "yunmin311.github.io",
+    "revision": "970b286497ebe4611993210c42d925ebebeb053c",
+    "readme": "https://github.com/yunmin311/yunmin311.github.io/blob/970b286497ebe4611993210c42d925ebebeb053c/README.md",
+    "readmeSHA256": "51991e029c28663cd2406c3ad39dcc4907bf8738882a643f568d55e19e5a560a",
+    "releasesAPI": "https://api.github.com/repos/yunmin311/yunmin311.github.io/releases",
+    "release": null
+  },
+  {
+    "repo": "zheng-tally-obsidian",
+    "revision": "dd9e4fc455e67e84aaf643bbdfeb4346720ec852",
+    "readme": "https://github.com/yunmin311/zheng-tally-obsidian/blob/dd9e4fc455e67e84aaf643bbdfeb4346720ec852/README.md",
+    "readmeSHA256": "bc17fdc6bfe75bf4cdca61bea58d83d51aed16995d52d3825869467b105498ee",
+    "releasesAPI": "https://api.github.com/repos/yunmin311/zheng-tally-obsidian/releases",
+    "release": {
+      "tag": "1.0.5",
+      "url": "https://github.com/yunmin311/zheng-tally-obsidian/releases/tag/1.0.5",
+      "prerelease": false,
+      "hasAssets": true
+    }
+  }
+]
