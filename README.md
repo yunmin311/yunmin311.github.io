@@ -1,9 +1,9 @@
 # Yunmin · 个人网站
 
-设计师的个人网站:作品集 + 博客,中英双语,纯静态,免费托管在 GitHub Pages。
+个人数字花园 + Creative Engineering Portfolio，中英双语，Astro 静态站，免费托管在 GitHub Pages。
 **线上入口：[中文首页](https://yunmin311.github.io/zh/) · [English](https://yunmin311.github.io/en/)**
 
-冷蓝细砂云层、玻璃界面、可展开的立体卡片和侧边音乐播放器。当前设计已定稿，详细作品、照片、歌单及笔记仍待逐步填充，展示样例保持明确标注。
+冷蓝细砂云层、玻璃界面、可展开的立体卡片和侧边音乐播放器。设计和性能基准已定稿并上线。2026-10-05 内容接入工作分支整理六个真实公开项目、五个精选与当前简介；尚未推送、尚未替换线上内容。照片、歌单、学习记录仍待真实材料，展示试样单独标明。
 
 [设计基准](docs/design-baseline-2026-10-03.md) · [接入与维护说明](docs/正式网站接入说明.md) · [内容填充准备](docs/内容填充准备.md) · [发布进度](https://github.com/yunmin311/yunmin311.github.io/actions/workflows/deploy.yml)
 
@@ -56,9 +56,11 @@ npm run dev     # 启动本地预览
    - 封面图放 `src/content/works/_covers/`,正文图放 `src/content/works/_images/`,
      **图片入库前先看 `docs/图片入库工序.md`**(一条命令把大图压到合适体积)
 
+   - 代码/研究项目支持 `category`、`status`、`stack`、`sources` 和 `reviewedAt`；封面与项目日期可缺省，使用诚实的文字卡。`reviewedAt` 是来源核对日，不是项目创建或发布日期。
+
 2. **英文版**:在 `src/content/works/en/` 建一个**同名**文件(`brand-2026.md`),
    内容翻成英文。同名 = 网站自动认成互为翻译,页面右上角就能互切。
-   **不写英文版也完全可以**——这条作品只在中文站出现,英文站自动藏起来,不会 404。
+   **新增真实项目本轮提供了对应中英文摘要；对其他内容，不写英文版时**——这条作品只在中文站出现,英文站自动藏起来,不会 404。
 
 3. 本地预览确认没问题(第一节),就可以提交保存了(第五节)。
 

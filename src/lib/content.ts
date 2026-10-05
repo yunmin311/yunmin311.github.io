@@ -16,7 +16,7 @@ async function published<C extends Coll>(coll: C, lang: Lang) {
 /** 某语言的全部非草稿作品,按日期倒序 */
 export async function getWorks(lang: Lang): Promise<CollectionEntry<'works'>[]> {
   const list = await published('works', lang);
-  return list.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+  return list.sort((a, b) => a.data.order - b.data.order);
 }
 
 /** 某语言的精选作品,按 order 升序 */

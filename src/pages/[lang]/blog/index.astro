@@ -15,11 +15,13 @@ const posts = (await getPosts(lang)).filter(p=>!/^占位文章|^Placeholder post
 
 <Base title={t(lang, 'blog.title')}>
   <h1 class="page-title">{t(lang, 'blog.title')}</h1>
+  <p class="source-note">{lang==='zh'?'当前文章尚未发布。以下是 2026-05 历史草稿，技术与部署描述不代表今天的网站。':'No current articles published. Earlier Chinese drafts remain in the archive; no English translation has been provided.'}</p>
   <ul class="post-list">
     {posts.map((post) => (
       <li class="post-item">
         <a href={getRelativeLocaleUrl(lang, `blog/${slugOf(post.id)}`)}>{post.data.title}</a>
         <time datetime={post.data.date.toISOString().slice(0, 10)}>{formatDate(lang, post.data.date)}</time>
+        {post.data.legacy&&<small>Archive / 2026-05</small>}
         <p class="post-summary">{post.data.summary}</p>
       </li>
     ))}

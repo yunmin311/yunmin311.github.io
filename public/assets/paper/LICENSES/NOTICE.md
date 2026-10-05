@@ -10,3 +10,9 @@ The material, geometry, photos, fonts, audio study and UI implementation were co
 - Three.js, OGL, esbuild, Plyr, PhotoSwipe, Motion, Paper Shaders, liquid glass, Tippy, Popper, Canvas Confetti and markdown-it are reused local implementations. Their exact notices and license texts accompany this directory. GSAP uses its included standard license; it is not represented as MIT.
 
 No personal contact address has been supplied. Earlier project/biography content is explicitly marked with its source date, without asserting current completion or status.
+
+## Real project screenshots added 2026-10-05
+
+- Context Distiller: original `docs/screenshots/messages.png` at commit `c94e1f2c5e63caf664569ef0c18c94e8bfce42c4`. Resized and encoded as WebP for this site, without inventing or redrawing its UI. License: `context-distiller-MIT.txt`.
+- DSH Universal Palette: original `docs/assets/readme/hero.png` at commit `d6b59dc8acfe68267039485072b8cdd3eb786989`. Resized and encoded as WebP. License: `dsh-universal-palette-MIT.txt`.
+- Supplemental Body glyphs: provider-generated LXGW WenKai TC delivery file, used with the same original license in this directory. No local font subsetting or naming modification.

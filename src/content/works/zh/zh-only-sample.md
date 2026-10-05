@@ -5,6 +5,7 @@ date: 2026-04-01
 cover: ../_covers/zh-only-sample.svg
 featured: true
 order: 3
+draft: true
 ---
 
 **【占位内容】** 这是"单语内容在另一语言站直接隐藏"规则的测试用例

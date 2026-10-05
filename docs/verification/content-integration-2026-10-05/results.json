@@ -1,0 +1,504 @@
+{
+  "routes": [
+    {
+      "lang": "zh",
+      "width": 1440,
+      "route": "",
+      "status": 200,
+      "overflow": false,
+      "metadata": "Yunmin / Qiyu Li 的个人数字花园与 Creative Engineering Portfolio：AI 原生工具、创意软件、人机协作与视觉系统。"
+    },
+    {
+      "lang": "zh",
+      "width": 1440,
+      "route": "works/",
+      "status": 200,
+      "overflow": false,
+      "metadata": "Yunmin / Qiyu Li 的个人数字花园与 Creative Engineering Portfolio：AI 原生工具、创意软件、人机协作与视觉系统。"
+    },
+    {
+      "lang": "zh",
+      "width": 1440,
+      "route": "projects/",
+      "status": 200,
+      "overflow": false,
+      "metadata": "Yunmin / Qiyu Li 的个人数字花园与 Creative Engineering Portfolio：AI 原生工具、创意软件、人机协作与视觉系统。"
+    },
+    {
+      "lang": "zh",
+      "width": 1440,
+      "route": "blog/",
+      "status": 200,
+      "overflow": false,
+      "metadata": "Yunmin / Qiyu Li 的个人数字花园与 Creative Engineering Portfolio：AI 原生工具、创意软件、人机协作与视觉系统。"
+    },
+    {
+      "lang": "zh",
+      "width": 1440,
+      "route": "about/",
+      "status": 200,
+      "overflow": false,
+      "metadata": "Yunmin / Qiyu Li 的个人数字花园与 Creative Engineering Portfolio：AI 原生工具、创意软件、人机协作与视觉系统。"
+    },
+    {
+      "lang": "zh",
+      "width": 1440,
+      "route": "repos/",
+      "status": 200,
+      "overflow": false,
+      "metadata": "Yunmin / Qiyu Li 的个人数字花园与 Creative Engineering Portfolio：AI 原生工具、创意软件、人机协作与视觉系统。"
+    },
+    {
+      "lang": "zh",
+      "width": 1440,
+      "route": "learning/",
+      "status": 200,
+      "overflow": false,
+      "metadata": "Yunmin / Qiyu Li 的个人数字花园与 Creative Engineering Portfolio：AI 原生工具、创意软件、人机协作与视觉系统。"
+    },
+    {
+      "lang": "zh",
+      "width": 1440,
+      "route": "works/gitlineage/",
+      "status": 200,
+      "overflow": false,
+      "metadata": "用可核查证据探索仓库谱系、来源和关系。"
+    },
+    {
+      "lang": "zh",
+      "width": 1440,
+      "route": "works/context-distiller/",
+      "status": 200,
+      "overflow": false,
+      "metadata": "在本地选择、编组对话材料，编译成纯文本提示词，不自动发送。"
+    },
+    {
+      "lang": "zh",
+      "width": 1440,
+      "route": "works/text-structure/",
+      "status": 200,
+      "overflow": false,
+      "metadata": "面向 AI 与 Markdown 的文本结构、排版规范及规则验证工具。"
+    },
+    {
+      "lang": "zh",
+      "width": 1440,
+      "route": "works/densegpt/",
+      "status": 200,
+      "overflow": false,
+      "metadata": "同时调整 ChatGPT 的界面阅读密度与回答表达密度。"
+    },
+    {
+      "lang": "zh",
+      "width": 1440,
+      "route": "works/anatomical-symptom-interface/",
+      "status": 200,
+      "overflow": false,
+      "metadata": "帮助描述症状、定位解剖区域并整理就诊前记录；不是诊断工具。"
+    },
+    {
+      "lang": "zh",
+      "width": 1440,
+      "route": "works/dsh-universal-palette/",
+      "status": 200,
+      "overflow": false,
+      "metadata": "统一搜索 DSH 命令、模型、会话与对话记录的控件。"
+    },
+    {
+      "lang": "en",
+      "width": 1440,
+      "route": "",
+      "status": 200,
+      "overflow": false,
+      "metadata": "Yunmin / Qiyu Li — a personal digital garden and creative engineering portfolio of AI-native tools, creative software, human–AI interaction and visual systems."
+    },
+    {
+      "lang": "en",
+      "width": 1440,
+      "route": "works/",
+      "status": 200,
+      "overflow": false,
+      "metadata": "Yunmin / Qiyu Li — a personal digital garden and creative engineering portfolio of AI-native tools, creative software, human–AI interaction and visual systems."
+    },
+    {
+      "lang": "en",
+      "width": 1440,
+      "route": "projects/",
+      "status": 200,
+      "overflow": false,
+      "metadata": "Yunmin / Qiyu Li — a personal digital garden and creative engineering portfolio of AI-native tools, creative software, human–AI interaction and visual systems."
+    },
+    {
+      "lang": "en",
+      "width": 1440,
+      "route": "blog/",
+      "status": 200,
+      "overflow": false,
+      "metadata": "Yunmin / Qiyu Li — a personal digital garden and creative engineering portfolio of AI-native tools, creative software, human–AI interaction and visual systems."
+    },
+    {
+      "lang": "en",
+      "width": 1440,
+      "route": "about/",
+      "status": 200,
+      "overflow": false,
+      "metadata": "Yunmin / Qiyu Li — a personal digital garden and creative engineering portfolio of AI-native tools, creative software, human–AI interaction and visual systems."
+    },
+    {
+      "lang": "en",
+      "width": 1440,
+      "route": "repos/",
+      "status": 200,
+      "overflow": false,
+      "metadata": "Yunmin / Qiyu Li — a personal digital garden and creative engineering portfolio of AI-native tools, creative software, human–AI interaction and visual systems."
+    },
+    {
+      "lang": "en",
+      "width": 1440,
+      "route": "learning/",
+      "status": 200,
+      "overflow": false,
+      "metadata": "Yunmin / Qiyu Li — a personal digital garden and creative engineering portfolio of AI-native tools, creative software, human–AI interaction and visual systems."
+    },
+    {
+      "lang": "en",
+      "width": 1440,
+      "route": "works/gitlineage/",
+      "status": 200,
+      "overflow": false,
+      "metadata": "Evidence-backed repository lineage and software provenance explorer."
+    },
+    {
+      "lang": "en",
+      "width": 1440,
+      "route": "works/context-distiller/",
+      "status": 200,
+      "overflow": false,
+      "metadata": "Select, group and compile AI context into one plain-text prompt, locally and without auto-sending."
+    },
+    {
+      "lang": "en",
+      "width": 1440,
+      "route": "works/text-structure/",
+      "status": 200,
+      "overflow": false,
+      "metadata": "A text-structure and layout standard, rule data and validation tools for AI-authored Markdown."
+    },
+    {
+      "lang": "en",
+      "width": 1440,
+      "route": "works/densegpt/",
+      "status": 200,
+      "overflow": false,
+      "metadata": "Two complementary layers for ChatGPT: denser UI layout and denser response style."
+    },
+    {
+      "lang": "en",
+      "width": 1440,
+      "route": "works/anatomical-symptom-interface/",
+      "status": 200,
+      "overflow": false,
+      "metadata": "Describe symptoms, localize them anatomically and prepare a pre-visit record — not a diagnosis tool."
+    },
+    {
+      "lang": "en",
+      "width": 1440,
+      "route": "works/dsh-universal-palette/",
+      "status": 200,
+      "overflow": false,
+      "metadata": "A shared search controller for DSH commands, models, sessions and conversation hits."
+    },
+    {
+      "lang": "zh",
+      "width": 390,
+      "route": "",
+      "status": 200,
+      "overflow": false,
+      "metadata": "Yunmin / Qiyu Li 的个人数字花园与 Creative Engineering Portfolio：AI 原生工具、创意软件、人机协作与视觉系统。"
+    },
+    {
+      "lang": "zh",
+      "width": 390,
+      "route": "works/",
+      "status": 200,
+      "overflow": false,
+      "metadata": "Yunmin / Qiyu Li 的个人数字花园与 Creative Engineering Portfolio：AI 原生工具、创意软件、人机协作与视觉系统。"
+    },
+    {
+      "lang": "zh",
+      "width": 390,
+      "route": "projects/",
+      "status": 200,
+      "overflow": false,
+      "metadata": "Yunmin / Qiyu Li 的个人数字花园与 Creative Engineering Portfolio：AI 原生工具、创意软件、人机协作与视觉系统。"
+    },
+    {
+      "lang": "zh",
+      "width": 390,
+      "route": "blog/",
+      "status": 200,
+      "overflow": false,
+      "metadata": "Yunmin / Qiyu Li 的个人数字花园与 Creative Engineering Portfolio：AI 原生工具、创意软件、人机协作与视觉系统。"
+    },
+    {
+      "lang": "zh",
+      "width": 390,
+      "route": "about/",
+      "status": 200,
+      "overflow": false,
+      "metadata": "Yunmin / Qiyu Li 的个人数字花园与 Creative Engineering Portfolio：AI 原生工具、创意软件、人机协作与视觉系统。"
+    },
+    {
+      "lang": "zh",
+      "width": 390,
+      "route": "repos/",
+      "status": 200,
+      "overflow": false,
+      "metadata": "Yunmin / Qiyu Li 的个人数字花园与 Creative Engineering Portfolio：AI 原生工具、创意软件、人机协作与视觉系统。"
+    },
+    {
+      "lang": "zh",
+      "width": 390,
+      "route": "learning/",
+      "status": 200,
+      "overflow": false,
+      "metadata": "Yunmin / Qiyu Li 的个人数字花园与 Creative Engineering Portfolio：AI 原生工具、创意软件、人机协作与视觉系统。"
+    },
+    {
+      "lang": "zh",
+      "width": 390,
+      "route": "works/gitlineage/",
+      "status": 200,
+      "overflow": false,
+      "metadata": "用可核查证据探索仓库谱系、来源和关系。"
+    },
+    {
+      "lang": "zh",
+      "width": 390,
+      "route": "works/context-distiller/",
+      "status": 200,
+      "overflow": false,
+      "metadata": "在本地选择、编组对话材料，编译成纯文本提示词，不自动发送。"
+    },
+    {
+      "lang": "zh",
+      "width": 390,
+      "route": "works/text-structure/",
+      "status": 200,
+      "overflow": false,
+      "metadata": "面向 AI 与 Markdown 的文本结构、排版规范及规则验证工具。"
+    },
+    {
+      "lang": "zh",
+      "width": 390,
+      "route": "works/densegpt/",
+      "status": 200,
+      "overflow": false,
+      "metadata": "同时调整 ChatGPT 的界面阅读密度与回答表达密度。"
+    },
+    {
+      "lang": "zh",
+      "width": 390,
+      "route": "works/anatomical-symptom-interface/",
+      "status": 200,
+      "overflow": false,
+      "metadata": "帮助描述症状、定位解剖区域并整理就诊前记录；不是诊断工具。"
+    },
+    {
+      "lang": "zh",
+      "width": 390,
+      "route": "works/dsh-universal-palette/",
+      "status": 200,
+      "overflow": false,
+      "metadata": "统一搜索 DSH 命令、模型、会话与对话记录的控件。"
+    },
+    {
+      "lang": "en",
+      "width": 390,
+      "route": "",
+      "status": 200,
+      "overflow": false,
+      "metadata": "Yunmin / Qiyu Li — a personal digital garden and creative engineering portfolio of AI-native tools, creative software, human–AI interaction and visual systems."
+    },
+    {
+      "lang": "en",
+      "width": 390,
+      "route": "works/",
+      "status": 200,
+      "overflow": false,
+      "metadata": "Yunmin / Qiyu Li — a personal digital garden and creative engineering portfolio of AI-native tools, creative software, human–AI interaction and visual systems."
+    },
+    {
+      "lang": "en",
+      "width": 390,
+      "route": "projects/",
+      "status": 200,
+      "overflow": false,
+      "metadata": "Yunmin / Qiyu Li — a personal digital garden and creative engineering portfolio of AI-native tools, creative software, human–AI interaction and visual systems."
+    },
+    {
+      "lang": "en",
+      "width": 390,
+      "route": "blog/",
+      "status": 200,
+      "overflow": false,
+      "metadata": "Yunmin / Qiyu Li — a personal digital garden and creative engineering portfolio of AI-native tools, creative software, human–AI interaction and visual systems."
+    },
+    {
+      "lang": "en",
+      "width": 390,
+      "route": "about/",
+      "status": 200,
+      "overflow": false,
+      "metadata": "Yunmin / Qiyu Li — a personal digital garden and creative engineering portfolio of AI-native tools, creative software, human–AI interaction and visual systems."
+    },
+    {
+      "lang": "en",
+      "width": 390,
+      "route": "repos/",
+      "status": 200,
+      "overflow": false,
+      "metadata": "Yunmin / Qiyu Li — a personal digital garden and creative engineering portfolio of AI-native tools, creative software, human–AI interaction and visual systems."
+    },
+    {
+      "lang": "en",
+      "width": 390,
+      "route": "learning/",
+      "status": 200,
+      "overflow": false,
+      "metadata": "Yunmin / Qiyu Li — a personal digital garden and creative engineering portfolio of AI-native tools, creative software, human–AI interaction and visual systems."
+    },
+    {
+      "lang": "en",
+      "width": 390,
+      "route": "works/gitlineage/",
+      "status": 200,
+      "overflow": false,
+      "metadata": "Evidence-backed repository lineage and software provenance explorer."
+    },
+    {
+      "lang": "en",
+      "width": 390,
+      "route": "works/context-distiller/",
+      "status": 200,
+      "overflow": false,
+      "metadata": "Select, group and compile AI context into one plain-text prompt, locally and without auto-sending."
+    },
+    {
+      "lang": "en",
+      "width": 390,
+      "route": "works/text-structure/",
+      "status": 200,
+      "overflow": false,
+      "metadata": "A text-structure and layout standard, rule data and validation tools for AI-authored Markdown."
+    },
+    {
+      "lang": "en",
+      "width": 390,
+      "route": "works/densegpt/",
+      "status": 200,
+      "overflow": false,
+      "metadata": "Two complementary layers for ChatGPT: denser UI layout and denser response style."
+    },
+    {
+      "lang": "en",
+      "width": 390,
+      "route": "works/anatomical-symptom-interface/",
+      "status": 200,
+      "overflow": false,
+      "metadata": "Describe symptoms, localize them anatomically and prepare a pre-visit record — not a diagnosis tool."
+    },
+    {
+      "lang": "en",
+      "width": 390,
+      "route": "works/dsh-universal-palette/",
+      "status": 200,
+      "overflow": false,
+      "metadata": "A shared search controller for DSH commands, models, sessions and conversation hits."
+    }
+  ],
+  "interactions": [
+    "3D front-card switch, open/detail/close",
+    "Cloud travel and pointer disturbance",
+    "Lazy sound load, playback while closed, in-place language change and history",
+    "Real workbench source context",
+    "Project/practice filtering and honest empty state",
+    "Reduced-motion reader"
+  ],
+  "internalLinks": [
+    "/en/",
+    "/en/works/",
+    "/en/blog/",
+    "/en/about/",
+    "/zh/about/",
+    "/zh/blog/",
+    "/en/projects/",
+    "/zh/learning/",
+    "/zh/project-notes/",
+    "/zh/projects/",
+    "/en/works/gitlineage/",
+    "/en/works/context-distiller/",
+    "/en/works/text-structure/",
+    "/en/works/densegpt/",
+    "/en/works/anatomical-symptom-interface/",
+    "/zh/projects/camera-transfer/",
+    "/zh/projects/cognitive-training/",
+    "/zh/projects/debate-agent/",
+    "/zh/projects/heatmap/",
+    "/zh/projects/rehab-guide/",
+    "/zh/projects/skincare-notes/",
+    "/zh/repos/",
+    "/en/works/dsh-universal-palette/",
+    "/zh/works/anatomical-symptom-interface/",
+    "/zh/works/context-distiller/",
+    "/zh/works/densegpt/",
+    "/zh/works/dsh-universal-palette/",
+    "/zh/works/gitlineage/",
+    "/zh/works/",
+    "/zh/works/text-structure/",
+    "/zh/",
+    "/zh/blog/building-personal-website/",
+    "/zh/blog/vibe-coding-heatmap/",
+    "/en/learning/",
+    "/en/project-notes/",
+    "/en/repos/"
+  ],
+  "sources": [
+    {
+      "repo": "GitLineage",
+      "revision": "e6c2bc54305e68552328d02c2a82ef62ccbe7fe8"
+    },
+    {
+      "repo": "context-distiller",
+      "revision": "c94e1f2c5e63caf664569ef0c18c94e8bfce42c4"
+    },
+    {
+      "repo": "universal-text-structure-standard",
+      "revision": "fe2b7f9763cec2eb3971a20913f8c4dae3d40afe"
+    },
+    {
+      "repo": "DenseGPT",
+      "revision": "01fd25dba0eca1dfc123b34329d745007b653579"
+    },
+    {
+      "repo": "anatomical-symptom-interface",
+      "revision": "dbd9c1f4af55f11c60e185a925221e1bf6a4a571"
+    },
+    {
+      "repo": "dsh-universal-palette",
+      "revision": "d6b59dc8acfe68267039485072b8cdd3eb786989"
+    },
+    {
+      "repo": "yunmin311",
+      "revision": "3cc725a138d53f07856a8d99dd13777fa8f40898"
+    }
+  ],
+  "errors": [],
+  "notVerified": [
+    "Physical phones and Safari/Firefox/Edge",
+    "Performance of external projects or their deployments",
+    "Clinical review of the anatomy project",
+    "Publication of this content branch"
+  ],
+  "passed": true
+}

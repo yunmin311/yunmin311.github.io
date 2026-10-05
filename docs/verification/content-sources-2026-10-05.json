@@ -1,0 +1,267 @@
+[
+  {
+    "repo": "GitLineage",
+    "revision": "e6c2bc54305e68552328d02c2a82ef62ccbe7fe8",
+    "checkedAt": "2026-10-05",
+    "readme": "README.md",
+    "readFiles": [
+      "README.md",
+      "docs/project-state.md",
+      "docs/web-slice.md",
+      "package.json"
+    ],
+    "sourceUrls": [
+      {
+        "label": "README.md",
+        "url": "https://github.com/yunmin311/GitLineage/blob/e6c2bc54305e68552328d02c2a82ef62ccbe7fe8/README.md"
+      },
+      {
+        "label": "docs/project-state.md",
+        "url": "https://github.com/yunmin311/GitLineage/blob/e6c2bc54305e68552328d02c2a82ef62ccbe7fe8/docs/project-state.md"
+      },
+      {
+        "label": "docs/web-slice.md",
+        "url": "https://github.com/yunmin311/GitLineage/blob/e6c2bc54305e68552328d02c2a82ef62ccbe7fe8/docs/web-slice.md"
+      },
+      {
+        "label": "package.json",
+        "url": "https://github.com/yunmin311/GitLineage/blob/e6c2bc54305e68552328d02c2a82ef62ccbe7fe8/package.json"
+      }
+    ],
+    "screenshot": null,
+    "sha256": {
+      "README.md": "8a3ab8bb4e338fac39b11b9023370897e2ac1d75783f16d4f2242020c819c72f",
+      "docs/project-state.md": "29a35599e8f954778443202fbead4c1865f69baeded1b001f63d3aa31ee4dd0c",
+      "docs/web-slice.md": "ca788056719050ae1508eff128f35b157ed673fe6e8a6dc805ce4a976689c5af",
+      "package.json": "4cbd2d880ca2e35da0f910b3a4d99ce0effb53c6e895f753fc8ca1246a27bee8"
+    },
+    "sourceFileInspection": "README and listed docs read; long standard and validator files checked in relevant excerpts, not executed"
+  },
+  {
+    "repo": "context-distiller",
+    "revision": "c94e1f2c5e63caf664569ef0c18c94e8bfce42c4",
+    "checkedAt": "2026-10-05",
+    "readme": "README.md",
+    "readFiles": [
+      "README.md",
+      "docs/PRIVACY.md",
+      "package.json",
+      "LICENSE"
+    ],
+    "sourceUrls": [
+      {
+        "label": "README.md",
+        "url": "https://github.com/yunmin311/context-distiller/blob/c94e1f2c5e63caf664569ef0c18c94e8bfce42c4/README.md"
+      },
+      {
+        "label": "docs/PRIVACY.md",
+        "url": "https://github.com/yunmin311/context-distiller/blob/c94e1f2c5e63caf664569ef0c18c94e8bfce42c4/docs/PRIVACY.md"
+      },
+      {
+        "label": "package.json",
+        "url": "https://github.com/yunmin311/context-distiller/blob/c94e1f2c5e63caf664569ef0c18c94e8bfce42c4/package.json"
+      },
+      {
+        "label": "LICENSE",
+        "url": "https://github.com/yunmin311/context-distiller/blob/c94e1f2c5e63caf664569ef0c18c94e8bfce42c4/LICENSE"
+      }
+    ],
+    "screenshot": "context-distiller.webp",
+    "sha256": {
+      "README.md": "60e32fc139e29258f85be9e3f9f5601ccb79f6e0691689fe6af114e06381f5e4",
+      "docs/PRIVACY.md": "3a1f83d425b1119fcd39b35d8af7d88222b8e23436aa778a7a07cb5a4e228cd6",
+      "package.json": "73274f691dcc23b548610648ebb7acd583680a8573c774b6b128ebcb43aedda6",
+      "LICENSE": "fec34ea0b628052352d25533685fa4d94fc49dca635acddc66a86aeb17ea5360"
+    },
+    "screenshotEvidence": {
+      "originalPath": "docs/screenshots/messages.png",
+      "originalSHA256": "987614f3103df458cd7dcd7aee408c42f85980b7327d96a6d45d2583837b0f33",
+      "license": "MIT",
+      "visualInspection": "Original images inspected; no personal photos imported"
+    },
+    "sourceFileInspection": "README and listed docs read; long standard and validator files checked in relevant excerpts, not executed"
+  },
+  {
+    "repo": "universal-text-structure-standard",
+    "revision": "fe2b7f9763cec2eb3971a20913f8c4dae3d40afe",
+    "checkedAt": "2026-10-05",
+    "readme": "README.md",
+    "readFiles": [
+      "README.md",
+      "STANDARD.md",
+      "FORMAT_RULES.yaml",
+      "scripts/validate.py"
+    ],
+    "sourceUrls": [
+      {
+        "label": "README.md",
+        "url": "https://github.com/yunmin311/universal-text-structure-standard/blob/fe2b7f9763cec2eb3971a20913f8c4dae3d40afe/README.md"
+      },
+      {
+        "label": "STANDARD.md",
+        "url": "https://github.com/yunmin311/universal-text-structure-standard/blob/fe2b7f9763cec2eb3971a20913f8c4dae3d40afe/STANDARD.md"
+      },
+      {
+        "label": "FORMAT_RULES.yaml",
+        "url": "https://github.com/yunmin311/universal-text-structure-standard/blob/fe2b7f9763cec2eb3971a20913f8c4dae3d40afe/FORMAT_RULES.yaml"
+      },
+      {
+        "label": "scripts/validate.py",
+        "url": "https://github.com/yunmin311/universal-text-structure-standard/blob/fe2b7f9763cec2eb3971a20913f8c4dae3d40afe/scripts/validate.py"
+      }
+    ],
+    "screenshot": null,
+    "sha256": {
+      "README.md": "f86ebe75f8d4ee099b6c65f58f4176f20d13efc3114f92b0804da80863a97f42",
+      "STANDARD.md": "3f7851fd20116bb43e58f3230f410ec5a88fd4aba6015aa9996a9a2577fe068d",
+      "FORMAT_RULES.yaml": "a21621966ba7362da91287a6e4ac666807322b823321f5a07adc9400aa7657dc",
+      "scripts/validate.py": "7b4556a04f42807996de59e11b8a5c8a468e7d444fdfcee4e7ffbc9b1a891939"
+    },
+    "sourceFileInspection": "README and listed docs read; long standard and validator files checked in relevant excerpts, not executed"
+  },
+  {
+    "repo": "DenseGPT",
+    "revision": "01fd25dba0eca1dfc123b34329d745007b653579",
+    "checkedAt": "2026-10-05",
+    "readme": "README.md",
+    "readFiles": [
+      "README.md",
+      "README.zh-CN.md",
+      "docs/design-principles.md",
+      "LICENSE"
+    ],
+    "sourceUrls": [
+      {
+        "label": "README.md",
+        "url": "https://github.com/yunmin311/DenseGPT/blob/01fd25dba0eca1dfc123b34329d745007b653579/README.md"
+      },
+      {
+        "label": "README.zh-CN.md",
+        "url": "https://github.com/yunmin311/DenseGPT/blob/01fd25dba0eca1dfc123b34329d745007b653579/README.zh-CN.md"
+      },
+      {
+        "label": "docs/design-principles.md",
+        "url": "https://github.com/yunmin311/DenseGPT/blob/01fd25dba0eca1dfc123b34329d745007b653579/docs/design-principles.md"
+      },
+      {
+        "label": "LICENSE",
+        "url": "https://github.com/yunmin311/DenseGPT/blob/01fd25dba0eca1dfc123b34329d745007b653579/LICENSE"
+      }
+    ],
+    "screenshot": null,
+    "sha256": {
+      "README.md": "8ae9ac5fd2c1f61c18fcae6368b7a64f824f1ee458c8257c75dcb8f94622d06c",
+      "README.zh-CN.md": "921ef6ab3a73d49a17feb31700bf1b98966c6355001e7a785e15aee7c58c02fa",
+      "docs/design-principles.md": "1e4029aff0fc392555193bdd6e3e11db4307a4e79035493d9cdaf83a93d6c21b",
+      "LICENSE": "2db080cf7669a8b9f468a7d35a5f0b3f398c19f1382bb89f01a82781a662999b"
+    },
+    "sourceFileInspection": "README and listed docs read; long standard and validator files checked in relevant excerpts, not executed"
+  },
+  {
+    "repo": "anatomical-symptom-interface",
+    "revision": "dbd9c1f4af55f11c60e185a925221e1bf6a4a571",
+    "checkedAt": "2026-10-05",
+    "readme": "README.md",
+    "readFiles": [
+      "README.md",
+      "docs/known-limitations.md",
+      "docs/04-roadmap.md",
+      "package.json"
+    ],
+    "sourceUrls": [
+      {
+        "label": "README.md",
+        "url": "https://github.com/yunmin311/anatomical-symptom-interface/blob/dbd9c1f4af55f11c60e185a925221e1bf6a4a571/README.md"
+      },
+      {
+        "label": "docs/known-limitations.md",
+        "url": "https://github.com/yunmin311/anatomical-symptom-interface/blob/dbd9c1f4af55f11c60e185a925221e1bf6a4a571/docs/known-limitations.md"
+      },
+      {
+        "label": "docs/04-roadmap.md",
+        "url": "https://github.com/yunmin311/anatomical-symptom-interface/blob/dbd9c1f4af55f11c60e185a925221e1bf6a4a571/docs/04-roadmap.md"
+      },
+      {
+        "label": "package.json",
+        "url": "https://github.com/yunmin311/anatomical-symptom-interface/blob/dbd9c1f4af55f11c60e185a925221e1bf6a4a571/package.json"
+      }
+    ],
+    "screenshot": null,
+    "sha256": {
+      "README.md": "f013d71a4697f9241f970dd49894b5a870304661d34e60171956ebb32f223277",
+      "docs/known-limitations.md": "7e5c7ecffaa18bae37a34a9cd78a794359679f0af5639d5c021c01b6d471f5a1",
+      "docs/04-roadmap.md": "e3177aafa3b02e8a7a40545228fb7f3a403b2f090204371bb8c671221b0c6e3d",
+      "package.json": "8108e0c949d34151bd34ba2b9a177bdc82ea5d5269492db170986710976e0ea1"
+    },
+    "sourceFileInspection": "README and listed docs read; long standard and validator files checked in relevant excerpts, not executed"
+  },
+  {
+    "repo": "dsh-universal-palette",
+    "revision": "d6b59dc8acfe68267039485072b8cdd3eb786989",
+    "checkedAt": "2026-10-05",
+    "readme": "README.md",
+    "readFiles": [
+      "README.md",
+      "docs/COMPATIBILITY.md",
+      "package.json",
+      "LICENSE"
+    ],
+    "sourceUrls": [
+      {
+        "label": "README.md",
+        "url": "https://github.com/yunmin311/dsh-universal-palette/blob/d6b59dc8acfe68267039485072b8cdd3eb786989/README.md"
+      },
+      {
+        "label": "docs/COMPATIBILITY.md",
+        "url": "https://github.com/yunmin311/dsh-universal-palette/blob/d6b59dc8acfe68267039485072b8cdd3eb786989/docs/COMPATIBILITY.md"
+      },
+      {
+        "label": "package.json",
+        "url": "https://github.com/yunmin311/dsh-universal-palette/blob/d6b59dc8acfe68267039485072b8cdd3eb786989/package.json"
+      },
+      {
+        "label": "LICENSE",
+        "url": "https://github.com/yunmin311/dsh-universal-palette/blob/d6b59dc8acfe68267039485072b8cdd3eb786989/LICENSE"
+      }
+    ],
+    "screenshot": "dsh-universal-palette.webp",
+    "sha256": {
+      "README.md": "8d0ec7997412079859c46c26800ef07560a2b23720e647291d3c4634540f5540",
+      "docs/COMPATIBILITY.md": "2d0d63339f2d4af3da23b269bfa27d77dd23afe9c510ff7919f948057fd485a2",
+      "package.json": "05231100dd610410cb20b103b6f51ad721602363db181ceef4a9fe9e801d66b7",
+      "LICENSE": "2db080cf7669a8b9f468a7d35a5f0b3f398c19f1382bb89f01a82781a662999b"
+    },
+    "screenshotEvidence": {
+      "originalPath": "docs/assets/readme/hero.png",
+      "originalSHA256": "a49683eaaf55d0a1b9dfbf864606c7ffc1bcd68f0699a64f986aa31a726b2937",
+      "license": "MIT",
+      "visualInspection": "Original images inspected; no personal photos imported"
+    },
+    "sourceFileInspection": "README and listed docs read; long standard and validator files checked in relevant excerpts, not executed"
+  },
+  {
+    "repo": "yunmin311",
+    "revision": "3cc725a138d53f07856a8d99dd13777fa8f40898",
+    "checkedAt": "2026-10-05",
+    "readFiles": [
+      "README.md",
+      "scripts/config.json"
+    ],
+    "sourceUrls": [
+      {
+        "label": "README.md",
+        "url": "https://github.com/yunmin311/yunmin311/blob/3cc725a138d53f07856a8d99dd13777fa8f40898/README.md"
+      },
+      {
+        "label": "scripts/config.json",
+        "url": "https://github.com/yunmin311/yunmin311/blob/3cc725a138d53f07856a8d99dd13777fa8f40898/scripts/config.json"
+      }
+    ],
+    "sha256": {
+      "README.md": "755f40bde7bfe59f030e6ea8ac62c7448a532efca74f662cc29e029ffa89ab7f",
+      "scripts/config.json": "1f2f2395cd0f44a093b2aed787838e1fd585af030870b265b0abec7d0f08f437"
+    },
+    "contactValuesCopied": false,
+    "sourceFileInspection": "README and listed docs read; long standard and validator files checked in relevant excerpts, not executed"
+  }
+]

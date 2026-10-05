@@ -4,13 +4,13 @@ import Exhibition from '../../components/paper/Exhibition.astro';
 import ReadingFooter from '../../components/paper/ReadingFooter.astro';
 import Overlays from '../../components/paper/Overlays.astro';
 import {getPaperHomeData} from '../../lib/paper-home';
-import {locales,type Lang} from '../../i18n/ui';
+import {locales,t,type Lang} from '../../i18n/ui';
 export function getStaticPaths(){return locales.map(lang=>({params:{lang}}));}
 const lang=Astro.params.lang as Lang;
 const data=await getPaperHomeData(lang);
 const encoded=JSON.stringify(data).replace(/</g,'\\u003c');
 const base='https://yunmin311.github.io';
-const description=lang==='zh'?'Yunmin 的作品、文字与过程记录。':'Works, writing, and process notes by Yunmin.';
+const description=t(lang,'site.description');
 ---
 <!doctype html>
 <html lang={lang==='zh'?'zh-CN':'en'}>

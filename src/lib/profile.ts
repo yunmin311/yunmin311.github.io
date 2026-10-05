@@ -1,15 +1,18 @@
-// 联系方式与社交链接:关于页与页脚共用同一份数据(规格第三节)。
-// 全部占位,等用户提供真实内容。邮箱拆成两段存放,配合构建出的小脚本拼装,
-// 网页源码里不出现明文地址(防爬,规格第四节)。
-
-export const email = {
-  user: 'hello', // 占位
-  domain: 'example.com', // 占位
+// Current public identity: user-confirmed brief, cross-checked against the public Profile.
+// Other contact channels remain pending even when visible in another repository.
+export const profile = {
+ name: 'Qiyu Li / Yunmin',
+ education: {zh:'本科在读', en:'Undergraduate student'},
+ intro: {
+  zh:'做 AI 原生工具、创意软件与视觉系统，把混乱的想法做成真正能工作的东西。',
+  en:'I build AI-native tools, creative software, and visual systems — turning messy ideas into things that actually work.',
+ },
+ about: {
+  zh:'我关注人机协作、创意软件与视觉系统，倾向于把模糊问题、个人需求和工作流变成真正能够运行的工具。摄影、影像与电影也是长期兴趣。',
+  en:'I work around human–AI interaction, creative software and visual systems, turning unclear problems, personal needs and workflows into working tools. Photography, moving images and film remain long-term interests.',
+ },
+ principle:{zh:'让人的判断始终参与其中。',en:'Human judgment stays in the loop.'},
+ github:'https://github.com/yunmin311',
 };
-
-/** href 为空 = 待补:页面显示灰字,不出链接 */
-export const socials: { label: string; href: string }[] = [
-  { label: 'Instagram', href: '' },
-  { label: 'Behance', href: '' },
-  { label: '小红书', href: '' },
-];
+export const email = null;
+export const socials: {label:string;href:string}[] = [];

@@ -8,6 +8,7 @@ role: 视觉设计(占位)
 link: https://example.com
 featured: true
 order: 1
+draft: true
 ---
 
 **【占位内容】** 这里是作品说明的正文。真实作品会讲:项目背景、要解决的问题、

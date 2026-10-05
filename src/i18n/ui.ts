@@ -1,5 +1,6 @@
 // 全站界面文字的唯一存放处(宪法第六条:界面文字两语齐全)。
-// 站名未决(规格·未决事项):占位 "Y",定稿后只改 site.name 两处。
+// 当前身份与首页介绍以用户确认内容为准。
+import { profile } from "../lib/profile";
 
 export const locales = ['zh', 'en'] as const;
 export type Lang = (typeof locales)[number];
@@ -7,12 +8,12 @@ export const defaultLang: Lang = 'zh';
 
 const zh = {
   'site.name': 'Yunmin',
-  'site.description': 'Yunmin 的作品、文字与过程记录。',
+  'site.description': 'Yunmin / Qiyu Li 的个人数字花园与 Creative Engineering Portfolio：AI 原生工具、创意软件、人机协作与视觉系统。',
   'nav.works': '作品',
   'nav.blog': '文字',
   'nav.about': '关于',
-  'home.intro.title': '你好,我是 Y。',
-  'home.intro.body': '(占位介绍)设计师,做视觉与影像。这里放两三行真正的自我介绍。',
+  'home.intro.title': 'Qiyu Li / Yunmin',
+  'home.intro.body': profile.intro.zh,
   'home.viewAll': '查看全部作品',
   'works.title': '作品',
   'work.client': '客户',
@@ -23,9 +24,9 @@ const zh = {
   'work.backToList': '全部作品',
   'blog.title': '文字',
   'about.title': '关于',
-  'about.photoAlt': '照片(占位)',
-  'about.status': '(占位状态)现居某地,接受合作洽谈。',
-  'about.body': '(占位介绍)这里放长版自我介绍:背景、在做的事、感兴趣的方向。',
+  'about.photoAlt': '个人照片待提供',
+  'about.status': '本科在读 · Creative Engineering',
+  'about.body': profile.about.zh,
   'about.email': '邮箱',
   'about.resume': '简历(PDF,待补)',
   'notfound.title': '页面不存在',
@@ -35,12 +36,12 @@ const zh = {
 
 const en = {
   'site.name': 'Yunmin',
-  'site.description': 'Works, writing, and process notes by Yunmin.',
+  'site.description': 'Yunmin / Qiyu Li — a personal digital garden and creative engineering portfolio of AI-native tools, creative software, human–AI interaction and visual systems.',
   'nav.works': 'Works',
   'nav.blog': 'Writing',
   'nav.about': 'About',
-  'home.intro.title': 'Hi, I am Y.',
-  'home.intro.body': '(Placeholder intro) Designer working in visuals and motion. A real two-line intro goes here.',
+  'home.intro.title': 'Qiyu Li / Yunmin',
+  'home.intro.body': profile.intro.en,
   'home.viewAll': 'View all works',
   'works.title': 'Works',
   'work.client': 'Client',
@@ -51,9 +52,9 @@ const en = {
   'work.backToList': 'All works',
   'blog.title': 'Writing',
   'about.title': 'About',
-  'about.photoAlt': 'Photo (placeholder)',
-  'about.status': '(Placeholder status) Based somewhere, open for collaboration.',
-  'about.body': '(Placeholder) A longer introduction goes here: background, current work, interests.',
+  'about.photoAlt': 'Personal photo pending',
+  'about.status': 'Undergraduate student · Creative Engineering',
+  'about.body': profile.about.en,
   'about.email': 'Email',
   'about.resume': 'Resume (PDF, coming)',
   'notfound.title': 'Page not found',

@@ -31,7 +31,9 @@ const altPath = (await hasTranslation('works', otherLang, slug))
   : null;
 
 const meta = [
-  { label: formatYear(entry.data.date), value: '' },
+  entry.data.date && { label: formatYear(entry.data.date), value: '' },
+  entry.data.category && { label: lang==='zh'?'类型':'Type', value: entry.data.category },
+  entry.data.status && { label: lang==='zh'?'状态':'Status', value: entry.data.status },
   entry.data.client && { label: t(lang, 'work.client'), value: entry.data.client },
   entry.data.role && { label: t(lang, 'work.role'), value: entry.data.role },
 ].filter(Boolean) as { label: string; value: string }[];
@@ -41,7 +43,7 @@ const meta = [
   title={entry.data.title}
   description={entry.data.summary}
   altPath={altPath}
-  ogImage={entry.data.cover.src}
+  ogImage={entry.data.cover?.src}
 >
   <article class="work">
     <header class="work-head">

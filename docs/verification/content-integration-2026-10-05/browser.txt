@@ -1,0 +1,1 @@
+PASS 52 routes; 6 interaction groups; 36 internal destinations

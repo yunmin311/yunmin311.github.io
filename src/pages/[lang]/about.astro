@@ -1,13 +1,13 @@
 ---
 import Base from '../../layouts/Base.astro';
-import {locales,type Lang} from '../../i18n/ui';
-import profile from '../../data/legacy-profile.json';
+import {locales,type Lang,t} from '../../i18n/ui';
+import {profile} from '../../lib/profile';
 export function getStaticPaths(){return locales.map(lang=>({params:{lang}}));}
 const lang=Astro.params.lang as Lang;
 ---
-<Base title={lang==='zh'?'关于':'About'}>
-<h1>{lang==='zh'?'关于 Yunmin':'About Yunmin'}</h1>
-<p>{lang==='zh'?'作品、文字与过程记录，也留位置给逐渐展开的兴趣。':'Works, writing, process notes, and room for interests to grow.'}</p>
-{lang==='zh'&&<><p class="source-note">以下介绍来自 2026-05 旧项目，保留为待更新的草稿。</p>{profile.paragraphs.map(p=><p>{p}</p>)}<h2>旧稿中的兴趣</h2><div class="route-tags">{profile.interests.map(item=><span>{item}</span>)}</div></>}
-<h2>{lang==='zh'?'联系':'Contact'}</h2><div class="contact"><a href="https://github.com/yunmin311" target="_blank" rel="noopener">GitHub ↗</a><span>{lang==='zh'?'邮箱、其他平台与简历待补。':'Email, other profiles, and résumé are pending.'}</span></div>
+<Base title={t(lang,'about.title')}>
+<h1>{profile.name}</h1>
+<p class="source-note">{profile.education[lang]} · Creative Engineering</p>
+<p>{profile.intro[lang]}</p><p>{profile.about[lang]}</p><p>{profile.principle[lang]}</p>
+<h2>{lang==='zh'?'联系':'Contact'}</h2><div class="contact"><a href={profile.github} target="_blank" rel="noopener">GitHub ↗</a><span>{lang==='zh'?'其他联系方式和简历尚未确认公开。':'Other contact channels and résumé are not yet confirmed for publication.'}</span></div>
 </Base>

@@ -14,9 +14,10 @@ const href = getRelativeLocaleUrl(lang, `works/${slugOf(work.id)}`);
 ---
 
 <a class="work-card" href={href}>
-  <Image class="work-cover" src={work.data.cover} alt={work.data.title} width={800} />
+  {work.data.cover ? <Image class="work-cover" src={work.data.cover} alt={`${work.data.title} — ${lang==='zh'?'项目仓库原有截图':'Existing repository screenshot'}`} width={800} /> : <div class="work-cover project-title-cover"><small>{work.data.category}</small><strong>{work.data.title}</strong><span>{work.data.stack}</span></div>}
   <span class="work-title">{work.data.title}</span>
   <span class="work-summary">{work.data.summary}</span>
+  <small>{work.data.status}</small>
 </a>
 
 <style>

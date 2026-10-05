@@ -8,6 +8,7 @@ role: Visual design (placeholder)
 link: https://example.com
 featured: true
 order: 1
+draft: true
 ---
 
 **[PLACEHOLDER]** This is the body of a work page. A real entry would cover:

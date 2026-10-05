@@ -7,6 +7,7 @@ role: 动态设计(占位)
 video: https://vimeo.com/76979871
 featured: true
 order: 2
+draft: true
 ---
 
 **【占位内容】** 这条作品带视频链接,详情页应出现内嵌播放器。

@@ -10,6 +10,7 @@ for(const [entry,out] of [['scene.js','scene.js'],['print.js','print.js'],['page
 const sound=await fs.readFile(path.join(output,'59bf62d8c803ef34.wav'));
 await fs.writeFile(path.join(output,'music-study.json'),JSON.stringify({mime:'audio/wav',base64:sound.toString('base64')}));
 let css=await read(styles,'shell.css');
+css+=(await read(output,'body-extra.css').catch(()=>''));
 for(const [key,file] of [['EXTRA_CSS','exhibition.css'],['FOLIO_CSS','folio.css'],['CONTROL_CSS','controls.css'],['REFINED_CSS','refined.css'],['PLAYER_CSS','vendor/plyr.css'],['GALLERY_CSS','vendor/photoswipe.css']])css=css.replace('__'+key+'__',await read(styles,file));
 css=css.replace('__DEPTH_CSS__',(await Promise.all(['vendor/tippy.css','vendor/tippy-shift-away.css','depth.css','experience.css','personal.css','scroll-controls.css','production.css'].map(f=>read(styles,f)))).join('\n'));
 const manifest=JSON.parse(await read(output,'manifest.json'));css=css.replaceAll('__ATLAS_URL__',manifest.atlas);
