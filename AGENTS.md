@@ -109,9 +109,9 @@ npm run preview  # 预览构建产物
 
 用户确认其余设计满意，仅要求解决大屏云层颗粒放大和不均匀。云层不再按 `ceil(视口宽度/960)` 整倍扩大采样块，屏幕采样固定 1 CSS 像素，覆盖宽度连续适配；宽屏细分颜色采样，手机保持原来的采样。Canvas 与 WebGL 都已检查。不要重新生成云图或修改字体、布局、组件材质。证据和缩放限制见 `docs/verification/grain-scale-2026-10-04.md`。
 
-## 当前内容接入（2026-10-05，未发布工作分支）
+## 当前内容接入与发布（2026-10-05）
 
-本轮用户明确授权真实内容接入、验证与报告，明确禁止自动推送和 Pages 发布。线上仍为已发布的 `970b286` 基准；内容接入位于 `codex/real-content`，经用户另行授权才发布。更细颗粒试验 `codex/grain-fine-study` 已否决合并，保留存档。
+用户先要求本地实现与验证，随后明确要求“上线啊”，已授权将 `codex/real-content` 的真实内容、完整项目目录和 Release 入口发布到现有 main / GitHub Pages。原发布基准为 `970b286`；本批实现提交为 `a247d32`、`b149055`。部署结果以 GitHub Actions 与线上页面核验为准，后续推送仍须用户明确要求。更细颗粒试验 `codex/grain-fine-study` 已否决合并，保留存档。
 
 当前身份唯一来源 `src/lib/profile.ts`（用户确认的公开介绍）；`src/data/legacy-profile.json` 仅存历史，不渲染为当前简介。公开仓库 README 与固定修订的 docs 支撑真实 Works；来源与边界见 `docs/verification/content-sources-2026-10-05.json`。
 
