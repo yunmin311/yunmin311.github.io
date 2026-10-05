@@ -25,3 +25,14 @@ body.paper-page{padding:0 0 80px!important;color:#34566c;background:#d2e1ed!impo
 @media(max-width:560px){.paper-site .context-switch{grid-template-columns:repeat(2,minmax(0,1fr))}.paper-site .context-switch button{font-size:12px;padding:10px 6px}.paper-site .repo-links{flex:none}.paper-page .works-grid{grid-template-columns:minmax(0,1fr)}}
 
 .paper-site .context-name{overflow-wrap:anywhere;max-width:100%;line-height:1.5}
+
+/* Sand is a surface, not a stretched cover image. 900x600 is the cached
+   sand raster's CSS footprint: content growth repeats it without magnification.
+   Cloud scenes and illustrated covers keep their existing independent sizing. */
+.paper-site .pixel-window[data-material="sand-blue"],
+.paper-site .pixel-window[data-material="sand-sage"],
+.paper-site .sand-sample[data-material="sand-blue"],
+.paper-site .sand-sample[data-material="sand-sage"]{
+ background-size:900px 600px;background-repeat:repeat;background-position:0 0;
+}
+.page-reading-layer:before{background-size:900px 600px;background-repeat:repeat;background-position:0 0}

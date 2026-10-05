@@ -6,6 +6,7 @@ category: "Text & visual systems"
 status: "1.0.0 maintenance baseline"
 stack: "Python · Markdown · YAML"
 link: "https://github.com/yunmin311/universal-text-structure-standard"
+portfolio: true
 featured: true
 order: 3
 kind: "project"

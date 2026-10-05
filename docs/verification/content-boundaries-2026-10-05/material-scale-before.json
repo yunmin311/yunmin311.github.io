@@ -1,0 +1,16 @@
+{
+  "before": {
+    "width": 1328,
+    "height": 2696.328125,
+    "size": "cover",
+    "repeat": "repeat",
+    "src": "none"
+  },
+  "after": {
+    "width": 1328,
+    "height": 4484,
+    "size": "cover",
+    "repeat": "repeat",
+    "src": "url(\"http://127.0.0.1:8800/assets/paper/6593175aa4866521.lossless.webp\")"
+  }
+}

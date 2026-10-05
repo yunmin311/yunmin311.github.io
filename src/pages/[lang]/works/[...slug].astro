@@ -4,7 +4,7 @@ import { getCollection, render } from 'astro:content';
 import { getRelativeLocaleUrl } from 'astro:i18n';
 import Base from '../../../layouts/Base.astro';
 import VideoEmbed from '../../../components/VideoEmbed.astro';
-import { getWorks, hasTranslation, slugOf } from '../../../lib/content';
+import { getPortfolioWorks, hasTranslation, slugOf } from '../../../lib/content';
 import { t, type Lang } from '../../../i18n/ui';
 import { formatYear } from '../../../lib/format';
 
@@ -22,10 +22,10 @@ const otherLang: Lang = lang === 'zh' ? 'en' : 'zh';
 const slug = slugOf(entry.id);
 const { Content } = await render(entry);
 
-const list = await getWorks(lang);
+const list = await getPortfolioWorks(lang);
 const idx = list.findIndex((w) => w.id === entry.id);
 const prev = idx > 0 ? list[idx - 1] : undefined;
-const next = idx < list.length - 1 ? list[idx + 1] : undefined;
+const next = idx >= 0 && idx < list.length - 1 ? list[idx + 1] : undefined;
 
 const altPath = (await hasTranslation('works', otherLang, slug))
   ? getRelativeLocaleUrl(otherLang, `works/${slug}`)
@@ -46,7 +46,7 @@ const meta = [
   altPath={altPath}
   ogImage={entry.data.cover?.src}
 >
-  <article class="work"><ReleaseLink release={entry.data.release} lang={lang}/>
+  <article class="work">{!entry.data.portfolio&&<p class="source-note">{lang==='zh'?'代码库项目说明 · 不列入代表性成果':'Repository documentation · outside the selected portfolio'} · <a href={`/${lang}/repos/`}>{lang==='zh'?'查看代码库 →':'View repositories →'}</a></p>}<ReleaseLink release={entry.data.release} lang={lang}/>
     <header class="work-head">
       <h1>{entry.data.title}</h1>
       <p class="summary">{entry.data.summary}</p>
@@ -77,7 +77,7 @@ const meta = [
 
     <nav class="work-pager">
       <span>{prev && <a href={getRelativeLocaleUrl(lang, `works/${slugOf(prev.id)}`)}>← {t(lang, 'work.prev')}:{prev.data.title}</a>}</span>
-      <a href={getRelativeLocaleUrl(lang, 'works')}>{t(lang, 'work.backToList')}</a>
+      <a href={getRelativeLocaleUrl(lang, entry.data.portfolio?'works':'repos')}>{entry.data.portfolio?t(lang, 'work.backToList'):(lang==='zh'?'完整代码库':'Complete repository index')}</a>
       <span>{next && <a href={getRelativeLocaleUrl(lang, `works/${slugOf(next.id)}`)}>{t(lang, 'work.next')}:{next.data.title} →</a>}</span>
     </nav>
   </article>

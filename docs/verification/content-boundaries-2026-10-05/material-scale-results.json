@@ -1,0 +1,89 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "width": 390,
+      "deviceScaleFactor": 1,
+      "planes": 25,
+      "rasterCSS": "900x600",
+      "sourceRaster": [
+        900,
+        600
+      ],
+      "contentGrowth": true,
+      "reading": "900px 600px",
+      "matchingEdges": true,
+      "noOverflow": true
+    },
+    {
+      "width": 390,
+      "deviceScaleFactor": 2,
+      "planes": 25,
+      "rasterCSS": "900x600",
+      "sourceRaster": [
+        900,
+        600
+      ],
+      "contentGrowth": true,
+      "reading": "900px 600px",
+      "matchingEdges": true,
+      "noOverflow": true
+    },
+    {
+      "width": 1440,
+      "deviceScaleFactor": 1,
+      "planes": 25,
+      "rasterCSS": "900x600",
+      "sourceRaster": [
+        900,
+        600
+      ],
+      "contentGrowth": true,
+      "reading": "900px 600px",
+      "matchingEdges": true,
+      "noOverflow": true
+    },
+    {
+      "width": 1440,
+      "deviceScaleFactor": 2,
+      "planes": 25,
+      "rasterCSS": "900x600",
+      "sourceRaster": [
+        900,
+        600
+      ],
+      "contentGrowth": true,
+      "reading": "900px 600px",
+      "matchingEdges": true,
+      "noOverflow": true
+    },
+    {
+      "width": 1920,
+      "deviceScaleFactor": 1,
+      "planes": 25,
+      "rasterCSS": "900x600",
+      "sourceRaster": [
+        900,
+        600
+      ],
+      "contentGrowth": true,
+      "reading": "900px 600px",
+      "matchingEdges": true,
+      "noOverflow": true
+    },
+    {
+      "width": 1920,
+      "deviceScaleFactor": 2,
+      "planes": 25,
+      "rasterCSS": "900x600",
+      "sourceRaster": [
+        900,
+        600
+      ],
+      "contentGrowth": true,
+      "reading": "900px 600px",
+      "matchingEdges": true,
+      "noOverflow": true
+    }
+  ]
+}

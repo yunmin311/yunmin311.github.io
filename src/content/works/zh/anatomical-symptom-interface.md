@@ -6,6 +6,7 @@ category: "解剖定位与交互"
 status: "原型 · 临床规则未审查 / 不具备发布条件"
 stack: "TypeScript · local-first"
 link: "https://github.com/yunmin311/anatomical-symptom-interface"
+portfolio: true
 featured: true
 order: 5
 kind: "project"

@@ -6,6 +6,7 @@ category: "Reading & response density"
 status: "UserCSS + response-style specification"
 stack: "CSS · Markdown"
 link: "https://github.com/yunmin311/DenseGPT"
+portfolio: true
 featured: true
 order: 4
 kind: "project"

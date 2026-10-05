@@ -1,0 +1,190 @@
+
+> personal-site@0.0.1 prebuild
+> node scripts/build-paper.mjs
+
+[
+  {
+    key: 'cloud-01',
+    original: 1933184,
+    compressed: 1044916,
+    pixelIdentical: true
+  },
+  {
+    key: 'cloud-02',
+    original: 1869013,
+    compressed: 976072,
+    pixelIdentical: true
+  },
+  {
+    key: 'cloud-03',
+    original: 1902324,
+    compressed: 1009330,
+    pixelIdentical: true
+  },
+  {
+    key: 'mineral-study',
+    original: 172768,
+    compressed: 69434,
+    pixelIdentical: true
+  },
+  {
+    key: 'pond-study',
+    original: 219684,
+    compressed: 105668,
+    pixelIdentical: true
+  },
+  {
+    key: 'sand-blue',
+    original: 1312148,
+    compressed: 722136,
+    pixelIdentical: true
+  },
+  {
+    key: 'sand-sage',
+    original: 1239476,
+    compressed: 656872,
+    pixelIdentical: true
+  },
+  {
+    key: 'terrace-study',
+    original: 207894,
+    compressed: 98908,
+    pixelIdentical: true
+  },
+  {
+    key: 'podcast-legacy',
+    original: 121122,
+    compressed: 61058,
+    pixelIdentical: true
+  }
+]
+Sand surface tiles: 900x600, matching wrap edges, verified lossless WebP.
+Paper site: local assets, theme and runtime built.
+
+> personal-site@0.0.1 build
+> astro build
+
+13:32:06 [content] Syncing content
+13:32:06 [WARN] [glob-loader] The base directory "/mnt/e/1project/yunmin311-site-performance/src/content/code/" does not exist.
+13:32:06 [WARN] [glob-loader] The base directory "/mnt/e/1project/yunmin311-site-performance/src/content/learning/" does not exist.
+13:32:06 [WARN] [glob-loader] The base directory "/mnt/e/1project/yunmin311-site-performance/src/content/reflections/" does not exist.
+13:32:06 [content] Synced content
+13:32:06 [types] Generated 2.18s
+13:32:06 [build] output: "static"
+13:32:06 [build] mode: "static"
+13:32:06 [build] directory: /mnt/e/1project/yunmin311-site-performance/dist/
+13:32:06 [build] Collecting build info...
+13:32:06 [build] ✓ Completed in 2.29s.
+13:32:07 [build] Building static entrypoints...
+13:32:08 [vite] ✓ built in 795ms
+13:32:08 [vite] ✓ built in 905ms
+13:32:08 [build] Rearranging server assets...
+
+ generating static routes 
+13:32:09 [WARN] [content] The collection "reflections" does not exist or is empty. Please check your content config file for errors.
+13:32:09 [WARN] [content] The collection "learning" does not exist or is empty. Please check your content config file for errors.
+13:32:09 [WARN] [content] The collection "code" does not exist or is empty. Please check your content config file for errors.
+13:32:09 [WARN] [build] Could not render `` from route `/` as it conflicts with higher priority route `/`.
+13:32:09   ├─ /404.html (+26ms) 
+13:32:09   ├─ /zh/about/index.html (+11ms) 
+13:32:09   ├─ /en/about/index.html (+8ms) 
+13:32:09   ├─ /zh/blog/index.html (+6ms) 
+13:32:09   ├─ /en/blog/index.html (+5ms) 
+13:32:09   ├─ /zh/blog/building-personal-website/index.html (+6ms) 
+13:32:09   ├─ /zh/blog/vibe-coding-heatmap/index.html (+7ms) 
+13:32:09   ├─ /zh/projects/index.html13:32:09 [WARN] [content] The collection "reflections" does not exist or is empty. Please check your content config file for errors.
+ (+6ms) 
+13:32:09   ├─ /en/projects/index.html13:32:09 [WARN] [content] The collection "reflections" does not exist or is empty. Please check your content config file for errors.
+ (+5ms) 
+13:32:09   ├─ /zh/projects/camera-transfer/index.html (+6ms) 
+13:32:09   ├─ /zh/projects/cognitive-training/index.html (+6ms) 
+13:32:09   ├─ /zh/projects/debate-agent/index.html (+5ms) 
+13:32:09   ├─ /zh/projects/heatmap/index.html (+5ms) 
+13:32:09   ├─ /zh/projects/rehab-guide/index.html (+5ms) 
+13:32:09   ├─ /zh/projects/skincare-notes/index.html (+5ms) 
+13:32:09   ├─ /zh/works/index.html (+15ms) 
+13:32:09   ├─ /en/works/index.html (+5ms) 
+13:32:09   ├─ /en/works/ai-systematic-notes/index.html (+7ms) 
+13:32:09   ├─ /en/works/anatomical-symptom-interface/index.html (+5ms) 
+13:32:09   ├─ /en/works/calendar-app/index.html (+6ms) 
+13:32:09   ├─ /en/works/context-distiller/index.html (+6ms) 
+13:32:09   ├─ /en/works/dark-canvas-image-skill/index.html (+6ms) 
+13:32:09   ├─ /en/works/dense-reading-obsidian/index.html (+7ms) 
+13:32:09   ├─ /en/works/densegpt/index.html (+6ms) 
+13:32:09   ├─ /en/works/dsh-universal-palette/index.html (+6ms) 
+13:32:09   ├─ /en/works/gitlineage/index.html (+6ms) 
+13:32:09   ├─ /en/works/governance-framework/index.html (+6ms) 
+13:32:09   ├─ /en/works/obsidian-config/index.html (+5ms) 
+13:32:09   ├─ /en/works/paper-desk-obsidian/index.html (+5ms) 
+13:32:09   ├─ /en/works/pixel-panels/index.html (+7ms) 
+13:32:09   ├─ /en/works/quiet-shelf-obsidian/index.html (+6ms) 
+13:32:09   ├─ /en/works/reading-rail-sidebar-obsidian/index.html (+5ms) 
+13:32:09   ├─ /en/works/text-structure/index.html (+5ms) 
+13:32:09   ├─ /en/works/toolbar-pin-toggle-obsidian/index.html (+5ms) 
+13:32:09   ├─ /en/works/window-annotator/index.html (+5ms) 
+13:32:09   ├─ /en/works/work-capsule/index.html (+5ms) 
+13:32:09   ├─ /en/works/ym-obsidian-course-notes-standard/index.html (+5ms) 
+13:32:09   ├─ /en/works/yunmin-workbench/index.html (+5ms) 
+13:32:09   ├─ /en/works/zheng-tally-obsidian/index.html (+5ms) 
+13:32:09   ├─ /zh/works/ai-systematic-notes/index.html (+6ms) 
+13:32:09   ├─ /zh/works/anatomical-symptom-interface/index.html (+6ms) 
+13:32:09   ├─ /zh/works/calendar-app/index.html (+5ms) 
+13:32:09   ├─ /zh/works/context-distiller/index.html (+5ms) 
+13:32:09   ├─ /zh/works/dark-canvas-image-skill/index.html (+7ms) 
+13:32:09   ├─ /zh/works/dense-reading-obsidian/index.html (+5ms) 
+13:32:09   ├─ /zh/works/densegpt/index.html (+6ms) 
+13:32:09   ├─ /zh/works/dsh-universal-palette/index.html (+5ms) 
+13:32:09   ├─ /zh/works/gitlineage/index.html (+5ms) 
+13:32:09   ├─ /zh/works/governance-framework/index.html (+6ms) 
+13:32:09   ├─ /zh/works/obsidian-config/index.html (+5ms) 
+13:32:09   ├─ /zh/works/paper-desk-obsidian/index.html (+5ms) 
+13:32:09   ├─ /zh/works/pixel-panels/index.html (+5ms) 
+13:32:09   ├─ /zh/works/quiet-shelf-obsidian/index.html (+5ms) 
+13:32:09   ├─ /zh/works/reading-rail-sidebar-obsidian/index.html (+5ms) 
+13:32:09   ├─ /zh/works/text-structure/index.html (+5ms) 
+13:32:09   ├─ /zh/works/toolbar-pin-toggle-obsidian/index.html (+5ms) 
+13:32:09   ├─ /zh/works/window-annotator/index.html (+6ms) 
+13:32:09   ├─ /zh/works/work-capsule/index.html (+6ms) 
+13:32:09   ├─ /zh/works/ym-obsidian-course-notes-standard/index.html (+7ms) 
+13:32:09   ├─ /zh/works/yunmin-workbench/index.html (+6ms) 
+13:32:09   ├─ /zh/works/zheng-tally-obsidian/index.html (+6ms) 
+13:32:09   ├─ /zh/project-notes/index.html13:32:09 [WARN] [content] The collection "reflections" does not exist or is empty. Please check your content config file for errors.
+ (+5ms) 
+13:32:09   ├─ /en/project-notes/index.html13:32:09 [WARN] [content] The collection "reflections" does not exist or is empty. Please check your content config file for errors.
+ (+4ms) 
+13:32:09   ├─ /zh/learning/index.html13:32:09 [WARN] [content] The collection "learning" does not exist or is empty. Please check your content config file for errors.
+ (+4ms) 
+13:32:09   ├─ /en/learning/index.html13:32:09 [WARN] [content] The collection "learning" does not exist or is empty. Please check your content config file for errors.
+ (+4ms) 
+13:32:09   ├─ /zh/repos/index.html13:32:09 [WARN] [content] The collection "code" does not exist or is empty. Please check your content config file for errors.
+ (+5ms) 
+13:32:09   ├─ /en/repos/index.html13:32:09 [WARN] [content] The collection "code" does not exist or is empty. Please check your content config file for errors.
+ (+5ms) 
+13:32:09   ├─ /zh/index.html13:32:09 [WARN] [content] The collection "reflections" does not exist or is empty. Please check your content config file for errors.
+13:32:09 [WARN] [content] The collection "learning" does not exist or is empty. Please check your content config file for errors.
+13:32:09 [WARN] [content] The collection "code" does not exist or is empty. Please check your content config file for errors.
+ (+7ms) 
+13:32:09   ├─ /en/index.html13:32:09 [WARN] [content] The collection "reflections" does not exist or is empty. Please check your content config file for errors.
+13:32:09 [WARN] [content] The collection "learning" does not exist or is empty. Please check your content config file for errors.
+13:32:09 [WARN] [content] The collection "code" does not exist or is empty. Please check your content config file for errors.
+ (+7ms) 
+13:32:09   ├─ /index.html (+16ms) 
+13:32:09 ✓ Completed in 755ms.
+
+ generating optimized images 
+13:32:09   ▶ /_astro/dsh-universal-palette.BuYT3DAk_20iUB6.webp (reused cache entry) (+6ms) (1/10)
+13:32:09   ▶ /_astro/context-distiller.BkXYny-h_Z1IoLt1.webp (reused cache entry) (+7ms) (2/10)
+13:32:09   ▶ /_astro/dsh-universal-palette.BuYT3DAk_ZCBFoR.webp (reused cache entry) (+6ms) (3/10)
+13:32:09   ▶ /_astro/context-distiller.BkXYny-h_Z1GUrvl.webp (reused cache entry) (+7ms) (4/10)
+13:32:09   ▶ /_astro/dsh-universal-palette.BuYT3DAk_ZnExGw.webp (reused cache entry) (+6ms) (5/10)
+13:32:09   ▶ /_astro/context-distiller.BkXYny-h_1sRkuN.webp (reused cache entry) (+6ms) (6/10)
+13:32:09   ▶ /_astro/dsh-universal-palette.BuYT3DAk_2cSBSa.webp (reused cache entry) (+5ms) (7/10)
+13:32:09   ▶ /_astro/context-distiller.BkXYny-h_Z27tyUG.webp (reused cache entry) (+5ms) (8/10)
+13:32:09   ▶ /_astro/dsh-universal-palette.BuYT3DAk_Z20eFwH.webp (reused cache entry) (+6ms) (9/10)
+13:32:09   ▶ /_astro/context-distiller.BkXYny-h_Z1Hgzdb.webp (reused cache entry) (+6ms) (10/10)
+13:32:09 ✓ Completed in 33ms.
+
+13:32:09 [build] ✓ Completed in 2.64s.
+13:32:09 [@astrojs/sitemap] `sitemap-index.xml` created at `dist`
+13:32:09 [build] 70 page(s) built in 5.19s
+13:32:09 [build] Complete!

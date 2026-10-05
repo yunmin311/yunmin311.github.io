@@ -6,6 +6,7 @@ category: "Anatomical interaction"
 status: "Prototype · clinical rules unreviewed / release not ready"
 stack: "TypeScript · local-first"
 link: "https://github.com/yunmin311/anatomical-symptom-interface"
+portfolio: true
 featured: true
 order: 5
 kind: "project"

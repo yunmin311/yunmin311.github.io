@@ -25,6 +25,7 @@ const works = defineCollection({
       link: z.string().url().optional(),
       video: z.string().url().optional(),
       featured: z.boolean().default(false),
+      portfolio: z.boolean().default(false),
       order: z.number().default(0),
       draft: z.boolean().default(false),
     }),

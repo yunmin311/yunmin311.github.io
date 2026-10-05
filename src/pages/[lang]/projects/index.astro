@@ -2,18 +2,19 @@
 import {getCollection} from 'astro:content';
 import Base from '../../../layouts/Base.astro';
 import {locales,type Lang} from '../../../i18n/ui';
-import {slugOf,getWorks} from '../../../lib/content';
+import {slugOf} from '../../../lib/content';
 export function getStaticPaths(){return locales.map(lang=>({params:{lang}}));}
 const lang=Astro.params.lang as Lang;
-const entries=await getCollection('projectIdeas',({id,data})=>id.startsWith(lang+'/')&&!data.draft);
-const works=await getWorks(lang);
 const archive=await getCollection('projectIdeas',({id,data})=>id.startsWith('zh/')&&!data.draft);
-const notes=await getCollection('reflections',({id})=>id.startsWith(lang+'/'));
+const notes=(await getCollection('reflections',({id})=>id.startsWith(lang+'/'))).sort((a,b)=>b.data.date.getTime()-a.data.date.getTime());
+const projects=[...new Set(notes.map(note=>note.data.project))];
+const title=lang==='zh'?'项目过程与复盘':'Project process & reflections';
 ---
-<Base title={lang==='zh'?'项目记录':'Projects'}>
-<h1>{lang==='zh'?'项目':'Projects'}</h1><p>{lang==='zh'?'当前实现见作品与仓库；项目过程、复盘会在真实记录公开后加入。':'Current implementations are documented in Works and Repos; process notes will appear when published.'}</p><div class="route-cards">{works.map(work=><a class="route-card" href={`/${lang}/works/${slugOf(work.id)}/`}><small>{work.data.category}</small><h2>{work.data.title}</h2><p>{work.data.summary}</p><p class="project-status">{work.data.status}</p></a>)}</div><h2>Archive / Earlier ideas · 2026-05</h2>
-{entries.length>0&&<><p class="source-note">Historical / 2026-05：六个旧想法。状态来自原稿，不代表当前进度。</p><div class="route-cards">{entries.map(entry=><a class="route-card" href={`/${lang}/projects/${slugOf(entry.id)}/`}><small>旧稿 · {entry.data.historicalStatus}</small><h2>{entry.data.title}</h2><p>{entry.data.summary}</p><div class="route-tags">{entry.data.tags.map(tag=><span>{tag}</span>)}</div></a>)}</div></>}
-{notes.length>0&&<><h2>{lang==='zh'?'过程与复盘':'Process & reflections'}</h2><div class="route-cards">{notes.map(entry=><a class="route-card" href={`/${lang}/project-notes/${slugOf(entry.id)}/`}><small>{entry.data.project} · {entry.data.kind}</small><h2>{entry.data.title}</h2><p>{entry.data.summary}</p></a>)}</div></>}
-{lang==='en'&&<><p class="source-note">The following ideas have Chinese historical drafts only. Titles retain their original language; no English translation is implied.</p><div class="route-cards">{archive.map(entry=><a class="route-card" href={`/zh/projects/${slugOf(entry.id)}/`}><small>Historical / 2026-05 · {entry.data.historicalStatus}</small><h2>{entry.data.title}</h2></a>)}</div></>}
-{!entries.length&&!notes.length&&lang==='zh'&&<p class="notice-empty">{lang==='zh'?'内容待补。':'No project entries in this language yet.'}</p>}
+<Base title={title}>
+<h1>{title}</h1>
+{notes.length===0?<section class="notice-empty" data-process-empty><p>{lang==='zh'?'项目过程与复盘尚未公开。当前成果可以在作品与代码库中查看。':'Project process notes and reflections are not published yet. Current outcomes are documented in Works and Repos.'}</p><div class="repo-links"><a href={`/${lang}/works/`}>{lang==='zh'?'查看作品 →':'View portfolio →'}</a><a href={`/${lang}/repos/`}>{lang==='zh'?'查看代码库 →':'View repositories →'}</a></div></section>:<>
+{projects.map(project=><section class="catalog-group"><h2>{project}</h2><div class="route-cards">{notes.filter(note=>note.data.project===project).map(note=><a class="route-card" href={`/${lang}/project-notes/${slugOf(note.id)}/`}><small>{note.data.kind==='复盘'?'Reflection':'Process'} · {note.data.date.toISOString().slice(0,10)}</small><h3>{note.data.title}</h3><p>{note.data.summary}</p></a>)}</div></section>)}
+<section class="catalog-group" data-process-timeline><h2>{lang==='zh'?'最近更新':'Recent updates'}</h2>{notes.map(note=><p><time>{note.data.date.toISOString().slice(0,10)}</time> · {note.data.project} · <a href={`/${lang}/project-notes/${slugOf(note.id)}/`}>{note.data.title}</a> · {note.data.kind==='复盘'?'Reflection':'Process'}</p>)}</section>
+</>}
+<section class="catalog-group" data-ideas-archive><h2>Archive / Earlier ideas · 2026-05</h2><p class="source-note">{lang==='zh'?'六个旧想法。状态来自原稿，不代表当前进度。':'Six earlier ideas have Chinese historical drafts only. Original statuses are preserved; they do not describe current progress.'}</p><div class="route-cards">{archive.map(entry=><a class="route-card" href={`/zh/projects/${slugOf(entry.id)}/`}><small>Historical / 2026-05 · {entry.data.historicalStatus}</small><h2>{entry.data.title}</h2>{lang==='zh'&&<><p>{entry.data.summary}</p><div class="route-tags">{entry.data.tags.map(tag=><span>{tag}</span>)}</div></>}</a>)}</div></section>
 </Base>

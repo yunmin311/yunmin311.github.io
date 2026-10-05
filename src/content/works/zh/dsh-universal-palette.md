@@ -6,6 +6,7 @@ category: "搜索与创意软件"
 status: "0.2.1 · 依赖宿主能力"
 stack: "TypeScript · DSH public APIs"
 link: "https://github.com/yunmin311/dsh-universal-palette"
+portfolio: true
 featured: false
 order: 6
 kind: "project"

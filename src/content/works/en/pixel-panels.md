@@ -7,6 +7,7 @@ group: "visual"
 status: "Public project"
 stack: "JavaScript · SVG"
 link: "https://github.com/yunmin311/pixel-panels"
+portfolio: true
 featured: false
 order: 24
 kind: "project"

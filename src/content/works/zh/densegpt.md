@@ -6,6 +6,7 @@ category: "阅读与回答密度"
 status: "UserCSS + 回答风格规范"
 stack: "CSS · Markdown"
 link: "https://github.com/yunmin311/DenseGPT"
+portfolio: true
 featured: true
 order: 4
 kind: "project"

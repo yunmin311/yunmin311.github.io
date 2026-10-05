@@ -1,0 +1,33 @@
+
+> personal-site@0.0.1 check
+> astro check
+
+13:31:26 [content] Syncing content
+13:31:26 [WARN] [glob-loader] The base directory "/mnt/e/1project/yunmin311-site-performance/src/content/reflections/" does not exist.
+13:31:26 [WARN] [glob-loader] The base directory "/mnt/e/1project/yunmin311-site-performance/src/content/learning/" does not exist.
+13:31:26 [WARN] [glob-loader] The base directory "/mnt/e/1project/yunmin311-site-performance/src/content/code/" does not exist.
+13:31:26 [content] Synced content
+13:31:26 [types] Generated 2.25s
+13:31:27 [check] Getting diagnostics for Astro files in /mnt/e/1project/yunmin311-site-performance...
+[96msrc/content.config.ts[0m:[93m26[0m:[93m25[0m - [93mwarning[0m[90m ts(6385): [0m'(params?: string | { abort?: boolean | undefined; pattern?: RegExp | undefined; hostname?: RegExp | undefined; protocol?: RegExp | undefined; normalize?: boolean | undefined; error?: string | ... 1 more ... | undefined; message?: string | undefined; } | undefined): ZodString' is deprecated.
+
+[7m26[0m       video: z.string().url().optional(),
+[7m  [0m [93m                        ~~~[0m
+[96msrc/content.config.ts[0m:[93m25[0m:[93m24[0m - [93mwarning[0m[90m ts(6385): [0m'(params?: string | { abort?: boolean | undefined; pattern?: RegExp | undefined; hostname?: RegExp | undefined; protocol?: RegExp | undefined; normalize?: boolean | undefined; error?: string | ... 1 more ... | undefined; message?: string | undefined; } | undefined): ZodString' is deprecated.
+
+[7m25[0m       link: z.string().url().optional(),
+[7m  [0m [93m                       ~~~[0m
+[96msrc/content.config.ts[0m:[93m22[0m:[93m66[0m - [93mwarning[0m[90m ts(6385): [0m'(params?: string | { abort?: boolean | undefined; pattern?: RegExp | undefined; hostname?: RegExp | undefined; protocol?: RegExp | undefined; normalize?: boolean | undefined; error?: string | ... 1 more ... | undefined; message?: string | undefined; } | undefined): ZodString' is deprecated.
+
+[7m22[0m       sources: z.array(z.object({label:z.string(),url:z.string().url()})).default([]),
+[7m  [0m [93m                                                                 ~~~[0m
+[96msrc/content.config.ts[0m:[93m21[0m:[93m56[0m - [93mwarning[0m[90m ts(6385): [0m'(params?: string | { abort?: boolean | undefined; pattern?: RegExp | undefined; hostname?: RegExp | undefined; protocol?: RegExp | undefined; normalize?: boolean | undefined; error?: string | ... 1 more ... | undefined; message?: string | undefined; } | undefined): ZodString' is deprecated.
+
+[7m21[0m       release: z.object({tag:z.string(),url:z.string().url(),prerelease:z.boolean(),hasAssets:z.boolean()}).optional(),
+[7m  [0m [93m                                                       ~~~[0m
+
+Result (32 files): 
+- 0 errors
+- 0 warnings
+- 4 hints
+

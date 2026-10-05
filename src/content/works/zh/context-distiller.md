@@ -6,6 +6,7 @@ category: "人机协作"
 status: "浏览器扩展 · 本地工作台"
 stack: "TypeScript · React · WXT"
 link: "https://github.com/yunmin311/context-distiller"
+portfolio: true
 featured: true
 order: 2
 kind: "project"

@@ -6,6 +6,7 @@ category: "Repository provenance"
 status: "Provenance core and Web explorer"
 stack: "TypeScript · Node.js"
 link: "https://github.com/yunmin311/GitLineage"
+portfolio: true
 featured: true
 order: 1
 kind: "project"

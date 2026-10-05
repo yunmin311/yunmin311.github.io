@@ -7,6 +7,7 @@ group: "software"
 status: "公开项目"
 stack: "Rust · egui · Windows"
 link: "https://github.com/yunmin311/work-capsule"
+portfolio: true
 featured: false
 order: 30
 kind: "project"

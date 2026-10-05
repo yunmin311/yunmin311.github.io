@@ -4,7 +4,7 @@ import {fileURLToPath} from 'node:url';
 import {build,transform} from 'esbuild';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const source=path.join(root,'src/scripts/paper'),styles=path.join(root,'src/styles/paper'),output=path.join(root,'public/assets/paper');
-const read=(base,file)=>fs.readFile(path.join(base,file),'utf8');await fs.mkdir(output,{recursive:true});await import('./compress-paper-experiment.mjs');
+const read=(base,file)=>fs.readFile(path.join(base,file),'utf8');await fs.mkdir(output,{recursive:true});await import('./compress-paper-experiment.mjs');await import('./build-material-tiles.mjs');
 for(const [entry,out] of [['scene.js','scene.js'],['print.js','print.js'],['page-chrome.js','page-chrome.js']])await build({entryPoints:[path.join(source,entry)],bundle:true,minify:true,format:'iife',target:'es2020',outfile:path.join(output,out)});
 // Keep the music study silent and network-free until the visitor presses play.
 const sound=await fs.readFile(path.join(output,'59bf62d8c803ef34.wav'));

@@ -6,6 +6,7 @@ category: "仓库来源与关系"
 status: "来源分析核心与 Web 探索界面"
 stack: "TypeScript · Node.js"
 link: "https://github.com/yunmin311/GitLineage"
+portfolio: true
 featured: true
 order: 1
 kind: "project"

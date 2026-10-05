@@ -2,7 +2,7 @@
 import {projectGroups} from '../../../lib/catalog';
 import Base from '../../../layouts/Base.astro';
 import WorkCard from '../../../components/WorkCard.astro';
-import { getWorks } from '../../../lib/content';
+import { getPortfolioWorks } from '../../../lib/content';
 import { t, locales, type Lang } from '../../../i18n/ui';
 
 export function getStaticPaths() {
@@ -10,12 +10,12 @@ export function getStaticPaths() {
 }
 
 const lang = Astro.params.lang as Lang;
-const works = await getWorks(lang);
+const works = await getPortfolioWorks(lang);
 ---
 
 <Base title={t(lang, 'works.title')}>
   <h1 class="page-title">{t(lang, 'works.title')}</h1>
-  <p class="source-note">{lang==='zh'?'完整项目目录；Obsidian 插件、配置与笔记规范放在同一组。Release 标记区分正式版本、预发布与仅源码发布。':'Complete project directory. Obsidian plugins, configuration and note standards share one group. Releases distinguish stable, pre-release and source-only publications.'}</p>{projectGroups.filter(group=>works.some(w=>w.data.group===group.id)).map(group=><section class="catalog-group" id={group.id}><h2>{group[lang]}</h2><div class="works-grid">{works.filter(w=>w.data.group===group.id).map(work=><WorkCard work={work} lang={lang}/>)}</div></section>)}
+  <p class="source-note">{lang==='zh'?'代表性成果。完整公开仓库另见代码库；Release 标记区分正式版本、预发布与仅源码发布。':'Selected portfolio. The complete public repository index lives in Repos. Releases distinguish stable, pre-release and source-only publications.'}</p><p><a href={`/${lang}/repos/`}>{lang==='zh'?'查看全部代码库 →':'View all repositories →'}</a></p>{projectGroups.filter(group=>works.some(w=>w.data.group===group.id)).map(group=><section class="catalog-group" id={group.id}><h2>{group[lang]}</h2><div class="works-grid">{works.filter(w=>w.data.group===group.id).map(work=><WorkCard work={work} lang={lang}/>)}</div></section>)}
 </Base>
 
 <style>

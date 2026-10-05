@@ -6,6 +6,7 @@ category: "Search & creative software"
 status: "0.2.1 · host capability-dependent"
 stack: "TypeScript · DSH public APIs"
 link: "https://github.com/yunmin311/dsh-universal-palette"
+portfolio: true
 featured: false
 order: 6
 kind: "project"

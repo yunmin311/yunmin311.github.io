@@ -6,6 +6,7 @@ category: "Human–AI interaction"
 status: "Browser extension · local workspace"
 stack: "TypeScript · React · WXT"
 link: "https://github.com/yunmin311/context-distiller"
+portfolio: true
 featured: true
 order: 2
 kind: "project"

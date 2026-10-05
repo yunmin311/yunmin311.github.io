@@ -3,7 +3,7 @@
 个人数字花园 + Creative Engineering Portfolio，中英双语，Astro 静态站，免费托管在 GitHub Pages。
 **线上入口：[中文首页](https://yunmin311.github.io/zh/) · [English](https://yunmin311.github.io/en/)**
 
-冷蓝细砂云层、玻璃界面、可展开的立体卡片和侧边音乐播放器。设计和性能基准已定稿并上线。2026-10-05 本批发布内容包括 22 个真实公开项目、26 个公开仓库、五个精选与当前简介，Obsidian 相关项目集中分组，已有 Release 提供真实版本入口。发布状态见下方 GitHub Actions。照片、歌单、学习记录仍待真实材料，展示试样单独标明。
+冷蓝细砂云层、玻璃界面、可展开的立体卡片和侧边音乐播放器。设计和性能基准已定稿并上线。已上线版本包含 22 个真实项目资料、26 个公开仓库及当前简介。本地整理版将首页收敛为 5 个作品与 8 个仓库精选，Works 展示 8 项代表性成果，Projects 展示过程与复盘（当前为空）及旧想法存档，Repos 保留全部 26 项与 Release。用户已授权提交推送本轮整理，实际发布结果见 GitHub Actions。发布状态见下方 GitHub Actions。照片、歌单、学习记录仍待真实材料，展示试样单独标明。
 
 [设计基准](docs/design-baseline-2026-10-03.md) · [接入与维护说明](docs/正式网站接入说明.md) · [内容填充准备](docs/内容填充准备.md) · [发布进度](https://github.com/yunmin311/yunmin311.github.io/actions/workflows/deploy.yml)
 
@@ -43,6 +43,7 @@ npm run dev     # 启动本地预览
    role: 你的角色(可删)
    link: https://线上项目网址(可删)
    video: https://vimeo.com/xxx(可删,填了详情页就有播放器)
+   portfolio: true # 进入代表性成果列表；其他真实资料可保留但不列入
    featured: true
    order: 1
    ---

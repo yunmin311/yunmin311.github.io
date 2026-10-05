@@ -1,9 +1,9 @@
 ---
 import ReleaseLink from '../ReleaseLink.astro';
-import {getFeaturedWorks,getWorks,slugOf} from '../../lib/content';
+import {getFeaturedWorks,getPortfolioWorks,slugOf} from '../../lib/content';
 import type {Lang} from '../../i18n/ui';
 const {lang='zh'}=Astro.props as {lang:Lang};
-const works=await getFeaturedWorks(lang);const allWorks=await getWorks(lang);const other=await getFeaturedWorks(lang==='zh'?'en':'zh');
+const works=await getFeaturedWorks(lang);const allWorks=await getPortfolioWorks(lang);const other=await getFeaturedWorks(lang==='zh'?'en':'zh');
 ---
 <section class="content works-section folio-sheet" id="works">
 <div class="works-header"><div><span class="works-kicker" data-zh="Creative Engineering / 精选" data-en="Creative Engineering / Selected">Creative Engineering / {lang==='zh'?'精选':'Selected'}</span><h2 data-zh="作品" data-en="Works">{lang==='zh'?'作品':'Works'}</h2></div><div class="works-toolbar"><div class="work-filter"><button data-work-filter="all" aria-pressed="true" data-zh="精选" data-en="Selected">{lang==='zh'?'精选':'Selected'}</button></div><div class="work-view"><button data-work-view="grid" aria-pressed="true" aria-label={lang==='zh'?'网格展示':'Grid view'}><span class="grid-icon"><i></i><i></i><i></i><i></i></span></button><button data-work-view="list" aria-pressed="false" aria-label={lang==='zh'?'清单展示':'List view'}><span class="list-icon"><i></i><i></i><i></i></span></button></div></div></div>

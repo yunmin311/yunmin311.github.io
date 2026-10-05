@@ -13,10 +13,15 @@ async function published<C extends Coll>(coll: C, lang: Lang) {
   return getCollection(coll, ({ id, data }) => id.startsWith(`${lang}/`) && !data.draft);
 }
 
-/** 某语言的全部非草稿作品,按日期倒序 */
+/** 全部真实项目资料（包括仅代码索引条目），按 order 升序 */
 export async function getWorks(lang: Lang): Promise<CollectionEntry<'works'>[]> {
   const list = await published('works', lang);
   return list.sort((a, b) => a.data.order - b.data.order);
+}
+
+/** Portfolio 列表与首页精选分开；完整资料仍供 Repos 与既有详情网址使用。 */
+export async function getPortfolioWorks(lang: Lang): Promise<CollectionEntry<'works'>[]> {
+  return (await getWorks(lang)).filter(w => w.data.portfolio);
 }
 
 /** 某语言的精选作品,按 order 升序 */

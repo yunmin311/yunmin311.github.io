@@ -115,6 +115,12 @@ npm run preview  # 预览构建产物
 
 当前身份唯一来源 `src/lib/profile.ts`（用户确认的公开介绍）；`src/data/legacy-profile.json` 仅存历史，不渲染为当前简介。公开仓库 README 与固定修订的 docs 支撑真实 Works；来源与边界见 `docs/verification/content-sources-2026-10-05.json`。
 
-Works 集合包含 22 个真实公开项目，中英成对，首页精选五个；项目工作台从 Works 读取；Repos 合并 Works 与公开仓库清单，共 26 个公开仓库，包含明确标示的 Fork 与网站/Profile 源码。Obsidian 6 个插件、配置和课程笔记规范共 8 项放在一组。Release 入口按 GitHub 实际元数据区分正式/预发布及是否带附件，不把 Release 等同生产就绪。作品封面、日期为可选字段；`reviewedAt` 是资料核对日，不能伪装成项目创建日期。无真实截图用文字卡，不生成项目截图。旧作品与文章试样转为未发布草稿；两个历史文章与六个旧想法保留 Archive / 2026-05 标记，不静默改写原文或状态。
+Works 内容文件保存 22 个真实公开项目资料，中英成对；其中 `portfolio: true` 的 8 项进入 Works，首页 `featured` 精选五个。首页 Repos 精选 8 项，完整 Repos 独立读取全部 26 个公开仓库，包含明确标示的 Fork 与网站/Profile 源码。Projects 只读取过程与复盘，没有真实记录时显示空状态，六个旧想法单独存档。仅代码索引项目保留既有详情网址与说明，但不进入 Portfolio 列表。Obsidian 6 个插件、配置和课程笔记规范共 8 项放在一组。Release 入口按 GitHub 实际元数据区分正式/预发布及是否带附件，不把 Release 等同生产就绪。作品封面、日期为可选字段；`reviewedAt` 是资料核对日，不能伪装成项目创建日期。无真实截图用文字卡，不生成项目截图。旧作品与文章试样转为未发布草稿；两个历史文章与六个旧想法保留 Archive / 2026-05 标记，不静默改写原文或状态。
 
 照片未提供；CC0 图像与 24 秒声音只作为收起的试样和侧边控件，不占一级导航。知识入口读取公开项目资料，不代表学习记录；设计、配色与纹理明确属于 Site study。三个 Obsidian 机器管理目录不手写。GitHub 是唯一已确认的联系链接；其他渠道发现后也必须待用户确认，不能自行公开。详细缺项见 `docs/内容填充准备.md`。
+
+## 信息架构与材质尺度（2026-10-05，已授权发布）
+
+当前工作分支 `codex/content-boundaries` 基于已发布 `07a50c2`。Home 是精选入口、Works 是代表性成果、Projects 是真实 Process / Reflection、Repos 是完整公开代码索引。`featured` 与 `portfolio` 分开；`kind` 是项目/练习，`group` 是主题，均不能替代 Portfolio 纳入判断。新增项目默认不进入 Portfolio。主页仓库精选只保存仓库名，描述和 Release 共用完整资料。
+
+砂画背景必须保持固定分辨率：现有砂图 900×600 像素，以 900×600 CSS 像素复用平铺；禁止内容高度增长后使用 cover 拉大砂纹。全站云层、照片与插画封面有独立尺度逻辑，不应用砂纹规则。维护与验证见 `docs/verification/content-boundaries-2026-10-05.md`。用户随后明确要求“提交推送”，授权发布本轮信息架构与材质修复；按现有 main 自动 Pages 流程执行，实际上线结果以 Actions 和线上核验为准。
