@@ -16,6 +16,9 @@ const description=t(lang,'site.description');
 <html lang={lang==='zh'?'zh-CN':'en'}>
 <head>
 <meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" /><title>Yunmin</title><meta name="description" content={description}/><meta property="og:title" content="Yunmin"/><meta property="og:description" content={description}/><meta property="og:image" content={`${base}/og-placeholder.png`}/><link rel="canonical" href={`${base}/${lang}/`}/><link rel="alternate" hreflang="zh-CN" href={`${base}/zh/`}/><link rel="alternate" hreflang="en" href={`${base}/en/`}/><link rel="alternate" hreflang="x-default" href={`${base}/zh/`}/><link rel="icon" href="/favicon.svg"/><link rel="sitemap" href="/sitemap-index.xml"/><link rel="stylesheet" href="/assets/paper/theme.css" />
+<link rel="preload" href="/assets/paper/runtime.js" as="script" />
+<link rel="preload" href="/assets/paper/scene.js" as="script" />
+<link rel="preload" href="/assets/paper/print.js" as="script" />
 </head>
 <body class="paper-site">
 <Overlays lang={lang}/>

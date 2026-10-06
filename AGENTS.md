@@ -124,3 +124,7 @@ Works 内容文件保存 22 个真实公开项目资料，中英成对；其中 
 当前工作分支 `codex/content-boundaries` 基于已发布 `07a50c2`。Home 是精选入口、Works 是代表性成果、Projects 是真实 Process / Reflection、Repos 是完整公开代码索引。`featured` 与 `portfolio` 分开；`kind` 是项目/练习，`group` 是主题，均不能替代 Portfolio 纳入判断。新增项目默认不进入 Portfolio。主页仓库精选只保存仓库名，描述和 Release 共用完整资料。
 
 砂画背景必须保持固定分辨率：现有砂图 900×600 像素，以 900×600 CSS 像素复用平铺；禁止内容高度增长后使用 cover 拉大砂纹。全站云层、照片与插画封面有独立尺度逻辑，不应用砂纹规则。维护与验证见 `docs/verification/content-boundaries-2026-10-05.md`。用户随后明确要求“提交推送”，授权发布本轮信息架构与材质修复；按现有 main 自动 Pages 流程执行，实际上线结果以 Actions 和线上核验为准。
+
+## 首次加载顺序优化（2026-10-05，2026-10-06已授权发布）
+
+工作分支 `codex/startup-load-order` 基于已发布 `51c8038`。HTML提前发现三个核心脚本，print与runtime并行初始化，云层准备不再阻塞印刷贴图。桌面宽≥900且精确指针时首次直接加载定稿3D贴图并复用，手机保留小首图优先。不得恢复被撤回的全部云层抢先下载试验（拖慢首层云）。原云层引擎、颗粒尺度、音乐、字体、3D几何/灯光及材质参数不变。验证/收益与取舍见 `docs/verification/startup-loading-2026-10-05.md`。用户于2026-10-06明确要求“推送，然后开始制定下一轮计划”，授权本批提交并推送现有main；发布结果以Actions和线上核验为准。

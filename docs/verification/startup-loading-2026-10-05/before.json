@@ -1,0 +1,1052 @@
+[
+  {
+    "width": 1440,
+    "run": 0,
+    "milestones": {
+      "controls": 3098.300000000745,
+      "model": 3208.5,
+      "cloud": 4820.800000000745,
+      "print": 6405.5,
+      "clouds": 7205.89999999851
+    },
+    "resources": [
+      {
+        "name": "theme.css",
+        "start": 55,
+        "end": 313,
+        "bytes": 266108
+      },
+      {
+        "name": "home.js",
+        "start": 102,
+        "end": 148,
+        "bytes": 3246
+      },
+      {
+        "name": "manifest.json",
+        "start": 327,
+        "end": 373,
+        "bytes": 603
+      },
+      {
+        "name": "e8db6f5b91f7882f.jpg",
+        "start": 334,
+        "end": 1018,
+        "bytes": 398473
+      },
+      {
+        "name": "body.woff2",
+        "start": 359,
+        "end": 878,
+        "bytes": 191268
+      },
+      {
+        "name": "display.woff2",
+        "start": 362,
+        "end": 510,
+        "bytes": 37948
+      },
+      {
+        "name": "body-extra.woff2",
+        "start": 391,
+        "end": 527,
+        "bytes": 31772
+      },
+      {
+        "name": "context-distiller.BkXYny-h.webp",
+        "start": 506,
+        "end": 707,
+        "bytes": 57100
+      },
+      {
+        "name": "model.json",
+        "start": 549,
+        "end": 889,
+        "bytes": 118319
+      },
+      {
+        "name": "print-cache.json",
+        "start": 549,
+        "end": 600,
+        "bytes": 620
+      },
+      {
+        "name": "material-experiment.json",
+        "start": 550,
+        "end": 601,
+        "bytes": 1236
+      },
+      {
+        "name": "scene.js",
+        "start": 985,
+        "end": 1875,
+        "bytes": 555279
+      },
+      {
+        "name": "runtime.js",
+        "start": 986,
+        "end": 1954,
+        "bytes": 658499
+      },
+      {
+        "name": "912cbccd36d7c067.jpg",
+        "start": 2063,
+        "end": 2425,
+        "bytes": 229539
+      },
+      {
+        "name": "c1cef1198288b583.jpg",
+        "start": 2064,
+        "end": 2323,
+        "bytes": 98607
+      },
+      {
+        "name": "babec375147ddd9b.jpg",
+        "start": 2064,
+        "end": 2308,
+        "bytes": 88482
+      },
+      {
+        "name": "",
+        "start": 2786,
+        "end": 2786,
+        "bytes": 0
+      },
+      {
+        "name": "",
+        "start": 2859,
+        "end": 2859,
+        "bytes": 0
+      },
+      {
+        "name": "print.js",
+        "start": 3015,
+        "end": 3227,
+        "bytes": 111367
+      },
+      {
+        "name": "licenses.json",
+        "start": 3015,
+        "end": 3268,
+        "bytes": 162537
+      },
+      {
+        "name": "76720cf83df061e5.lossless.webp",
+        "start": 3252,
+        "end": 4577,
+        "bytes": 1045216
+      },
+      {
+        "name": "2c9294ffad831c82.lossless.webp",
+        "start": 3704,
+        "end": 4027,
+        "bytes": 99208
+      },
+      {
+        "name": "58dd6681256916c4.lossless.webp",
+        "start": 3705,
+        "end": 3959,
+        "bytes": 69734
+      },
+      {
+        "name": "sand-blue-surface-v1.lossless.webp",
+        "start": 3706,
+        "end": 4857,
+        "bytes": 756282
+      },
+      {
+        "name": "58d5b8960051a195.lossless.webp",
+        "start": 4749,
+        "end": 6823,
+        "bytes": 976372
+      },
+      {
+        "name": "e8bf8db511dca49a.lossless.webp",
+        "start": 4749,
+        "end": 6851,
+        "bytes": 1009630
+      },
+      {
+        "name": "78adb94bcb06eceb.jpg",
+        "start": 4754,
+        "end": 6390,
+        "bytes": 689672
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "run": 1,
+    "milestones": {
+      "controls": 3061.7999999970198,
+      "model": 3164.099999997765,
+      "cloud": 4735.5,
+      "print": 6531.099999997765,
+      "clouds": 7218
+    },
+    "resources": [
+      {
+        "name": "theme.css",
+        "start": 54,
+        "end": 305,
+        "bytes": 266108
+      },
+      {
+        "name": "home.js",
+        "start": 99,
+        "end": 146,
+        "bytes": 3246
+      },
+      {
+        "name": "e8db6f5b91f7882f.jpg",
+        "start": 319,
+        "end": 1018,
+        "bytes": 398473
+      },
+      {
+        "name": "body.woff2",
+        "start": 339,
+        "end": 851,
+        "bytes": 191268
+      },
+      {
+        "name": "display.woff2",
+        "start": 342,
+        "end": 492,
+        "bytes": 37948
+      },
+      {
+        "name": "body-extra.woff2",
+        "start": 359,
+        "end": 499,
+        "bytes": 31772
+      },
+      {
+        "name": "context-distiller.BkXYny-h.webp",
+        "start": 458,
+        "end": 640,
+        "bytes": 57100
+      },
+      {
+        "name": "manifest.json",
+        "start": 466,
+        "end": 512,
+        "bytes": 603
+      },
+      {
+        "name": "model.json",
+        "start": 564,
+        "end": 875,
+        "bytes": 118319
+      },
+      {
+        "name": "print-cache.json",
+        "start": 564,
+        "end": 609,
+        "bytes": 620
+      },
+      {
+        "name": "material-experiment.json",
+        "start": 566,
+        "end": 613,
+        "bytes": 1236
+      },
+      {
+        "name": "scene.js",
+        "start": 956,
+        "end": 1853,
+        "bytes": 555279
+      },
+      {
+        "name": "runtime.js",
+        "start": 957,
+        "end": 1935,
+        "bytes": 658499
+      },
+      {
+        "name": "912cbccd36d7c067.jpg",
+        "start": 2044,
+        "end": 2417,
+        "bytes": 229539
+      },
+      {
+        "name": "c1cef1198288b583.jpg",
+        "start": 2045,
+        "end": 2304,
+        "bytes": 98607
+      },
+      {
+        "name": "babec375147ddd9b.jpg",
+        "start": 2045,
+        "end": 2287,
+        "bytes": 88482
+      },
+      {
+        "name": "",
+        "start": 2760,
+        "end": 2760,
+        "bytes": 0
+      },
+      {
+        "name": "",
+        "start": 2833,
+        "end": 2833,
+        "bytes": 0
+      },
+      {
+        "name": "print.js",
+        "start": 2988,
+        "end": 3200,
+        "bytes": 111367
+      },
+      {
+        "name": "licenses.json",
+        "start": 2989,
+        "end": 3242,
+        "bytes": 162537
+      },
+      {
+        "name": "76720cf83df061e5.lossless.webp",
+        "start": 3235,
+        "end": 4512,
+        "bytes": 1045216
+      },
+      {
+        "name": "2c9294ffad831c82.lossless.webp",
+        "start": 3763,
+        "end": 4085,
+        "bytes": 99208
+      },
+      {
+        "name": "58dd6681256916c4.lossless.webp",
+        "start": 3764,
+        "end": 4019,
+        "bytes": 69734
+      },
+      {
+        "name": "sand-blue-surface-v1.lossless.webp",
+        "start": 3766,
+        "end": 5082,
+        "bytes": 756282
+      },
+      {
+        "name": "58d5b8960051a195.lossless.webp",
+        "start": 4671,
+        "end": 6819,
+        "bytes": 976372
+      },
+      {
+        "name": "e8bf8db511dca49a.lossless.webp",
+        "start": 4672,
+        "end": 6847,
+        "bytes": 1009630
+      },
+      {
+        "name": "78adb94bcb06eceb.jpg",
+        "start": 4675,
+        "end": 6387,
+        "bytes": 689672
+      }
+    ]
+  },
+  {
+    "width": 1440,
+    "run": 2,
+    "milestones": {
+      "controls": 3093.10000000149,
+      "model": 3171.199999999255,
+      "cloud": 4759.60000000149,
+      "print": 6405.60000000149,
+      "clouds": 7204.5
+    },
+    "resources": [
+      {
+        "name": "theme.css",
+        "start": 58,
+        "end": 308,
+        "bytes": 266108
+      },
+      {
+        "name": "home.js",
+        "start": 97,
+        "end": 145,
+        "bytes": 3246
+      },
+      {
+        "name": "manifest.json",
+        "start": 320,
+        "end": 363,
+        "bytes": 603
+      },
+      {
+        "name": "e8db6f5b91f7882f.jpg",
+        "start": 331,
+        "end": 1269,
+        "bytes": 398473
+      },
+      {
+        "name": "body.woff2",
+        "start": 356,
+        "end": 881,
+        "bytes": 191268
+      },
+      {
+        "name": "display.woff2",
+        "start": 361,
+        "end": 513,
+        "bytes": 37948
+      },
+      {
+        "name": "body-extra.woff2",
+        "start": 383,
+        "end": 522,
+        "bytes": 31772
+      },
+      {
+        "name": "context-distiller.BkXYny-h.webp",
+        "start": 482,
+        "end": 694,
+        "bytes": 57100
+      },
+      {
+        "name": "model.json",
+        "start": 490,
+        "end": 844,
+        "bytes": 118319
+      },
+      {
+        "name": "print-cache.json",
+        "start": 490,
+        "end": 560,
+        "bytes": 620
+      },
+      {
+        "name": "material-experiment.json",
+        "start": 491,
+        "end": 567,
+        "bytes": 1236
+      },
+      {
+        "name": "scene.js",
+        "start": 849,
+        "end": 1864,
+        "bytes": 555279
+      },
+      {
+        "name": "runtime.js",
+        "start": 849,
+        "end": 1944,
+        "bytes": 658499
+      },
+      {
+        "name": "912cbccd36d7c067.jpg",
+        "start": 2066,
+        "end": 2431,
+        "bytes": 229539
+      },
+      {
+        "name": "c1cef1198288b583.jpg",
+        "start": 2066,
+        "end": 2325,
+        "bytes": 98607
+      },
+      {
+        "name": "babec375147ddd9b.jpg",
+        "start": 2067,
+        "end": 2309,
+        "bytes": 88482
+      },
+      {
+        "name": "",
+        "start": 2781,
+        "end": 2781,
+        "bytes": 0
+      },
+      {
+        "name": "",
+        "start": 2851,
+        "end": 2851,
+        "bytes": 0
+      },
+      {
+        "name": "print.js",
+        "start": 3010,
+        "end": 3223,
+        "bytes": 111367
+      },
+      {
+        "name": "licenses.json",
+        "start": 3010,
+        "end": 3264,
+        "bytes": 162537
+      },
+      {
+        "name": "76720cf83df061e5.lossless.webp",
+        "start": 3253,
+        "end": 4525,
+        "bytes": 1045216
+      },
+      {
+        "name": "2c9294ffad831c82.lossless.webp",
+        "start": 3774,
+        "end": 4098,
+        "bytes": 99208
+      },
+      {
+        "name": "58dd6681256916c4.lossless.webp",
+        "start": 3774,
+        "end": 4029,
+        "bytes": 69734
+      },
+      {
+        "name": "sand-blue-surface-v1.lossless.webp",
+        "start": 3776,
+        "end": 5079,
+        "bytes": 756282
+      },
+      {
+        "name": "58d5b8960051a195.lossless.webp",
+        "start": 4687,
+        "end": 6831,
+        "bytes": 976372
+      },
+      {
+        "name": "e8bf8db511dca49a.lossless.webp",
+        "start": 4688,
+        "end": 6860,
+        "bytes": 1009630
+      },
+      {
+        "name": "78adb94bcb06eceb.jpg",
+        "start": 4693,
+        "end": 6399,
+        "bytes": 689672
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "run": 0,
+    "milestones": {
+      "controls": 3080,
+      "model": 3206.699999999255,
+      "cloud": 5290,
+      "print": 6994.29999999702,
+      "clouds": 7587.699999999255
+    },
+    "resources": [
+      {
+        "name": "theme.css",
+        "start": 57,
+        "end": 308,
+        "bytes": 266108
+      },
+      {
+        "name": "home.js",
+        "start": 103,
+        "end": 150,
+        "bytes": 3246
+      },
+      {
+        "name": "e8db6f5b91f7882f.jpg",
+        "start": 326,
+        "end": 1013,
+        "bytes": 398473
+      },
+      {
+        "name": "body.woff2",
+        "start": 349,
+        "end": 866,
+        "bytes": 191268
+      },
+      {
+        "name": "display.woff2",
+        "start": 353,
+        "end": 506,
+        "bytes": 37948
+      },
+      {
+        "name": "body-extra.woff2",
+        "start": 372,
+        "end": 513,
+        "bytes": 31772
+      },
+      {
+        "name": "context-distiller.BkXYny-h.webp",
+        "start": 465,
+        "end": 653,
+        "bytes": 57100
+      },
+      {
+        "name": "manifest.json",
+        "start": 476,
+        "end": 521,
+        "bytes": 603
+      },
+      {
+        "name": "print-cache.json",
+        "start": 566,
+        "end": 613,
+        "bytes": 620
+      },
+      {
+        "name": "model.json",
+        "start": 566,
+        "end": 884,
+        "bytes": 118319
+      },
+      {
+        "name": "material-experiment.json",
+        "start": 567,
+        "end": 615,
+        "bytes": 1236
+      },
+      {
+        "name": "scene.js",
+        "start": 977,
+        "end": 1865,
+        "bytes": 555279
+      },
+      {
+        "name": "runtime.js",
+        "start": 978,
+        "end": 1948,
+        "bytes": 658499
+      },
+      {
+        "name": "912cbccd36d7c067.jpg",
+        "start": 2067,
+        "end": 2435,
+        "bytes": 229539
+      },
+      {
+        "name": "c1cef1198288b583.jpg",
+        "start": 2067,
+        "end": 2327,
+        "bytes": 98607
+      },
+      {
+        "name": "babec375147ddd9b.jpg",
+        "start": 2067,
+        "end": 2312,
+        "bytes": 88482
+      },
+      {
+        "name": "",
+        "start": 2794,
+        "end": 2794,
+        "bytes": 0
+      },
+      {
+        "name": "",
+        "start": 2854,
+        "end": 2854,
+        "bytes": 0
+      },
+      {
+        "name": "print.js",
+        "start": 3012,
+        "end": 3222,
+        "bytes": 111367
+      },
+      {
+        "name": "licenses.json",
+        "start": 3013,
+        "end": 3264,
+        "bytes": 162537
+      },
+      {
+        "name": "76720cf83df061e5.lossless.webp",
+        "start": 3562,
+        "end": 5063,
+        "bytes": 1045216
+      },
+      {
+        "name": "2c9294ffad831c82.lossless.webp",
+        "start": 3649,
+        "end": 3918,
+        "bytes": 99208
+      },
+      {
+        "name": "sand-blue-surface-v1.lossless.webp",
+        "start": 3651,
+        "end": 4922,
+        "bytes": 756282
+      },
+      {
+        "name": "58d5b8960051a195.lossless.webp",
+        "start": 5213,
+        "end": 7268,
+        "bytes": 976372
+      },
+      {
+        "name": "e8bf8db511dca49a.lossless.webp",
+        "start": 5213,
+        "end": 7297,
+        "bytes": 1009630
+      },
+      {
+        "name": "78adb94bcb06eceb.jpg",
+        "start": 5217,
+        "end": 6836,
+        "bytes": 689672
+      },
+      {
+        "name": "favicon.svg",
+        "start": 5292,
+        "end": 5338,
+        "bytes": 520
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "run": 1,
+    "milestones": {
+      "controls": 3021.5,
+      "model": 3124.099999997765,
+      "cloud": 5195.39999999851,
+      "print": 6933.89999999851,
+      "clouds": 7517.099999997765
+    },
+    "resources": [
+      {
+        "name": "theme.css",
+        "start": 57,
+        "end": 307,
+        "bytes": 266108
+      },
+      {
+        "name": "home.js",
+        "start": 101,
+        "end": 147,
+        "bytes": 3246
+      },
+      {
+        "name": "e8db6f5b91f7882f.jpg",
+        "start": 320,
+        "end": 1028,
+        "bytes": 398473
+      },
+      {
+        "name": "body.woff2",
+        "start": 342,
+        "end": 852,
+        "bytes": 191268
+      },
+      {
+        "name": "display.woff2",
+        "start": 345,
+        "end": 497,
+        "bytes": 37948
+      },
+      {
+        "name": "body-extra.woff2",
+        "start": 369,
+        "end": 507,
+        "bytes": 31772
+      },
+      {
+        "name": "context-distiller.BkXYny-h.webp",
+        "start": 473,
+        "end": 659,
+        "bytes": 57100
+      },
+      {
+        "name": "manifest.json",
+        "start": 480,
+        "end": 525,
+        "bytes": 603
+      },
+      {
+        "name": "print-cache.json",
+        "start": 565,
+        "end": 611,
+        "bytes": 620
+      },
+      {
+        "name": "model.json",
+        "start": 565,
+        "end": 880,
+        "bytes": 118319
+      },
+      {
+        "name": "material-experiment.json",
+        "start": 566,
+        "end": 611,
+        "bytes": 1236
+      },
+      {
+        "name": "scene.js",
+        "start": 954,
+        "end": 1853,
+        "bytes": 555279
+      },
+      {
+        "name": "runtime.js",
+        "start": 954,
+        "end": 1932,
+        "bytes": 658499
+      },
+      {
+        "name": "912cbccd36d7c067.jpg",
+        "start": 2049,
+        "end": 2411,
+        "bytes": 229539
+      },
+      {
+        "name": "c1cef1198288b583.jpg",
+        "start": 2049,
+        "end": 2309,
+        "bytes": 98607
+      },
+      {
+        "name": "babec375147ddd9b.jpg",
+        "start": 2050,
+        "end": 2293,
+        "bytes": 88482
+      },
+      {
+        "name": "",
+        "start": 2763,
+        "end": 2763,
+        "bytes": 0
+      },
+      {
+        "name": "",
+        "start": 2825,
+        "end": 2825,
+        "bytes": 0
+      },
+      {
+        "name": "print.js",
+        "start": 2964,
+        "end": 3178,
+        "bytes": 111367
+      },
+      {
+        "name": "licenses.json",
+        "start": 2964,
+        "end": 3216,
+        "bytes": 162537
+      },
+      {
+        "name": "76720cf83df061e5.lossless.webp",
+        "start": 3506,
+        "end": 5003,
+        "bytes": 1045216
+      },
+      {
+        "name": "2c9294ffad831c82.lossless.webp",
+        "start": 3603,
+        "end": 3872,
+        "bytes": 99208
+      },
+      {
+        "name": "sand-blue-surface-v1.lossless.webp",
+        "start": 3604,
+        "end": 4878,
+        "bytes": 756282
+      },
+      {
+        "name": "58d5b8960051a195.lossless.webp",
+        "start": 5145,
+        "end": 7203,
+        "bytes": 976372
+      },
+      {
+        "name": "e8bf8db511dca49a.lossless.webp",
+        "start": 5145,
+        "end": 7230,
+        "bytes": 1009630
+      },
+      {
+        "name": "78adb94bcb06eceb.jpg",
+        "start": 5148,
+        "end": 6767,
+        "bytes": 689672
+      },
+      {
+        "name": "favicon.svg",
+        "start": 5226,
+        "end": 5272,
+        "bytes": 520
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "run": 2,
+    "milestones": {
+      "controls": 3059.599999997765,
+      "model": 3426.7999999970198,
+      "cloud": 5163.39999999851,
+      "print": 6915.39999999851,
+      "clouds": 7493.599999997765
+    },
+    "resources": [
+      {
+        "name": "theme.css",
+        "start": 58,
+        "end": 314,
+        "bytes": 266108
+      },
+      {
+        "name": "home.js",
+        "start": 102,
+        "end": 150,
+        "bytes": 3246
+      },
+      {
+        "name": "e8db6f5b91f7882f.jpg",
+        "start": 330,
+        "end": 1017,
+        "bytes": 398473
+      },
+      {
+        "name": "body.woff2",
+        "start": 355,
+        "end": 876,
+        "bytes": 191268
+      },
+      {
+        "name": "display.woff2",
+        "start": 358,
+        "end": 510,
+        "bytes": 37948
+      },
+      {
+        "name": "body-extra.woff2",
+        "start": 376,
+        "end": 515,
+        "bytes": 31772
+      },
+      {
+        "name": "context-distiller.BkXYny-h.webp",
+        "start": 479,
+        "end": 673,
+        "bytes": 57100
+      },
+      {
+        "name": "manifest.json",
+        "start": 486,
+        "end": 532,
+        "bytes": 603
+      },
+      {
+        "name": "model.json",
+        "start": 556,
+        "end": 885,
+        "bytes": 118319
+      },
+      {
+        "name": "print-cache.json",
+        "start": 556,
+        "end": 605,
+        "bytes": 620
+      },
+      {
+        "name": "material-experiment.json",
+        "start": 556,
+        "end": 603,
+        "bytes": 1236
+      },
+      {
+        "name": "scene.js",
+        "start": 977,
+        "end": 1868,
+        "bytes": 555279
+      },
+      {
+        "name": "runtime.js",
+        "start": 977,
+        "end": 1949,
+        "bytes": 658499
+      },
+      {
+        "name": "912cbccd36d7c067.jpg",
+        "start": 2076,
+        "end": 2442,
+        "bytes": 229539
+      },
+      {
+        "name": "c1cef1198288b583.jpg",
+        "start": 2076,
+        "end": 2336,
+        "bytes": 98607
+      },
+      {
+        "name": "babec375147ddd9b.jpg",
+        "start": 2077,
+        "end": 2320,
+        "bytes": 88482
+      },
+      {
+        "name": "",
+        "start": 2790,
+        "end": 2790,
+        "bytes": 0
+      },
+      {
+        "name": "",
+        "start": 2850,
+        "end": 2850,
+        "bytes": 0
+      },
+      {
+        "name": "print.js",
+        "start": 2994,
+        "end": 3205,
+        "bytes": 111367
+      },
+      {
+        "name": "licenses.json",
+        "start": 2994,
+        "end": 3245,
+        "bytes": 162537
+      },
+      {
+        "name": "76720cf83df061e5.lossless.webp",
+        "start": 3476,
+        "end": 4970,
+        "bytes": 1045216
+      },
+      {
+        "name": "2c9294ffad831c82.lossless.webp",
+        "start": 3564,
+        "end": 3832,
+        "bytes": 99208
+      },
+      {
+        "name": "sand-blue-surface-v1.lossless.webp",
+        "start": 3565,
+        "end": 4837,
+        "bytes": 756282
+      },
+      {
+        "name": "58d5b8960051a195.lossless.webp",
+        "start": 5111,
+        "end": 7169,
+        "bytes": 976372
+      },
+      {
+        "name": "e8bf8db511dca49a.lossless.webp",
+        "start": 5112,
+        "end": 7198,
+        "bytes": 1009630
+      },
+      {
+        "name": "78adb94bcb06eceb.jpg",
+        "start": 5114,
+        "end": 6733,
+        "bytes": 689672
+      },
+      {
+        "name": "favicon.svg",
+        "start": 5195,
+        "end": 5242,
+        "bytes": 520
+      }
+    ]
+  }
+]
